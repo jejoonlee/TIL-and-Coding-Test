@@ -94,7 +94,7 @@
    ADMIN@LAPTOP-M3AAIA8I MINGW64 ~/OneDrive/Desktop/TIL (master)
    $ git add .
    
-   # 
+   # 현재 수정 또는 새로운 파일은 Working directory에서 Staging Area(임시공간)에 옮겨졌다
    
    ADMIN@LAPTOP-M3AAIA8I MINGW64 ~/OneDrive/Desktop/TIL (master)
    $ git status
@@ -112,7 +112,59 @@
 
 4. **$ git commit -m '커밋 메시지'**
 
+   ```bash
+   #커밋을 통해 버전으로 기록
+   
+   $ git commit -m 'TIL 업데이트 3'
+   [master 87e9989] TIL 업데이트 3
+    2 files changed, 90 insertions(+)
+    create mode 100644 "markdown/Git.assets/\355\231\224\353\251\264 \354\272\241\354\262\230 2022-07-05 171325.png"
+   ```
+
+   
+
 5. **$ git log**
+
+   ```bash
+   #git log를 통해 현재 저장소에 기록된 커밋을 조회할 수 있다
+   
+   $ git log
+   commit 87e9989e27ca5de4018fe90c36b65323a592451c (HEAD -> master)
+   Author: JeJoonLee <jejoonlee1996@gmail.com>
+   Date:   Tue Jul 5 17:41:59 2022 +0900
+   
+       TIL 업데이트 3 #조회된 커밋 메세지
+   
+   commit 89a758d7767d5fc57811f750c36053e5f786d279
+   Author: JeJoonLee <jejoonlee1996@gmail.com>
+   Date:   Tue Jul 5 17:05:48 2022 +0900
+   
+       TIL 업데이트 2
+   
+   commit 28555b0d36a1c6d9e52c67bfe9716f4f23b54c2d
+   Author: JeJoonLee <jejoonlee1996@gmail.com>
+   Date:   Tue Jul 5 16:56:33 2022 +0900
+   
+       TIL 업데이트
+   ```
+
+   **$ git log -1** : 직전의 커밋
+
+   **$ git log  --oneline** : 커밋을 한줄로
+
+   **$ git log -2 --oneline** : 최근 2개 커밋을 한줄로
+
+
+
+### 📌 Git 기초 명령어
+
+| 명령어                       | 내용                                                 |
+| :--------------------------- | :--------------------------------------------------- |
+| git init                     | 로컬 저장소 생성 (이후 파일 이름 옆에 master라고 뜸) |
+| git add <파일명>             | 특정 파일/ 폴더의 변경사항 추가                      |
+| git commit -m '<커밋메세지>' | 커밋 (버전 기록)                                     |
+| git status                   | 상태 확인                                            |
+| git log                      | 버전확인                                             |
 
 
 
