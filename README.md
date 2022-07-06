@@ -4,8 +4,8 @@
 
 ## ✏️Category
 
-- [Git/Github](#Git/Github)
-- [Markdown](#Markdown)
+- [Git/Github](#gitgithub)
+- [Markdown](#markdown)
 
 
 
