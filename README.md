@@ -1,4 +1,4 @@
 # TIL
 Today I Learned
 
-[Git](#git)
+[Git](TIL/Git.md)
