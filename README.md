@@ -11,7 +11,7 @@
 
 ## ✏️ Index
 
-- **Git/Github**
+- ### Git/Github
 
 | Content | Detail                           | Date    | Link |
 | ------- | -------------------------------- | ------- | ---- |
@@ -20,7 +20,7 @@
 
 
 
-- **Markdown**
+- ### Markdown
 
 | Content      | Detail             | Date    | Link |
 | ------------ | ------------------ | ------- | ---- |
