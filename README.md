@@ -1,10 +1,29 @@
 # 📋  Je Joon Lee's TIL (Today I Learned) 
 
+
+
+## ✏️Category
+
+- [Git/Github](#Git/Github)
+- [Markdown](#Markdown)
+
+
+
 ## ✏️ Index
 
-[Markdown](./Typora/README.md)
+- **Git/Github**
 
-[Git/Github](./Git/README.md)
+| Content | Detail                           | Date    | Link |
+| ------- | -------------------------------- | ------- | ---- |
+| Git     | Git 개념, 기초 흐름, 명령어      | 7월 5일 | [링크](./Git/Git.md) |
+| Github  | Github 개념과 버전을 올리는 방법 | 7월 6일 | [링크](./Git/Github.md) |
 
 
+
+- **Markdown**
+
+| Content      | Detail             | Date    | Link |
+| ------------ | ------------------ | ------- | ---- |
+| Markdown     | 마크다운 문법 정리 | 7월 5일 | [링크](./Typora/markdown_language.md)      |
+| Markdown (P) | 마크다운 복제 실습 | 7월 5일 | [링크](./Typora/markdown_copy_1.md)     |
 
