@@ -1,11 +1,10 @@
 # Je Joon Lee's TIL (Today I Learned)
 
-## Project
+## Index
 
-[Typora Copy Project](Typora/markdown_copy_1.md.md)
+[Markdown](./Typora/README.md)
+
+[Git/Github](./Git/README.md)
 
 
 
-## Summary
-
-[Markdown 마크다운 사용하기](Typora/markdown_language.md.md)
