@@ -2,10 +2,10 @@
 
 ## Project
 
-[Typora Copy Project](Typora/markdwon_copy_1.md.md)
+[Typora Copy Project](Typora/markdown_copy_1.md.md)
 
 
 
 ## Summary
 
-[Markdown Using Typora](Typora/markdown_language.md.md)
+[Markdown 마크다운 사용하기](Typora/markdown_language.md.md)
