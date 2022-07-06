@@ -16,7 +16,7 @@
 >
 > 커밋을 보내고 받을 수 있다
 
-![화면 캡처 2022-07-06 165029](./Github.assets/화면 캡처 2022-07-06 165029.png)
+![pushandpull](Github.assets/pushandpull.png)
 
 1. 커밋을 원격 저장소에 보내는 것을 `PUSH`
 2. 커밋을 원격 저장소에서 받으면 `PULL`
