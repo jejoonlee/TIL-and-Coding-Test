@@ -58,11 +58,15 @@
    Reinitialized existing Git repository in C:/Users/ADMIN/OneDrive/Desktop/TIL/.git/
    ```
 
-​	*만약 (master)가 생성이 안 될 경우*     아래 내용 추가
+​	🚨 *만약 (master)가 생성이 안 될 경우*     아래 내용 추가
 
 ​	`$ git config --global user.name 'Github username'`
 
 ​	`$ git config --global user.email 'Github email'`
+
+​	🚨 확인을 할 때는
+
+​	`$ git config --global --list`
 
 
 
