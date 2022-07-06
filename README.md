@@ -1,6 +1,6 @@
-# Je Joon Lee's TIL (Today I Learned)
+# 📋  Je Joon Lee's TIL (Today I Learned) 
 
-## Index
+## ✏️ Index
 
 [Markdown](./Typora/README.md)
 
