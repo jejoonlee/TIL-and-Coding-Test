@@ -1,10 +1,10 @@
 # 📝 Github
 
-[Github 이란?](#github-이란)
+[Github 이란?](#%EF%B8%8F-github이란)
 
-[How it works?](#how-it-works)
+[How it works?](#%EF%B8%8F-how-it-works)
 
-[.gitignore](#.gitignore)
+[.gitignore](#%EF%B8%8F-gitignore)
 
 
 

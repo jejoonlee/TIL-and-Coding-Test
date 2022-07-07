@@ -1,8 +1,8 @@
 # ✔️ 마크다운 문법 정리
 
-[Heading](#heading)				[List](#list)				[Fenced Code Block](#fenced-code-block)				[Inline Code Block](#inline-code-block)				[Link](#link)
+**Category**
 
-[Image](#image)					[Blockquotes](#blockquotes)					[Table](#table)						[Text](#text)							[Horizontal line](#horizontal-line)
+[Heading](#heading) [List](#list) [Fenced Code Block](#fenced-code-block) [Inline Code Block](#inline-code-block) [Link](#link) [Image](#image) [Blockquotes](#blockquotes) [Table](#table) [Text](#text) [Horizontal line](#horizontal-line)
 
 ​	
 
