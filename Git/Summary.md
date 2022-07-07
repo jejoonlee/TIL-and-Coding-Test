@@ -1,14 +1,14 @@
 # 📝 Git 정리
 
-[CLI 명령어](#✔️ CLI 명령어)
+[CLI 명령어](#cli-명령어)
 
-[Git 기초 명령어 (로컬 저장소 내)](#✔️Git 기초 명령어 (로컬 저장소 내))
+[Git 기초 명령어 (로컬 저장소 내)](#git-기초-명령어-로컬-저장소-내)
 
-[Git 기초 명령어 (로컬 저장소에서 원격 저장소로)](#✔️Git 기초 명령어 (로컬 저장소에서 원격 저장소로))
+[Git 기초 명령어 (로컬 저장소에서 원격 저장소로)](#git-기초-명령어-로컬-저장소에서-원격-저장소로)
 
-[Git Summary](#✔️Git Summary)
+[Git Summary](#git-summary)
 
-[Forking Workflow](#✔️Forking Workflow)
+[Forking Workflow](#forking-workflow)
 
 
 

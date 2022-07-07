@@ -1,5 +1,11 @@
 # 📝 Github
 
+[Github 이란?](#github-이란)
+
+[How it works?](#how-it-works)
+
+[.gitignore](#.gitignore)
+
 
 
 ## ✔️ Github이란?

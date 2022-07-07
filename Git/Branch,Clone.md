@@ -1,14 +1,14 @@
 # 📝 Github (Branch)
 
-[Branch란?](#✔️ Branch란?)
+[Branch란?](#branch란)
 
-[병합 시나리오](#✔️ 병합 시나리오)
+[병합 시나리오](#병합-시나리오)
 
-[Branch 사용](#✔️ Branch 사용)
+[Branch 사용](#branch-사용)
 
-[Clone(복제)](#✔️ Clone (복제))
+[Clone (복제)](#clone-복제)
 
-[Github Flow](#✔️ Github Flow)
+[Github Flow](#github-flow)
 
 
 
