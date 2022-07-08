@@ -63,9 +63,19 @@ $ git remote -v
 ## ✔️ .gitignore
 
 > 버전이랑 상관없는 파일이 있을 때 사용
+>
+> git이 추적하지 못하게 파일을 관리
 
 - .gitignore 파일을 만든다 `$ touch .gitignore`
 - 생성된 파일 안에 버전 관리가 필요 없는 파일/폴더 이름을 넣으면 된다
 - BUT, 이미 커밋을 하면 수정된 것이 track이 된다
 
 [.gitignore](https://www.toptal.com/developers/gitignore/)
+
+
+
+### .gitkeep
+
+- 빈폴더를 만든다 (관용적 used commonly)
+- git을 효율적으로 관리하기 위해 쓰이지만, 빈폴더는 의미가 없음
+
