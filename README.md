@@ -1,5 +1,10 @@
 # 📋  Je Joon Lee's TIL (Today I Learned) 
 
+- Codecademy
+
+| Codecademy | Extra Coding | Updated (2022.07.08) | [링크](./Codecademy/README.md) |
+| ---------- | ------------ | -------------------- | ------------------------------ |
+
 
 
 ## ✏️Category
