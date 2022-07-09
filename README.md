@@ -2,7 +2,7 @@
 
 - Codecademy
 
-| Codecademy | Extra Coding | Updated (2022.07.08) | [링크](./Codecademy/README.md) |
+| Codecademy | Extra Coding | Updated (2022.07.09) | [링크](./Codecademy/README.md) |
 | ---------- | ------------ | -------------------- | ------------------------------ |
 
 

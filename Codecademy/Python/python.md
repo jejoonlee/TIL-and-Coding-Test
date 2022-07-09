@@ -1,4 +1,4 @@
-# 📝 Python 
+# 📝 Python (Basic 1)
 
 
 
@@ -12,11 +12,17 @@
 
 [Error](#error)
 
+[String](#string)
+
 [Number](#number)
 
 [Calculation](#calculation)
 
 [Concatenation](#concatenation) 문자열 접합
+
+[Plus Equal](#plus-equal)
+
+[Multi-line Strings](#multi-line-strings)
 
 
 
@@ -32,6 +38,8 @@
 
 
 
+
+
 #### Print
 
 ```python
@@ -39,6 +47,8 @@ print('Hello World!')		# 'Hello World!' will be printed.
 ```
 
 - `print()` function is used to tell a computer to talk
+
+
 
 
 
@@ -55,6 +65,8 @@ print='have_a_good_day'
 
 
 
+
+
 #### Error
 
 > When there is an error `^` character will point to the location of the error
@@ -65,11 +77,31 @@ print='have_a_good_day'
 
 
 
+
+
+#### String
+
+> It is used with variable 
+>
+> A string is how programming languages store text
+
+```python
+name = 'Je Joon Lee'
+
+print(name)		# Je Joon Lee will be printed
+```
+
+
+
+
+
 #### Number
 
 > `int`, integer, contains all numbers without decimal points
 >
 > `float`, float, can be used for fractional quantities (decimal) as well as precise measurements (1~10)
+
+
 
 
 
@@ -111,6 +143,8 @@ my_team = 27 % 4
 print(my_team)
 	# prints '3'
 ```
+
+
 
 
 
@@ -156,4 +190,49 @@ print(string1, number, string2)
 
 
 
+
+#### Plus Equal
+
+> Shorthand for updating variables
+>
+> `+=` when you have a number saved in a variable and want to add to the current value of the variable
+>
+> `+=` adds the value afterwards to the variable and then updates the variable to be the sum
+>
+> Can also be used in concatenation
+
+```python
+total_price = 0
+# 0 will be printed
+
+new_cloths = 20 
+
+total_price += new_cloths 		# += used
+# 20 will be printed
+
+new_shoes = 30
+new_book = 10
+
+total_price += new_shoes + new book			# += used
+
+print(total_price)	# this will print 60
+```
+
+
+
+
+
+#### Multi-line Strings
+
+> `'''....'''` or `"""..."""`
+
+```python
+to_you = '''Stranger, if you passing meet me and desire to speak to me, why
+  should you not speak to me?
+And why should I not speak to you?
+'''
+print(to_you)
+```
+
+🚨If multi-line is not assigned a variable, it is treated as comment
 
