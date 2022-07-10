@@ -14,7 +14,7 @@
 
 [Relational Operators II](#relational-operators-ii)
 
-[Boolean Operators: and](#boolean-operators:-and)
+[Boolean Operators: and](#boolean-operators-and)
 
 
 
