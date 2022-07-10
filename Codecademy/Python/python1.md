@@ -16,6 +16,10 @@
 
 [Boolean Operators: and](#boolean-operators-and)
 
+[Boolean Operators: or](#boolean-operators-or)
+
+[Boolean Operators: not](#boolean-operators-not)
+
 
 
 ## ✔️ Content
@@ -129,3 +133,70 @@ if credits < 120:
 
 
 #### Boolean Operators: and
+
+> `and` : two boolean expressions need to be `TRUE` to be `TRUE`, otherwise all `FALSE`
+
+```python
+(1 + 1 == 2) and (2 + 2 == 4)   
+# True (both TRUE)
+ 
+(1 > 9) and (5 != 6)            
+# False (only one is TRUE)
+ 
+(1 + 1 == 2) and (2 < 1)        
+# False (only one is TRUE)
+    
+(0 == 10) and (1 + 1 == 1)      
+# False (both are FALSE)
+-------------------------------------------------
+
+credits = 120
+gpa = 3.4
+
+if (credits >= 120) and (gpa >= 2.0):
+  print("You meet the requirements to graduate!")
+# Since both standards were met, it will print 'You meet the requirements to graduate!' 
+```
+
+
+
+
+
+#### Boolean Operators: or
+
+> `or` : if one or both of the expressions are TRUE, it is TRUE
+
+```python
+True or (3 + 4 == 7)    # True
+(1 - 1 == 0) or False   # True
+(2 < 0) or True         # True
+(3 == 8) or (3 > 4)     # False
+--------------------------------------------------
+
+credits = 118
+gpa = 2.0
+
+if (credits >= 120) or (gpa >= 2.0):
+  print('You have met at least one of the requirements.')
+# Since one of the following standard is met, it will print 'You have met at least one of the requirements'
+```
+
+
+
+
+
+#### Boolean Operators: not
+
+> `not` when applied to boolean expression, it reverses the value
+
+```python
+not True == False
+not False == True
+
+not 1 + 1 == 2  
+# False
+
+not 7 < 0       
+# True (7<0 is FALSE, if you reverse this with 'not' operator, it is TRUE)
+```
+
