@@ -18,3 +18,6 @@
 |   `>=`   | greater than or equal to                                     |                      |
 |   `<`    | less than                                                    |                      |
 |   `<=`   | less than or equal to                                        |                      |
+|  `and`   | Two expressions NEED to be TRUE to be TRUE                   |                      |
+|   `or`   | One of the expressions NEED to be TRUE to be TRUE            |                      |
+|  `not`   | Reverse value of `and`                                       |                      |
