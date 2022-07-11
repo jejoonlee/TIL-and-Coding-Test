@@ -50,7 +50,7 @@
 
 | Content         | Detail | Date     |                 Link                 |
 | :-------------- | ------ | -------- | :----------------------------------: |
-| Python Basics 1 |        | 7월 11일 |   [링크](./Python/python_basic_1)    |
+| Python Basics 1 |        | 7월 11일 |  [링크](./Python/python_basic_1.md)  |
 |                 |        |          |                                      |
 | 📌**정리**       | 명령문 | 7월 11일 | [링크](./Python/python_operators.md) |
 

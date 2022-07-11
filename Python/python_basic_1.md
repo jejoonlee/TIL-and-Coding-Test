@@ -2,25 +2,25 @@
 
 #### Category
 
-[컴퓨터 프로그랭 언어](#-컴퓨터-프로그래밍-언어)
+[컴퓨터 프로그랭 언어](#%EF%B8%8F-컴퓨터-프로그래밍-언어)
 
-[파이썬이란](#-파이썬이란)
+[파이썬이란](#%EF%B8%8F-파이썬이란)
 
-[코드 스타일 가이드](#-코드-스타일-가이드)
+[코드 스타일 가이드](#%EF%B8%8F코드-스타일-가이드)
 
-[변수](#-변수-variable)
+[변수](#%EF%B8%8F-변수-variable)
 
-[식별자 (Identifiers)](#-식별자-identifiers) 
+[식별자 (Identifiers)](#%EF%B8%8F-식별자-identifiers) 
 
-[사용자 입력 (input)](# -사용자-입력-input)
+[사용자 입력 (input)](#--사용자-입력-input)
 
-[주석 (Comment)](#-주석-comment)
+[주석 (Comment)](#%EF%B8%8F-주석-comment)
 
-[파이썬 기본 자료형](#-파이썬-기본-자료형)    → 불린형, 수치형, 문자열, None
+[파이썬 기본 자료형](#%EF%B8%8F-파이썬-기본-자료형)    → 불린형, 수치형, 문자열, None
 
-[형 변환](#-형-변환)
+[형 변환](#%EF%B8%8F-형-변환)
 
-[컨테이너 (Container)](#-컨테이너-container)
+[컨테이너 (Container)](#%EF%B8%8F-컨테이너-container)
 
 [시퀀스 (Sequence Container)](#-시퀀스-sequence-container)
 
