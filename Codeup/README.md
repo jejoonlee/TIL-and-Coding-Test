@@ -6,5 +6,5 @@
 
 
 
-[CodeUp (Python-기초 100제)](./Python_(기초_100제))
+[CodeUp (Python-기초 100제)](./Python%20(기초%20100제)
 
