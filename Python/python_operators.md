@@ -1,16 +1,16 @@
 # 📋Python Operators
 
-[논리 연산자 (Logical Operator)](#-논리-연산자-logical-operator)
+[논리 연산자 (Logical Operator)](#%EF%B8%8F-논리-연산자-logical-operator)
 
-[산술 연산자 (Arithmetic Operator)](#-산술-연산자-arithmetic-operator)
+[산술 연산자 (Arithmetic Operator)](#%EF%B8%8F-산술-연산자-arithmetic-operator)
 
-[복합 연산자 (In-place Operator)](#-복합-연산자-in-place operator)
+[복합 연산자 (In-place Operator)](#%EF%B8%8F-복합-연산자-in-place-operator)
 
-[비교 연산자 (Comparison Operator)](#-비교-연산자-comparison-operator)
+[비교 연산자 (Comparison Operator)](#%EF%B8%8F-비교-연산자-comparison-operator)
 
-[Escape Sequence](#-escape-sequence)
+[Escape Sequence](#%EF%B8%8F-escape-sequence)
 
-[Sequence-Operator](#-sequence-operator)
+[Sequence-Operator](#%EF%B8%8F-sequence-operator)
 
 
 
