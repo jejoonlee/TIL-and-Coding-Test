@@ -7,7 +7,7 @@
 
 
 
-- Codeup
+## Codeup
 
 | Codeup | 문제풀이 | Updated (2022.07.11) | [링크](./Codeup/README.md) |
 | ------ | -------- | -------------------- | -------------------------- |
@@ -18,6 +18,7 @@
 
 - [Git/Github](#gitgithub)
 - [Markdown](#markdown)
+- [Python](#python)
 - [특별강의](#특별강의)
 
 
@@ -42,6 +43,16 @@
 | Markdown     | 마크다운 문법 정리 | 7월 5일 | [링크](./Typora/markdown_language.md)      |
 | Markdown (P) | 마크다운 복제 실습 | 7월 5일 | [링크](./Typora/markdown_copy_1.md)     |
 | 📌**정리** | 명령문 | 7월 7일 | [링크](./Typora/summary.md) |
+
+
+
+- ### Python
+
+| Content         | Detail | Date     |                 Link                 |
+| :-------------- | ------ | -------- | :----------------------------------: |
+| Python Basics 1 |        | 7월 11일 |   [링크](./Python/python_basic_1)    |
+|                 |        |          |                                      |
+| 📌**정리**       | 명령문 | 7월 11일 | [링크](./Python/python_operators.md) |
 
 
 
