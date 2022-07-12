@@ -7,8 +7,10 @@
 
 numbers = [0, 20, 100]
 max = numbers[0]
+second_max = numbers[0]
 
-for i in numbers:
-    if i > max:
+for i in numbers:           #최대값이었던 것이 두번째로 큰 수
+    if max < i:
+        second_max = max    
         max = i
-print(max)
+print(second_max)

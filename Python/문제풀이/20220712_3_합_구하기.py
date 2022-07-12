@@ -15,8 +15,8 @@ print(result)
 
 # 2) for 문
 user_input = int(input())
-n = int(0)
-result = int(0)
+n = 0
+result = 0
 
 for i in range(0, user_input + 1):      # range는 이상, 미만이라서 user_input에 1을 더함
     result += n                         

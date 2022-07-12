@@ -2,9 +2,9 @@
 
 word = 'happy!'
 
-count = 0
-for a in word:
-    count += 1
+count = 0               # h a p p y ! 하나하나의 변수
+for i in word:
+    count += 1          # 1씩 증가
 print(count)
 
 # ‘happy!’ 는 하나의 통

@@ -3,12 +3,14 @@
 # numbers = [3, 10, 20]
 
 num = [3, 10 ,20]
-sum_li = 0
-len_li = 0
+
+# 값 초기화
+result = 0
+count = 0
 
 for i in num:  
-    sum_li += i             # num 에 있는 리스트들 더하기
-    len_li += 1             # 리스트에서 하나씩 숫자를 꺼내올때마다 1씩 더하기         
+    result += i             # num 에 있는 리스트들 더하기
+    count += 1              # 리스트에서 하나씩 숫자를 꺼내올때마다 1씩 더하기         
     
-print(sum_li / len_li)
-
+print(result / count)
+# print(sum(num) / len(num))
