@@ -18,6 +18,11 @@
 
 [파이썬 기본 자료형](#%EF%B8%8F-파이썬-기본-자료형)    → 불린형, 수치형, 문자열, None
 
+- [None](#-none)
+- [불린형 Boolean Type](#-불린형-boolean-type)
+- [수치형 Numeric Type](#-수치형-numeric-type)
+- [문자열](#-문자열-string)
+
 [형 변환](#%EF%B8%8F-형-변환)
 
 [컨테이너 (Container)](#%EF%B8%8F-컨테이너-container)
