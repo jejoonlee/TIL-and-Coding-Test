@@ -12,6 +12,8 @@
 
 [Sequence-Operator](#%EF%B8%8F-sequence-operator)
 
+[Functions](#%EF%B8%8F-functions)
+
 
 
 ### ✔️ 논리 연산자 (Logical Operator)
@@ -101,3 +103,16 @@
 | len(s)           | s 의 길이                                                |
 | min(s)           | s 의 가장 작은 항목                                      |
 | max(s)           | s 의 가장 큰 항목                                        |
+
+
+
+## ✔️ Functions
+
+| 함수                    | 역할                                                         |
+| ----------------------- | ------------------------------------------------------------ |
+| chr()                   | 유니코드에서 알파벳으로 변환해준다 (97~122 → a~z) / 반대 함수 **ord**() |
+| format()                | 형식을 바꾸는 것                                             |
+| map(function, iterable) | 순회 가능한 데이터구조 (iterable)의 모든 요소에 함수(function)을 적용하고, 그 결과를 map object로 반환 |
+| ord()                   | 알파벳을 입력하면, 알파벳에서 유니코드로 변환해준다 (a~z → 97~122) / 반대 함수 **chr**() |
+|                         |                                                              |
+
