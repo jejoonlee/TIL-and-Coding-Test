@@ -52,6 +52,7 @@
 | :-------------- | ------------------ | -------- | :------------------------------------------: |
 | Python Basics 1 |                    | 7월 11일 |      [링크](./Python/python_basic_1.md)      |
 | Python Basics 2 | Control Statements | 7월 12일 | [링크](./Python/python_control_statement.md) |
+| Python Basics 3 | Function           | 7월 13일 |     [링크](./Python/python_function.md)      |
 | 📌**정리**       | 명령문             | 7월 11일 |     [링크](./Python/python_operators.md)     |
 | ✍️문제풀이       | 수업               | 7월 12일 |          [링크](./Python/문제풀이)           |
 
