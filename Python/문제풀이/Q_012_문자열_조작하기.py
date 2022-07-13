@@ -10,3 +10,12 @@ for i in word:
     rm_a += i
     
 print(rm_a)
+
+word = 'apple'
+rm_a = ''
+
+for i in word:
+    if i != 'a':        # continue를 이용해서 a와 일치하면, 지나간다
+        rm_a += i
+    
+print(rm_a)

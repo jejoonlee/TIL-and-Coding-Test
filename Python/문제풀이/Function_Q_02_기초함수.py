@@ -8,3 +8,12 @@ def rect(a, b):
     return a * b , (a + b) * 2  # ','를 통해 튜플로 반환시킨다
 
 print(rect(20, 30))
+
+
+#다른 가능한 공식
+def rect(a, b):
+    area = a * b
+    perimeter = (a + b) * 2
+    return area, perimeter
+
+print(rect(20, 30))
