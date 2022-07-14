@@ -11,6 +11,11 @@
   - [문자열 변경](#문자열-변경)
 - [리스트 (List)](#리스트-list)
 
+[컬렉션](#%EF%B8%8F-컬렉션)
+
+- [세트](#세트)
+- [딕셔너리 (Dictionary)](#딕셔너리-dictionary)
+
 
 
 ## ✔️Review
@@ -286,5 +291,96 @@ result = number.reverse()
 print(number, result)
 # [6, 2, 3, 7, 1] None
 리스트의 순서를 바꾸는 것이지, 정렬하는 것이 아님. None으로 반환
+```
+
+
+
+
+
+## ✔️ 컬렉션
+
+
+
+### 세트
+
+| 문법           | 설명                                                         |
+| -------------- | ------------------------------------------------------------ |
+| .copy()        | 세트의 얕은 복사본을 반환                                    |
+| .add(x)        | 항목 x가 세트에 없다면 추가                                  |
+| .pop()         | 세트 s에서 랜덤하게 항목을 반환하고, 해당 항목을 제고. 세트가 비어있을 경우, KeyError |
+| .remove(s)     | 항목 x를 세트 s에서 삭제. 항목이 존재하지 않을 경우, KeyError |
+| .discard(x)    | 항목 x가 세트 s에 있는 경우, 항목 x를 세트 s에서 삭제        |
+| .update(t)     | 세트 t에 있는 모든 항목 중 세트 s에 없는 항목을 추가         |
+| .clear()       | 모든 항목을 제거                                             |
+| .isdisjoint(t) | 세트 s가 세트 t의 서로 같은 항목을 하나라도 갖고 있지 않은 경우, True 반환 |
+| .issubset(t)   | 세트 s가 세트  t의 하위 세트인 경우, True 반환               |
+| .issuperset(t) | 세트 s가 세트 t의 상위 세트인 경우, True 반환                |
+
+
+
+
+
+### 딕셔너리 (Dictionary)
+
+| 문법                 | 설명                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| .clear()             | 모든 항목 제거                                               |
+| .keys()              | 딕셔너리 모든 키를 담은 뷰를 반환                            |
+| .values()            | 딕셔너리 모든 값을 담은 뷰를 반환                            |
+| .items()             | 딕셔너리 모든 키-값의 쌍을 담은 뷰를 반환                    |
+| **.get(k)**          | 키 key의 값을 반환하는데, 키 key가 딕셔너리에 없을 경우 None을 반환 |
+| **.get(k, v)**       | 키 key의 값을 반환하는데, 키 key가 딕셔너리에 없을 경우 value를 반환 |
+| **.pop(k)**          | 키 key의 값을 반환하고 키 key인 항목ㅇ르 딕셔너리에서 삭제하는데, 키 key가 딕셔너리에 없을 경우 KeyError를 발생 |
+| **.pop(k, v)**       | 키 k의 값을 반환하고 키 key인 항목을 딕셔너리에서 삭제하는데, 키 key가 딕셔너리에 없을 경우 value를 반환 |
+| **.update([other])** | 딕셔너리의 값을 매핑하여 업데이트                            |
+
+
+
+**.get(key[, default])**
+
+- key를 통해 value를 가져온다
+- KeyError가 발생하지 않으며, default값을 설정할 수 있음 (기본, None)
+
+```python
+my_dict = {'football': '축구', 'basketball': '농구'}
+my_dict['rugby']	# my_dict에 'rugby'라는 key가 없어서, KeyError가 뜬다
+
+my_dict = {'football': '축구', 'basketball': '농구'}
+print(my_dict.get('rugby'))					# None
+print(my_dict.get('football'))				# 축구
+print(my_dict.get('rugby', 0))				# 0
+print(my_dict.get('football', 0))			# 축구
+```
+
+**.pop(key[, default])**
+
+- key가 딕셔너리에 있으면 제거하고 해당 값을 반환
+- 그렇지 않으면 default를 반환 / default 값이 없으면 KeyError
+
+```python
+my_dict = {'football': '축구', 'basketball': '농구'}
+data = my_dict.pop('basketball')
+print(data, my_dict)				# 농구 {'football': '축구'}
+--------------------------------------------------------------------------------
+
+my_dict = {'football': '축구', 'basketball': '농구'}
+data = my_dict.pop('rugby')
+print(data, my_dict)				# KeyError {'football': '축구', 'basketball': '농구'}
+
+--------------------------------------------------------------------------------
+my_dict = {'football': '축구', 'basketball': '농구'}
+data = my_dict.pop('rugby', '없음')
+print(data, my_dict)				# 없음 {'football': '축구', 'basketball': '농구'}
+```
+
+**.update([other])**
+
+- 값을 제공하는 key, value로 덮어쓴다
+
+```python
+my_dict = {'football': '축', 'basketball': '농구'}
+my_dict.update('football' = '축구')	# 'football' key에 있는 값 value를 '축구'로 바꿔라
+print(my_dict)
+# {'football': '축구', 'basketball': '농구'}
 ```
 
