@@ -1,3 +1,6 @@
 a, b = map(int, input().split())
 
-print(bool(not(a and b)))
+if a == b:
+    print('True')
+else:
+    print('False')
