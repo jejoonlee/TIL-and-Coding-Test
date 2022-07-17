@@ -9,7 +9,7 @@
 
 ## Codeup
 
-| Codeup | 문제풀이 | Updated (2022.07.14) | [링크](./Codeup/README.md) |
+| Codeup | 문제풀이 | Updated (2022.07.15) | [링크](./Codeup/README.md) |
 | ------ | -------- | -------------------- | -------------------------- |
 
 
@@ -56,7 +56,7 @@
 | Python 4  | Methods              | 7월 14일 | [링크](./Python/python_data_structure_methods.md) |
 | 📌**정리** | 명령문/ 함수/methods | 7월 14일 |  [링크](./Python/python_operators_functions.md)   |
 | ✍️문제풀이 | 수업                 | 7월 14일 |             [링크](./Python/문제풀이)             |
-| Project 1 | 프로젝트 1           | 7월 15일 |       [링크](./Python/Project/project_1.md)       |
+| Project 1 | 프로젝트 1           | 7월 17일 |       [링크](./Python/Project/project_1.md)       |
 
 
 
