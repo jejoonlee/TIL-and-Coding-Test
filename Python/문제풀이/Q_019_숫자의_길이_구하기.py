@@ -12,11 +12,31 @@
 # else:
 #     print('4자리거나 보다 많음')
 
-a = int(input())
-b = 0
 
-while a > 0:
-    a //= 10
-    b += 1
+# 123 == 100 + 20 + 3 == 100 * 1 + 10 * 2 + 3 * 1
+# 123 -> 12 -> 1 -> 0
+result = 0
+number = 123
 
-print(b)
+# 몫이 0이 되면 종료해야한다.
+# 0이 되면 false이기 때문에 , '!= 0' 을 없애도 된다
+while number != 0:
+    number //= 10
+    result += 1
+print(result)
+
+
+
+# a = int(input())
+# b = 0
+
+# while a > 0:
+#     a //= 10
+#     b += 1
+
+# print(b)
+
+
+
+# number = 123
+# print(len(str(number))
