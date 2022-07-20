@@ -16,14 +16,14 @@
 
 ## 🧑‍💻 SW Expert Academy
 
-| SW Expert Academy | 문제풀이 | Updated (2022.07.19) | [링크](https://github.com/jejoonlee/SWEA) |
+| SW Expert Academy | 문제풀이 | Updated (2022.07.20) | [링크](https://github.com/jejoonlee/SWEA) |
 | ----------------- | -------- | -------------------- | ----------------------------------------- |
 
 
 
 ## 🧑‍💻 Baekjoon
 
-| Baekjoon | 문제풀이 | Updated (2022.07.15) | [링크](https://github.com/jejoonlee/baekjoon) |
+| Baekjoon | 문제풀이 | Updated (2022.07.20) | [링크](https://github.com/jejoonlee/baekjoon) |
 | -------- | -------- | -------------------- | --------------------------------------------- |
 
 
@@ -69,7 +69,7 @@
 | Python 3  | Function             | 7월 13일 |        [링크](./Python/python_function.md)        |
 | Python 4  | Methods              | 7월 14일 | [링크](./Python/python_data_structure_methods.md) |
 | Python 5  | Error / Debugging    | 7월 18일 |      [링크](./Python/python_error_debug.md)       |
-| Python 6  | OOP                  | 7월 19일 |          [링크](./Python/python_OOP.md)           |
+| Python 6  | OOP                  | 7월 20일 |          [링크](./Python/python_OOP.md)           |
 | 📌**정리** | 명령문/ 함수/methods | 7월 14일 |  [링크](./Python/python_operators_functions.md)   |
 | ✍️문제풀이 | 수업                 | 7월 19일 |             [링크](./Python/문제풀이)             |
 | Project 1 | 프로젝트 1           | 7월 17일 |       [링크](./Python/Project/project_1.md)       |
