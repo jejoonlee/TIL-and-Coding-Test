@@ -14,6 +14,8 @@
 
 [가상 환경](#%EF%B8%8F-가상-환경)
 
+[API](#%EF%B8%8F-api)
+
 
 
 ## ✔️ List Comprehension
@@ -219,5 +221,40 @@ print(list(filter(div_3, numbers)))
 
 
 
+## ✔️ API
 
+> Application Programming Interface 응용 프로그램 인터페이스
+
+컴퓨터나 컴퓨터 프로그램 사이의 연결 / 프로그램을 제어한다
+
+​	예) TV를 조작하기 위한 인터페이스는 **리모콘**이다
+
+
+
+**API를 활용시 확인 사항**
+
+- 요청하는 방식에 대한 이해
+  - 인증방식
+  - URL (기본주소/ 원하는 기능에 대한 추가 경로/ 요청 변수)
+- 응답 결과에 대한 이해
+  - 응답 결과 타입 (JSON) / 응답 결과 구조
+
+```python
+import requests
+
+BASE_URL = 'https://api.themoviedb.org/3'
+path = '/movie/43261'
+# path 는 원하는 기능에 대한 '추가 경로'이다
+
+# api_key 발급받아서 각자 키를 넣는 것
+params = {
+    'api_key': '',
+    'language': 'ko-KR'
+}
+
+# 응답 받은 값을 JSON 형태로 가지고 오는 것
+response = requests.get(BASE_URL+path, params=params).json()
+
+print(response)
+```
 
