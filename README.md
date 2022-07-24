@@ -74,7 +74,7 @@
 
 | Content  | Detail      | Date    | Link                                     |
 | -------- | ----------- | ------- | ---------------------------------------- |
-| 취업특강 | 개발자 취업 | 7월 8일 | [링크](./Extra_lecture/extra_lecture.md) |
+| 취업특강 | 개발자 취업 | 7월 24일 | [링크](./Extra_lecture/extra_lecture.md) |
 |          |             |         |                                          |
 |          |             |         |                                          |
 
