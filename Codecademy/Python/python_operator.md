@@ -1,6 +1,12 @@
 # 📝 Python Operators
 
+[Boolean Operators](#boolean-operators)
 
+[Function](#function)
+
+
+
+### Boolean Operators
 
 | Operator | Explanation                                                  | Example              |
 | :------: | ------------------------------------------------------------ | -------------------- |
@@ -21,3 +27,13 @@
 |  `and`   | Two expressions NEED to be TRUE to be TRUE                   |                      |
 |   `or`   | One of the expressions NEED to be TRUE to be TRUE            |                      |
 |  `not`   | Reverse value of `and`                                       |                      |
+|   `if`   | `if` statements can be used to create control flow in your code |                      |
+|  `else`  | `else` statements can be used to execute code when the conditions of an `if` statement are not met |                      |
+|  `elif`  | Checks another condition after the previous `if` statement conditions are not met. **Used to control the corder we want our program to check each of our conditional statements** |                      |
+
+
+
+
+
+### Function
+

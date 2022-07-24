@@ -2,7 +2,7 @@
 
 - [Codecademy](https://www.codecademy.com/profiles/JeJoonLee)
 
-| Codecademy | Extra Coding | Updated (2022.07.10) | [링크](./Codecademy/README.md) |
+| Codecademy | Extra Coding | Updated (2022.07.24) | [링크](./Codecademy/README.md) |
 | ---------- | ------------ | -------------------- | ------------------------------ |
 
 

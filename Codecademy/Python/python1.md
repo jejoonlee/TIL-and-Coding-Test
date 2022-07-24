@@ -200,3 +200,23 @@ not 7 < 0
 # True (7<0 is FALSE, if you reverse this with 'not' operator, it is TRUE)
 ```
 
+
+
+
+
+### Else Statements
+
+> `else` statements allow us to elegantly describe what we want our code to do when certain conditions are not met
+>
+> It always appear in conjunction with `if` statement
+
+```python
+if a <= 5 :
+    print('low')
+else:
+    print('high')
+    
+# if 'a' is lower or equal to 5, print 'low'
+# else, 'a' is greater than 5, print 'high'
+```
+
