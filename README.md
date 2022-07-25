@@ -13,12 +13,13 @@
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
 | **SW Expert Academy** | 문제풀이 | 2022.07.21  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.07.22  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **Baekjoon**          | 문제풀이 | 2022.07.25  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
 ## ✏️Category
 
+- [Algorithm](#Algorithm)
 - [Git/Github](#gitgithub)
 - [Markdown](#markdown)
 - [Python](#python)
@@ -27,6 +28,22 @@
 
 
 ## ✏️ Index
+
+- ### Algorithm
+
+| Content         | Detail   | Date     | Link                                     |
+| --------------- | -------- | -------- | ---------------------------------------- |
+| Algorithm_Intro | 자료구조 | 7월 25일 | [링크](./Algorithm/algorithm_1_intro.md) |
+|                 |          |          |                                          |
+|                 |          |          |                                          |
+
+| Content          | Detail        | Date     |                                                              |
+| ---------------- | ------------- | -------- | ------------------------------------------------------------ |
+| Algorithm_Answer | 문제풀이 정리 | 7월 25일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220725/README.md) |
+|                  |               |          |                                                              |
+|                  |               |          |                                                              |
+
+
 
 - ### Git/Github
 
