@@ -13,7 +13,7 @@
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
 | **SW Expert Academy** | 문제풀이 | 2022.07.26  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.07.27  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **Baekjoon**          | 문제풀이 | 2022.07.28  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
@@ -36,12 +36,14 @@
 | Algorithm_Intro | 자료구조                           | 7월 25일 | [링크](./Algorithm/algorithm_1_intro.md) |
 | Algorithm 2     | 시간 복잡도 / 빅오 표기법 / 리스트 | 7월 26일 | [링크](./Algorithm/algorithm_2.md)       |
 | Algorithm 3     | 문자열                             | 7월 27일 | [링크](./Algorithm/algorithm_3.md)       |
+| Algorithm 4     | 딕셔너리                           | 7월 28일 | [링크](./Algorithm/algorithm_4.md)       |
 
 | Content     | Detail        | Date     | Link                                                         |
 | ----------- | ------------- | -------- | ------------------------------------------------------------ |
 | Algorithm_1 | 문제풀이 정리 | 7월 25일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220725/README.md) |
 | Algorithm_2 | 문제풀이 정리 | 7월 26일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2회차/이제준/20220726/README.md) |
 | Algorithm_3 | 문제풀이 정리 | 7월 27일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220727/README.md) |
+| Algorithm_4 | 문제풀이 정리 | 7월 28일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220727/README.md) |
 
 
 
