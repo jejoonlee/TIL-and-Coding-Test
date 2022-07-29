@@ -13,12 +13,13 @@
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
 | **SW Expert Academy** | 문제풀이 | 2022.07.26  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.07.28  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **Baekjoon**          | 문제풀이 | 2022.07.29  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
 ## ✏️Category
 
+- [Projects](#projects)
 - [Algorithm](#Algorithm)
 - [Git/Github](#gitgithub)
 - [Markdown](#markdown)
@@ -28,6 +29,14 @@
 
 
 ## ✏️ Index
+
+- ### Projects
+
+| Project      | Detail                 | Date           | Link                                  |
+| ------------ | ---------------------- | -------------- | ------------------------------------- |
+| 🧑‍💻 Project 1 | 프로젝트 1             | 7월 17일       | [링크](./Python/Project/project_1.md) |
+| 🧑‍💻 Project 2 | 프로젝트 2 (API, TMBD) | 7월 22 ~ 24    | [링크](./Python/Project/project_2.md) |
+| 🧑‍💻 Project 3 | Mock Coding Test       | 7월 29일 (4hr) | [링크](./모의고사/20220729/README.md) |
 
 - ### Algorithm
 
@@ -82,18 +91,11 @@
 | 📌**정리** | 명령문/ 함수/methods | 7월 14일      |  [링크](./Python/python_operators_functions.md)   |
 | ✍️문제풀이 | 수업                 | 7월 19일      |             [링크](./Python/문제풀이)             |
 
-| Project      | Detail                 | Date        | Link                                  |
-| ------------ | ---------------------- | ----------- | ------------------------------------- |
-| 🧑‍💻 Project 1 | 프로젝트 1             | 7월 17일    | [링크](./Python/Project/project_1.md) |
-| 🧑‍💻 Project 2 | 프로젝트 2 (API, TMBD) | 7월 22 ~ 24 | [링크](./Python/Project/project_2.md) |
-
-
-
 - ### 특별강의
 
 | Content  | Detail      | Date    | Link                                     |
 | -------- | ----------- | ------- | ---------------------------------------- |
 | 취업특강 | 개발자 취업 | 7월 24일 | [링크](./Extra_lecture/extra_lecture.md) |
-|          |             |         |                                          |
+| 코딩 테스트 | 코딩 테스트 | 7월 29일 | [링크](./Extra_lecture/coding_test.md) |
 |          |             |         |                                          |
 
