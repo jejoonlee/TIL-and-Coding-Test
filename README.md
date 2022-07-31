@@ -13,7 +13,7 @@
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
 | **SW Expert Academy** | 문제풀이 | 2022.07.26  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.07.30  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **Baekjoon**          | 문제풀이 | 2022.07.31  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
