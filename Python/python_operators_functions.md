@@ -140,8 +140,10 @@
 | **.index(x)** | x의 첫 번째 위치를 반환. 없으면, 오류 발생                   |
 | .isalpha()    | is alphabet (알파벳으로 이루어져있나?) / True or False       |
 | .isupper()    | is upper (모두 대문자인가?) / True or False                  |
-| .islower      | is lower (모두 소문자인가?) / True or False                  |
-| .istitle      | is title (제목처럼, 앞의 문자가 대문자인가?) / True or False |
+| .islower()    | is lower (모두 소문자인가?) / True or False                  |
+| .istitle()    | is title (제목처럼, 앞의 문자가 대문자인가?) / True or False |
+| .isalnum()    | 알파벳과 숫자                                                |
+| .isdigit()    | 숫자                                                         |
 
 
 
