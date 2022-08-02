@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**                              |
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
-| **SW Expert Academy** | 문제풀이 | 2022.07.26  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.08.01  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **SW Expert Academy** | 문제풀이 | 2022.08.02  | [링크](https://github.com/jejoonlee/SWEA)     |
+| **Baekjoon**          | 문제풀이 | 2022.08.02  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
@@ -47,6 +47,7 @@
 | Algorithm 3     | 문자열                             | 7월 27일 | [링크](./Algorithm/algorithm_3.md)       |
 | Algorithm 4     | 딕셔너리                           | 7월 28일 | [링크](./Algorithm/algorithm_4.md)       |
 | Algorithm 5     | 스택 (Stack) / 큐 (Queue)          | 8월 1일  | [링크](./Algorithm/algorithm_5.md)       |
+| Algorithm 6     | 힙 (Heap) / 셋 (set)               | 8월 2일  | [링크](./Algorithm/algorithm_6.md)       |
 
 | Content     | Detail        | Date     | Link                                                         |
 | ----------- | ------------- | -------- | ------------------------------------------------------------ |
@@ -55,6 +56,9 @@
 | Algorithm_3 | 문제풀이 정리 | 7월 27일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220727/README.md) |
 | Algorithm_4 | 문제풀이 정리 | 7월 28일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220728/README.md) |
 | Algorithm_5 | 문제풀이 정리 | 8월 1일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220801/README.md) |
+| Algorithm_6 | 문제풀이 정리 | 8월 2일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220802/README.md) |
+
+
 
 
 
