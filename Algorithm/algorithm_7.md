@@ -8,6 +8,8 @@
 
 ​	[유니크](#5533-유니크)
 
+​	[2차원 배열의 합](#2167-2차원-배열의-합)
+
 
 
 
@@ -174,3 +176,27 @@ print(scores)
 
 ![image-20220803203658234](algorithm_7.assets/image-20220803203658234.png)
 
+
+
+#### 2167 2차원 배열의 합
+
+```python
+N, M = map(int, input().split())
+
+matrix = [list(map(int, input().split())) for _ in range(2)]
+
+r_num = int(input())
+
+for r in range(r_num):
+    i, j, x, y = map(int, input().split())
+    result = 0
+    for a in range(i - 1, x):
+        for b in range(j - 1, y):
+            result += matrix[a][b]
+    print(result)
+```
+
+![2차원_배열의_합](algorithm_7.assets/2차원_배열의_합.png)
+
+- 이중 for문을 사용 한 후,
+  - `matrix[a][b]` 사용하기
