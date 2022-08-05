@@ -37,6 +37,7 @@
 | 🧑‍💻 Project 1 | 프로젝트 1             | 7월 17일       | [링크](./Python/Project/project_1.md) |
 | 🧑‍💻 Project 2 | 프로젝트 2 (API, TMBD) | 7월 22 ~ 24    | [링크](./Python/Project/project_2.md) |
 | 🧑‍💻 Project 3 | Mock Coding Test       | 7월 29일 (4hr) | [링크](./모의고사/20220729/README.md) |
+| 🧑‍💻 Project 4 | Mock Coding Test       | 8월 5일 (4hr)  | [링크](./모의고사/20220805/README.md) |
 
 - ### Algorithm
 
