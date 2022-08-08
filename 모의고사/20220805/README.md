@@ -8,6 +8,8 @@
 
 [괄호 짝짓기](#괄호-짝짓기)
 
+[파리 퇴치](#파리-퇴치)
+
 
 
 ### 민석이의 과제 체크하기
@@ -245,3 +247,47 @@ for t in range(1, 11):
   - 순회를 다 했는데, `stack`에 아무것도 없으면 문자열은 **유효**한 것
 - 단! 반대쪽 괄호를 넣으려고 했는데, `stack`에 아무것도 없으면 **무효**
 - 또한 반대쪽 괄호인데, `stack` 마지막이 다른 괄호인 경우도 **무효**
+
+
+
+### 파리 퇴치
+
+```python
+T = int(input())
+
+for t in range(1, T + 1):
+
+    N, M = map(int, input().split())
+
+    area = [list(map(int, input().split())) for _ in range(N)]
+
+    total = [[0] * N for _ in range(N)]
+	
+    # 이차원 리스트를 순회한다
+    for x in range(N):
+        for y in range(N):
+
+            add = 0
+            
+            # 순회하면서, x부터 x + M 만큼
+            # 그리고 y부터 y + M 만큼을 순회를 한다
+            for i in range(x, x + M):
+                for j in range(y, y + M):
+					
+                    # 단 i와 j는 리스트 안에 있어야 하고
+                    # 그 조건까지 맞아 떨어지면, add에 누적시킨다
+                    if 0 <= i < N and 0 <= j < N:
+                        add += area[i][j]
+            # 구한 총 값을 total에 넣는다        
+            total[x][y] = add
+	
+    # 최대값 찾기
+    max_num = 0
+    for x in range(N):
+        for y in range(N):
+            if total[x][y] > max_num:
+                max_num = total[x][y]
+
+    print(f'#{t} {max_num}')
+```
+
