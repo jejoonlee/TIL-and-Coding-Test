@@ -13,7 +13,7 @@
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
 | **SW Expert Academy** | 문제풀이 | 2022.08.03  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.08.06  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **Baekjoon**          | 문제풀이 | 2022.08.08  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
@@ -41,16 +41,17 @@
 
 - ### Algorithm
 
-| Content         | Detail                             | Date     | Link                                     |
-| --------------- | ---------------------------------- | -------- | ---------------------------------------- |
-| Algorithm_Intro | 자료구조                           | 7월 25일 | [링크](./Algorithm/algorithm_1_intro.md) |
-| Algorithm 2     | 시간 복잡도 / 빅오 표기법 / 리스트 | 7월 26일 | [링크](./Algorithm/algorithm_2.md)       |
-| Algorithm 3     | 문자열                             | 7월 27일 | [링크](./Algorithm/algorithm_3.md)       |
-| Algorithm 4     | 딕셔너리                           | 7월 28일 | [링크](./Algorithm/algorithm_4.md)       |
-| Algorithm 5     | 스택 (Stack) / 큐 (Queue)          | 8월 1일  | [링크](./Algorithm/algorithm_5.md)       |
-| Algorithm 6     | 힙 (Heap) / 셋 (set)               | 8월 2일  | [링크](./Algorithm/algorithm_6.md)       |
-| Algorithm 7     | 행열 (Matrix)                      | 8월 3일  | [링크](./Algorithm/algorithm_7.md)       |
-| Algorithm 8     | 행열 (Matrix), 순회                | 8월 4일  | [링크](./Algorithm/algorithm_8.md)       |
+| Content         | Detail                                 | Date     | Link                                     |
+| --------------- | -------------------------------------- | -------- | ---------------------------------------- |
+| Algorithm_Intro | 자료구조                               | 7월 25일 | [링크](./Algorithm/algorithm_1_intro.md) |
+| Algorithm 2     | 시간 복잡도 / 빅오 표기법 / 리스트     | 7월 26일 | [링크](./Algorithm/algorithm_2.md)       |
+| Algorithm 3     | 문자열                                 | 7월 27일 | [링크](./Algorithm/algorithm_3.md)       |
+| Algorithm 4     | 딕셔너리                               | 7월 28일 | [링크](./Algorithm/algorithm_4.md)       |
+| Algorithm 5     | 스택 (Stack) / 큐 (Queue)              | 8월 1일  | [링크](./Algorithm/algorithm_5.md)       |
+| Algorithm 6     | 힙 (Heap) / 셋 (set)                   | 8월 2일  | [링크](./Algorithm/algorithm_6.md)       |
+| Algorithm 7     | 행열 (Matrix)                          | 8월 3일  | [링크](./Algorithm/algorithm_7.md)       |
+| Algorithm 8     | 행열 (Matrix), 순회                    | 8월 4일  | [링크](./Algorithm/algorithm_8.md)       |
+| Algorithm 9     | 완전탐색 1 (Brute_force, Delta search) | 8월 8일  | [링크](./Algorithm/algorithm_9.md)       |
 
 | Content     | Detail        | Date     | Link                                                         |
 | ----------- | ------------- | -------- | ------------------------------------------------------------ |
@@ -62,6 +63,7 @@
 | Algorithm_6 | 문제풀이 정리 | 8월 2일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220802/README.md) |
 | Algorithm_7 | 문제풀이 정리 | 8월 3일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220803/README.md) |
 | Algorithm_8 | 문제풀이 정리 | 8월 4일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220804/README.md) |
+| Algorithm_9 | 문제풀이 정리 | 8월 8일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220808/README.md) |
 
 
 
