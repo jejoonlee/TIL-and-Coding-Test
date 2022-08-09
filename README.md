@@ -52,18 +52,20 @@
 | Algorithm 7     | 행열 (Matrix)                          | 8월 3일  | [링크](./Algorithm/algorithm_7.md)       |
 | Algorithm 8     | 행열 (Matrix), 순회                    | 8월 4일  | [링크](./Algorithm/algorithm_8.md)       |
 | Algorithm 9     | 완전탐색 1 (Brute_force, Delta search) | 8월 8일  | [링크](./Algorithm/algorithm_9.md)       |
+| Algorithm 10    | 그래프 (Graph)                         | 8월 9일  | [링크](./Algorithm/algorithm_10.md)      |
 
-| Content     | Detail        | Date     | Link                                                         |
-| ----------- | ------------- | -------- | ------------------------------------------------------------ |
-| Algorithm_1 | 문제풀이 정리 | 7월 25일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220725/README.md) |
-| Algorithm_2 | 문제풀이 정리 | 7월 26일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2회차/이제준/20220726/README.md) |
-| Algorithm_3 | 문제풀이 정리 | 7월 27일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220727/README.md) |
-| Algorithm_4 | 문제풀이 정리 | 7월 28일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220728/README.md) |
-| Algorithm_5 | 문제풀이 정리 | 8월 1일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220801/README.md) |
-| Algorithm_6 | 문제풀이 정리 | 8월 2일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220802/README.md) |
-| Algorithm_7 | 문제풀이 정리 | 8월 3일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220803/README.md) |
-| Algorithm_8 | 문제풀이 정리 | 8월 4일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220804/README.md) |
-| Algorithm_9 | 문제풀이 정리 | 8월 8일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220808/README.md) |
+| Content      | Detail        | Date     | Link                                                         |
+| ------------ | ------------- | -------- | ------------------------------------------------------------ |
+| Algorithm_1  | 문제풀이 정리 | 7월 25일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220725/README.md) |
+| Algorithm_2  | 문제풀이 정리 | 7월 26일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2회차/이제준/20220726/README.md) |
+| Algorithm_3  | 문제풀이 정리 | 7월 27일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220727/README.md) |
+| Algorithm_4  | 문제풀이 정리 | 7월 28일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220728/README.md) |
+| Algorithm_5  | 문제풀이 정리 | 8월 1일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220801/README.md) |
+| Algorithm_6  | 문제풀이 정리 | 8월 2일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220802/README.md) |
+| Algorithm_7  | 문제풀이 정리 | 8월 3일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220803/README.md) |
+| Algorithm_8  | 문제풀이 정리 | 8월 4일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220804/README.md) |
+| Algorithm_9  | 문제풀이 정리 | 8월 8일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220808/README.md) |
+| Algorithm_10 | 문제풀이 정리 | 8월 9일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220809/README.md) |
 
 
 
@@ -102,7 +104,7 @@
 | Python 6  | OOP                  | 7월 19 ~ 20일 |          [링크](./Python/python_OOP.md)           |
 | Python 7  | 응용 / 심화          | 7월 21 ~ 22일 |         [링크](./Python/python_extra.md)          |
 | 📌**정리** | 명령문/ 함수/methods | 8월 1일       |  [링크](./Python/python_operators_functions.md)   |
-| ✍️문제풀이 | 수업                 | 7월 19일      |             [링크](./Python/문제풀이)             |
+| ✍️문제풀이 | 수업                 | 8월 9일       |             [링크](./Python/문제풀이)             |
 
 - ### 특별강의
 
