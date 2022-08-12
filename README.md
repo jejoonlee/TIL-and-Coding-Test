@@ -13,7 +13,7 @@
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
 | **SW Expert Academy** | 문제풀이 | 2022.08.03  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.08.08  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **Baekjoon**          | 문제풀이 | 2022.08.11  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
@@ -38,6 +38,7 @@
 | 🧑‍💻 Project 2 | 프로젝트 2 (API, TMBD) | 7월 22 ~ 24    | [링크](./Python/Project/project_2.md) |
 | 🧑‍💻 Project 3 | Mock Coding Test       | 7월 29일 (4hr) | [링크](./모의고사/20220729/README.md) |
 | 🧑‍💻 Project 4 | Mock Coding Test       | 8월 5일 (4hr)  | [링크](./모의고사/20220805/README.md) |
+| 🧑‍💻 Project 5 | Mock Coding Test       | 8월 12일 (5hr) | [링크](./모의고사/20220812/README.md) |
 
 - ### Algorithm
 
@@ -53,6 +54,8 @@
 | Algorithm 8     | 행열 (Matrix), 순회                    | 8월 4일  | [링크](./Algorithm/algorithm_8.md)       |
 | Algorithm 9     | 완전탐색 1 (Brute_force, Delta search) | 8월 8일  | [링크](./Algorithm/algorithm_9.md)       |
 | Algorithm 10    | 그래프 (Graph)                         | 8월 9일  | [링크](./Algorithm/algorithm_10.md)      |
+| Algorithm 11    | 깊이 우선 탐색 (DFS)                   | 8월 10일 | [링크](./Algorithm/algorithm_11.md)      |
+| Algorithm 12    | 단순 구현                              | 8월 11일 | [링크](./Algorithm/algorithm_12.md)      |
 
 | Content      | Detail        | Date     | Link                                                         |
 | ------------ | ------------- | -------- | ------------------------------------------------------------ |
@@ -66,6 +69,8 @@
 | Algorithm_8  | 문제풀이 정리 | 8월 4일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220804/README.md) |
 | Algorithm_9  | 문제풀이 정리 | 8월 8일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220808/README.md) |
 | Algorithm_10 | 문제풀이 정리 | 8월 9일  | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220809/README.md) |
+| Algorithm_11 | 문제풀이 정리 | 8월 10일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220810/README.md) |
+| Algorithm_12 | 문제풀이 정리 | 8월 11일 | [링크](https://github.com/jejoonlee/01-ALGORITHM/blob/master/2%ED%9A%8C%EC%B0%A8/%EC%9D%B4%EC%A0%9C%EC%A4%80/20220811/README.md) |
 
 
 

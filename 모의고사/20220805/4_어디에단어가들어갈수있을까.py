@@ -25,7 +25,7 @@ for t in range(1, T + 1):
                 cnt = 0
             elif puzzle[i][j] == 0:
                 cnt = 0
-        if cnt == 3:
+        if cnt == K:
             row += 1
             cnt = 0
 
@@ -40,7 +40,7 @@ for t in range(1, T + 1):
                 cnt = 0
             elif puzzle[j][i] == 0:
                 cnt = 0
-        if cnt == 3:
+        if cnt == K:
             col += 1
             cnt = 0
 
