@@ -17,7 +17,7 @@ for t in range(1, T + 1):
     for i in range(1, stu + 1):
         if i not in fin:
             unfin.append(i)
-            result = sorted(unfin)
-            result = ' '.join(map(str, result))
+    result = sorted(unfin)
+    result = ' '.join(map(str, result))
 
     print(f'#{t} {result}')
