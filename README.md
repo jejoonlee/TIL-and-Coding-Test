@@ -24,6 +24,7 @@
 - [Git/Github](#gitgithub)
 - [Markdown](#markdown)
 - [Python](#python)
+- [SQLite](#SQLite)
 - [특별강의](#특별강의)
 
 
@@ -110,6 +111,16 @@
 | Python 7  | 응용 / 심화          | 7월 21 ~ 22일 |         [링크](./Python/python_extra.md)          |
 | 📌**정리** | 명령문/ 함수/methods | 8월 1일       |  [링크](./Python/python_operators_functions.md)   |
 | ✍️문제풀이 | 수업                 | 8월 9일       |             [링크](./Python/문제풀이)             |
+
+- ### SQLite
+
+| Content  | Detail | Date     | Link                                     |
+| -------- | ------ | -------- | ---------------------------------------- |
+| Database | Basic  | 8월 16일 | [링크](./SQL/20220816/DataBase_Basic.md) |
+
+
+
+
 
 - ### 특별강의
 
