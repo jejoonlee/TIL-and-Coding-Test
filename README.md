@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**                              |
 | --------------------- | -------- | ----------- | --------------------------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)                    |
-| **SW Expert Academy** | 문제풀이 | 2022.08.17  | [링크](https://github.com/jejoonlee/SWEA)     |
-| **Baekjoon**          | 문제풀이 | 2022.08.17  | [링크](https://github.com/jejoonlee/baekjoon) |
+| **SW Expert Academy** | 문제풀이 | 2022.08.18  | [링크](https://github.com/jejoonlee/SWEA)     |
+| **Baekjoon**          | 문제풀이 | 2022.08.18  | [링크](https://github.com/jejoonlee/baekjoon) |
 
 
 
@@ -114,10 +114,11 @@
 
 - ### SQLite
 
-| Content  | Detail | Date     | Link                                     |
-| -------- | ------ | -------- | ---------------------------------------- |
-| Database | Basic  | 8월 16일 | [링크](./SQL/20220816/DataBase_Basic.md) |
-| Database | Basic  | 8월 17일 | [링크](./SQL/20220817/DataBase_Basic.md) |
+| Content  | Detail                                  | Date     | Link                                     |
+| -------- | --------------------------------------- | -------- | ---------------------------------------- |
+| Database | Basic                                   | 8월 16일 | [링크](./SQL/20220816/DataBase_Basic.md) |
+| Database | Aggregate functions, `LIKE`, `ORDER BY` | 8월 17일 | [링크](./SQL/20220817/DataBase_Basic.md) |
+| Database | `GROUP BY`,` ALTER TABLE`               | 8월 18일 | [링크](./SQL/20220818/DataBase_Basic.md) |
 
 
 
