@@ -74,6 +74,30 @@ for t in range(1, T + 1):
     
     result = ''.join(new_word)
     print(f'#{t} {result}')
+    
+----------------------------------------------------
+# .replace를 사용해서 풀어보기!
+
+T = int(input())
+
+vowel = 'aeiou'
+
+for t in range(1, T + 1):
+    word = input()
+    # 모음이 없는 letter들만 new_word에 넣기
+    
+    for i in vowel:
+        if i in word:
+            word = word.replace(i, '')
+
+    print(f'#{t} {word}')
+
+    # 이걸 for문으로 돌린 것!
+    # word = word.replace('a', '')
+    # word = word.replace('e', '')
+    # word = word.replace('i', '')
+    # word = word.replace('o', '')
+    # word = word.replace('u', '')
 ```
 
 #### 🚨🚨🚨Main Point🚨🚨🚨
@@ -83,6 +107,11 @@ for t in range(1, T + 1):
 - for문을 통해서 입력된 글자를 순회한다
 - 그중 모음들이 들어간 `vowel` 변수와 비교를 하여, 모음이 아닐 경우에만 따로 리스트에 넣는다
 - 그 리스트는 모음이 없는 단어가 된다 
+
+**.replace를 이용해서 풀어보기**
+
+- `word`를 순회하는 것이 아니라 `vowel`을 순회한다!
+- 순회하면서 `vowel`이 있으면, `.replace()`를 통해, 공백으로 만든다
 
 
 
@@ -129,6 +158,34 @@ for t in range(1, T + 1):
 
     result = ' '.join(result)
     print(f'#{t} {result}')
+
+-----------------------------------------------------------
+import math
+
+T = int(input())
+
+for t in range(1, T + 1):
+    # 카드 개수
+    N = int(input())
+
+    # 카드 종류
+    cards = list(input().split())
+    
+    # 결과 값들을 넣은다
+    result = [0] * N
+
+    num = math.ceil(N / 2) - 1
+
+    cnt = num
+    for i in range(len(cards)):
+        if i <= num:
+            result[i + i] = cards[i]
+        else:
+            result[i - cnt] = cards[i]
+            cnt -= 1
+    
+    result = ' '.join(result)
+    print(f'#{t} {result}')
 ```
 
 #### 🚨🚨🚨Main Point🚨🚨🚨
@@ -147,6 +204,21 @@ for t in range(1, T + 1):
     - 즉 `cards`를 `deque`로 만들었다
   - `cards` 는 `.popleft()`를 하고, `temp`는 그냥 `.pop()`을 한 후 `.append()`를 통해 `result`에 저장
   - 단 끝나는 것은 두 리스트들의 값들이 다 없어졌을 때에 `while`문을 끝낸다
+
+
+
+**리스트로 풀기**
+
+- 인덱스를 가지고 풀이를 진행한다
+- 먼저 중간 값을 구한다
+  - 여기서 중간 값은 인덱스로 풀이를 하다보니 1을 빼야 한다
+  - `num = math.ceil(N / 2) - 1`  →  올림을 한 후 1을 빼기
+- for문은 `cards`의 인덱스로 순회한다
+  - `cards`의 인덱스가 `num`보다 작거나 같을 때까지, 인덱스 한번 더 더한다
+    - `result[i + i] = cards[i]`  → `i`가 인덱스
+  - `num`이 더 클 경우
+    - `result[i - cnt] = cards[i]` 여기서 cnt는 `num`이고
+    - 한번씩 순회 할 때마다, 1을 뺀다
 
 
 
@@ -183,6 +255,26 @@ for t in range(1, 11):
         
     result = max(area) - min(area)
     print(f'#{t} {result}')
+--------------------------------------------------
+# index() 메서드 사용하기
+for t in range(1, 11):
+
+    C = int(input())
+    area = list(map(int, input().split()))
+
+    cnt = 0
+
+    while C != cnt:
+        if len(set(area)) == 0:
+            break
+        else:
+            area[area.index(max(area))] -= 1
+            area[area.index(min(area))] += 1
+            cnt += 1
+    
+    result = max(area) - min(area)
+
+    print(f'#{t} {result}')
 ```
 
 #### 🚨🚨🚨Main Point🚨🚨🚨
@@ -195,6 +287,17 @@ for t in range(1, 11):
 - `cnt` 를 세는 것
   - 리스트 안에 제일 큰 값을 구해서, 그 값을 1로 빼고
   - 리스트 안에서 제일 작은 값을 구해서, 그 값을 1로 더하는 것
+
+
+
+**index() 메서드 사용하기!**
+
+- 로직은 처음에 했던 것과 같다
+- `area[area.index(max(area))] -= 1` 
+  - `area`의 index를 찾는 것
+  - 여기서 index는 `area`리스트에 있는 값들 중에 제일 큰 값 `max(area)`
+- `area[area.index(min(area))] += 1`
+  - 반대로 `index()`를 통해서 area의 최솟값을 가지고 오는 것!
 
 
 
