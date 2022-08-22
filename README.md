@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**            |
 | --------------------- | -------- | ----------- | --------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.08.21  | [링크](./SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.08.21  | [링크](./Baekjoon)          |
+| **SW Expert Academy** | 문제풀이 | 2022.08.22  | [링크](./SW_Expert_Academy) |
+| **Baekjoon**          | 문제풀이 | 2022.08.22  | [링크](./Baekjoon)          |
 
 
 
@@ -120,6 +120,7 @@
 | Database | Aggregate functions, `LIKE`, `ORDER BY` | 8월 17일 | [링크](./SQL/20220817/DataBase_Basic.md) |
 | Database | `GROUP BY`,` ALTER TABLE`               | 8월 18일 | [링크](./SQL/20220818/DataBase_Basic.md) |
 | Database | `CASE` , `서브쿼리`                     | 8월 19일 | [링크](./SQL/20220819/DataBase_Basic.md) |
+| Database | `JOIN`                                  | 8월 22일 | [링크](./SQL/20220822/DataBase_Basic.md) |
 
 
 

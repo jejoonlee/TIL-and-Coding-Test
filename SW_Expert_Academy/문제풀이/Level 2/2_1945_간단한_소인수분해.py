@@ -1,5 +1,5 @@
-import sys
-sys.stdin = open('input.txt')
+# import sys
+# sys.stdin = open('input.txt')
 
 T = int(input())
 
@@ -24,3 +24,21 @@ for t in range(1, T + 1):
     result = ' '.join(result)
 
     print(f'#{t} {result}')
+
+
+# 수소 구하기 100까지 수 중에서
+
+N = 100
+cnt = 0
+
+while cnt != N:
+    cnt += 1
+    divide = []
+    for i in range(1, cnt + 1):
+        if cnt % i == 0:
+            divide.append(i)
+    
+    if len(divide) == 2:
+        print(cnt)
+    else:
+        continue
