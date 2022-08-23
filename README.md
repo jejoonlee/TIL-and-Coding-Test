@@ -121,6 +121,7 @@
 | Database | `GROUP BY`,` ALTER TABLE`               | 8월 18일 | [링크](./SQL/20220818/DataBase_Basic.md) |
 | Database | `CASE` , `서브쿼리`                     | 8월 19일 | [링크](./SQL/20220819/DataBase_Basic.md) |
 | Database | `JOIN`                                  | 8월 22일 | [링크](./SQL/20220822/DataBase_Basic.md) |
+| Database | 데이터 모델링                           | 8월 23일 | [링크](./SQL/20220823/DataBase_Basic.md) |
 
 
 
