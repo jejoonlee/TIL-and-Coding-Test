@@ -2,6 +2,12 @@
 
 ### Practice
 
+[syllaverse](#syllaverse)
+
+[학사](#학사)
+
+
+
 ### Category
 
 [모델링](#%EF%B8%8F-모델링)
@@ -75,3 +81,23 @@
   - PK가 아닌 모든 칼럼은 PK에 종속되도록 구성
 - 제 3 정규화 : 이행적 함수 종속성 제거 (X → Y, Y → Z)
   - 일반 속성 간의 함수 종속 관계가 존재하지 않아야 함
+
+
+
+
+
+## Syllaverse
+
+![syllaverse_curriculum_모델링](DataBase_Basic.assets/syllaverse_curriculum_모델링.png)
+
+
+
+## 학사
+
+![학사practice](DataBase_Basic.assets/학사practice-16612435585753.png)
+
+
+
+## Netflix DataBase Modelling
+
+![image-20220823195951586](DataBase_Basic.assets/image-20220823195951586.png)
