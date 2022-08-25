@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**            |
 | --------------------- | -------- | ----------- | --------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.08.22  | [링크](./SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.08.23  | [링크](./Baekjoon)          |
+| **SW Expert Academy** | 문제풀이 | 2022.08.25  | [링크](./SW_Expert_Academy) |
+| **Baekjoon**          | 문제풀이 | 2022.08.25  | [링크](./Baekjoon)          |
 
 
 
@@ -114,15 +114,17 @@
 
 - ### SQLite
 
-| Content  | Detail                                  | Date     | Link                                     |
-| -------- | --------------------------------------- | -------- | ---------------------------------------- |
-| Database | Basic                                   | 8월 16일 | [링크](./SQL/20220816/DataBase_Basic.md) |
-| Database | Aggregate functions, `LIKE`, `ORDER BY` | 8월 17일 | [링크](./SQL/20220817/DataBase_Basic.md) |
-| Database | `GROUP BY`,` ALTER TABLE`               | 8월 18일 | [링크](./SQL/20220818/DataBase_Basic.md) |
-| Database | `CASE` , `서브쿼리`                     | 8월 19일 | [링크](./SQL/20220819/DataBase_Basic.md) |
-| Database | `JOIN`                                  | 8월 22일 | [링크](./SQL/20220822/DataBase_Basic.md) |
-| Database | 데이터 모델링                           | 8월 23일 | [링크](./SQL/20220823/DataBase_Basic.md) |
-| Database | `ORM`                                   | 8월 24일 | [링크](./SQL/20220824/DataBase_Basic.md) |
+| Content   | Detail                                     | Date     | Link                                                         |
+| --------- | ------------------------------------------ | -------- | ------------------------------------------------------------ |
+| Database  | Basic                                      | 8월 16일 | [링크](./SQL/20220816/DataBase_Basic.md)                     |
+| Database  | Aggregate functions, `LIKE`, `ORDER BY`    | 8월 17일 | [링크](./SQL/20220817/DataBase_Basic.md)                     |
+| Database  | `GROUP BY`,` ALTER TABLE`                  | 8월 18일 | [링크](./SQL/20220818/DataBase_Basic.md)                     |
+| Database  | `CASE` , `서브쿼리`                        | 8월 19일 | [링크](./SQL/20220819/DataBase_Basic.md)                     |
+| Database  | `JOIN`                                     | 8월 22일 | [링크](./SQL/20220822/DataBase_Basic.md)                     |
+| Database  | 데이터 모델링                              | 8월 23일 | [링크](./SQL/20220823/DataBase_Basic.md)                     |
+| Database  | `ORM`                                      | 8월 24일 | [링크](./SQL/20220824/DataBase_Basic.md)                     |
+| Database  | `QuerySet API`                             | 8월 25일 | [링크](./SQL/20220825/DataBase_Basic.md)                     |
+| 📌**정리** | `QuerySet 매서드 정리` / LinkFrom. yangahh | 8월 25일 | [링크]([[Django\] QuerySet 메소드 정리 (2) - CRUD (tistory.com)](https://devvvyang.tistory.com/37)) |
 
 
 
