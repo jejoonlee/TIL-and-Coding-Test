@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**            |
 | --------------------- | -------- | ----------- | --------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.08.25  | [링크](./SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.08.25  | [링크](./Baekjoon)          |
+| **SW Expert Academy** | 문제풀이 | 2022.08.27  | [링크](./SW_Expert_Academy) |
+| **Baekjoon**          | 문제풀이 | 2022.08.27  | [링크](./Baekjoon)          |
 
 
 
