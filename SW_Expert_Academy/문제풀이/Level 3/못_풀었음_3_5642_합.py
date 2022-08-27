@@ -8,8 +8,9 @@ for t in range(1, T + 1):
     M = list(map(int, input().split()))
 
     
-    # visited = [False] * N
+    visited = [False] * N
 
+    # 이중 for문은 아닌 것 같음
     # num = M[0]
     # for i in range(N):
     #     for j in range(N):
