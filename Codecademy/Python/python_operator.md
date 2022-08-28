@@ -2,11 +2,11 @@
 
 [Boolean Operators](#boolean-operators)
 
-[Function](#function)
+[List Methods](#list-methods)
 
 
 
-### Boolean Operators
+## Boolean Operators
 
 | Operator | Explanation                                                  | Example              |
 | :------: | ------------------------------------------------------------ | -------------------- |
@@ -33,7 +33,16 @@
 
 
 
+## List Methods
 
-
-### Function
+|       Methods        | Explanation                                                  | Example         |
+| :------------------: | :----------------------------------------------------------- | --------------- |
+|     `.append()`      | adding an element at the end of the list                     |                 |
+|         `+`          | this is combing two lists together (must be list). Example will print `[1,2,3,7]` | `[1,2,3] + [7]` |
+|     `.remove()`      | remove an element that first appears that you have written in the method |                 |
+|      `.count()`      | A list method to count the number of occurrences of an element in a list |                 |
+|      `insert()`      | A list method to insert an element into a specific index of a list |                 |
+|       `pop()`        | A list method to remove an element from a specific index or from the end of a list |                 |
+|       `len()`        | A built-in Python function to get the length of a list       |                 |
+| `.sort() / sorted()` | A method and a built-in function to sort a list              |                 |
 

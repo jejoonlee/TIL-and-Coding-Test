@@ -15,11 +15,11 @@
 
 
 
-| Project          | Detail       | Updated date | Link                                    |
-| ---------------- | ------------ | ------------ | --------------------------------------- |
-| Python (Boolean) | Magic 8-Ball | 2022.07.24   | [Click](./Python/python_pjt_boolean.md) |
-|                  |              |              |                                         |
-|                  |              |              |                                         |
+| Project          | Detail       | Updated date | Link                                            |
+| ---------------- | ------------ | ------------ | ----------------------------------------------- |
+| Python (Boolean) | Magic 8-Ball | 2022.07.24   | [Click](./Python/Project/python_pjt_boolean.md) |
+|                  |              |              |                                                 |
+|                  |              |              |                                                 |
 
 
 
