@@ -13,7 +13,7 @@
 | --------------------- | -------- | ----------- | --------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)  |
 | **SW Expert Academy** | 문제풀이 | 2022.08.28  | [링크](./SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.08.28  | [링크](./Baekjoon)          |
+| **Baekjoon**          | 문제풀이 | 2022.08.29  | [링크](./Baekjoon)          |
 
 
 
@@ -58,7 +58,7 @@
 | Algorithm 10    | `그래프 (Graph)`                         | 8월 9일  | [링크](./Algorithm/algorithm_10.md)      |
 | Algorithm 11    | `깊이 우선 탐색 (DFS)`                   | 8월 10일 | [링크](./Algorithm/algorithm_11.md)      |
 | Algorithm 12    | 단순 구현                                | 8월 11일 | [링크](./Algorithm/algorithm_12.md)      |
-| Algorithm 13    | `재귀함수 (Recursive Function)`          |          | [링크](./Algorithm/algorithm_13.md)      |
+| Algorithm 13    | `재귀함수 (Recursive Function)`          | 8월 29일 | [링크](./Algorithm/algorithm_13.md)      |
 
 | Content      | Detail        | Date     | Link                                                         |
 | ------------ | ------------- | -------- | ------------------------------------------------------------ |
