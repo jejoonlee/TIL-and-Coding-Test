@@ -132,9 +132,11 @@
 
 - ### WEB
 
-| Content  | Detail          | Date     | Link                        |
-| -------- | --------------- | -------- | --------------------------- |
-| 취업특강 | INTRO HTML, CSS | 8월 29일 | [링크](./Web/Lecture/Web_1) |
+| Content         | Detail          | Date     | Link                           |
+| --------------- | --------------- | -------- | ------------------------------ |
+| Web 1           | INTRO HTML, CSS | 8월 29일 | [링크](./Web/Lecture/Web_1.md) |
+|                 |                 |          |                                |
+| 📌 HTML elements |                 | 8월 29일 | [링크](./Web/HTML_elements.md) |
 
 
 
