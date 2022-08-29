@@ -34,6 +34,10 @@
 
 
 
+![2ysa18v4r1mu3evmtiui](Web_1.assets/2ysa18v4r1mu3evmtiui.png)
+
+
+
 ### ✍️ HTML 요소 element의 구조
 
 - **여는 태그와 닫는 태그 (opening tag and closing tag)**
