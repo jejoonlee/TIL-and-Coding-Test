@@ -25,6 +25,7 @@
 - [Markdown](#markdown)
 - [Python](#python)
 - [SQLite](#SQLite)
+- [Web](#web)
 - [특별강의](#특별강의)
 
 
@@ -128,6 +129,12 @@
 | 📌**정리** | `QuerySet 매서드 정리` / LinkFrom. yangahh | 8월 25일 | [링크]([[Django\] QuerySet 메소드 정리 (2) - CRUD (tistory.com)](https://devvvyang.tistory.com/37)) |
 
 
+
+- ### WEB
+
+| Content  | Detail          | Date     | Link                        |
+| -------- | --------------- | -------- | --------------------------- |
+| 취업특강 | INTRO HTML, CSS | 8월 29일 | [링크](./Web/Lecture/Web_1) |
 
 
 
