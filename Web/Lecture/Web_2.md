@@ -22,7 +22,7 @@
 
 [CSS Display](#%EF%B8%8F-css-display)
 
-
+![화면 캡처 2022-08-31 143000](Web_2.assets/화면 캡처 2022-08-31 143000.png)
 
 
 
