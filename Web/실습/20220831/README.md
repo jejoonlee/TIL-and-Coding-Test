@@ -98,7 +98,7 @@ p{
 
 ### 레이아웃
 
-![melon card](README.assets/melon card.png)
+[레이아웃 링크 ㅜ.ㅜ 이미지가 올려지지 않아서 링크 걸어둡니다](https://github.com/jejoonlee/TIL/blob/master/Web/%EC%8B%A4%EC%8A%B5/20220831/README.assets/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-08-31%20200549.png)
 
 - 설계는 main container 한 개, 그리고 그 안에 3개의 item들을 넣었다
   - 그리고 3개의 item들을 `justify-content: space-evenly`로 정렬을 했다
