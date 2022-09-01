@@ -9,8 +9,18 @@ body {
 /*top button*/
 .top{
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: white;
+  z-index: 1;
+}
+
+.top:hover{
+  box-shadow: 0px 0px 0px;
+  transition: all ease-in 0.2s;
 }
 
 .top-img{
@@ -22,8 +32,10 @@ body {
   display: flex;
   position: sticky;
   top: 0;
+  z-index: 3;
   justify-content: space-between;
   background-color: white;
+  opacity: 0.8;
   padding: 1rem;
 }
 
@@ -138,11 +150,45 @@ body {
 }
 
 .product-info{
+  position: relative;
   width: 350px;
   padding: 5px;
   border: black solid 1px;
   margin: 15px;
   box-shadow: 5px 5px 5px grey;
+}
+
+.overlay{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.overlay-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay,
+.overlay-background{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.product-info:hover .overlay,
+.product-info:hover .overlay-background{
+  visibility: visible;
+  opacity: 1;
 }
 
 .category{

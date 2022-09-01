@@ -1,12 +1,13 @@
 import sys
 sys.stdin = open('input.txt')
-# 1부터 N의 수열을 stack에 넣기 시작한다
 
-# stack에 넣었을 때, 입력된 수와 같으면, stack에서 pop을 한다
+# 1부터 N번까지 순회한다
+# 순회하면서 주어진 수열의 첫번째 숫자와 비교를 한다
+# 숫자가 다르면 stack에 넣는다. stack의 마지막 숫자와 
+# 수열의 첫번째 숫자가 같을때까지 반복한다
 
-# 여기서 stack에 마지막 수가 입력된 첫번째 수와 같아야 한다
+# 질문 잘 읽기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-# 마지막에 stack에 숫자가 남으면 NO 출력
 
 n = int(input())
 
@@ -17,9 +18,40 @@ for _ in range(1, n + 1):
 
 stack = []
 result = []
-print(array)
 
+# 1부터 n번까지 순환하기
+for i in range(1, n + 1):
+    # 순환하는 숫자 i를 stack에 저장한다
+    stack.append(i)
+    # 그리고 result에 '+'를 저장한다
+    result.append('+')
 
+    # 스택에 제일 마지막에 있는 숫자와
+    # 입력 받은 수열의 첫번째 숫자를 비교한다
+    # 둘이 같지 않으면 다시 숫자를 순환한다
+    if stack[-1] != array[0]:
+        continue
+    # 만약 같다면 while문을 실행한다
+    if stack[-1] == array[0]:
+        # 스택에 마지막 숫자, 그리고 입력받은 수열을 첫번째
+        # 숫자를 비교하면서, 같으면 그 둘을 리스트에서 빼면서
+        # result에 '-'을 넣는다
+        while stack[-1] == array[0]:
+            stack.pop()
+            array.pop(0)
+            result.append('-')
+
+            # while문이 종료되는 기준은 스택에 마지막 숫자와
+            # 수열의 첫번째 숫자가 다르거나
+            # stack에 숫자가 아예 없을 때
+            if len(stack) == 0:
+                break
+
+if len(array) == 0:
+    for ans in result:
+        print(ans)
+else:
+    print('NO')
 
 
 
@@ -53,4 +85,5 @@ print(array)
 #     for ans in result:
 #         print(ans)
 # else:
-#     print('No')
+#     print('NO')
+
