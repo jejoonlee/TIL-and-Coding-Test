@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1280px;
+  color: #333333;
+}
+
+/*top button*/
+.top{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.top-img{
+  height: 30px;
+}
+
+/*nav bar*/
+.nav{
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+}
+
+.title{
+  color: rgb(87, 87, 87);
+}
+
+.items{
+  display: flex;
+}
+
+.nav-item{
+  margin: 0px 10px;
+}
+
+.nav-link{
+  color: rgb(87, 87, 87);
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color: black;
+  text-decoration: underline;
+  transition: all ease-out 0.5s;
+  /*1초 동안 조금씩 검적으로 변하기*/
+}
+
+/*banner*/
+.banner{
+  height: 700px;
+  /*높이는 700px, 넓이는 100%*/
+  background-size: 100%, 700px;
+  background-image: url(../assets/apparel.jpeg);
+  background-repeat: no-repeat;
+}
+
+/*contents*/
+.contents{
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: 10px auto;
+}
+
+/*contents information*/
+.about{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.img, .bag{
+  width: 500px;
+  border-radius: 20px;
+}
+
+.about-our-company{
+  margin: 0px 20px;
+}
+
+.company-title{
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2em;
+  color: rgb(87, 87, 87);
+}
+
+.words{
+  line-height: 2rem;
+  color: rgb(87, 87, 87);
+}
+
+/*contents More*/
+.info{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.more{
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0px 40px 0px;
+  color: rgb(87, 87, 87);
+}
+
+.info-boxes{
+  display: flex;
+  justify-content: center;
+}
+
+.info-item{
+  margin: 0px 40px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+.info-image{
+  height: 64px;
+  width: 64px;
+}
+
+/*Product Page!!!!!*/
+.products{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 1280px;
+  margin: 10px auto;
+}
+
+.product-info{
+  width: 350px;
+  padding: 5px;
+  border: black solid 1px;
+  margin: 15px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.category{
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.product-detail{
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  margin: 0px 10px 10px 10px;
+}

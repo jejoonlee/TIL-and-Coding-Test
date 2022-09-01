@@ -17,33 +17,40 @@ for _ in range(1, n + 1):
 
 stack = []
 result = []
+print(array)
+
+
+
+
+
 # 1부터 N번까지 순회한다
-for i in range(1, n + 1):
-    # i가 주어진 수열 첫번째 수와 같지 않다면
-    # stack에 i를 넣고, +를 반환한다
-    if i != array[0]:
-        stack.append(i)
-        result.append('+')
+# for i in range(1, n + 1):
+#     # i가 주어진 수열 첫번째 수와 같지 않다면
+#     # stack에 i를 넣고, +를 반환한다
+#     if i != array[0]:
+#         stack.append(i)
+#         result.append('+')
 
-    # i와 수열 첫번째 수와 같다면
-    # + 과 - 을 차례대로 result에 저장하고
-    # 수열 첫번째 수를 없앤다
-    if i == array[0]:
-        result.append('+')
-        result.append('-')
-        array.pop(0)
-        # stack의 개수가 0이 아닌 경우
-        # while문을 통해 stack의 마지막 숫자와 수열의 첫번째 숫자를 비교한다
-        if len(stack) > 0:
-            while stack[-1] == array[0]:
-                stack.pop()
-                array.pop(0)
-                result.append('-')
-                if len(array) == 0:
-                    break
+#     # i와 수열 첫번째 수와 같다면
+#     # + 과 - 을 차례대로 result에 저장하고
+#     # 수열 첫번째 수를 없앤다
+#     if i == array[0]:
+#         result.append('+')
+#         result.append('-')
+#         array.pop(0)
+#         # stack의 개수가 0이 아닌 경우
+#         # while문을 통해 stack의 마지막 숫자와 수열의 첫번째 숫자를 비교한다
+#         if len(stack) > 0:
+#             while len(stack) != 0:
+#                 if stack[-1] == array[0]:
+#                     stack.pop()
+#                     array.pop(0)
+#                     result.append('-')
+#                 else:
+#                     break
 
-if len(stack) != 0:
-    print('No')
-else:
-    for ans in result:
-        print(ans)
+# if len(stack) == 0 and len(array) == 0:
+#     for ans in result:
+#         print(ans)
+# else:
+#     print('No')
