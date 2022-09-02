@@ -1,0 +1,173 @@
+body {
+    min-width: 1350px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    height: 80px;
+    padding: 0 40px;
+    background: white;
+    opacity: 0.8;
+}
+
+.logo {
+    height: 60px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: rgb(35, 29, 29);
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: rgb(219, 199, 124);
+    transition: 0.5s all ease-in;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    background-image: url('./images/background.jpg');
+    background-size: 100%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+}
+
+/* content */
+#content {
+    display: flex;
+    margin: 0px auto;
+    width: 1350px;
+}
+
+/* content aside */
+.aside-list,
+.aside-title{
+    margin: 0px;
+}
+
+.content-aside {
+    width: 20%;
+    padding: 1rem;
+}
+
+.aside-list {
+    padding-left: 0;
+}
+
+.aside-item {
+    list-style: none;
+}
+
+.genre {
+    color: black;
+}
+
+.genre:hover {
+    text-decoration: none;
+    color: rgb(219, 199, 124);
+    transition: 0.5s all ease-in-out;
+}
+
+/* movie section */
+.movie-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 24px;
+    background-color: rgb(230, 224, 224);
+}
+
+.movie-info{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.overlay-background{
+    position: absolute;
+    border-radius: 10px;
+    height: 429.81px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay,
+.overlay-background{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.movie-info:hover .overlay,
+.movie-info:hover .overlay-background{
+    visibility: visible;
+    opacity: 1;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.movies{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.movie-img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.movie-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.footer-inf {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}

@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**            |
 | --------------------- | -------- | ----------- | --------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.08.28  | [링크](./SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.08.30  | [링크](./Baekjoon)          |
+| **SW Expert Academy** | 문제풀이 | 2022.09.02  | [링크](./SW_Expert_Academy) |
+| **Baekjoon**          | 문제풀이 | 2022.09.01  | [링크](./Baekjoon)          |
 
 
 
@@ -34,13 +34,14 @@
 
 - ### Projects
 
-| Project      | Detail                 | Date                  | Link                                  |
-| ------------ | ---------------------- | --------------------- | ------------------------------------- |
-| 🧑‍💻 Project 1 | 프로젝트 1             | 2022년 7월 17일       | [링크](./Python/Project/project_1.md) |
-| 🧑‍💻 Project 2 | 프로젝트 2 (API, TMBD) | 2022년 7월 22 ~ 24    | [링크](./Python/Project/project_2.md) |
-| 🧑‍💻 Project 3 | Mock Coding Test       | 2022년 7월 29일 (4hr) | [링크](./모의고사/20220729/README.md) |
-| 🧑‍💻 Project 4 | Mock Coding Test       | 2022년 8월 5일 (4hr)  | [링크](./모의고사/20220805/README.md) |
-| 🧑‍💻 Project 5 | Mock Coding Test       | 2022년 8월 12일 (5hr) | [링크](./모의고사/20220812/README.md) |
+| Project          | Detail                 | Date                  | Link                                  |
+| ---------------- | ---------------------- | --------------------- | ------------------------------------- |
+| 🧑‍💻 Project 1     | 프로젝트 1             | 2022년 7월 17일       | [링크](./Python/Project/project_1.md) |
+| 🧑‍💻 Project 2     | 프로젝트 2 (API, TMBD) | 2022년 7월 22 ~ 24    | [링크](./Python/Project/project_2.md) |
+| 🧑‍💻 Project 3     | Mock Coding Test       | 2022년 7월 29일 (4hr) | [링크](./모의고사/20220729/README.md) |
+| 🧑‍💻 Project 4     | Mock Coding Test       | 2022년 8월 5일 (4hr)  | [링크](./모의고사/20220805/README.md) |
+| 🧑‍💻 Project 5     | Mock Coding Test       | 2022년 8월 12일 (5hr) | [링크](./모의고사/20220812/README.md) |
+| Personal Project | Melon Web              | 2022년 9월 2일        | [링크](./Web/실습/melon)              |
 
 - ### Algorithm
 
@@ -147,6 +148,7 @@
 | Web 2   | CSS Display           | 2022년 8월 30일 | [링크](./Web/실습/20220830/README.md) |
 | Web 3   | CSS position, flexbox | 2022년 8월 31일 | [링크](./Web/실습/20220831/README.md) |
 | Web 4   | CSS flexbox, nav bar  | 2022년 9월 1일  | [링크](./Web/실습/20220901/README.md) |
+| Web 5   | **PROJECT**           | 2022년 9월 2일  | [링크](./Web/실습/20220902/README.md) |
 
 
 
