@@ -13,7 +13,7 @@
 | --------------------- | -------- | ----------- | --------------------------- |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./Codeup/README.md)  |
 | **SW Expert Academy** | 문제풀이 | 2022.09.02  | [링크](./SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.09.01  | [링크](./Baekjoon)          |
+| **Baekjoon**          | 문제풀이 | 2022.09.03  | [링크](./Baekjoon)          |
 
 
 
@@ -42,6 +42,7 @@
 | 🧑‍💻 Project 4     | Mock Coding Test       | 2022년 8월 5일 (4hr)  | [링크](./모의고사/20220805/README.md) |
 | 🧑‍💻 Project 5     | Mock Coding Test       | 2022년 8월 12일 (5hr) | [링크](./모의고사/20220812/README.md) |
 | Personal Project | Melon Web              | 2022년 9월 2일        | [링크](./Web/실습/melon)              |
+| Personal Project | Bootstrap              | 2022년 9월 3일        |                                       |
 
 - ### Algorithm
 

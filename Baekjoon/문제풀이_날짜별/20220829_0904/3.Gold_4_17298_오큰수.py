@@ -1,5 +1,4 @@
-import sys
-sys.stdin = open('input.txt')
+
 
 # 오큰수는 숫자 A에서 오른쪽에 있으면서 A보다 큰 수 중에 가장 왼쪽에 있는 수
 # 즉, A와 오른쪽 숫자들을 비교면서, A보다 큰 수 중 제일 먼저 나오는 숫자가 오큰수
@@ -13,9 +12,29 @@ sys.stdin = open('input.txt')
 
 # 5 4 4 5 6 7 8 1 1 8 
 
+import sys
+sys.stdin = open('input.txt')
+
+
+# 하나씩 스텍에 넣고, 입력 수의 다음 수와 비교 후 인덱스 값 활용
 N = int(input())
 nums = list(map(int, sys.stdin.readline().split()))
 
+stack = []
+result = [-1] * N
+for i in range(1, N):
+    if nums[i - 1] >= nums[i]:
+        stack.append(i - 1)
+    else:
+        stack.append(i - 1)
+        while len(stack) != 0:
+            if nums[stack[-1]] < nums[i]:
+                r = stack.pop()
+                result[r] = nums[i]
+            elif nums[stack[-1]] >= nums[i]:
+                break
+
+print(' '.join(map(str, result)))
 
 
 #시간 초과

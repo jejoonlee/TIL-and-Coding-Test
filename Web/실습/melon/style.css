@@ -19,6 +19,77 @@
     position: relative;
 }
 
+/* overlay */
+.overlay1{
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.overlay-name{
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.overlay-play{
+    position: absolute;
+    z-index: 20;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+} 
+
+
+.play{
+    font-size: 40px;
+    color: white;
+    opacity: 0.5;
+} 
+
+.overlay-background{
+    position: absolute;
+    z-index: 5;
+    width: 156px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay1,
+.overlay-play,
+.overlay-background{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.artist-info:hover .overlay1,
+.artist-info:hover .overlay-play,
+.artist-info:hover .overlay-background{
+    visibility: visible;
+    opacity: 1;
+}
+
+.artist-info:hover .box{
+    visibility: hidden;
+}
+
+.overlay-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.play:hover{
+    color: rgb(134, 224, 162);
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+}
+
+/* 여기까지 overlay */
 
 .artist{
     width: 156px;
@@ -51,6 +122,9 @@
     height: 318px;
 }
 
+.album-poster:hover{
+    cursor: not-allowed;
+}
 
 
 /*로그인 부분*/
@@ -90,6 +164,15 @@
     font-size: 16px;
 }
 
+.log:hover{
+    cursor: pointer;
+    background-color: rgb(1, 147, 47);
+}
+
+.register:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /*기생충 부분*/
 .poster{
@@ -115,4 +198,8 @@
     border-radius: 20px;
     background-color: rgb(197, 0, 37);
     color: white;
+}
+
+.poster:hover, .purchase:hover{
+    cursor: wait;
 }
