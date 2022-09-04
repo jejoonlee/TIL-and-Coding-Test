@@ -36,10 +36,19 @@ body{
 }
 
 .nav-links{
+    padding: 33px 10px 30px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-weight: 700;
 }
+
+/* nav 효과 */
+
+.nav-links:hover{
+    color: rgb(100, 161, 157);
+    border-bottom: 3px solid rgb(100, 161, 157);
+    transition: color 0.5s ease;
+}
+
 
 /* banner */
 .banner{
@@ -101,11 +110,19 @@ body{
     font-weight: bold;
 }
 
+.started:hover{
+    background-color: rgb(83, 133, 129);
+    box-shadow: none;
+    transition: 0.5s all ease;
+}
+
 .get-started{
     letter-spacing: 2px;
     text-decoration: none;
     color: white;
 }
+
+
 
 /* information slide */
 .info{
@@ -123,13 +140,17 @@ body{
 
 .about-words{
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 20rem 0px;
     color: rgb(136, 136, 136);
     letter-spacing: 1px;
 }
 
 .about-words a{
     color: rgb(100, 161, 157);
+}
+
+.about-words a:hover{
+    color: rgb(77, 122, 119);
 }
 
 .pad{
@@ -142,7 +163,8 @@ body{
 #Projects{
     display: flex;
     flex-direction: column;
-    margin: 10rem auto;
+    padding: 10rem 0;
+    margin: 0 auto;
     width: 1200px;
 }
 
@@ -251,6 +273,11 @@ body{
     font-size: 2rem;
 }
 
+.subscribe-info{
+    min-width: 1000px;
+    text-align: center;
+}
+
 .subscribe{
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -278,6 +305,12 @@ body{
     font-family: 'Varela Round', sans-serif;
     font-weight: 500;
     letter-spacing: 2px;
+}
+
+.notify:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.5s ease;
 }
 
 /* contack info */
@@ -331,6 +364,10 @@ body{
     opacity: 1;
 }
 
+.email:hover{
+    color: rgb(63, 100, 97);
+}
+
 .contact-sns{
     margin-top: 5rem;
     display: flex;
@@ -352,6 +389,11 @@ body{
     font-size: 1.5rem;
     color: rgb(109, 109, 109);
 }
+
+.sns-icon:hover{
+    color: rgb(71, 71, 71);
+}
+
 
 /* footer */
 .footer{
