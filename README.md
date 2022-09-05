@@ -134,22 +134,24 @@
 
 - ### WEB
 
-| Content         | Detail            | Date            | Link                           |
-| --------------- | ----------------- | --------------- | ------------------------------ |
-| Web 1           | INTRO HTML, CSS   | 2022년 8월 29일 | [링크](./Web/Lecture/Web_1.md) |
-| Web 2           | INTRO CSS Display | 2022년 8월 30일 | [링크](./Web/Lecture/Web_2.md) |
-| Web 3           | Position, Flexbox | 2022년 8월 31일 | [링크](./Web/Lecture/Web_3.md) |
-| Web 4           | Semantic          | 2022년 9월 1일  | [링크](./Web/Lecture/Web_4.md) |
-| 📌 HTML elements |                   | 2022년 8월 29일 | [링크](./Web/HTML_elements.md) |
+| Content         | Detail                     | Date            | Link                           |
+| --------------- | -------------------------- | --------------- | ------------------------------ |
+| Web 1           | INTRO HTML, CSS            | 2022년 8월 29일 | [링크](./Web/Lecture/Web_1.md) |
+| Web 2           | INTRO CSS Display          | 2022년 8월 30일 | [링크](./Web/Lecture/Web_2.md) |
+| Web 3           | Position, Flexbox          | 2022년 8월 31일 | [링크](./Web/Lecture/Web_3.md) |
+| Web 4           | Semantic                   | 2022년 9월 1일  | [링크](./Web/Lecture/Web_4.md) |
+| Web 5           | `table`, `form`, Bootstrap | 2022년 9월 5일  | [링크](./Web/Lecture/Web_5.md) |
+| 📌 HTML elements |                            | 2022년 8월 29일 | [링크](./Web/HTML_elements.md) |
 
 #### 실습
 
-| Content | Detail                | Date            | Link                                  |
-| ------- | --------------------- | --------------- | ------------------------------------- |
-| Web 2   | CSS Display           | 2022년 8월 30일 | [링크](./Web/실습/20220830/README.md) |
-| Web 3   | CSS position, flexbox | 2022년 8월 31일 | [링크](./Web/실습/20220831/README.md) |
-| Web 4   | CSS flexbox, nav bar  | 2022년 9월 1일  | [링크](./Web/실습/20220901/README.md) |
-| Web 5   | **PROJECT**           | 2022년 9월 2일  | [링크](./Web/실습/20220902/README.md) |
+| Content     | Detail                | Date            | Link                                  |
+| ----------- | --------------------- | --------------- | ------------------------------------- |
+| Web 2       | CSS Display           | 2022년 8월 30일 | [링크](./Web/실습/20220830/README.md) |
+| Web 3       | CSS position, flexbox | 2022년 8월 31일 | [링크](./Web/실습/20220831/README.md) |
+| Web 4       | CSS flexbox, nav bar  | 2022년 9월 1일  | [링크](./Web/실습/20220901/README.md) |
+| Web Project | **PROJECT**           | 2022년 9월 2일  | [링크](./Web/실습/20220902/README.md) |
+| Web 5       | CDN Bootstrap         | 2022년 9월 5일  | [링크](./Web/실습/20220905/README.md) |
 
 
 

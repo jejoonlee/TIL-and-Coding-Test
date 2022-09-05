@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body{
+  min-width: 1280px
+}
+
+/* top 버튼 */
+.top{
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* navigation */
+.nav-item:hover{
+  color:rgb(179, 159, 135);
+  transition: color 0.3s ease;
+}
+
+#banner{
+  height: 700px;
+  background-image: url(../assets/apparel.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* contents */
+.about, .info{
+  width: 1280px;
+}
+
+.img, .bag{
+  width: 500px;
+}
+
+.company-title{
+  text-align: center;
+}
+
+/* More */
+.info-image{
+  height: 64px;
+  width: 64px;
+}
+
+.more{
+  text-align: center;
+}
+
+
+
+
+/* products page */
+
+#navbar{
+  z-index: 100;
+}
+
+.products{
+  width: 1280px;
+}
+
+.product-info{
+  width: 350px;
+}
+
+.category{
+  text-align: center;
+}
+
+.overlay{
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.overlay, 
+.overlay-background{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.product-info:hover .overlay,
+.product-info:hover .overlay-background{
+  visibility: visible;
+  opacity: 1;
+}
