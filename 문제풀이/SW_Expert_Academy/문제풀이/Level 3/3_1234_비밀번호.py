@@ -16,6 +16,9 @@ for t in range(1, 11):
         if nums[i] == nums[i + 1]:
             nums.pop(i)
             nums.pop(i)
+            # 위에 pop이 끝나면, i가 1이 더해진다
+            # 근데 없어지고, 연속으로 또 숫자가 붙을 수도 있어
+            # 1을 i에서 빼준다
             i -= 1
         else:
             i += 1
