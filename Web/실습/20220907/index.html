@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Practice</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">MyFavTeams</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- slide -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/manchester-united-old.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Manchester United</h5>
+              <p>My Favorite Team Since 2006</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/suwon-samsung-bluewings-fc-south-korean-football-club-blue-metal-texture-metal-logo-emblem.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Suwon Samsung Bluewings</h5>
+              <p>My Favorite Team Since 2012</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/999218.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Houston Rockets</h5>
+              <p>My Favorite Team Since 2008</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- Main -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <img src="./images/manutd.jpg" class="img-fluid rounded-1" alt="...">
+            </div>
+            <div class="col-12 col-lg-5 my-auto py-3">
+                    <h2>Manchester United</h2>
+                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                    <a class="btn btn-light" href="https://www.manutd.com/en/History/History-by-Decade" role="button">Call to Action!</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- banner -->
+    <section class="banner container mt-3">
+        <div class="card" style="height:80px; border:0px;">
+            <img src="./images/pattern2.jpg" class="card-img" alt="..." style="height: 100%;">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <p class="card-text bg-opacity-25 fw-bold">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="container pt-5">
+        <div class="row">
+            <div class="col-12 my-3 col-lg-4">
+                <div class="card">
+                    <img src="./images/suwon.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3>Suwon Bluewings</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-light" href="http://www.bluewings.kr/history2010" role="button">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-3 col-lg-4">
+                <div class="card">
+                    <img src="./images/houston.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3>Houston Rockets</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-light" href="https://www.nba.com/rockets" role="button">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-3 col-lg-4">
+                <div class="card">
+                    <img src="./images/cardinals.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3>Arizona Cardinals</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-light" href="https://www.azcardinals.com/" role="button">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer d-flex align-items-center justify-content-center bg-black text-white p-3 mt-5">
+        <p class="fs-6 mb-0">Copyright © Your Website 2022</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

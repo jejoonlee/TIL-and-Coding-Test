@@ -1,0 +1,13 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.navbar{
+    background-color: rgb(102, 102, 102);
+    opacity: 80%;
+}
+

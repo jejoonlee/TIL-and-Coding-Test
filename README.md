@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**                     |
 | --------------------- | -------- | ----------- | ------------------------------------ |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./문제풀이/Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.09.06  | [링크](./문제풀이/SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.09.06  | [링크](./문제풀이/Baekjoon)          |
+| **SW Expert Academy** | 문제풀이 | 2022.09.07  | [링크](./문제풀이/SW_Expert_Academy) |
+| **Baekjoon**          | 문제풀이 | 2022.09.07  | [링크](./문제풀이/Baekjoon)          |
 
 
 
@@ -141,7 +141,8 @@
 | Web 3           | Position, Flexbox          | 2022년 8월 31일 | [링크](./Web/Lecture/Web_3.md) |
 | Web 4           | Semantic                   | 2022년 9월 1일  | [링크](./Web/Lecture/Web_4.md) |
 | Web 5           | `table`, `form`, Bootstrap | 2022년 9월 5일  | [링크](./Web/Lecture/Web_5.md) |
-| Web 5           | Bootstrap Components       | 2022년 9월 6일  | [링크](./Web/Lecture/Web_6.md) |
+| Web 6           | Bootstrap Components       | 2022년 9월 6일  | [링크](./Web/Lecture/Web_6.md) |
+| Web 7           | Bootstrap Grid             | 2022년 9월 7일  | [링크](./Web/Lecture/Web_7.md) |
 | 📌 HTML elements |                            | 2022년 8월 29일 | [링크](./Web/HTML_elements.md) |
 
 #### 실습
@@ -154,6 +155,7 @@
 | Web Project | **PROJECT**           | 2022년 9월 2일  | [링크](./Web/실습/20220902/README.md)      |
 | Web 5       | CDN Bootstrap         | 2022년 9월 5일  | [링크](./Web/실습/20220905/README.md)      |
 | Web 6       | Bootstrap Components  | 2022년 9월 6일  | [링크](./Web/실습/20220906/실습/README.md) |
+| Web 7       | Bootstrap Grid        | 2022년 9월 7일  | [링크](./Web/실습/20220907/README.md)      |
 
 
 
