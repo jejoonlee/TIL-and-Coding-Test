@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65272ea3c1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Payment-Plan">Payment Plan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div data-bs-spy="scroll" data-bs-target="navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <!-- banner -->
+        <section class="banner position-relative">
+        <div class="banner-info d-flex flex-column align-items-center position-absolute">
+            <h1 class="banner-title fw-bold text-center text-white">Present your business in a whole new way</h1>
+            <p class="banner-detail d-none d-sm-block text-center text-white">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p>
+            <div class="buttons d-grid flex-row gap-2 d-sm-flex">
+                <a class="banner-btn btn btn-primary" href="#Features" role="button">Get Started</a>
+                <a class="banner-btn btn btn-outline-light" href="#Contact" role="button">Learn More</a>
+            </div>
+        </div>
+        <img src="./images/visual_img.jpg" alt="image" class="img-fluid w-100">
+        </section>
+
+        <!-- Features -->
+        <section id="Features" class="container my-5">
+            <div class="row">
+                <div class="col-12 col-lg-4 my-5 my-lg-0">
+                    <div class="icon bg-primary position-relative mb-3">
+                        <i class="features-icon fa-solid fa-list-check position-absolute"></i>
+                    </div>
+                    <p class="featured-title fw-bold fs-3 mb-0">Featured title</p>
+                    <p class="featured-detail">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a href="#" class="action-link text-decoration-none">Call to action <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                </div>
+                <div class="col-12 col-lg-4 my-3 my-lg-0">
+                    <div class="icon bg-primary position-relative mb-3">
+                        <i class="features-icon fa-solid fa-building position-absolute"></i>
+                    </div>
+                    <p class="featured-title fw-bold fs-3 mb-0">Featured title</p>
+                    <p class="featured-detail">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a href="#" class="action-link text-decoration-none">Call to action <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                </div>
+                <div class="col-12 col-lg-4 my-5 my-lg-0">
+                    <div class="icon bg-primary position-relative mb-3">
+                        <i class="features-icon fa-solid fa-toggle-off position-absolute"></i>
+                    </div>
+                    <p class="featured-title fw-bold fs-3 mb-0">Featured title</p>
+                    <p class="featured-detail">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <a href="#" class="action-link text-decoration-none">Call to action <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Plan -->
+        <section class="Payment-background bg-light py-5">
+            <div id="Payment-Plan" class="d-flex flex-column align-items-center my-5">
+                <div class="payment-title">
+                    <h1 class="payment-detail-1">Pay as you grow</h1>
+                    <p class="payment-detail-2">With our no hassle pricing plans</p>
+                </div>
+                <div class="payments container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-6 col-xl-4 px-4">
+                            <div class="payment-box my-3 my-xl-0">
+                                <p class="pay-type mb-0">FREE</p>
+                                <p class="pay-price"><span class="price">$0</span> / mo.</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> <b>1 users</b></p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> 5GB storage</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Unlimited public projects</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Community access</p>
+                                <p class="pay-details"><i class="fa-solid fa-xmark"></i> Unlimited private projects</p>
+                                <p class="pay-details"><i class="fa-solid fa-xmark"></i> Dedicated support</p>
+                                <p class="pay-details"><i class="fa-solid fa-xmark"></i> Free linked domain</p>
+                                <p class="pay-details"><i class="fa-solid fa-xmark"></i> Monthly status reports</p>
+                                <a class="btn btn-outline-primary mt-3 w-100" href="#" role="button">Choose plan</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 px-4">
+                            <div class="payment-box my-3 my-xl-0">
+                                <p class="pay-type mb-0 fw-bold"><i class="fa-solid fa-star"></i>Pro</p>
+                                <p class="pay-price"><span class="price">$9</span> / mo.</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> <b>5 users</b></p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> 50GB storage</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Unlimited public projects</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Community access</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Unlimited private projects</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Dedicated support</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Free linked domain</p>
+                                <p class="pay-details"><i class="fa-solid fa-xmark"></i> Monthly status reports</p>
+                                <a class="btn btn-primary mt-3 w-100" href="#" role="button">Choose plan</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 px-4">
+                            <div class="payment-box my-3 my-xl-0">
+                                <p class="pay-type mb-0">ENTERPRISE</p>
+                                <p class="pay-price"><span class="price">$49</span> / mo.</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> <b>Unlimited users</b></p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> 5GB storage</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Unlimited public projects</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Community access</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Unlimited private projects</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> Dedicated support</p>
+                                <p class="pay-details"><i class="fa-solid fa-check"></i> <b>Unlimited</b> linked domain</p>
+                                <p class="pay-details"><i class="fa-solid fa-xmark"></i> Monthly status reports</p>
+                                <a class="btn btn-outline-primary mt-3 w-100" href="#" role="button">Choose plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer testimonials -->
+        <section class="customer container d-flex flex-column align-items-center my-5 py-5">
+            <div class="customer-title mb-4">
+                <h1 class="c-title text-center">Customer testimonials</h1>
+                <p class="c-detail fs-5 text-center">Our customers love working with us</p>
+            </div>
+
+            <div class="comments d-flex p-4 mb-3">
+                <div class="comment-icon">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="comment-detail">
+                    <p class="comment-what">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
+                    <p class="comment-who mb-0">- Client Name, Location</p>
+                </div>
+            </div>
+            <div class="comments d-flex p-4">
+                <div class="comment-icon">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="comment-detail">
+                    <p class="comment-what">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
+                    <p class="comment-who mb-0">- Client Name, Location</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <div class="contact-background bg-light py-5">
+            <section id="Contact" class="container d-flex flex-column align-items-center">
+                <div class="contact-words d-flex flex-column align-items-center my-4">
+                    <div class="icon bg-primary position-relative mb-3" style="padding: 30px;">
+                        <i class="features-icon fa-regular fa-envelope position-absolute"></i>
+                    </div>
+                    <h1 class="text-center">Get in touch</h1>
+                    <p class="text-center">We'd love to hear from you</p>
+                </div>
+
+                <form class="needs-validation" novalidate style="width: 400px;">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="validation1" placeholder="" required>
+                        <label for="validation1">Full name</label>
+                        <div class="invalid-feedback">
+                            A name is required
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="validation-email" placeholder="name@example.com" required>
+                        <label for="validation-email">Email address</label>
+                        <div class="invalid-feedback">
+                            An email is required
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="" required>
+                        <label for="floatingInput">Phone number</label>
+                        <div class="invalid-feedback">
+                            A phone number is required
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 w-100">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <section class="footer d-flex justify-content-center align-items-center py-5 bg-black">
+        <p class="copyright text-white">Copyright © Your Website 2022</p>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

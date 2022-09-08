@@ -156,8 +156,9 @@
 | Web 5       | CDN Bootstrap         | 2022년 9월 5일  | [링크](./Web/실습/20220905/README.md)      |
 | Web 6       | Bootstrap Components  | 2022년 9월 6일  | [링크](./Web/실습/20220906/실습/README.md) |
 | Web 7       | Bootstrap Grid        | 2022년 9월 7일  | [링크](./Web/실습/20220907/README.md)      |
+| Web 8       | **PROJECT**           | 2022년 9월 8일  | [링크](./Web/실습/20220908/README.md)      |
 
-
+s
 
 - ### 특별강의
 

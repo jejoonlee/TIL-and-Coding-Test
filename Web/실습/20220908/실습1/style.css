@@ -1,0 +1,64 @@
+
+*{
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+
+/* index.html */
+/* Banner */
+.banner{
+    position: relative;
+}
+
+.banner-info{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-img{
+    opacity: 0.4;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-words{
+    font-size: 1rem;
+}
+
+/* items */
+.card-title{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.price{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.rating{
+    margin-bottom: 0.5rem;
+}
+
+.fa-star{
+    color: rgb(224, 224, 25);
+}
+
+.sale{
+    background-color: rgb(94, 94, 94);
+    color:white;
+    right: 10px;
+    top: 10px;
+}
+
+/* ---------------------------------------------------- */
+/* items.html */
+

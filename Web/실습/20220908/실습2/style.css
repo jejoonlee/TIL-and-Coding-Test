@@ -1,0 +1,75 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* banner */
+.banner-info{
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-btn{
+    margin: 0 1rem;
+}
+
+/* Features */
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.features-icon{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+}
+
+/* payment plan */
+.payment-box{
+    border-radius: 5px;
+    border: solid 1px rgb(199, 199, 199);
+    padding: 48px;
+}
+
+.price{
+    font-size: 4rem;
+}
+
+.fa-star{
+    color: rgb(200, 221, 79);
+    margin-right: 2px;
+}
+
+.pay-details{
+    margin-bottom: 0.5rem;
+}
+
+.fa-check{
+    margin-right: 2px;
+    color: rgb(63, 93, 239);
+}
+
+.fa-xmark{
+    margin-right: 8px;
+    color: rgb(112, 112, 112);
+}
+
+/* testimonial */
+.comments{
+    width: 400px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+}
+
+.fa-comment{
+    margin-right: 10px;
+    font-size: 2rem;
+    color: rgb(13, 110, 253);
+}
+
+/* contact */

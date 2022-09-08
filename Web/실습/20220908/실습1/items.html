@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/65272ea3c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Shop Item</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">All Products</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Popular Items</a></li>
+                  <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-dark" type="submit">
+                <i class="cart fas fa-shopping-cart me-2"></i>
+                Search
+                <span class="badge ms-1 rounded-pill bg-dark text-white">0</span>
+              </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- item info -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <img src="./images/clothes 3_original.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="item-code mb-0">SKU: BST-498</p>
+                <h1 class="item-name fw-bold">Shop item template</h1>
+                <p class="item-price fs-5"><del>$45.00</del> $40.00</p>
+                <p class="details mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere, numquam reprehenderit dolorum suscipit tempore eius voluptate nesciunt quisquam vel veritatis expedita perferendis deleniti quasi dolor hic voluptates debitis earum.</p>
+                <div class="purchase d-flex">
+                    <input class="form-control me-3" type="number" placeholder="1" aria-label="default input example" style="width: 60px;">
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-dark" type="submit">
+                        <i class="cart fas fa-shopping-cart me-2"></i>
+                        Add to Cart
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- related products -->
+    <section class="related-products py-3 bg-light">
+        <div class="container mt-5 py-5">
+            <h1 class="related-proucts my-3 fs-2">Related Products</h1>
+            <div class="row g-4 g-lg-5 justify-content-center">
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card h-100">
+                        <img src="./images/clothes 3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                        <h5 class="card-title">Fancy Product</h5>
+                        <h5 class="price">$40.00 - $80.00</h5>
+                        <a href="#" class="btn btn-outline-dark btn-cart">View options</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card position-relative h-100">
+                        <img src="./images/clothes 3.jpg" class="card-img-top" alt="...">
+                        <span class="sale badge position-absolute">Sale</span>
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                        <h5 class="card-title">Special Item</h5>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 class="price"><del>$20.00</del> $18.00</h5>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card position-relative h-100">
+                        <img src="./images/clothes 3.jpg" class="card-img-top" alt="...">
+                        <span class="sale badge position-absolute">Sale</span>
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                        <h5 class="card-title">Sale Item</h5>
+                        <h5 class="price"><del>$50.00</del> $25.00</h5>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card h-100">
+                        <img src="./images/clothes 3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                        <h5 class="card-title">Popular Item</h5>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5 class="price">$40.00</h5>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="d-flex justify-content-center align-items-center p-5 bg-dark">
+        <p class="copyright text-white">Copyright © Your Website 2022</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
