@@ -1,0 +1,11 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar{
+    z-index: 100;
+}
+
+.m-body{
+    padding: 1rem 2rem;
+}

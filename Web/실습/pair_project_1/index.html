@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Movie</title>
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="" style='width:100%; height:60px;'>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="needs-validation" novalidate>
+          <div class="m-body">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="invalid-feedback">
+                  이메일을 입력해주세요
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                <div class="invalid-feedback">
+                  비밀번호를 입력해주세요
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </div> 
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="7000">
+        <img src="https://dummyimage.com/1920x600/000/fff" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="https://dummyimage.com/1920x600/000/fff" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="https://dummyimage.com/1920x600/000/fff" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Main -->
+  <section class="container">
+    <div class="d-flex justify-content-center">
+      <h1 class="text-center my-5 fw-bold animate__animated animate__fadeIn">Boxoffice</h1>
+    </div>
+    <div class="row d-flex justify-content-center g-4">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="./images/movie1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum molestias quae temporibus, fugit possimus eum voluptates minus rerum accusamus hic libero similique ad, veritatis minima in, numquam illo quidem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="./images/movie2.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum molestias quae temporibus, fugit possimus eum voluptates minus rerum accusamus hic libero similique ad, veritatis minima in, numquam illo quidem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="./images/movie3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum molestias quae temporibus, fugit possimus eum voluptates minus rerum accusamus hic libero similique ad, veritatis minima in, numquam illo quidem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="./images/movie4.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum molestias quae temporibus, fugit possimus eum voluptates minus rerum accusamus hic libero similique ad, veritatis minima in, numquam illo quidem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="./images/movie5.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum molestias quae temporibus, fugit possimus eum voluptates minus rerum accusamus hic libero similique ad, veritatis minima in, numquam illo quidem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="./images/movie6.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum molestias quae temporibus, fugit possimus eum voluptates minus rerum accusamus hic libero similique ad, veritatis minima in, numquam illo quidem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="text-center bg-dark text-white mt-5 py-3">
+    <p class="mb-0">Created by<br>1기 2회차 이제준<br>1기 3회차 문현동</p>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
