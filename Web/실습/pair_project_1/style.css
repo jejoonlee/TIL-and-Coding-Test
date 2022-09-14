@@ -1,5 +1,13 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    justify-content: space-between;
 }
 
 .navbar{
@@ -8,4 +16,45 @@ body{
 
 .m-body{
     padding: 1rem 2rem;
+}
+
+/* boxoffice */
+.now-playing{
+    z-index: 10;
+}
+
+.card-overlay-bg,
+.card-overlay-words{
+    visibility:hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear;
+}
+
+.card:hover .card-overlay-bg,
+.card:hover .card-overlay-words{
+    visibility:visible;
+    opacity: 1;
+}
+
+/* movies */
+.information{
+    z-index: 10;
+}
+
+.share-icon,
+.heart-icon{
+    margin: 0px 1rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.share-icon:hover,
+.heart-icon:hover{
+    cursor: pointer;
+}
+
+.info-share-words,
+.info-like-words{
+    font-size: 0.7rem;
+    color: white;
 }

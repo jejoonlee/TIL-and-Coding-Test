@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65272ea3c1.js" crossorigin="anonymous"></script>
+    <title>Movie</title>
+    <link rel="icon" type="image/x-icon" href="./images/film.png">
+    </head>
+
+    <div>
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky top-0">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="" style='width:100%; height:60px;'>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="community.html">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form class="needs-validation" novalidate>
+                <div class="m-body">
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div class="invalid-feedback">
+                        이메일을 입력해주세요
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        <div class="invalid-feedback">
+                        비밀번호를 입력해주세요
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1">확인</label>
+                        <div class="invalid-feedback">
+                        체크를 꼭 해주세요
+                        </div>
+                    </div>
+                    </div> 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+    <!-- banner -->
+    <div class="banner-movie d-flex justify-content-center bg-black">
+        <video width='50%' controls>
+            <source src="images/The Shawshank Redemption - Trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- info -->
+    <div class="info-background bg-black opacity-75 py-5">
+        <div class="information container">
+            <h1 class="movie-title text-white">쇼생크 탈출</h1>
+            <p class="movie-info text-white"><span class="rating fw-bold">평점 9.88</span> | 드라마 | 142분 | 15세</p>
+            <div class="info-others d-flex">
+                <div class="info-share">
+                    <i class="share-icon fa-solid fa-share-nodes"></i>
+                    <p class="info-share-words text-center">공유</p>
+                </div>
+                <div class="info-like">
+                    <i class="heart-icon fa-regular fa-heart"></i>
+                    <p class="info-like-words text-center">찜하기</p>
+                </div>
+            </div>
+            <p class="detail text-white">
+                "Fear Can Hold You Prisoner, Hope Can Set You Free"<br>
+                <span class="d-none d-md-block">촉망받는 은행 간부 앤디 듀프레인은 아내와 그녀의 정부를 살해했다는 누명을 쓴다. 주변의 증언과 살해 현장의 그럴듯한 증거들로 그는 종신형을 선고받고 악질범들만 수용한다는 지옥같은 교도소 쇼생크로 향한다. 인간 말종 쓰레기들만 모인 그곳에서 그는 이루 말할 수 없는 억압과 짐승보다 못한 취급을 당한다. 무식한 간수눈에 잘못 보였다가는 개죽음 당하기 십상이고 악질 동료 죄수들에겐 강간까지 당한다. 그러던 어느날 간수의 세금을 면제받게 해주는 덕분에 그는 일약 교도소의 비공식 회계사로 일하게 된다. 해마다 간수들과 소장의 세금을 면제받게 해 주고 재정 상담까지 해 준다. 또 주정부에서 교도소 도서관 자금을 지원받기위해 한 주도 빠짐없이 편지를 쓰고 마침내 상당한 지원을 받아내고 최신식의 도서관을 꾸민다. 그 와중에 교도소 소장은 죄수들을 이리저리 부리면서 검은 돈을 긁어 모으고 앤디는 이돈을 세탁하여 불려주면서 그의 돈을 관리하게 된다. 어느날 교도소안에 토미라는 신참내기가 들어오고 앤디는 그를 새 사람으로 만들기 위해 최선의 노력을 아끼지 않는다. 레드에게 앤디가 아내와 아내의 정부를 살해했다고 들은 토미는 진짜 살인범에 대해 증언하고 앤디는 이 얘기를 소장에게 전하며 결백을 주장한다. 앤디의 결백이 알려지면 자신의 처지가 곤란해질 것을 직감한 소장은 토미를 무참히 죽여버리는데...</span>
+            </p>
+            <p>
+                <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                더보기
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class=" bi bi-chevron-down" viewBox="0 0 16 20">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body mb-3">
+                    <p><span class="me-4 fw-bold">원제</span>Shaw Shank Redemption</p>
+                    <p><span class="me-4 fw-bold">개요</span>미국, 1995년</p>
+                    <p><span class="me-4 fw-bold">장르</span>드라마</p>
+                    <p><span class="me-4 fw-bold">감독</span>프랭크 다라본트</p>
+                    <p class="mb-0"><span class="me-4 fw-bold">출연</span>팀 로빈스, 모건 프리먼</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- 배우 -->
+        <div class="container d-none d-sm-block px-0 mt-5">
+            <h2 class="actors text-white" style="margin-left: 10px;">출연진</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-wrapper d-flex">
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper d-flex">
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper d-flex">
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                            <div class="card mx-3">
+                                <img src="./images/모건 프리먼.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Morgan Freeman</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="position-fixed bottom-0 end-0 m-5 p-2 bg-secondary rounded-circle">
+        <a href="#">
+            <svg class="text-light" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-bar-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- footer -->
+        <footer class="text-center bg-dark text-white py-3">
+            <p class="mb-0">Created by<br>1기 2회차 이제준<br>1기 3회차 문현동</p>
+        </footer>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
