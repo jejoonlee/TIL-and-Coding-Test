@@ -13,7 +13,7 @@
 | --------------------- | -------- | ----------- | ------------------------------------ |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./문제풀이/Codeup/README.md)  |
 | **SW Expert Academy** | 문제풀이 | 2022.09.09  | [링크](./문제풀이/SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.09.14  | [링크](./문제풀이/Baekjoon)          |
+| **Baekjoon**          | 문제풀이 | 2022.09.15  | [링크](./문제풀이/Baekjoon)          |
 | **Programmers**       | 문제풀이 | 2022.09.14  | [링크](./문제풀이/Programmers)       |
 
 
@@ -27,6 +27,8 @@
 - [Python](#python)
 - [SQLite](#SQLite)
 - [Web](#web)
+  - [Javascript](#javascript)
+
 - [특별강의](#특별강의)
 
 
@@ -146,6 +148,14 @@
 | Web 6           | Bootstrap Components       | 2022년 9월 6일  | [링크](./Web/Lecture/Web_6.md) |
 | Web 7           | Bootstrap Grid             | 2022년 9월 7일  | [링크](./Web/Lecture/Web_7.md) |
 | 📌 HTML elements |                            | 2022년 8월 29일 | [링크](./Web/HTML_elements.md) |
+
+- ### Javascript
+
+| Content    | Detail      | Date            | Link                                             |
+| ---------- | ----------- | --------------- | ------------------------------------------------ |
+| Javascript | Basic / DOM | 2022년 9월 15일 | [링크](./Web/Javascript/Javascript_Basic_DOM.md) |
+
+
 
 #### 실습
 
