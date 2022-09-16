@@ -1,4 +1,4 @@
-# 📋Web HTML & CSS
+# 📋Web JavaScript
 
 #### Category
 
