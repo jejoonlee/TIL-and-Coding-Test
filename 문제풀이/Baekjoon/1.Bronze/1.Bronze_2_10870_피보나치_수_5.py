@@ -10,4 +10,3 @@ for i in range(n):
 
 print(fibo_1)
 # fibo_2 또는 fibo_3는 89임
-
