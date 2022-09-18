@@ -13,24 +13,25 @@ for t in range(T):
     N, M = map(int, input().split())
 
     board = [input() for _ in range(N)]
-    flag = True
+    
+    answer = [0, 0, 0, 0]
 
-    for r in range(N):
-        if flag == False:
-            break
-        
-        for c in range(M):
-            if c + 1 < M and r + 1 < N and board[r][c] == '#':
-                if board[r][c + 1] == '#':
-                    print(f'#{t+1} impossible')
-                    flag = False
-                    break
+    for row in range(N):
+        for col in range(M):
+
+            if board[row][col] == '.':
+                if (row + col) % 2 == 0:
+                    answer[0] += 1
+                else:
+                    answer[1] += 1
             
-            if c + 1 < M and board[r][c] == '.':
-                if board[r][c + 1] == '.':
-                    print(f'#{t+1} impossible')
-                    flag = False
-                    break
+            elif board[row][col] == '#':
+                if (row + col) % 2 == 0:
+                    answer[2] += 1
+                else:
+                    answer[3] += 1
 
-    if flag == True:
-        print(f'#{t+1} possible')
+    if (answer[0] and answer[1]) or (answer[2] and answer[3]) or (answer[0] and answer[2]) or (answer[1] and answer[3]):
+        print(f'#{t + 1} impossible')
+    else:
+        print(f'#{t + 1} possible')
