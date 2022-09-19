@@ -47,21 +47,41 @@
       <div class="carousel-item">4</div>
     </div>
   </div>
-    <button class="carousel-btn prev" data-carousel-btn="prev">prev</button>
-    <button class="carousel-btn next" data-carousel-btn="next">next</button>
+    <button id="prevBtn">prev</button>
+    <button id="nextBtn">next</button>
   
   
   <script>
-    const carouselBtn = document.querySelectorAll('[data-carousel-btn]')
+      
 
+    // next 버튼
+    const nextBtn = document.querySelector('#nextBtn')
 
+    nextBtn.addEventListener('click', function() {
+      const currentElement = document.querySelector('.active')
+      const items = document.querySelectorAll('.carousel-item')
+      const idx = [...items].indexOf(currentElement)
 
-      // const currentElement = document.querySelector('.active')
-      // const items = document.querySelectorAll('.carousel-item')
-      // const idx = [...items].indexOf(currentElement)
-      // console.log(currentElement, items, idx)
-      // currentElement.classList.toggle('active')
-      // items[(idx+1)%items.length].classList.toggle('active')
+      currentElement.classList.toggle('active')
+      items[(idx+1)%items.length].classList.toggle('active')
+    })
+
+    // prev 버튼
+    const prevBtn = document.querySelector('#prevBtn')
+
+    prevBtn.addEventListener('click', function() {
+      // 현제 슬라이드의 위치를 알아야 한다 (active)
+      const currentElement = document.querySelector('.active')
+      // 모든 슬라이드들을 가지고 와야 한다
+      const items = document.querySelectorAll('carousel-item')
+      // 모든 슬라이드들 중에서, 현제 슬라이드 (active)의 인덱스를 알아야 한다
+      const idx = [...items].indexOf(currentElement)
+      console.log(currentElement, items, idx)
+      // 현제 슬라이드 (active)를 누르면
+      currentElement.classList.toggle('active')
+      // 그 슬라이드의 (active)는 뒤에 입력이 된다
+      items[(items.length+idx-1)%items.length].classList.toggle('active')
+    })
   </script>
 </body>
 </html>
