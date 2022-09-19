@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .carousel-items {
+      position: relative;
+      display: flex;
+      width: 10rem;
+      height: 10rem;
+      overflow: hidden;
+    }
+    
+    .carousel-item {
+      position: absolute;
+      top: 0;
+      width: 10rem;
+      height: 10rem;
+      background-color: bisque;
+      display: none;
+    }
+
+    .active {
+      display: block;
+      animation: active 1.5s;
+    }
+    @keyframes active {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="carousel-items">
+      <div class="carousel-item active">1</div>
+      <div class="carousel-item">2</div>
+      <div class="carousel-item">3</div>
+      <div class="carousel-item">4</div>
+    </div>
+  </div>
+    <button class="carousel-btn prev" data-carousel-btn="prev">prev</button>
+    <button class="carousel-btn next" data-carousel-btn="next">next</button>
+  
+  
+  <script>
+    const carouselBtn = document.querySelectorAll('[data-carousel-btn]')
+
+
+
+      // const currentElement = document.querySelector('.active')
+      // const items = document.querySelectorAll('.carousel-item')
+      // const idx = [...items].indexOf(currentElement)
+      // console.log(currentElement, items, idx)
+      // currentElement.classList.toggle('active')
+      // items[(idx+1)%items.length].classList.toggle('active')
+  </script>
+</body>
+</html>

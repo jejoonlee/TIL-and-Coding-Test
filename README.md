@@ -155,21 +155,23 @@
 | ---------- | ----------- | --------------- | ------------------------------------------------ |
 | Javascript | Basic / DOM | 2022년 9월 15일 | [링크](./Web/Javascript/Javascript_Basic_DOM.md) |
 | Javascript | 문법들      | 2022년 9월 16일 | [링크](./Web/Javascript/Javascript_문법.md)      |
+| Javascript | event       | 2022년 9월 19일 | [링크](./Web/Javascript/Javascript_event.md)     |
 
 
 
 #### 실습
 
-| Content     | Detail                | Date            | Link                                       |
-| ----------- | --------------------- | --------------- | ------------------------------------------ |
-| Web 2       | CSS Display           | 2022년 8월 30일 | [링크](./Web/실습/20220830/README.md)      |
-| Web 3       | CSS position, flexbox | 2022년 8월 31일 | [링크](./Web/실습/20220831/README.md)      |
-| Web 4       | CSS flexbox, nav bar  | 2022년 9월 1일  | [링크](./Web/실습/20220901/README.md)      |
-| Web Project | **PROJECT**           | 2022년 9월 2일  | [링크](./Web/실습/20220902/README.md)      |
-| Web 5       | CDN Bootstrap         | 2022년 9월 5일  | [링크](./Web/실습/20220905/README.md)      |
-| Web 6       | Bootstrap Components  | 2022년 9월 6일  | [링크](./Web/실습/20220906/실습/README.md) |
-| Web 7       | Bootstrap Grid        | 2022년 9월 7일  | [링크](./Web/실습/20220907/README.md)      |
-| Web 8       | **PROJECT**           | 2022년 9월 8일  | [링크](./Web/실습/20220908/README.md)      |
+| Content     | Detail                | Date            | Link                                             |
+| ----------- | --------------------- | --------------- | ------------------------------------------------ |
+| Web 2       | CSS Display           | 2022년 8월 30일 | [링크](./Web/실습/20220830/README.md)            |
+| Web 3       | CSS position, flexbox | 2022년 8월 31일 | [링크](./Web/실습/20220831/README.md)            |
+| Web 4       | CSS flexbox, nav bar  | 2022년 9월 1일  | [링크](./Web/실습/20220901/README.md)            |
+| Web Project | **PROJECT**           | 2022년 9월 2일  | [링크](./Web/실습/20220902/README.md)            |
+| Web 5       | CDN Bootstrap         | 2022년 9월 5일  | [링크](./Web/실습/20220905/README.md)            |
+| Web 6       | Bootstrap Components  | 2022년 9월 6일  | [링크](./Web/실습/20220906/실습/README.md)       |
+| Web 7       | Bootstrap Grid        | 2022년 9월 7일  | [링크](./Web/실습/20220907/README.md)            |
+| Web 8       | **PROJECT**           | 2022년 9월 8일  | [링크](./Web/실습/20220908/README.md)            |
+| Javascript  | Practice              | 2022년 9월 19일 | [링크](./Web/Javascript/실습/20220919/README.md) |
 
 
 

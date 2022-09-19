@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+    }
+
+    .modal{
+      display: none;
+    }
+    .overlay-modal-background{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.3);
+    }
+    
+    .overlay-modal{
+      position: relative;
+    }
+
+    .modal-box{
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      transform: translate(-50%);
+      padding: 20px;
+      border: solid 1px rgba(255, 255, 255);
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+      background-color: rgba(255, 255, 255, 0.6);
+      animation-name: modal-box-appear;
+      animation-duration: 0.4s;
+    }
+
+    @keyframes modal-box-appear{
+      from {top: -10px}
+      to {top: 10px}
+    }
+
+    .active{
+      display: block;
+    }
+
+    .modal-title{
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    #text-input{
+      width: 20rem;
+      margin: 0.2rem 0 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- modal 만들기 -->
+  <button class="modal-btn">Click for Modal</button>
+  <section class="modal">
+    <div class="overlay-modal-background"></div>
+    <div class="overlay-modal">
+      <div class="modal-box">
+        <p class="modal-title">Login</p>
+        <div class="email">
+          <p class="modal-detail">E-mail</p>
+            <!-- 입력값의 value를 받아오는 것 -->
+          <input type="text" id="text-input" class="email-input">
+        </div>
+        <div class="password">
+          <p class="modal-detail">Password</p>
+          <input type="password" id="text-input" class="password-input">
+        </div>
+        <div class="password-verify">
+          <p class="modal-detail">Password Verification</p>
+          <input type="password" id="text-input" class="password-verify-input">
+        </div>
+        <div class="submit-btn">
+          <button class="submit">Login</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    // 입력값의 value를 받아오는 것
+    const textInput = document.querySelector('#text-input')
+    textInput.addEventListener('input', function(event) {
+      console.log(event)
+      console.log(event.target)
+      console.log(event.target.input)
+    })
+
+    // Modal 만들기
+    const modalToggle = function() {
+      document.querySelector('.modal').classList.toggle('active')
+    }
+
+    const modalBtn = document.querySelector('.modal-btn')
+    modalBtn.addEventListener('click', modalToggle)
+
+    const modal = document.querySelector('.overlay-modal-background')
+    modal.addEventListener('click', modalToggle)
+
+    // 로그인 확인
+    const submit = document.querySelector('.submit')
+    const email = document.querySelector('.email-input')
+    const password = document.querySelector('.password-input')
+    const passwordV = document.querySelector('.password-verify-input')
+
+    submit.addEventListener('click', function() {
+      if (!email.value || !password.value || !passwordV.value) {
+        alert('빈칸을 채워주세요')
+        return
+      }
+      if (password.value.length < 7) {
+        alert('비밀번호 개수는 8개 이상입니다')
+        return
+      }
+
+      if ((password.value !== passwordV.value)) {
+        alert('비밀번호가 일치하지 않습니다')
+        return
+      }
+      if (!email.value.includes('@')) {
+        alert('이메일 형식이 틀립니다')
+        return
+      }
+    })
+  </script>
+</body>
+</html>
