@@ -11,15 +11,7 @@ see = list(map(int, input().split()))
 result = [0] * N
 
 for i in range(N):
-  if result[see[i]] == 0:
-    result[see[i]] = height[i]
-  
-  elif result[see[i]] != 0:
-    while True:
-      see[i] += 1
-      if result[see[i]] == 0:
-        result[see[i]] = height[i]
-        break
+
 
 
 print(result)
