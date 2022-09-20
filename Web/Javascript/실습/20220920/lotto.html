@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로또 번호 만들기</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      font-family: 'Nunito', sans-serif
+    }
+
+    .title{
+      margin: 1rem 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .ball-container{
+      display: flex;
+      justify-content: center;
+    }
+
+    .lotto{
+      max-width: 900px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #lotto-button{
+      margin-bottom: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(197, 197, 197);
+      font-weight: bold;
+    }
+
+    #lotto-button:hover{
+      cursor: pointer;
+      background-color: rgb(129, 129, 129);
+      transition: all ease-in 0.5s;
+    }
+
+    .ball{
+      width: 6rem;
+      height: 6rem;
+      margin: 0.5rem;
+      border-radius: 50%;
+      background-color: rgb(117, 3, 248);
+      color: white;
+      text-align: center;
+      line-height: 6rem;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">로또 번호</h1>
+  <div class="lotto">
+    <button id="lotto-button">랜덤 번호 받기</button>
+    <div class="result"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script>
+    const lottoBtn = document.querySelector('#lotto-button')
+
+    let clickNum = 0
+    // 로또 버튼을 눌렀을때 일어나는 함수
+    // 5번까지 가능
+    lottoBtn.addEventListener('click', function () {
+      if (clickNum !== 5) {
+        clickNum ++
+        console.log(clickNum)
+        return lotto()
+      } else {
+        document.querySelector('.result').reset
+        alert('새로운 로또 번호를 보고싶으시면 새로고침을 누르세요')
+      }
+    })
+    
+    
+    function lotto() {
+      
+      // 컨테이너를 만들기
+      // 버튼을 누르면 'div'라는 HTML 태그가 생성이되고 (createElement)
+      // classList.add를 통해서 'div'의 'class'를 정의한다
+      const ballContainer = document.createElement('div')
+      ballContainer.classList.add('ball-container')
+
+      // 숫자 생성
+      // lodash를 활용했다 (위에 CDN으로 있음)
+      const number = _.sampleSize(_.range(1,46), 6)
+      console.log(number)
+
+
+      // for문으로 버튼을 누를때마다 6개의 공이 생기게 하고
+      // i는 각 숫자 생성했을 때에 node의 인덱스가 되게 한다
+      for (let i = 0; i < 6; i++) {
+        
+        // 공 만들기
+        const ball = document.createElement('div')
+        ball.classList.add('ball')
+        // 컨테이너가 만들어질 때, 'ball'이 자식 요소로 뜨게 한다
+        ballContainer.appendChild(ball)
+
+        //  공 안에 숫자 넣기
+        ball.innerText = number[i]
+
+        switch (Math.floor(number[i] / 10)) {
+          case 0:
+            ball.style.backgroundColor = '#d9d90d';
+            break
+          case 1:
+            ball.style.backgroundColor = '#2570e8';
+            break
+          case 2:
+            ball.style.backgroundColor = '#e03636';
+          break
+          case 3:
+            ball.style.backgroundColor = '#707070';
+          break
+          case 4:
+            ball.style.backgroundColor = '#1ed106';
+          break
+        }
+      }
+
+      // 위에 컨테이너와 공은 버튼을 클릭할때 나타나는 요소다
+      // HTML에 있는 'result'와 연결을 하여, 버튼을 클릭 했을 때,
+      // 화면에 출력이 되도록 설정을 한다
+      const result = document.querySelector('.result')
+      result.appendChild(ballContainer)
+      //-------------------------------------------------------------
+    }
+  </script>
+  
+  </body>
+</html>

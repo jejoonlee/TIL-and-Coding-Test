@@ -172,6 +172,7 @@
 | Web 7       | Bootstrap Grid        | 2022년 9월 7일  | [링크](./Web/실습/20220907/README.md)            |
 | Web 8       | **PROJECT**           | 2022년 9월 8일  | [링크](./Web/실습/20220908/README.md)            |
 | Javascript  | Practice              | 2022년 9월 19일 | [링크](./Web/Javascript/실습/20220919/README.md) |
+| Javascript  | Practice              | 2022년 9월 20일 | [링크](./Web/Javascript/실습/20220920/README.md) |
 
 
 
