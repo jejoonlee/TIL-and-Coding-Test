@@ -25,6 +25,8 @@
 - [Git/Github](#gitgithub)
 - [Markdown](#markdown)
 - [Python](#python)
+  - [Django](#django)
+
 - [SQLite](#SQLite)
 - [Web](#web)
   - [Javascript](#javascript)
@@ -119,6 +121,16 @@
 | Python 7  | 응용 / 심화          | 2022년 7월 21 ~ 22일 |         [링크](./Python/python_extra.md)          |
 | 📌**정리** | 명령문/ 함수/methods | 2022년 8월 1일       |  [링크](./Python/python_operators_functions.md)   |
 | ✍️문제풀이 | 수업                 | 2022년 8월 9일       |             [링크](./Python/문제풀이)             |
+
+> **Django**
+
+| Content | Detail | Date            | Link                                    |
+| ------- | ------ | --------------- | --------------------------------------- |
+| Django  | Basic  | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
+
+
+
+
 
 - ### SQLite
 
