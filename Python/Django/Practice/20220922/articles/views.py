@@ -23,8 +23,6 @@ def eat(request):
     'image' : food_img[idx],
   }
 
-
-
   return render(request, 'index.html', context)
 
 def lotto(request):

@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**                     |
 | --------------------- | -------- | ----------- | ------------------------------------ |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./문제풀이/Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.09.18  | [링크](./문제풀이/SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.09.20  | [링크](./문제풀이/Baekjoon)          |
+| **SW Expert Academy** | 문제풀이 | 2022.09.22  | [링크](./문제풀이/SW_Expert_Academy) |
+| **Baekjoon**          | 문제풀이 | 2022.09.21  | [링크](./문제풀이/Baekjoon)          |
 | **Programmers**       | 문제풀이 | 2022.09.14  | [링크](./문제풀이/Programmers)       |
 
 
@@ -124,9 +124,10 @@
 
 > **Django**
 
-| Content | Detail | Date            | Link                                    |
-| ------- | ------ | --------------- | --------------------------------------- |
-| Django  | Basic  | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
+| Content | Detail                       | Date            | Link                                    |
+| ------- | ---------------------------- | --------------- | --------------------------------------- |
+| Django  | Basic                        | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
+| Django  | MTV ,요청과 응답 (연습 포함) | 2022년 9월 22일 | [링크](./Python/Django/Django_2.md)     |
 
 
 
