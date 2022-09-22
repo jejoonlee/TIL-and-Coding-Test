@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <style>
+    .button{
+      margin-bottom: 1rem;
+      padding: 0.5rem 3rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center my-3">로또</h1>
+  <div class="d-flex justify-content-center mb-2">
+    <a class="btn btn-secondary button" href="http://localhost:8000/lotto/" role="button">새로고침</a>
+  </div>
+    <section class="lotto d-flex flex-column mb-5">
+    <div class="container d-flex justify-content-center">
+      <p class="fs-2 me-3">{{ cnt1 }}:</p>
+      {% for num in lotto1 %}
+        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+      {% endfor %}   
+    </div>
+    <div class="container d-flex justify-content-center">
+      <p class="fs-2 me-3">{{ cnt2 }}:</p>
+      {% for num in lotto2 %}
+        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+      {% endfor %}   
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <p class="fs-2 me-3">{{ cnt3 }}:</p>
+      {% for num in lotto3 %}
+        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+      {% endfor %}   
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <p class="fs-2 me-3">{{ cnt4 }}:</p>
+      {% for num in lotto4 %}
+        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+      {% endfor %}   
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <p class="fs-2 me-3">{{ cnt5 }}:</p>
+      {% for num in lotto5 %}
+        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+      {% endfor %}   
+    </div>
+  </section>
+
+  <section class="last-week">
+    <h2 class="text-center mb-3">저번주 결과</h2>
+    <div class="container d-flex justify-content-center">
+      {% for num in lastWeek %}
+        <p class="mx-3 rounded-circle bg-info text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+      {% endfor %}   
+      <p class="fw-bold ms-3 rounded-circle bg-secondary text-white fs-2 text-center" style="width: 3rem; height: 3rem;">{{bonus}}</p>
+  </section>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

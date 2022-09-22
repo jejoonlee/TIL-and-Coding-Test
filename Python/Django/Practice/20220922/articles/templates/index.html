@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What to eat?</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Nunito&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
+  <style>
+    *{
+      font-family: 'Nanum Pen Script', cursive;
+    }
+    
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    .button{
+      margin-bottom: 1rem;
+      padding: 0.5rem 3rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold
+    }
+  </style>
+</head>
+
+<body>
+  <section class="d-flex flex-column align-items-center">
+    <h1 class="text-center mt-5 mb-3">오늘의 추천 메뉴는 <span class="p-1 rounded text-bg-primary">{{food}}</span>입니다.</h1>
+    <a class="btn btn-secondary button" href="http://localhost:8000/today-eat/" role="button">새로고침</a>
+    <img src="{{image}}" class="rounded mx-auto d-block" alt="음식사진" style="height: 500px;">
+  </section>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
