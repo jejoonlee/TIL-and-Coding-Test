@@ -25,34 +25,34 @@
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt1 }}:</p>
       {% for num in lotto1 %}
-        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
       {% endfor %}   
     </div>
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt2 }}:</p>
       {% for num in lotto2 %}
-        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
       {% endfor %}   
     </div>
 
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt3 }}:</p>
       {% for num in lotto3 %}
-        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
       {% endfor %}   
     </div>
 
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt4 }}:</p>
       {% for num in lotto4 %}
-        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
       {% endfor %}   
     </div>
 
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt5 }}:</p>
       {% for num in lotto5 %}
-        <p class="mx-3 rounded-circle bg-primary text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
       {% endfor %}   
     </div>
   </section>
@@ -61,13 +61,36 @@
     <h2 class="text-center mb-3">저번주 결과</h2>
     <div class="container d-flex justify-content-center">
       {% for num in lastWeek %}
-        <p class="mx-3 rounded-circle bg-info text-white fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-cir fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
       {% endfor %}   
-      <p class="fw-bold ms-3 rounded-circle bg-secondary text-white fs-2 text-center" style="width: 3rem; height: 3rem;">{{bonus}}</p>
+      <p class="ball fw-bold ms-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;">{{bonus}}</p>
   </section>
 
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script>  
+    const ball = document.querySelectorAll('.ball')
+
+    for (let i = 0; i < ball.length; i++) {
+      switch (Math.floor(ball[i].innerText/ 10)) {
+        case 0:
+          ball.style.backgroundColor = '#d9d90d';
+          break
+        case 1:
+          ball.style.backgroundColor = '#2570e8';
+          break
+        case 2:
+          ball.style.backgroundColor = '#e03636';
+        break
+        case 3:
+          ball.style.backgroundColor = '#707070';
+        break
+        case 4:
+          ball.style.backgroundColor = '#1ed106';
+        break
+      }
+    }
+  </script>
 </body>
 </html>
