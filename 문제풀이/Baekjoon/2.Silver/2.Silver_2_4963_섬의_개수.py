@@ -22,7 +22,6 @@ while True:
     # 지도 만들기
     map_ = [list(map(int, input().split())) for _ in range(m)]
 
-
     for r in range(m):
         for c in range(n):
             

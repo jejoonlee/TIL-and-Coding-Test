@@ -27,7 +27,6 @@ def bfs(row, column):
           queue.append((sr, sc))
 
 
-
 while True:
 
   w, h = map(int, input().split())

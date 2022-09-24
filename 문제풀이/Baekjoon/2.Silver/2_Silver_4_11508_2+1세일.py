@@ -11,17 +11,17 @@ sys.stdin = open('input.txt')
 
 N = int(input())
 
-purchase = []
-for _ in range(N):
-  C = int(input())
-  purchase.append(C)
+# purchase = []
+# for _ in range(N):
+#   C = int(input())
+#   purchase.append(C)
+
+purchase = [int(input()) for _ in range(N)]
 
 purchase.sort(reverse = True)
-P = len(purchase)
-
 result = 0
 
-for p in range(P):
+for p in range(N):
   if not(p % 3 == 2):
     result += purchase[p]
 

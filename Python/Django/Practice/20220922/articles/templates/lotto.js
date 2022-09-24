@@ -1,4 +1,3 @@
-
 const ball = document.querySelector('.ball')
 const number = ball.innerText
 

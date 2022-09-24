@@ -36,7 +36,6 @@ def lotto(request):
 
   cnt = [0, 0, 0, 0, 0]
 
-  print(last_week)
   for num in range(len(last_week)):
     # 6개가 연속해서 있다면, 1등
     if num != 6:
@@ -81,8 +80,6 @@ def lotto(request):
 
       if last_week[num] in num5:
         cnt[4] += 1
-
-  print(cnt)
 
   for i in range(len(cnt)):
     if cnt[i] == 0:
