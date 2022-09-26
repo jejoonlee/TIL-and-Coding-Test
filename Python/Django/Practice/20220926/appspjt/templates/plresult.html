@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}<title>나의 해리포터 등장인물?</title>{% endblock %}
+
+{% block style %} 
+<style>
+  html{
+    background-color: rgb(160,0,0);
+  }
+
+  body{
+    background-color: transparent;
+    font-family: 'Nanum Pen Script', cursive;
+  }
+  
+  .question{
+    background-color: rgb(192, 192, 192);
+    box-shadow: 3px 3px 20px rgb(85, 85, 85);
+    font-size: 3rem;
+  }
+
+  .result{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+
+  strong{
+    color: rgb(192, 192, 192);
+  }
+
+  .image{
+    height: 400px;
+  }
+</style>
+{% endblock %}  
+
+{% block content %}
+  <h1 class="question text-center py-3">{{ name }}의 해리포터 등장인물은?</h1>
+  <p class="result text-center">당신은 <strong>{{ character }}</strong> 입니다</p>
+  <div class="d-flex justify-content-center">
+    <img class="image" src="{{ charimg }}" alt="{{ character }} 사진" srcset="">
+  </div>
+{% endblock %}

@@ -124,12 +124,11 @@
 
 > #### **Django**
 
-| Content | Detail                       | Date            | Link                                    |
-| ------- | ---------------------------- | --------------- | --------------------------------------- |
-| Django  | Basic                        | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
-| Django  | MTV ,요청과 응답 (연습 포함) | 2022년 9월 22일 | [링크](./Python/Django/Django_2.md)     |
-
-
+| Content | Detail                                              | Date            | Link                                    |
+| ------- | --------------------------------------------------- | --------------- | --------------------------------------- |
+| Django  | Basic                                               | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
+| Django  | MTV ,요청과 응답 (연습 포함)                        | 2022년 9월 22일 | [링크](./Python/Django/Django_2.md)     |
+| Django  | Variable routing / Sending and Retrieving form data | 2202년 9월 26일 | [링크](./Python/Django/Django_3.md)     |
 
 
 

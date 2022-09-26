@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>가짜 검색창</h1>
+  <!-- action에 주소창을 넣으면, submit을 눌렀을 때에, 그 주소로 가게 한다 -->
+  <!-- 단 action에 주소를 넣으면, '검색'에 넣으면, 그냥 그 주소로 간다 -->
+  <!-- 예) action='https://www.naver.com' 이면 네이버로 들어 간다 -->
+
+  <!-- action에 google 검색 url을 넣고-->
+  <!-- input의 name에 google에 사용하는 변수 이름 즉 'q'를 넣으면 -->
+  <!-- 검색에 단어를 쓸 경우 google로 검색이 된다 -->
+  <!-- https://www.google.com/search?q=winner -->
+  <!-- 'winner'를 검색했을 때에 나오는 url -->
+
+  <!-- https://www.google.com/search? => form의 action에 정의 내용 -->
+  <!-- q=winner => input으로 정의한 데이터 -->
+  <form action="https://www.google.com/search">
+    검색: <input type="text" name="q">
+    <input type="button" value="Submit">
+  </form>
+
+  <!-- https://search.naver.com/search.naver?query=winner -->
+  <!-- 'winner'를 검색했을 때에 나오는 url -->
+  <form action="https://search.naver.com/search.naver">
+    검색: <input type="text" name="query">
+    <input type="button" value="Submit">
+  </form>
+</body>
+</html>

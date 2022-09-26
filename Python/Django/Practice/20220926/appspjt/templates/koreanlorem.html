@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Korean Lorem Lipsun</title>{% endblock %}
+{% block style %} 
+
+{% endblock %}
+
+{% block content %}
+  <form action="/kloremresult" class="form container mt-5">
+    <div class="mb-3">
+      <label for="paragraph" class="form-label">문단의 수</label>
+      <input type="number" class="form-control" name="para" id="paragraph">
+    </div>
+    <div class="mb-3">
+      <label for="words" class="form-label">문단별 단어의 수</label>
+      <input type="number" class="form-control" name="words" id="words">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}

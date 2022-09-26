@@ -24,49 +24,35 @@
     <section class="lotto d-flex flex-column mb-5">
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt1 }}:</p>
-      {% for num in lotto1 %}
-        {% if 1 <= num < 10 %}
-          <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: #d9d90d;"> {{num}} </p>
-        {% endif %}
-        {% if 10 <= num < 20 %}
-          <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: #d9d90d;"> {{num}} </p>
-        {% endif %}
-        {% if 20 <= num < 30 %}
-          <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: #d9d90d;"> {{num}} </p>
-        {% endif %}
-        {% if 30 <= num < 40 %}
-          <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: #d9d90d;"> {{num}} </p>
-        {% endif %}
-        {% if 40 <= num < 46 %}
-          <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: #d9d90d;"> {{num}} </p>
-        {% endif %}
-      {% endfor %}   
+      {% for num in lotto2 %}
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: sky-blue"> {{num}} </p>
+      {% endfor %} 
     </div>
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt2 }}:</p>
       {% for num in lotto2 %}
-        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: sky-blue"> {{num}} </p>
       {% endfor %}   
     </div>
 
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt3 }}:</p>
       {% for num in lotto3 %}
-        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: sky-blue"> {{num}} </p>
       {% endfor %}   
     </div>
 
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt4 }}:</p>
       {% for num in lotto4 %}
-        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: sky-blue"> {{num}} </p>
       {% endfor %}   
     </div>
 
     <div class="container d-flex justify-content-center">
       <p class="fs-2 me-3">{{ cnt5 }}:</p>
       {% for num in lotto5 %}
-        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem; background-color: sky-blue"> {{num}} </p>
       {% endfor %}   
     </div>
   </section>
@@ -75,7 +61,7 @@
     <h2 class="text-center mb-3">저번주 결과</h2>
     <div class="container d-flex justify-content-center">
       {% for num in lastWeek %}
-        <p class="ball mx-3 rounded-cir fs-2 text-center" style="width: 3rem; height: 3rem;"> {{num}} </p>
+        <p class="ball mx-3 rounded-cir fs-2 text-center" style="width: 3rem; height: 3rem; background-color: sky-blue"> {{num}} </p>
       {% endfor %}   
       <p class="ball fw-bold ms-3 rounded-circle fs-2 text-center" style="width: 3rem; height: 3rem;">{{bonus}}</p>
   </section>

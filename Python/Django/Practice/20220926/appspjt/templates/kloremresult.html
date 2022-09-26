@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Korean Lorem Lipsun</title>{% endblock %}
+{% block style %} 
+
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-center my-5">Korean Lorem Lipsun</h1>
+  <section class="container">
+    {% for r in result%}
+      <div class="mb-4">
+        <p>{{ r|join:' ' }}</p>
+        <hr>
+      </div>
+    {% endfor %}
+  </section>
+{% endblock %}

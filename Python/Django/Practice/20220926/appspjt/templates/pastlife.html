@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}<title>나의 해리포터 등장인물?</title>{% endblock %}
+{% block style %} 
+<style>
+  html{
+    background-color: rgb(160,0,0);
+  }
+
+  body{
+    background-color: transparent;
+    font-family: 'Nanum Pen Script', cursive;
+  }
+  
+  .box{
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(56, 56, 56);
+    background-color: rgb(192, 192, 192);
+  }
+
+  .sortinghat{
+    width: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .title{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .name{
+    font-size: 1.5rem;
+  }
+
+  .name-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label, 
+  input{
+    margin-bottom: 0.5rem;
+  }
+
+  #name{
+    border-radius: 5px;
+  }
+
+  .submit{
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1.2rem;
+    background-color: rgb(235, 235, 235);
+  }
+
+  .submit:hover{
+    background-color: rgb(129, 129, 129);
+    transition: all 0.3s ease;
+  }
+  
+</style>
+{% endblock %}
+
+{% block content %}
+  <section class="box d-flex flex-column align-items-center">
+    <img class="sortinghat" src="https://www.pngkey.com/png/full/106-1067907_sorting-hat-png-harry-potter-sorting-hat-png.png" alt="해리포터 모자">
+    <h1 class="title mb-3">나의 해리포터 등장인물?</h1>
+    <!-- action에서 입력 후 연결하고 싶은 창의 이름을 입력 -->
+    <form action="/plresult" class="name-form">
+      <label for="name" class="name">이름을 입력해주세요</label>
+      <input type="text" name="result" id="name">
+      <input type="submit" value="Submit" class="submit">
+    </form>
+  </section>
+{% endblock %}
