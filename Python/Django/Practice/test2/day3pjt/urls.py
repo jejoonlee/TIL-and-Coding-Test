@@ -1,4 +1,4 @@
-"""test2pjt URL Configuration
+"""day3pjt URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -14,14 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from articles import views
+from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('index/', views.index),
-    path('ping/', views.ping),
-    path('pong/', views.pong),
+    path("admin/", admin.site.urls),
+    path('articles/', include('articles.urls')),
+    path('practices/', include('practices.urls')),
 ]
-
-#  /ping : form 태그 및 input 태그를 통해 사용자 입력을 받아 pong/으로 보내는 것

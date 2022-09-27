@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>방명록</h1>
+  <div>
+    <h2>글 목록</h2>
+    {% for c in saved %}
+      <p>{{ c.content }}</p>
+    {% endfor %}
+  </div>
+  <div>
+    <h2>글 작성</h2>
+    <form action="/articles/create/" method="GET">
+      <input type="text" name="content">
+      <input type="submit">
+    </form>
+  </div>
+{% endblock %}

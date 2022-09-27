@@ -128,7 +128,8 @@
 | ------- | --------------------------------------------------- | --------------- | --------------------------------------- |
 | Django  | Basic                                               | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
 | Django  | MTV ,요청과 응답 (연습 포함)                        | 2022년 9월 22일 | [링크](./Python/Django/Django_2.md)     |
-| Django  | Variable routing / Sending and Retrieving form data | 2202년 9월 26일 | [링크](./Python/Django/Django_3.md)     |
+| Django  | Variable routing / Sending and Retrieving form data | 2022년 9월 26일 | [링크](./Python/Django/Django_3.md)     |
+| Django  | Base template / Django URLS / 데이터 저장 밑 사용   | 2022년 9월 27일 | [링크](./Python/Django/Django_4.md)     |
 
 
 
