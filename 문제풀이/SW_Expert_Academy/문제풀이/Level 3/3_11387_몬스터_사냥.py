@@ -8,7 +8,10 @@ T = int(input())
 
 for t in range(1, T + 1):
   D, L, N = map(int, input().split())
+  result = 0
 
-  result = D * (1 + L * (N * 1/100))
+  for n in range(N):
+    damage = D * (1 + n * (L / 100))
+    result += damage
 
-  print(f'#{t} {result}')
+  print(f'#{t} {int(result)}')

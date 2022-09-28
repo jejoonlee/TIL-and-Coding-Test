@@ -12,7 +12,7 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**                     |
 | --------------------- | -------- | ----------- | ------------------------------------ |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./문제풀이/Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.09.22  | [링크](./문제풀이/SW_Expert_Academy) |
+| **SW Expert Academy** | 문제풀이 | 2022.09.27  | [링크](./문제풀이/SW_Expert_Academy) |
 | **Baekjoon**          | 문제풀이 | 2022.09.21  | [링크](./문제풀이/Baekjoon)          |
 | **Programmers**       | 문제풀이 | 2022.09.14  | [링크](./문제풀이/Programmers)       |
 
@@ -124,12 +124,13 @@
 
 > #### **Django**
 
-| Content | Detail                                              | Date            | Link                                    |
-| ------- | --------------------------------------------------- | --------------- | --------------------------------------- |
-| Django  | Basic                                               | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
-| Django  | MTV ,요청과 응답 (연습 포함)                        | 2022년 9월 22일 | [링크](./Python/Django/Django_2.md)     |
-| Django  | Variable routing / Sending and Retrieving form data | 2022년 9월 26일 | [링크](./Python/Django/Django_3.md)     |
-| Django  | Base template / Django URLS / 데이터 저장 밑 사용   | 2022년 9월 27일 | [링크](./Python/Django/Django_4.md)     |
+| Content | Detail                                                       | Date            | Link                                    |
+| ------- | ------------------------------------------------------------ | --------------- | --------------------------------------- |
+| Django  | Basic                                                        | 2022년 9월 21일 | [링크](./Python/Django/Django_basic.md) |
+| Django  | MTV ,요청과 응답 (연습 포함)                                 | 2022년 9월 22일 | [링크](./Python/Django/Django_2.md)     |
+| Django  | Variable routing / Sending and Retrieving form data          | 2022년 9월 26일 | [링크](./Python/Django/Django_3.md)     |
+| Django  | Base template / Django URLS / 데이터 저장 밑 사용, CRUD (create, read) | 2022년 9월 27일 | [링크](./Python/Django/Django_4.md)     |
+| Django  | CRUD                                                         | 2022년 9월 28일 | [링크](./Python/Django/Django_5.md)     |
 
 
 

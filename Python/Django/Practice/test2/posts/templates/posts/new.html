@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>새로운 글 쓰기</h1>
+
+<form action="{% url 'posts:create' %}">
+  제목: <input type="text" name="title"><br>
+  내용: <input type="content" name="content">
+  <input type="submit" value="제출">
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>게시판</h1>
+
+<ul>
+  {% for p in posts %}
+    <li>ID : {{ p.id }} | 제목 : {{ p.title }} | 내용 : {{ p.content }}</li>
+    <a href="">
+      [수정]
+    </a>/
+    <!-- 삭제 페이지를 들어가서, 글을 삭제한다. 그러기 위해 글의 id를 가지고 와야 한다 -->
+    <a href="/posts/delete/{{ p.id }}">
+      [삭제]
+    </a>
+  {% endfor %}
+</ul>
+
+<a href="{% url 'posts:new' %}">새로운 글 쓰기</a>
+
+{% endblock %}

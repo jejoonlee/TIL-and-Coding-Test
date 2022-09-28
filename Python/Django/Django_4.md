@@ -6,7 +6,7 @@
 
 [Django URL](#%EF%B8%8F-Django-url)
 
-[DB 이용](#%EF%B8%8F-DB-이용)
+[DB 이용](#%EF%B8%8F-DB-이용) - CRUD (Create)
 
 
 
