@@ -32,7 +32,12 @@ def delete(request, pk):
 
 def complete(request, pk):
   complete = Todo.objects.get(id=pk)
-  complete.completed = True
-  complete.save()
+
+  if complete.completed == False:
+    complete.completed = True
+    complete.save()
+  elif complete.completed == True:
+    complete.completed = False
+    complete.save()
 
   return redirect('todos:index')

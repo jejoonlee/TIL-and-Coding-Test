@@ -5,8 +5,8 @@
 
 <ul>
   {% for p in posts %}
-    <li>ID : {{ p.id }} | 제목 : {{ p.title }} | 내용 : {{ p.content }}</li>
-    <a href="">
+    <li>ID : {{ p.id }} | <a href="{% url 'posts:detail' p.id %}">제목 : {{ p.title }}</a></li>
+    <a href="{% url 'posts:edit' p.id %}">
       [수정]
     </a>/
     <!-- 삭제 페이지를 들어가서, 글을 삭제한다. 그러기 위해 글의 id를 가지고 와야 한다 -->

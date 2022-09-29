@@ -131,6 +131,7 @@
 | Django  | Variable routing / Sending and Retrieving form data          | 2022년 9월 26일 | [링크](./Python/Django/Django_3.md)     |
 | Django  | Base template / Django URLS / 데이터 저장 밑 사용, CRUD (create, read) | 2022년 9월 27일 | [링크](./Python/Django/Django_4.md)     |
 | Django  | CRUD                                                         | 2022년 9월 28일 | [링크](./Python/Django/Django_5.md)     |
+| Django  | CRUD (detail page 만들기), Update                            | 2022년 9월 29일 | [링크](./Python/Django/Django_6.md)     |
 
 
 

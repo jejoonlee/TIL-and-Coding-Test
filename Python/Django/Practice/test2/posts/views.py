@@ -40,3 +40,34 @@ def delete(request, pk):
     post.delete()
 
     return redirect("posts:index")
+
+# 상세 내용
+def detail(request, pk):
+
+    context = {
+        'detail' : Post.objects.get(id=pk),
+    }
+
+    return render(request, 'posts/detail.html', context)
+
+# Update은 edit과 update 페이지가 있어야 함
+def edit(request, pk):
+
+    context = {
+        'edit' : Post.objects.get(id=pk),
+    }
+
+    return render(request, 'posts/edit.html', context)
+
+def update(request, pk):
+    new_title = request.GET.get('title_edit')
+    new_content = request.GET.get('content_edit')
+
+    post = Post.objects.get(id=pk)
+
+    # 수정 후 저장
+    post.title = new_title
+    post.content = new_content
+    post.save()
+
+    return redirect('posts:detail', post.pk)

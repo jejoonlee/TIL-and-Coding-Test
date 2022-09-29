@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>글 수정하기</h1>
+
+<form action="{% url 'posts:update' edit.id %}">
+  <!-- value에 어떤 내용일 수정되는지 보여준다 -->
+  제목: <input type="text" name="title_edit" value="{{ edit.title }}"><br>
+  내용: <input type="content" name="content_edit" value="{{ edit.content }}">
+  <!-- input 말고 textarea는 value 기능이 없어서, 데이터를 테그 사이에 넣는다 -->
+  <input type="submit" value="제출">
+</form>
+
+
+{% endblock %}

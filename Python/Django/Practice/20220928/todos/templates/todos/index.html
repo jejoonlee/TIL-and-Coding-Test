@@ -46,7 +46,7 @@
           <th scope="col">생성 날짜</th>
           <th scope="col">마감 기한</th>
           <th scope="col">진행 상태</th>
-          <th scope="col">상태 변경</th>
+          <th scope="col">완료 상태</th>
           <th scope="col">삭제</th>
         </tr>
       </thead>
@@ -60,7 +60,7 @@
               <td>{{ do.created_at }}</td>
               <td>{{ do.deadline }}</td>
               <td>{{ do.completed }}</td>
-              <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">변경</a></td>
+              <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">상태</a></td>
               <td><a class="btn btn-danger" href="/todos/delete/{{ do.pk }}" role="button">삭제</a></td>
             </tr>
           {% elif do.completed == True %}
@@ -71,7 +71,7 @@
               <td class="text-decoration-line-through">{{ do.created_at }}</td>
               <td class="text-decoration-line-through">{{ do.deadline }}</td>
               <td class="text-decoration-line-through">{{ do.completed }}</td>
-              <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">변경</a></td>
+              <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">상태</a></td>
               <td><a class="btn btn-danger" href="/todos/delete/{{ do.pk }}" role="button">삭제</a></td>
             </tr>
           {% endif %}

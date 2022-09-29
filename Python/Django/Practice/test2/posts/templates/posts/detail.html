@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>detail.html</h1>
+<h2>제목 : {{ detail.title }}</h2>
+<p>내용 : {{ detail.content }}</p>
+
+
+<a href="{% url 'posts:index' %}">뒤로 가기</a>
+
+{% endblock %}
