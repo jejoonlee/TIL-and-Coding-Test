@@ -9,15 +9,20 @@
 <h1 class="text-center my-3">내가 할 일</h1>
   <div class="container mt-3">
     <form action="{% url 'todos:create' %}">
-      <!-- content -->
+      <!-- title -->
       <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1" maxlength="80" style="padding: 6px 25px;">할 일</span>
-        <input type="text" class="form-control" name="content">
+        <input type="text" class="form-control" name="title" required>
+      </div>
+      <!-- content -->
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="content"></textarea>
+        <label for="floatingTextarea2">내용</label>
       </div>
       <!-- priority -->
       <div class="input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">우선순위</label>
-        <select class="form-select" id="inputGroupSelect01" name="priority">
+        <select class="form-select" id="inputGroupSelect01" name="priority" required>
           <option selected>선택</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -29,55 +34,73 @@
       <!-- deadline -->
       <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1">마감일자</span>
-        <input type="date" class="form-control" name="dday">
+        <input type="date" class="form-control" name="dday" required>
       </div>
+      <div class="d-flex justify-content-center">
       <!-- submit button -->
-      <button type="submit" class="btn btn-primary">할 일 추가</button>
+        <button type="submit" class="btn btn-primary px-5">할 일 추가</button>
+      </div>
     </form>
   </div>
 
-  <section class="lists container mt-5">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="d-none">id</th>
-          <th scope="col">우선순위</th>
-          <th scope="col">할일 내용</th>
-          <th scope="col">생성 날짜</th>
-          <th scope="col">마감 기한</th>
-          <th scope="col">진행 상태</th>
-          <th scope="col">완료 상태</th>
-          <th scope="col">삭제</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for do in todo%}
-          {% if do.completed == False %}
-            <tr>
-              <td class="d-none">{{ do.pk }}</td>
-              <td>{{ do.priority }}</td>
-              <td>{{ do.content }}</td>
-              <td>{{ do.created_at }}</td>
-              <td>{{ do.deadline }}</td>
-              <td>{{ do.completed }}</td>
-              <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">상태</a></td>
-              <td><a class="btn btn-danger" href="/todos/delete/{{ do.pk }}" role="button">삭제</a></td>
-            </tr>
-          {% elif do.completed == True %}
-            <tr>
-              <td class="d-none">{{ do.pk }}</td>
-              <td class="text-decoration-line-through">{{ do.priority }}</td>
-              <td class="text-decoration-line-through">{{ do.content }}</td>
-              <td class="text-decoration-line-through">{{ do.created_at }}</td>
-              <td class="text-decoration-line-through">{{ do.deadline }}</td>
-              <td class="text-decoration-line-through">{{ do.completed }}</td>
-              <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">상태</a></td>
-              <td><a class="btn btn-danger" href="/todos/delete/{{ do.pk }}" role="button">삭제</a></td>
-            </tr>
-          {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
+
+  <!-- collapse 기능 -->
+  <section class="posts container mt-4">
+    <p>
+      <a class="btn btn-outline-primary w-100" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        내가 할 일들 보기
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <div class="table-responsive-xl">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="d-none">id</th>
+                <th scope="col">우선순위</th>
+                <th scope="col">할 일</th>
+                <th scope="col">생성 날짜</th>
+                <th scope="col">마감 기한</th>
+                <th scope="col">진행 상태</th>
+                <th scope="col">수정하기</th>
+                <th scope="col">완료 상태</th>
+                <th scope="col">삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for do in todo%}
+                {% if do.completed == False %}
+                  <tr>
+                    <td class="d-none">{{ do.pk }}</td>
+                    <td>{{ do.priority }}</td>
+                    <td><a href="{% url 'todos:detail' do.pk %}">{{ do.title }}</a></td>
+                    <td>{{ do.created_at }}</td>
+                    <td>{{ do.deadline }}</td>
+                    <td>{{ do.completed }}</td>
+                    <td><a class="btn btn-primary" href="{% url 'todos:edit' do.pk %}" role="button">수정</a></td>
+                    <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">상태</a></td>
+                    <td><a class="btn btn-danger" href="/todos/delete/{{ do.pk }}" role="button">삭제</a></td>
+                  </tr>
+                {% elif do.completed == True %}
+                  <tr>
+                    <td class="d-none">{{ do.pk }}</td>
+                    <td class="text-decoration-line-through">{{ do.priority }}</td>
+                    <td class="text-decoration-line-through">{{ do.title }}</td>
+                    <td class="text-decoration-line-through">{{ do.created_at }}</td>
+                    <td class="text-decoration-line-through">{{ do.deadline }}</td>
+                    <td class="text-decoration-line-through">{{ do.completed }}</td>
+                    <td><a class="btn btn-primary" href="{% url 'todos:edit' do.pk %}" role="button">수정</a></td>
+                    <td><a class="btn btn-primary" href="/todos/complete/{{ do.pk }}" role="button">상태</a></td>
+                    <td><a class="btn btn-danger" href="/todos/delete/{{ do.pk }}" role="button">삭제</a></td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </section>
 
 

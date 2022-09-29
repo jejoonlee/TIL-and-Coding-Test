@@ -29,4 +29,28 @@ while True:
     land[r][c] = 2
     result += 1
 
+    for i in range(4):
+      mr = dr[(d+3) % 4] + r
+      mc = dc[(d+3) % 4] + c
+      d = (d+3) % 4
+
+      if land[mr][mc] == 0:
+        r, c = mr, mc
+        break
+
+  elif land[r + dr[((d+2) % 4)]][c + dc[((d+2) % 4)]] != 1:
+    r, c = r + dr[((d+2) % 4)], c + dc[((d+2) % 4)]
+
+    for i in range(4):
+      mr = dr[(d+3) % 4] + r
+      mc = dc[(d+3) % 4] + c
+      d = (d+3) % 4
+
+      if land[mr][mc] == 0:
+        r, c = mr, mc
+        break
   
+  elif land[r + dr[((d+2) % 4)]][c + dc[((d+2) % 4)]] == 1:
+    break
+
+print(result)

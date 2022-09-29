@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>To do list: edit</title>{% endblock %}
+{% block script %}
+{% endblock %}
+
+
+{% block content %}
+<h1 class="text-center my-3">수정하기</h1>
+  <div class="container mt-3">
+    <form action="{% url 'todos:update' post.id %}">
+      <!-- title -->
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1" maxlength="80" style="padding: 6px 25px;">할 일</span>
+        <input type="text" class="form-control" name="edit_title" value="{{ post.title }}">
+      </div>
+      <!-- content -->
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="edit_content" value="{{ post.title }}"></textarea>
+        <label for="floatingTextarea2">내용</label>
+      </div>
+      <!-- priority -->
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">우선순위</label>
+        <select class="form-select" id="inputGroupSelect01" name="edit_priority">
+          <option selected >{{ post.priority }}</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <!-- deadline -->
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon1">마감일자</span>
+        <input type="date" class="form-control" name="edit_dday" aria-describedby="deadlineHelp" required>
+      </div>
+      <div id="deadlineHelp" class="form-text mb-3">마감일자를 다시 설정해주세요</div>
+      <!-- submit button -->
+      <a class="btn btn-danger" href="{% url 'todos:index' %}" role="button">변경 취소</a>
+      <button type="submit" class="btn btn-primary">변경</button>
+    </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Document</title> {% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="container card my-5">
+  <div class="card-body">
+    <h1 class="card-title text-center">{{ post.title }}</h5>
+    <div class="d-flex justify-content-center my-3">
+      <h6 class="card-subtitle me-4 text-muted">완료 상태: {{ post.completed }}</h6>
+      <h6 class="card-subtitle me-4 text-muted">우선 순위: {{ post.priority }}</h6>
+      <h6 class="card-subtitle me-4 text-muted">생성 날짜: {{ post.created_at }}</h6>
+      <h6 class="card-subtitle me-4 text-muted">마감 날짜: {{ post.deadline }}</h6>
+    </div>
+    <h4 class="card-text">{{ post.content }}</p>
+    <a href="{% url 'todos:index' %}" class="btn btn-primary">뒤로가기</a>
+    <a href="{% url 'todos:edit' post.id %}" class="btn btn-danger">변경하기</a>
+  </div>
+</div>
+
+<section class="posts container mt-4">
+  <p>
+    <a class="btn btn-outline-primary w-100" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      내가 할 일들 보기
+    </a>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <div class="table-responsive-xl">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="d-none">id</th>
+              <th scope="col">우선순위</th>
+              <th scope="col">할 일</th>
+              <th scope="col">생성 날짜</th>
+              <th scope="col">마감 기한</th>
+              <th scope="col">진행 상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for do in allposts%}
+              {% if do.completed == False %}
+                <tr>
+                  <td class="d-none">{{ do.pk }}</td>
+                  <td>{{ do.priority }}</td>
+                  <td><a href="{% url 'todos:detail' do.pk %}">{{ do.title }}</a></td>
+                  <td>{{ do.created_at }}</td>
+                  <td>{{ do.deadline }}</td>
+                  <td>{{ do.completed }}</td>
+                </tr>
+              {% elif do.completed == True %}
+                <tr>
+                  <td class="d-none">{{ do.pk }}</td>
+                  <td class="text-decoration-line-through">{{ do.priority }}</td>
+                  <td class="text-decoration-line-through">{{ do.title }}</td>
+                  <td class="text-decoration-line-through">{{ do.created_at }}</td>
+                  <td class="text-decoration-line-through">{{ do.deadline }}</td>
+                  <td class="text-decoration-line-through">{{ do.completed }}</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
