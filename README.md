@@ -171,6 +171,7 @@
 | Javascript | Basic / DOM | 2022년 9월 15일 | [링크](./Web/Javascript/Javascript_Basic_DOM.md) |
 | Javascript | 문법들      | 2022년 9월 16일 | [링크](./Web/Javascript/Javascript_문법.md)      |
 | Javascript | event       | 2022년 9월 19일 | [링크](./Web/Javascript/Javascript_event.md)     |
+| Javascript | Methods     | 2022년 10월 3일 | [링크](./Web/Javascript/Javascript_메서드.md)    |
 
 
 
