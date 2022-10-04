@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}<title>New</title>{% endblock %}
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ review_form.as_p }}
+  <input type="submit" value="제출하기">
+</form>
+{% endblock %}

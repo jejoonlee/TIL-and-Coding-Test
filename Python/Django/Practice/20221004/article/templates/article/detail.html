@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}<title>Homepage</title>{% endblock %}
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="card container my-3">
+  <h1 class="card-header text-center">{{ review.title }}</h1>
+  <div class="card-body">
+    <p class="card-title">Created: {{ review.created_at }} || Updated: {{ review.updated_at }}</p>
+    <p class="card-title text-muted">Content No. {{ review.pk }}</p>
+    <h4 class="card-text my-4">{{ review.content }}</h4>
+    <a href="{% url 'article:index' %}" class="btn btn-outline-secondary">뒤로가기</a>
+    <a href="{% url 'article:edit' review.pk %}" class="btn btn-outline-danger">변경하기</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}<title>Homepage</title>{% endblock %}
+{% block style %}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="text-center my-3">index.html</h1>
+    <a class="btn btn-secondary btn-sm" href="{% url 'article:create' %}" role="button">New</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Contents</th>
+          <th scope="col">Updated</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for review in reviews %}
+        <tr>
+          <td>{{ review.title }}</td>
+          <td><a class="btn btn-outline-secondary btn-sm" href="{% url 'article:detail' review.pk %}" role="button">View Content</a></td>
+          <td>{{ review.updated_at}}</td>
+          <td><a class="btn btn-outline-danger btn-sm" href="{% url 'article:delete' review.pk %}" role="button">Delete</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
