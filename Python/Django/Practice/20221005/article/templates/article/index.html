@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>Index</title>{% endblock  %}
+{% block style %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+{% endblock style %}
+
+
+{% block content %}
+  <h1 class="title my-3 text-center">게시판</h1>
+  <section class="banner">
+  </section>
+  <section class="container">
+    <a class="btn btn-outline-secondary btn-sm" href="{% url 'article:create' %}" role="button">새로운 글 쓰기</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">제목</th>
+          <th scope="col">변경 날짜</th>
+          <th scope="col">내용 확인</th>
+        </tr>
+      </thead>
+        <tbody>
+          {% for review in reviews %}
+          <tr>
+            <td>{{ review.title }}</td>
+            <td>{{ review.updated_at }}</td>
+            <td>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                내용 확인하기
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">{{ review.title }}</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="time mb-3">
+                        <p class="text-muted">글 쓴 날짜: {{ review.created_at }}</p>
+                      </div>
+                      <h4>{{ review.content }}</h4>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                      <a class="btn btn-outline-secondary" href="{% url 'article:edit' review.pk %}" role="button">글 수정하기</a>
+                      <a class="btn btn-danger" href="{% url 'article:delete' review.pk %}" role="button">글 삭제하기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+  </section>
+{% endblock content %}

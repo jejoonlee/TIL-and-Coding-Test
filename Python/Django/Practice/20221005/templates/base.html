@@ -1,0 +1,21 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}<title>Document</title>{% endblock %}
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Pen+Script&family=Nunito&family=Roboto+Condensed&family=Sunflower&family=Varela+Round&display=swap" rel="stylesheet">
+  {# Load CSS #}
+  {% bootstrap_css %}
+  {% block style %}{% endblock style %}
+</head>
+<body>
+  {% block content %}
+  {% endblock content %}
+
+  {# Load JavaScript #}
+  {% bootstrap_javascript %}
+</body>
+</html>

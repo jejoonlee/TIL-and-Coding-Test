@@ -1,10 +1,39 @@
-# 📋Django 7
+# 📋Django 7, 8
 
 #### Category
 
+[Web FrameWork](#%EF%B8%8F-Web-framework)
+
 [ModelForm](#%EF%B8%8F-ModelForm)
 
+[Bootstrap](#%EF%B8%8F-bootstrap)
 
+[Static Files](#%EF%B8%8F-static-file)
+
+
+
+## ✔️ Web FrameWork
+
+> 1. URL 요청을 받아 (urls.py)
+>
+> 2. 요청을 처리하고 (views.py)
+>
+> 3. 응답을 한다
+
+### 게시판 만들기 예시
+
+|      | 기능                               | URL                                             | views.py          |
+| ---- | ---------------------------------- | ----------------------------------------------- | ----------------- |
+| 생성 | HTML form \| DB 제작과정           | `/articles/new/` | `/articles/create/`          | `new` | `create`  |
+| 조회 | 글을 누르면 DB 값 조회             | `/articles/<pk>/`                               | `detail`          |
+| 삭제 | 버튼을 누르면 DB 값 삭제           | `/articles/<pk>/delete/`                        | `delete`          |
+| 수정 | HTML form + 기본값 \| DB 저장 과정 | `/articles/<pk>/edit` | `/articles/<pk>/update` | `edit` | `update` |
+
+- `<pk>` : DB 안에 있는 특정한 데이터를 가지고 오기 위해서
+- 클라이언트는 URL 요청 (HTTP 요청 메세지)
+  - path / methods / header / protocol
+
+-------------------------------------
 
 ## ✔️ ModelForm
 
@@ -66,7 +95,7 @@
 > 해당 입력창에 유저가 정보를 입력하면 메서드가 `POST`로 바뀌고 7번줄로 넘어간다
 >
 > - 7번줄에서 유저가 입력한 데이터를 `request.POST`를 통해 가지고 온다
-> - 데이터를 reviewForm에 넣은 후, review_form 변수에 저장을 한다
+> - 가지고 온 데이터를, review_form 변수에 저장을 한다
 >
 > 해당 변수안에 입력한 데이터가 유효하면 10번 줄로간다
 >
@@ -87,3 +116,32 @@
 > - 여기서 review는 44번 줄에, Review 데이터베이스의 pk값을 일치한 데이터다
 
 ![modelform3](Django_7.assets/modelform3.png)
+
+- `<form action="">` : 동일한 URL에 있는 것이라서 action은 비워놔도 된다
+  - `views.py` 에 return 값이 `/edit/html`이다
+
+
+
+## ✔️ Bootstrap
+
+> ModelForm 같은 경우, Django-Bootstrap을 통해서 꾸며준다
+>
+> Django-Bootstrap을 사용하면, 알아서 ModelForm의 field별로 Bootstrap 디자인으로 꾸며준다
+
+![bootstrap](Django_7.assets/bootstrap.png)
+
+1. 터미널에 `$ pip install django-bootstrap5` 을 다운로드 받는다
+2. settings.py의 INSTALLED_APPS에 `'bootstrap5'`를 입력/저장한다
+3. ModelForm을 사용해야 하는 HTML 문서에 `{% load bootstrap5 %}을 입력한다
+   - 여기서 `load` 는 ` import` 같은 개념이다
+4. `{% bootstrap_form form이름 %}`을 입력하면, ModelForm을 bootstrap이 필드와 일치시켜 꾸며준다
+
+_______________________
+
+
+
+## ✔️ Static File
+
+> CSS, Javascript, images 등을 `static file`에 templates처럼 저장해서 사용한다
+
+![staticfile](Django_7.assets/staticfile.png)

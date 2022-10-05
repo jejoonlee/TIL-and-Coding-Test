@@ -1,0 +1,13 @@
+*{
+  font-family: 'Sunflower', sans-serif;
+}
+
+.banner{
+  margin: 1rem 0 2rem 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(/static/images/letter-writing-day.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% load static %}
+
+{% block title %}<title>Create</title>{% endblock %}
+{% block style %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+{% endblock style %}
+
+{% block content %}
+<h1 class="title my-3 text-center">새로운 글 작성하기</h1>
+<form action="" method="POST" class="container">
+  {% csrf_token %}
+  {% bootstrap_form article_form %}
+
+  <button type="submit" class="btn btn-success">제출하기</button>
+</form>
+{% endblock content %}
