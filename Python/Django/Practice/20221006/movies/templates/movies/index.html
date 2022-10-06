@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Movies{% endblock title %}
+{% block css %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endblock css %}
+
+{% block content %}
+
+<section class='review-banner'>
+  <div class="overlay"></div>
+  <h1 class='review-banner-title'>Movie Reviews</h1>
+</section>
+
+<section class="container mb-5">
+  {% for review in reviews %}
+  <div class="card mb-3">
+    <div class="card-header">
+      {{ review.updated_at }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title mb-3 text-muted">영화: {{ review.movie_title }}</h5>
+      <h3 class="card-title mb-3">리뷰 제목: {{ review.title }}</h3>
+      <img src="" alt="">
+      <a href="{% url 'movies:detail' review.pk %}" class="btn btn-outline-secondary btn-sm">더 보기</a>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock content %}

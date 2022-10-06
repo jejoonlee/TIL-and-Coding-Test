@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Detail{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
+
+{% block content %}
+<section class="detail-banner">
+  <div class="overlay"></div>
+  <h1 class='detail-banner-title'>Review</h1>
+</section>
+
+<section>
+  <div class="container my-3">
+    <div class="movie-title d-flex align-items-end mb-3">
+      <h2 class="mb-0">{{ review.title }}</h2>
+      <p class="ms-3 mb-0">영화 시간: {{ review.running_time }}분</p>
+    </div>
+    <div class='mb-3'>
+      <p class='mb-0 text-muted'> 글 쓴 날짜: {{ review.created_at}}</p>
+      <p class='mb-0 text-muted'>수정한 날짜: {{ review.updated_at}}</p>
+    </div>
+    <h5>{{ review.summary }}</h5>
+  </div>
+</section>
+
+<section class="buttons container mb-5">
+  <a class="btn btn-outline-secondary" href="{% url 'movies:update' review.pk %}" role="button">글 변경</a>
+  <a class="btn btn-outline-danger" href="{% url 'movies:delete' review.pk %}" role="button">글 삭제</a>
+</section>
+
+{% endblock content %}

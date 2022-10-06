@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block title %}글 수정하기{% endblock title %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
+
+{% block content %}
+  <h1 class="text-center my-3">글 수정하기</h1>
+  <section class="container d-flex flex-column">
+    <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% bootstrap_form movies_form %}
+      <a class="btn btn-outline-secondary" href="{% url 'movies:detail' index %}" role="button">뒤로 가기</a>
+      <button type="submit" class="btn btn-outline-success my-5">글 수정하기</button>
+    </form>
+  </section>
+{% endblock content %}
