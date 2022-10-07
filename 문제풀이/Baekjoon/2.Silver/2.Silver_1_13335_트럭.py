@@ -11,32 +11,6 @@ queue = deque([0] * w)
 cnt = 0
 weight = 0
 
-while True:
-  weight += trucks[0]
+# 만약에 queue 안에 있는 트럭의 무게들 + trucks에 제일 앞에 있는 트럭의 무게
+# 둘이 합했을 때에, 최대 하중보다 낮으면 trucks에 제일 앞에 있는 트럭을 queue에 넣는다
 
-  if weight <= L:
-    queue.append(trucks[0])
-    queue.popleft()
-    trucks.popleft()
-
-  else:
-    while True:
-      out = queue.popleft()
-      queue.append(0)
-
-      if trucks:
-        if sum(queue) + trucks[0] > L:
-          queue.popleft()
-          queue.append(0)
-        
-        else:
-          if weight - out + trucks[0] <= L:
-            weight = weight - out
-            break
-
-
-
-  
-
-
-print(cnt)
