@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="/static/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Sunflower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Sunflower&display=swap" rel="stylesheet">
   {% block css %}{% endblock css %}
 </head>
 <body>
   <nav class="nav">
-    <a class="logo" href="#"><img class="logo" src="/static/image/football uniform-fococlipping-standard.png" alt="로고"></a>
+    <a class="logo" href="{% url 'review:index' %}"><img class="logo" src="/static/image/football uniform-fococlipping-standard.png" alt="로고"></a>
     <ul class="navs">
-      <li class="navlinks"><a class="navlink" href="#">Home</a></li>
+      <li class="navlinks"><a class="navlink" href="{% url 'review:index' %}">Home</a></li>
       <li class="navlinks"><a class="navlink" href="#">Reviews</a></li>
-      <li class="navlinks"><a class="navlink" href="#">Write Review</a></li>
+      <li class="navlinks"><a class="navlink" href="{% url 'review:create_review' %}">Write Review</a></li>
     </ul>
   </nav>
   <div class="main">

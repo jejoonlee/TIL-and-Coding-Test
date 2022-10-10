@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block title %}Create Team{% endblock title %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
+
+{% block content %}
+  <div class="container my-5">
+    <h1>팀 추가하기</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% bootstrap_form team_form %}
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+  </div>
+
+{% endblock content %}

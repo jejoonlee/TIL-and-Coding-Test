@@ -3,10 +3,6 @@ sys.stdin = open('input.txt')
 
 # 적록색약은 빨간색과 초록색을 한 색깔로 같이 본다
 
-def pprint(lst):
-  for i in lst:
-    print(i)
-
 N = int(input())
 colors = [list(input()) for _ in range(N)]
 

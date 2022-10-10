@@ -2,9 +2,6 @@ import sys
 sys.stdin = open('input.txt')
 
 # 단지 개수를 구하고 / 단지에 속하는 집의 수를 오름차순으로 정렬해서 출력
-def pprint(lst):
-    for row in lst:
-        print(row)
 
 N = int(input())
 

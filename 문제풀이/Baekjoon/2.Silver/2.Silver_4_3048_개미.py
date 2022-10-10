@@ -4,12 +4,12 @@ sys.stdin = open('input.txt')
 # group
 one, two = map(int, input().split())
 
-first = list(input())
-second = list(input())
+first = list(input()) 
+second = list(input()) 
 
 T = int(input())
 
-ants = first[::-1] + second
+ants = first[::-1] + second 
 
 for t in range(1, T + 1):
   for i in range(len(ants) - 1):

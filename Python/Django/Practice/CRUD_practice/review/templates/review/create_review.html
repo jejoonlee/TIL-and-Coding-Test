@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block title %}Create Uniform Review{% endblock title %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
+
+{% block content %}
+  <div class="container my-5">
+    <h1 >유니폼 리뷰 작성하기</h1>
+    <select class="form-select mt-4 mb-2" aria-label="Default select example">
+      <option selected>Choose club</option>
+      {% for team in teams%}
+        <option value="{{ team.pk }}">{{ team.team_name }}</option>
+      {% endfor %}
+    </select>
+    <a class="btn btn-primary mb-2 btn-sm" href="{% url 'review:create_team' %}" role="button">새로운 팀 추가하기</a>
+    <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% bootstrap_form uniform_form %}
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+  </div>
+
+{% endblock content %}
