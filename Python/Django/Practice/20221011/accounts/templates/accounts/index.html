@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}회원{% endblock title %}
+
+{% block content %}
+<div class="container my-5">
+  <h1 class="text-center">회원</h1>
+  <a class="btn btn-primary" href="{% url 'accounts:create' %}" role="button">회원가입</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">pk</th>
+        <th scope="col">username</th>
+        <th scope="col">email</th>
+        <th scope="col">name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+      <tr>
+        <th scope="row">{{ user.pk }}</th>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td><a href="{% url 'accounts:profile' user.pk %}">{{ user.last_name }}{{ user.first_name }}</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock content %}

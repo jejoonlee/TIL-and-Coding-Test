@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %} {{ user.last_name }}{{ user.first_name }} Profile {% endblock title %}
+
+{% block content %}
+<div class="container my-5">
+  <h1 class="text-center">{{ user.last_name }}{{ user.first_name }}님 프로필</h1>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    회원 탈퇴하기
+  </button>
+  <a class="btn btn-primary" href="{% url 'accounts:index' %}" role="button">뒤로가기</a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">정말 회원을 탈퇴하겠습니까?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          회원을 탈퇴하면, 모든 정보가 삭제됩니다
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a class="btn btn-danger" href="{% url 'accounts:delete' user.pk %}" role="button">회원 탈퇴하기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h3 class="card-title">사용자 닉네임: {{ user.username }}</h3>
+      <h6 class="card-subtitle mb-2 text-muted">회원가입 날짜 : {{ user.date_joined }}</h6>
+      <h4 class="card-text mt-3">이름: {{ user.last_name }}{{ user.first_name }}</h4>
+      <h4 class="card-text">이메일 주소: {{ user.email }}</h4>
+    </div>
+  </div>
+
+</div>
+{% endblock content %}
