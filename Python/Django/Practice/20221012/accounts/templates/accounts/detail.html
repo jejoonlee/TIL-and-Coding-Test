@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} {{user.first_name}}의 정보 {% endblock title %}
+
+{% block content %}
+ <h1>{{user.first_name}}의 정보</h1>
+ <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ user.uername }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Created: {{ user.date_joined }}</h6>
+    <p class="card-text">Name: {{user.last_name}}, {{user.first_name}}</p>
+    <p class="card-text">Email: {{ user.email }}</p>
+    <p class="card-text">Gender: {{ user.gender }}</p>
+  </div>
+</div>
+<a class="btn btn-primary mt-3" href="{% url 'accounts:index' %}" role="button">뒤로가기</a>
+
+{% endblock content %}

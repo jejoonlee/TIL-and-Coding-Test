@@ -14,7 +14,7 @@
 
 > Django authorization system
 >
-> 인증 (Authentictiaon) : 신원 확인 / 사용자가 자신이 누구인지 확인
+> 인증 (Authentication) : 신원 확인 / 사용자가 자신이 누구인지 확인
 >
 > 권한 (Authorization) : 권한 부여
 
@@ -58,3 +58,69 @@
 ![회원가입3](Django_8.assets/회원가입3.png)
 
 > #### 📌 `from .models import user` 는 `from django.contrib.auth import get_user_model` 로 바꾼다
+
+
+
+## ✔️ 로그인
+
+> import을 통해서 로그인 관련된 기능들을 가지고 온다
+>
+> `from django.contrib.auth import login`
+>
+> `from django.contrib.auth import logout`
+>
+> `from django.contribe.auth.forms import AuthenticationForm`
+
+![로그인1](Django_8.assets/로그인1.png)
+
+
+
+> `request.user.is_authenticated` 라는 것을 사용하여, 로그인이 된 상태면, 어떤 기능을 쓸 수 있도록 가능하게 해준다
+
+```python
+def login(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)
+        
+        if form.is_valid():
+            auth_login(form, form.get_user())
+            return redirect(request.GET.get('next') or 'articles:index')
+        	# 로그인을 할 경우 next 이후에 나오는 url로 이동하거나
+            # next 이후에 url이 없으면 articles의 index 페이지로 이동하게 된다
+    else:
+    	form = AuthenticationForm()
+    context = {
+        'form' : form,
+    }
+    
+    return render(request, 'accounts/login.html', context)
+```
+
+
+
+#### 회원가입 후 바로 로그인이 될 수 있도록 만들기
+
+```python
+from .forms import UserForm
+from django.contrib.auth import login as auth_login
+
+def register(request):
+    if reqeust.method == 'POST':
+        form = UserForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            auth_login(request, user)
+            return redirect('articles:index')
+# 저장된 인스턴스를 user로 저장하고
+# 바로 auth_login에 가지고 와서 회원 가입을 하면
+# 바로 로그인이 되도록 한다
+        
+    else:
+        form = UserForm()
+    context = {
+        'form' : form,
+    }
+    
+    return render(request, 'accounts/register.html', context)
+```
+
