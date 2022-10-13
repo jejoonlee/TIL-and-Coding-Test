@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}제한된 엑세스{% endblock title %}
+
+{% block content %}
+<h1 class='text-danger text-center mt-5'>관리자만 들어올 수 있는 페이지</h1>
+<div class='d-flex justify-content-center'>
+  <a class="btn btn-success my-5 text-center" href="{% url 'articles:index' %}" role="button">홈으로 돌아가기</a>
+</div>
+{% endblock content %}

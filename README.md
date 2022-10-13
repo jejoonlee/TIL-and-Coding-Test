@@ -134,6 +134,7 @@
 | Django  | CRUD (detail page 만들기), Update                            | 2022년 9월 29일        | [링크](./Python/Django/Django_6.md)     |
 | Django  | Web FrameWork / ModelForm / Django-bootstrap / static file   | 2022년 10월 4일~ 5일   | [링크](./Python/Django/Django_7.md)     |
 | Django  | Django Auth / 회원가입 / 로그인 / 로그아웃                   | 2022년 10월 11일~ 12일 | [링크](./Python/Django/Django_8.md)     |
+| Django  | 회원가입 / 로그인 / 로그아웃 / 회원 정보 수정 / 회원 탈퇴    | 2022년 10월 13일       | [링크](./Python/Django/Django_9.md)     |
 
 - ### SQLite
 

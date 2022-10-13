@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}회원 정보 수정{% endblock title %}
+
+{% block content %}
+<h1 class="my-5 text-center fw-bold">회원 정보 수정</h1>
+<div class="container mb-5">
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form update_form %}
+    <a class="btn btn-outline-secondary" href="{% url 'accounts:password' %}" role="button">비밀번호 바꾸기</a>
+    <input class="btn btn-outline-success" type="submit" value="수정">
+  </form>
+    <!-- Button trigger modal -->
+  <button type="button" class="btn btn-outline-danger mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    회원탈퇴
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">회원탈퇴</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          한번 탈퇴하면, 해당 정보는 모두 삭제가 됩니다
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a class="btn btn-outline-danger" href="{% url 'accounts:delete' %}" role="button">회원 탈퇴</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

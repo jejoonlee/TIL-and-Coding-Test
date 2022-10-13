@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}회원 정보 | {{ user.username }}{% endblock title %}
+
+{% block content %}
+<h1 class="my-5 text-center fw-bold"> {{ user.username }} 정보</h1>
+<div class="container mb-5">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title mb-4">Username: {{ user.username }}</h2>
+      <h3 class="card-subtitle">Name: {{ user.last_name }}{{ user.first_name }}</h3>
+      <h6 class="card-text text-muted">Date Joined : {{ user.date_joined }}</h6>
+      <h4 class="card-text">Gender : {{ user.gender }}</h4>
+      <h4 class="card-text">Email Address : {{ user.email }}</h4>
+    </div>
+  </div>
+    <a class="btn btn-outline-secondary btn-sm my-5" href="{% url 'articles:index' %}" role="button">뒤로가기</a>
+    <a class="btn btn-outline-primary btn-sm my-5" href="{% url 'accounts:update' %}" role="button">회원정보 수정</a>
+</div>
+
+{% endblock content %}

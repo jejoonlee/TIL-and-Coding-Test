@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}홈페이지{% endblock title %}
+
+{% block content %}
+<a href="{% url 'accounts:index' %}">회원 목록</a>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}로그인{% endblock title %}
+
+{% block content %}
+<h1 class="my-5 text-center fw-bold">로그인</h1>
+<div class="container mb-5">
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form login_form %}
+    <input class="btn btn-outline-success" type="submit" value="로그인">
+  </form>
+  <a class="btn btn-outline-secondary btn-sm my-5" href="{% url 'accounts:register' %}" role="button">회원가입하기</a>
+</div>
+
+{% endblock content %}
