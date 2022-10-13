@@ -6,6 +6,7 @@ from .forms import UserForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def login(request):
@@ -14,7 +15,7 @@ def login(request):
 
     if form.is_valid():
       auth_login(request, form.get_user())
-      return redirect('articles:index')
+      return redirect(request.GET.get('next') or 'articles:index')
   
   else:
     form = AuthenticationForm()
@@ -45,6 +46,7 @@ def register(request):
 
   return render(request, 'accounts/register.html', context)
 
+@login_required
 def index(request):
   context={
     'users': get_user_model().objects.all(),

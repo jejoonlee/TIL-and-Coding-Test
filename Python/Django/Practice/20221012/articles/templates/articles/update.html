@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}리뷰 작성{% endblock title %}
+
+{% block content %}
+<h1>리뷰 작성</h1>
+<form action="" method="POST">
+  {% csrf_token %}
+  {% bootstrap_form  form %}
+  <input class="btn btn-success" type="submit" value="수정하기">
+  <a class="btn btn-primary" href="{% url 'articles:detail' index %}" role="button">뒤로가기</a>
+  <a class="btn btn-danger" href="{% url 'articles:delete' index %}" role="button">삭제하기</a>
+</form>
+{% endblock content %}

@@ -5,5 +5,23 @@
 {% block content %}
 <h1>홈페이지</h1>
 <a href="{% url 'accounts:index' %}">회원 목록 보기</a>
+<table class="table my-4">
+  <thead>
+    <tr>
+      <th scope="col">Movie Title</th>
+      <th scope="col">Review Title</th>
+      <th scope="col">Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for review in reviews %}
+    <tr>
+      <td>{{ review.movie_title }}</td>
+      <td>{{ review.review_title }}</td>
+      <td><a class="btn btn-primary" href="{% url 'articles:detail' review.pk %}" role="button">더 보기</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 {% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}리뷰 | {{ review.review_title }}{% endblock title %}
+
+{% block content %}
+<h1>{{ review.movie_title }}</h1>
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">영화 제목: {{ review.movie_title }}<span class='fs-5 ms-5'> 점수 : {{ review.grade }}<span></h3>
+    <h4 class="card-subtitle mb-2">리뷰 제목 : {{ review.review_title }}</h4>
+    <h5 class="card-text text-muted">작성 : {{ review.created_at }} || 업데이트 : {{ review.updated_at }}</h5>
+    <h5 class="my-3">{{ review.content }}</h5>
+    <a class="btn btn-primary" href="{% url 'articles:index' %}" role="button">뒤로가기</a>
+    <a class="btn btn-danger" href="{% url 'articles:update' review.pk %}" role="button">수정하기</a>
+  </div>
+</div>
+{% endblock content %}
