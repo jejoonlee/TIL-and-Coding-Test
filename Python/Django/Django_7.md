@@ -6,6 +6,8 @@
 
 [ModelForm](#%EF%B8%8F-ModelForm)
 
+- [Class 상속](#class-상속)
+
 [Bootstrap](#%EF%B8%8F-bootstrap)
 
 [Static Files](#%EF%B8%8F-static-file)
@@ -46,6 +48,20 @@
 > - UI를 그려주고 / 유효성을 검사해주고 / DB에 저장시켜준다
 
 ------------------------------------------
+
+- #### ModelForm에 대해서
+
+  - model과 fields를 정의하는 것이 제일 중요한 설정이다
+    - model에 클래스를 정의하면, 클래스 변수에 해당하는 것이 필드
+
+#### Class 상속
+
+- 부모 클래스의 기존 기능 (속성 or 메서드)에 새로운 기능을 덧붙이고 싶을 때에
+- 예)
+  - AritcleForm 또는 UserCreationForm에 ModelForm의 기능을 상속 받는다
+  - 그리고 ModelForm의 기능 (예) 유효성 검사)을 살리면서, ArticleForm과 UserCreationForm에 각자 맞는 model과 fields를 설정한다
+
+
 
 #### CREATE
 

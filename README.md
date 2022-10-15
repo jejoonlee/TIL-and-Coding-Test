@@ -12,8 +12,8 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**                     |
 | --------------------- | -------- | ----------- | ------------------------------------ |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./문제풀이/Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.10.10  | [링크](./문제풀이/SW_Expert_Academy) |
-| **Baekjoon**          | 문제풀이 | 2022.10.11  | [링크](./문제풀이/Baekjoon)          |
+| **SW Expert Academy** | 문제풀이 | 2022.10.15  | [링크](./문제풀이/SW_Expert_Academy) |
+| **Baekjoon**          | 문제풀이 | 2022.10.15  | [링크](./문제풀이/Baekjoon)          |
 | **Programmers**       | 문제풀이 | 2022.09.14  | [링크](./문제풀이/Programmers)       |
 
 
@@ -132,7 +132,7 @@
 | Django  | Base template / Django URLS / 데이터 저장 밑 사용, CRUD (create, read) | 2022년 9월 27일        | [링크](./Python/Django/Django_4.md)     |
 | Django  | CRUD                                                         | 2022년 9월 28일        | [링크](./Python/Django/Django_5.md)     |
 | Django  | CRUD (detail page 만들기), Update                            | 2022년 9월 29일        | [링크](./Python/Django/Django_6.md)     |
-| Django  | Web FrameWork / ModelForm / Django-bootstrap / static file   | 2022년 10월 4일~ 5일   | [링크](./Python/Django/Django_7.md)     |
+| Django  | Web FrameWork / ModelForm/ 클래스 상속 / Django-bootstrap / static file | 2022년 10월 4일~ 5일   | [링크](./Python/Django/Django_7.md)     |
 | Django  | Django Auth / 회원가입 / 로그인 / 로그아웃                   | 2022년 10월 11일~ 12일 | [링크](./Python/Django/Django_8.md)     |
 | Django  | 회원가입 / 로그인 / 로그아웃 / 회원 정보 수정 / 회원 탈퇴    | 2022년 10월 13일       | [링크](./Python/Django/Django_9.md)     |
 
