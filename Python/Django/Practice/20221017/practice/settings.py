@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'article',
+    'accounts',
     'imagekit',
     'django_bootstrap5',
     'django.contrib.admin',
@@ -133,3 +134,8 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# custom user
+AUTH_USER_MODEL = 'accounts.User'
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'

@@ -1,6 +1,7 @@
 from django.db import models
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
+from accounts.models import User
 
 # Create your models here.
 class Review(models.Model):
@@ -14,6 +15,7 @@ class Review(models.Model):
 
   title = models.CharField(max_length=100)
   movie_title = models.CharField(max_length=100)
+  user_pk = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
   content = models.TextField()
   grade = models.CharField(max_length=2, choices=grade_choice, blank=True)
   created_at = models.DateTimeField(auto_now_add=True)
