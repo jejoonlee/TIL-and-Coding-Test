@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}리뷰 수정하기{% endblock title %}
+
+{% block content %}
+  <section class="main my-5 container">
+    <h1 class='text-center'>리뷰 수정하기</h1>
+    <form action="" method="POST" enctype='multipart/form-data'>
+      {% csrf_token %}
+      {% bootstrap_form update_form %}
+      <input class="btn btn-outline-success" type="submit" value="Submit">
+      <a class="btn btn-outline-danger" href="{% url 'article:delete' num %}" role="button">삭제하기</a>
+    </form>
+
+  </section>
+{% endblock content %}
