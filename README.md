@@ -136,6 +136,7 @@
 | Django  | Django Auth / 회원가입 / 로그인 / 로그아웃                   | 2022년 10월 11일~ 12일 | [링크](./Python/Django/Django_8.md)     |
 | Django  | 회원가입 / 로그인 / 로그아웃 / 회원 정보 수정 / 회원 탈퇴    | 2022년 10월 13일       | [링크](./Python/Django/Django_9.md)     |
 | Django  | Media (User file input)                                      | 2022년 10월 17일       | [링크](./Python/Django/Django_10.md)    |
+| Django  | 댓글 추가/ 삭제 /보기                                        | 2022년 10월 18일       | [링크](./Python/Django/Django_11.md)    |
 
 - ### SQLite
 
