@@ -15,7 +15,7 @@ class Review(models.Model):
 
   title = models.CharField(max_length=100)
   movie_title = models.CharField(max_length=100)
-  user_pk = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+  user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
   content = models.TextField()
   grade = models.CharField(max_length=2, choices=grade_choice, blank=True)
   created_at = models.DateTimeField(auto_now_add=True)
@@ -25,3 +25,10 @@ class Review(models.Model):
                             processors=[ResizeToFill(295, 295)],
                             format='JPEG',
                             options={'quality': 80})
+
+
+class Comment(models.Model):
+  content = models.TextField()
+  updated_at = models.DateTimeField(auto_now=True)
+  review = models.ForeignKey(Review, on_delete=models.CASCADE, null=True)
+  user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
