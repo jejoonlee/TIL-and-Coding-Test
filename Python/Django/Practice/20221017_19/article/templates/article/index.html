@@ -18,7 +18,7 @@
             {% if review.user == null %}
             <p class="card-text">작성자 : 익명</p>
             {% else %}
-            <p class="card-text">작성자 : {{ review.user.username }}</p>
+            <p class="card-text">작성자 : <a href='{% url 'accounts:profile' review.user_id %}'>{{ review.user.username }}</a></p>
             {% endif %}
             <a href="{% url 'article:detail' review.pk %}" class="btn btn-outline-secondary">더 보기</a>
           </div>

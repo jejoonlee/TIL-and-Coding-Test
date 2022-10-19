@@ -31,7 +31,7 @@
         <a class="btn btn-outline-secondary btn-sm" href="{% url 'accounts:signup' %}" role="button">회원가입</a>
         {% else %}
         <p class="mb-0 me-3">{{ request.user }}로 로그인</p>
-        <a class="btn me-3 btn-outline-secondary btn-sm" href="{% url 'accounts:profile' request.user.pk %}" role="button">프로필</a>
+        <a class="me-3 btn btn-outline-secondary btn-sm" href="{% url 'accounts:update' request.user.pk %}" role="button">회원정보 수정</a>
         <a class="btn btn-outline-danger btn-sm" href="{% url 'accounts:logout' %}" role="button">로그아웃</a>
         {% endif %}
       </div>

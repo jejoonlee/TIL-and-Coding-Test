@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}정보 수정{% endblock title %}
+
+{% block content %}
+<section class="main my-5 container">
+  <h1 class='text-center'>정보 수정</h1>
+  <form action="" method="POST" enctype='multipart/form-data'>
+    {% csrf_token %}
+    {% bootstrap_form change_form %}
+    <input class="btn btn-outline-success" type="submit" value="Submit">
+  </form>
+  <div class='my-3'>
+    <a href="{% url 'article:index' %}" class="btn btn-outline-secondary">뒤로가기</a>
+    <a href="{% url 'accounts:password_update' %}" class="btn btn-outline-secondary">비밀번호 바꾸기</a>
+    <!-- Button trigger modal -->
+  <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    회원 탈퇴
+  </button>
+  </div>
+
+</section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">정말 탈퇴하겠습니까?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        탈퇴를 진행하면, 모든 정보는 사라집니다 ㅜ.ㅜ
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="{% url 'accounts:delete' %}" class="btn btn-outline-danger">탈퇴하기</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -23,7 +23,9 @@
           <h4 class='mt-3'>별점 : {{ review.get_grade_display }}</h4>
           <div class='mt-3'>
             <a class="btn btn-outline-secondary" href="{% url 'article:index' %}" role="button">뒤로가기</a>
+            {% if request.user == review.user %}
             <a class="btn btn-outline-danger" href="{% url 'article:update' review.pk %}" role="button">수정하기</a>
+            {% endif %}
           </div>
       </div>
     </div>
@@ -48,9 +50,12 @@
     </div>
     <div class="com my-3"></div>
       {% for comment in comments %}
+      <img src="{{ comment.user.profile_pic.url }}" class='review-profile-pic' alt="" srcset="" style='width: 40px; border-radius: 40px;'>
       <h5>{{ comment.user }} | <span class='fs-6 text-muted'>{{ comment.updated_at }}</span></h5>
       <h5>{{ comment.content }}</h5>
+      {% if request.user == comment.user %}
       <a class="btn btn-outline-danger btn-sm" href="{% url 'article:comment_delete' comment.pk review.pk %}" role="button">삭제하기</a>
+      {% endif %}
       <hr>
       {% endfor %}
     </div>

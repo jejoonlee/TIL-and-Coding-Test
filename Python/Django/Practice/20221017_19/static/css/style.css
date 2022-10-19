@@ -21,6 +21,11 @@
   justify-content: center;
 }
 
+.review-profile-pic{
+  width: 30px;
+  border-radius: 50%;
+}
+
 @media only screen and (max-width: 768px) {
   .review-content{
     flex-direction: column;
@@ -33,4 +38,9 @@
   .review-image{
     height: auto;
   }
+}
+
+/* profile page */
+.profile-info{
+  display: flex;
 }

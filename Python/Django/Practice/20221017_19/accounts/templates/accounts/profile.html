@@ -1,10 +1,31 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}{{profile.username}}의 프로필{% endblock title %}
+{% block css %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endblock css %}
 
 {% block content %}
 <section class="main my-5 container">
   <h1 class='text-center'>{{profile.username}}의 프로필</h1>
+  <div class='profile-info container my-4 d-flex justify-content-center align-items-center'>
+    <div class='profile-info-img'>
+      <img src="{{ profile.profile_pic.url }}" alt="프로필 사진" style="height: 300px;">
+    </div>
+    <div class='profile-info-detail ms-5'>
+      <h2>유저 ID: {{ profile.username }}</h2>
+      <h2>유저 이름: {{ profile.first_name }}, {{ profile.last_name }}</h2>
+      <hr>
+      <h4>이메일: {{ profile.email }}</h4>
+      <h4>성별: {{ profile.gender }}</h4>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    {% if request.user == profile %}
+    <a href="{% url 'accounts:update' profile.pk %}" class="me-5 btn btn-outline-danger">정보 수정</a>
+    {% endif %}
+    <a href="{% url 'article:index' %}" class="btn btn-outline-secondary">뒤로가기</a>
+  </div>
+
   <table class="table my-5">
     <thead>
       <tr>
