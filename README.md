@@ -124,19 +124,20 @@
 
 > #### **Django**
 
-| Content | Detail                                                       | Date                   | Link                                    |
-| ------- | ------------------------------------------------------------ | ---------------------- | --------------------------------------- |
-| Django  | Basic                                                        | 2022년 9월 21일        | [링크](./Python/Django/Django_basic.md) |
-| Django  | MTV ,요청과 응답 (연습 포함)                                 | 2022년 9월 22일        | [링크](./Python/Django/Django_2.md)     |
-| Django  | Variable routing / Sending and Retrieving form data          | 2022년 9월 26일        | [링크](./Python/Django/Django_3.md)     |
-| Django  | Base template / Django URLS / 데이터 저장 밑 사용, CRUD (create, read) | 2022년 9월 27일        | [링크](./Python/Django/Django_4.md)     |
-| Django  | CRUD                                                         | 2022년 9월 28일        | [링크](./Python/Django/Django_5.md)     |
-| Django  | CRUD (detail page 만들기), Update                            | 2022년 9월 29일        | [링크](./Python/Django/Django_6.md)     |
-| Django  | Web FrameWork / ModelForm/ 클래스 상속 / Django-bootstrap / static file | 2022년 10월 4일~ 5일   | [링크](./Python/Django/Django_7.md)     |
-| Django  | Django Auth / 회원가입 / 로그인 / 로그아웃                   | 2022년 10월 11일~ 12일 | [링크](./Python/Django/Django_8.md)     |
-| Django  | 회원가입 / 로그인 / 로그아웃 / 회원 정보 수정 / 회원 탈퇴    | 2022년 10월 13일       | [링크](./Python/Django/Django_9.md)     |
-| Django  | Media (User file input) / Local MediaFile delete             | 2022년 10월 17일       | [링크](./Python/Django/Django_10.md)    |
-| Django  | 댓글 추가/ 삭제 /보기                                        | 2022년 10월 18일       | [링크](./Python/Django/Django_11.md)    |
+| Content | Detail                                                       | Date                    | Link                                                   |
+| ------- | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------ |
+| Django  | Basic                                                        | 2022년 9월 21일         | [링크](./Python/Django/Django_basic.md)                |
+| Django  | MTV ,요청과 응답 (연습 포함)                                 | 2022년 9월 22일         | [링크](./Python/Django/Django_2.md)                    |
+| Django  | Variable routing / Sending and Retrieving form data          | 2022년 9월 26일         | [링크](./Python/Django/Django_3.md)                    |
+| Django  | Base template / Django URLS / 데이터 저장 밑 사용, CRUD (create, read) | 2022년 9월 27일         | [링크](./Python/Django/Django_4.md)                    |
+| Django  | CRUD                                                         | 2022년 9월 28일         | [링크](./Python/Django/Django_5.md)                    |
+| Django  | CRUD (detail page 만들기), Update                            | 2022년 9월 29일         | [링크](./Python/Django/Django_6.md)                    |
+| Django  | Web FrameWork / ModelForm/ 클래스 상속 / Django-bootstrap / static file | 2022년 10월 4일~ 5일    | [링크](./Python/Django/Django_7.md)                    |
+| Django  | Django Auth / 회원가입 / 로그인 / 로그아웃                   | 2022년 10월 11일~ 12일  | [링크](./Python/Django/Django_8.md)                    |
+| Django  | 회원가입 / 로그인 / 로그아웃 / 회원 정보 수정 / 회원 탈퇴    | 2022년 10월 13일        | [링크](./Python/Django/Django_9.md)                    |
+| Django  | Media (User file input) / Local MediaFile delete             | 2022년 10월 17일        | [링크](./Python/Django/Django_10.md)                   |
+| Django  | 댓글 추가/ 삭제 /보기 / 1:N 기능                             | 2022년 10월 18일 ~ 19일 | [링크](./Python/Django/Django_11.md)                   |
+| Django  | 10월 17일 ~ 19일 정리                                        | 2022년 10월 17일 ~ 19일 | [링크](./Python/Django/Practice/20221017_19/README.md) |
 
 - ### SQLite
 
