@@ -6,6 +6,8 @@
 
 [imagekit](#%EF%B8%8F-imagekit)
 
+[사진 파일 자동 삭제](#%EF%B8%8F-사진-파일-자동-삭제)
+
 
 
 ## ✔️ 사진 업로드
@@ -75,3 +77,27 @@ urlpatterns = [
 ![imagekit1](Django_10.assets/imagekit1.png)
 
 ![imagekit2](Django_10.assets/imagekit2.png)
+
+
+
+## ✔️ 사진 파일 자동 삭제
+
+> 사진을 업로드한 후, 해당 게시물을 삭제하게되면 사진 파일은 로컬에 남게 된다
+>
+> 그럴 때에, 자동으로 파일을 삭제하는 기능이 있다
+
+```python
+# 터미널
+pip install django-cleanup
+
+# settings.py
+INSTALLED_APPS = (
+    ...,
+    'django_cleanup.apps.CleanupConfig',
+)
+```
+
+- 터미널에 `django-cleanup`을 설치해준다
+  - `django-cleanup`은 ImageField만 아닌 FileField에도 똑같이 적용이 된다
+- 그리고 INSTALLED_APPS, 맨 마지막에 위에 코드를 넣어준다
+  - 파이썬 특성상, 위에 있으면, 겹칠 수 있게되어, 그냥 편안하게 맨 마지막에 넣어준다

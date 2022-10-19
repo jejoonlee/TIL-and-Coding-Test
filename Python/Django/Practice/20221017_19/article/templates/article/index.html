@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Reviews{% endblock title %}
+
+{% block content %}
+<section class="main my-5 container">
+<h1 class='text-center'>리뷰 목록</h1>
+  <a class="btn btn-outline-secondary" href="{% url 'article:create' %}" role="button">글 쓰기</a>
+  <div class="container text-center my-4">
+    <div class="row justify-content-center">
+      {% for review in reviews %}
+      <div class="col-12 col-md-4 my-3">
+        <div class="card">
+          <img src="{{ review.thumbnail.url }}" class="card-img-top" alt="{{ review.thumbnail }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ review.title }}</h5>
+            <p class="card-text">영화 : {{ review.movie_title }}</p>
+            {% if review.user == null %}
+            <p class="card-text">작성자 : 익명</p>
+            {% else %}
+            <p class="card-text">작성자 : {{ review.user.username }}</p>
+            {% endif %}
+            <a href="{% url 'article:detail' review.pk %}" class="btn btn-outline-secondary">더 보기</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}

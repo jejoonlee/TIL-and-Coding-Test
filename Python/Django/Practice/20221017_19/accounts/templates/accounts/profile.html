@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{profile.username}}의 프로필{% endblock title %}
+
+{% block content %}
+<section class="main my-5 container">
+  <h1 class='text-center'>{{profile.username}}의 프로필</h1>
+  <table class="table my-5">
+    <thead>
+      <tr>
+        <th scope="col">썼던 게시글</th>
+        <th scope="col">영화 제목</th>
+        <th scope="col">업로드 시간</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for review in reviews %}
+      <tr>
+        <td>{{ review.title }}</td>
+        <td>{{ review.movie_title }}</td>
+        <td>{{ review.updated_at }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock content %}

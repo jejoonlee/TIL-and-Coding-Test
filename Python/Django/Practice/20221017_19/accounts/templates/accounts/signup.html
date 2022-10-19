@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block title %}회원 가입{% endblock title %}
+
+{% block content %}
+<section class="main my-5 container">
+  <h1 class='text-center'>회원 목록</h1>
+  <form action="" method="POST" enctype='multipart/form-data'>
+    {% csrf_token %}
+    {% bootstrap_form signup_form %}
+    <input class="btn btn-outline-success" type="submit" value="Submit">
+  </form>
+</section>
+{% endblock content %}
