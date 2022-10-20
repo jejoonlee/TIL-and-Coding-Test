@@ -29,8 +29,18 @@ def create(request):
 @login_required
 def detail(request, pk):
   review = Review.objects.get(pk=pk)
+
+  comment_form = CommentForm()
+
+  comments = review.comment_set.all().order_by('-created_at')
+
+  comments_num = review.comment_set.all().count()
+
   context = {
     'review': review,
+    'comment_form': comment_form,
+    'comments' : comments,
+    'comments_num' : comments_num,
   }
   return render(request, 'articles/detail.html', context)
 
@@ -68,3 +78,14 @@ def delete(request, pk):
   
   else:
     return redirect('article:index')
+
+def comment(request, pk):
+  review = Review.objects.get(pk=pk)
+  if request.method == "POST":
+    comment_form = CommentForm(request.POST)
+    if comment_form.is_valid():
+      comment = comment_form.save(commit=False)
+      comment.review = review
+      comment. user = request.user
+      comment.save()
+  return redirect('articles:detail', review.pk)

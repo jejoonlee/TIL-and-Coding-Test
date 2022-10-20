@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load django_bootstrap5 %}
 
 {% block title %}{{ review.review_title }}{% endblock title %}
 
@@ -27,6 +28,36 @@
 
   <div class='mt-4'>
     <h4>{{ review.match_info }}</h4>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h3>Comments <span class="badge bg-secondary">{{ comments_num }}</span></h3>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Write Comment
+  </button>
+  <div class="collapse my-3" id="collapseExample">
+    <div class="card card-body">
+      <form action="{% url 'articles:comment' review.pk %}" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form comment_form %}
+        <input class="btn btn-outline-success" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div class="comments">
+    {% for comment in comments %}
+    <div class="comment my-3"> 
+      <div class="comment-user d-flex align-items-center">
+        <img src="{{ comment.user.profile_img.url }}" alt="" style="height: 4rem; width: 4rem; border-radius:50%;">
+        <div class="comment-user-info ms-3">
+          <h5>{{ comment.user }}</h5>
+          <h6 class="text-muted">{{ comment.created_at }}</h6>
+        </div>
+      </div>
+      <h4 class="mt-2">{{ comment.content }}</h4>
+    </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock content %}
