@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block title %}Register Page{% endblock title %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'CSS/style.css' %}">{% endblock css %}
+
+{% block content %}
+<div class="container my-5">
+  <h1 class="text-center">Register</h1>
+
+  <form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% bootstrap_form signup_form %}
+    <a class="btn btn-outline-success" href="#" role="button">Submit</a>
+  </form>
+</div>
+{% endblock content %}
