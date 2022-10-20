@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import UserChangeForm
+from django.contrib.auth.forms import PasswordChangeForm
 
 class UserCustomForm(UserCreationForm):
   class Meta:
@@ -28,3 +29,7 @@ class UserCustomChangeForm(UserChangeForm):
       'gender',
       'profile_img',
     ]
+
+class UserCustomPasswordForm(PasswordChangeForm):
+  class Meta:
+    pass

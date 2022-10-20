@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import UserCustomForm, UserCustomChangeForm
+from .forms import UserCustomForm, UserCustomChangeForm, UserCustomPasswordForm
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
@@ -69,3 +69,33 @@ def update(request, pk):
   
   else:
     return redirect('articles:index')
+
+@login_required
+def password_change(request, pk):
+  user = get_user_model().objects.get(pk=pk)
+
+  if request.user == user:
+    if request.method == "POST":
+      password_form = UserCustomPasswordForm(request.POST, request.user)
+      if password_form.is_valid():
+        user = password_form.save()
+        auth_login(request, user=user)
+        return redirect('accounts:update', user.pk)
+
+    else:
+      password_form = UserCustomPasswordForm(request.user)
+    context = {
+      'password_form': password_form,
+    }
+    return render(request, 'accounts/password.html', context)
+  
+  else:
+    return redirect('articles:index')
+
+@login_required
+def delete(request, pk):
+  if request.user == pk:
+    request.user.delete()
+    return redirect('article:index')
+  else:
+    return redirect('accounts:update', request.user.pk)

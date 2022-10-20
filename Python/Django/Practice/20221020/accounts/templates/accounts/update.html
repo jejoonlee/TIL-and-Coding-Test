@@ -14,6 +14,31 @@
     {% csrf_token %}
     {% bootstrap_form update_form %}
     <input class="btn btn-outline-success" type="submit" value="Submit">
+    <a class="btn btn-outline-secondary" href="{% url 'accounts:profile' request.user.id %}" role="button">Go Back</a>
+    <a class="btn btn-outline-danger" href="{% url 'accounts:password_change' request.user.id %}" role="button">Change Password</a>
   </form>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Delete Account
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Are You Sure?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        All your information will be removed from this website, once you delete your account
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a class="btn btn-outline-danger" href="{% url 'accounts:delete' request.user.id %}" role="button">Delete Account</a>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 {% endblock content %}
