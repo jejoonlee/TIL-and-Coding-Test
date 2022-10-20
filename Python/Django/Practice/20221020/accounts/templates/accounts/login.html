@@ -2,18 +2,18 @@
 {% load static %}
 {% load django_bootstrap5 %}
 
-{% block title %}Register Page{% endblock title %}
+{% block title %}Login{% endblock title %}
 
 {% block css %}<link rel="stylesheet" href="{% static 'CSS/style.css' %}">{% endblock css %}
 
 {% block content %}
-<div class="container my-5">
-  <h1 class="text-center">Register</h1>
-
-  <form action="" method="POST" enctype="multipart/form-data">
+<section class="container my-5">
+  <h1 class='text-center'>Login</h1>
+  <form action="" method="POST">
     {% csrf_token %}
-    {% bootstrap_form signup_form %}
+    {% bootstrap_form login_form %}
+    <a class="btn btn-outline-secondary" href="#" role="button">Register</a>
     <input class="btn btn-outline-success" type="submit" value="Submit">
   </form>
-</div>
+</section>
 {% endblock content %}

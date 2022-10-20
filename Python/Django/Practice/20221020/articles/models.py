@@ -27,7 +27,7 @@ class Review(models.Model):
   match_info = models.TextField()
   rating = models.CharField(max_length=50, choices=rating_choice)
   match_date = models.DateField()
-  image = models.ImageField(upload_to='image', default='no_img.png')
+  image = models.ImageField(upload_to='image/article_image', default='no_img.png')
   image_thumbnail = ImageSpecField(source='avatar',
                                   processors=[ResizeToFill(295, 295)],
                                   format='JPEG',

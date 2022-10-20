@@ -10,5 +10,5 @@ class User(AbstractUser):
   )
 
   gender = models.CharField(max_length=6, choices=gender_choice)
-  profile_img = models.ImageField(upload_to='profile_pic', default='no_profile_pic.png')
+  profile_img = models.ImageField(upload_to='image/profile_pic', default='no_profile_pic.png')
   pass
