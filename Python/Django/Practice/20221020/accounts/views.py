@@ -44,8 +44,12 @@ def logout(request):
 
 def profile(request, pk):
   user = get_user_model().objects.get(pk=pk)
+
+  user_reviews = user.review_set.all()
+
   context = {
     'user': user,
+    'user_reviews': user_reviews,
   }
 
   return render(request, 'accounts/profile.html', context)

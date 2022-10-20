@@ -9,12 +9,12 @@
 <section class="main container my-5 d-flex flex-column align-items-center">
   <h1>{{ user.username }}'s Profile</h1>
   <div class="profile-details d-flex align-items-center">
-    <img src="{{ user.profile_img.url }}" alt="Profile_Picture" style="height: 200px;">
+    <img src="{{ user.profile_img.url }}" alt="Profile_Picture" style="height: 250px;">
     <div class="ms-5">
       <h3>Full Name : {{ user.first_name }} {{ user.last_name }}</h3>
       <h4>Gender : {{ user.gender }}</h4>
       <h4>Email : {{ user.email }}</h4>
-      <h4 class="text-muted">Date Joined : {{ user.date_joined }}</h4>
+      <h6 class="text-muted">Date Joined : {{ user.date_joined }}</h6>
       <a class="btn btn-outline-secondary" href="{% url 'articles:index' %}" role="button">Go Home</a>
       {% if request.user.id == user.id %}
       <a class="btn btn-outline-danger" href="{% url 'accounts:update' request.user.id %}" role="button">Chang Info</a>
@@ -36,12 +36,14 @@
       </tr>
     </thead>
     <tbody>
+      {% for review in user_reviews %}
       <tr>
-        <td>Otto</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td><a class="btn btn-outline-success btn-sm" href="#" role="button">Click to Move</a></td>
+        <td>{{ review.review_title }}</td>
+        <td>{{ review.match_title }}</td>
+        <td>{{ review.created_at }}</td>
+        <td><a class="btn btn-outline-success btn-sm" href="{% url 'articles:detail' review.pk %}" role="button">Click to Move</a></td>
       </tr>
+      {% endfor %}
     </tbody>
   </table>
 </section>
