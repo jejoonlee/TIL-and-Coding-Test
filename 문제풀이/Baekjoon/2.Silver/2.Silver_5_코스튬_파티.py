@@ -5,13 +5,13 @@ sys.stdin = open('input.txt')
 # S : 코스튬에 들어갈 수 있는 2마리의 소 사이즈
 N, S = map(int, input().split())
 cnt = 0
+    
 
 cows = []
 for _ in range(N):
   cows.append(int(input()))
 
-
-for i in range(0, N):
+for i in range(N):
   j = i
   while j != N - 1:
     j += 1
