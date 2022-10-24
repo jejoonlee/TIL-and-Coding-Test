@@ -92,4 +92,11 @@ def comment(request, pk):
 
 
 def likes(request, pk):
-  pass
+  review = Review.objects.get(pk = pk)
+
+  if request.user not in review.user_like.all():
+    review.user_like.add(request.user)
+    return redirect('articles:detail', review.pk)
+  else:
+    review.user_like.remove(request.user)
+    return redirect('articles:detail', review.pk)
