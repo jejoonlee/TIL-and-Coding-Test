@@ -19,8 +19,14 @@ for t in range(1, T + 1):
     car_weight.append(int(input()))
 
   parking_cost.sort()
+  # 주차장에 있는 차의 숫자
   parking = [0] * n
   waiting_line = deque([])
+  
+  # 세울 곳
+  park = 0
 
   for _ in range(2 * m):
-    
+    car = int(input())
+    if 0 in parking:
+      

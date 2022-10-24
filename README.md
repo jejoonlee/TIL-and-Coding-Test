@@ -12,7 +12,7 @@
 | **Website**           | Detail   | **Updated** | **Link (Click)**                     |
 | --------------------- | -------- | ----------- | ------------------------------------ |
 | **Codeup**            | 문제풀이 | 2022.07.19  | [링크](./문제풀이/Codeup/README.md)  |
-| **SW Expert Academy** | 문제풀이 | 2022.10.15  | [링크](./문제풀이/SW_Expert_Academy) |
+| **SW Expert Academy** | 문제풀이 | 2022.10.24  | [링크](./문제풀이/SW_Expert_Academy) |
 | **Baekjoon**          | 문제풀이 | 2022.10.23  | [링크](./문제풀이/Baekjoon)          |
 | **Programmers**       | 문제풀이 | 2022.09.14  | [링크](./문제풀이/Programmers)       |
 
