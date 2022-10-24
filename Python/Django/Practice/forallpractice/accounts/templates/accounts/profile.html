@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block title %}{{ user.username }}'s Profile Page{% endblock title %}
-
-{% block css %}<link rel="stylesheet" href="{% static 'CSS/style.css' %}">{% endblock css %}
 
 {% block content %}
 <section class="main container my-5 d-flex flex-column align-items-center">
@@ -24,7 +21,7 @@
 
 </section>
 
-<section class="table container">
+<section class="profile_reviews table container">
   <h2 class="text-center">Written Reviews</h2>
   <table class="table">
     <thead>
@@ -41,6 +38,28 @@
         <td>{{ review.review_title }}</td>
         <td>{{ review.match_title }}</td>
         <td>{{ review.created_at }}</td>
+        <td><a class="btn btn-outline-success btn-sm" href="{% url 'articles:detail' review.pk %}" role="button">Click to Move</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="profile_likes my-4 table container">
+  <h2 class="text-center">Liked Reviews <span class="likes-num">| you like {{ user.like_articles.all | length }} reviews </span></h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Review Title</th>
+        <th scope="col">Reviewed match</th>
+        <th scope="col">Go to the Page</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for review in user.like_articles.all %}
+      <tr>
+        <td>{{ review.review_title }}</td>
+        <td>{{ review.match_title }}</td>
         <td><a class="btn btn-outline-success btn-sm" href="{% url 'articles:detail' review.pk %}" role="button">Click to Move</a></td>
       </tr>
       {% endfor %}

@@ -20,3 +20,9 @@
 .likes:hover{
   color: rgb(255, 11, 223);
 }
+
+/* profile */
+.likes-num {
+  font-size: 1.2rem;
+  color: rgba(133, 133, 133);
+}
