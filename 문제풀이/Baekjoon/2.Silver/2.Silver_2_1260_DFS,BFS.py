@@ -42,5 +42,6 @@ for _ in range(M):
 for j in graph:
   j.sort()
 
-print(dfs(V))
-print(bfs(V))
+dfs(V)
+print()
+bfs(V)
