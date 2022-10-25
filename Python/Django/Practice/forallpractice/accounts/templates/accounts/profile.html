@@ -18,7 +18,20 @@
       {% endif %}
     </div>
   </div>
+</section>
 
+<section class="follow container d-flex flex-column justify-content-center mb-4">
+  <div class="follow-info d-flex justify-content-center">
+    <h5 class="followers">Followers : {{ user.follower.all | length }}</h5>
+    <h5>Following : {{ user.following.all | length }}</h5>
+  </div>
+  {% if request.user != user %}
+  {% if request.user not in user.follower.all %}
+  <a class="btn btn-outline-primary" href="{% url 'accounts:follow' user.pk %}" role="button">Follow</a>
+  {% else %}
+  <a class="btn btn-outline-danger" href="{% url 'accounts:follow' user.pk %}" role="button">Unfollow</a>
+  {% endif %}
+  {% endif %}
 </section>
 
 <section class="profile_reviews table container">

@@ -21,7 +21,7 @@
           <p class="mb-2 card-text text-center">{{ review.sports }}</p>
           <p class="mb-2 card-text text-center">{{ review.match_title }}</p>
           <p class="mb-2 card-text text-center">{{ review.match_date }}</p>
-          <p class="mb-2 card-text text-center">Written by: {{ review.user }}</p>
+          <p class="mb-2 card-text text-center">Written by:<a href="{% url 'accounts:profile' review.user.pk %}"> {{ review.user }}</a></p>
           <p class="mb-2 card-text text-center">{{ review.user_like.all | length }} people like this review</p>
           <a href="{% url 'articles:detail' review.pk %}" class="mt-2 btn btn-primary">Detail</a>
         </div>

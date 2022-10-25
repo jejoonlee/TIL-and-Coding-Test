@@ -103,3 +103,17 @@ def delete(request, pk):
     return redirect('article:index')
   else:
     return redirect('accounts:update', request.user.pk)
+
+
+def follow(request, pk):
+  profile = get_user_model().objects.get(pk=pk)
+
+  if request.user not in profile.follower.all():
+    if request.user != profile:
+      profile.follower.add(request.user)
+      return redirect('accounts:profile', profile.pk)
+    else:
+      return redirect('accounts:profile', profile.pk)
+  else:
+    profile.follower.remove(request.user)
+    return redirect('accounts:profile', profile.pk)
