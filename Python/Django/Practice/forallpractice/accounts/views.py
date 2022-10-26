@@ -5,6 +5,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 
 # Create your views here.
 def signup(request):
@@ -104,16 +105,24 @@ def delete(request, pk):
   else:
     return redirect('accounts:update', request.user.pk)
 
-
+@login_required
 def follow(request, pk):
   profile = get_user_model().objects.get(pk=pk)
 
   if request.user not in profile.follower.all():
     if request.user != profile:
       profile.follower.add(request.user)
-      return redirect('accounts:profile', profile.pk)
+      is_following = True
     else:
       return redirect('accounts:profile', profile.pk)
+
   else:
     profile.follower.remove(request.user)
-    return redirect('accounts:profile', profile.pk)
+    is_following = False
+
+  context = {
+    'isFollowing': is_following,
+    'follower' :  profile.follower.all().count(),
+    'following' : profile.following.all().count(),
+  }
+  return JsonResponse(context)

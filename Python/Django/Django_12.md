@@ -4,6 +4,8 @@
 
 [M:N관계](#%EF%B8%8F-M:N관계)
 
+- [Follow 기능](#follow-기능)
+
 
 
 
@@ -61,3 +63,19 @@ class Reservation(models.Model):
 | `add()`    | 지정된 객체를 관련 객체 집합에 추가        |
 | `remove()` | 관련 객체 집합에서 지정된 모델 객체를 제거 |
 
+
+
+### Follow 기능
+
+> 유저와 유저와의 관계
+
+```python
+class User(AbstractUser):
+    following = models.ManyToManyField('self', symmetrical=False, related_name='followers')
+    # symmetrical이 False라서 팔로우를 하면 서로 친구가 안 된다
+```
+
+- 'self' 를 넣어줘서, 그 자체 관계를 표현해준다 (1:N 기능에서도 가능하다)
+- symmetrical = True (팔로우를 하면, 자동으로 맞팔을 한다)
+- symmetrical = False (팔로우를 하면, 상대방도 맞팔을 해야, 맞팔이 형성된다)
+  - 테이블에 `from_user_id` 와 `to_user_id`가 형성이 된다

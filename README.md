@@ -139,6 +139,8 @@
 | Django  | **댓글 추가/ 삭제 /보기 / 1:N 기능**                         | 2022년 10월 18일 ~ 19일 | [링크](./Python/Django/Django_11.md)                   |
 | Django  | 10월 17일 ~ 19일 정리                                        | 2022년 10월 17일 ~ 19일 | [링크](./Python/Django/Practice/20221017_19/README.md) |
 | Django  | **M:N 기능 (좋아요 기능)**                                   | 2022년 10월 24일        | [링크](./Python/Django/Django_12.md)                   |
+| Django  | 추가적인 내용 (views.py)                                     | 2022년 10월 25일        | [링크](./Python/Django/Django_13.md)                   |
+| Django  | 비동기 처리                                                  | 2022년 10월 26일        | [링크](./Python/Django/Django_14.md)                   |
 | Django  | 배운 것들 총 집합 (연습)                                     | update 2022.10.24       | [링크](./Python/Django/Practice/forallpractice)        |
 
 - ### SQLite

@@ -22,14 +22,14 @@
 
 <section class="follow container d-flex flex-column justify-content-center mb-4">
   <div class="follow-info d-flex justify-content-center">
-    <h5 class="followers">Followers : {{ user.follower.all | length }}</h5>
-    <h5>Following : {{ user.following.all | length }}</h5>
+    <h5 id="follower-cnt" class="followers">Follower: {{ user.follower.count }}</h5>
+    <h5 id="following-cnt">Following: {{ user.following.count }}</h5>
   </div>
   {% if request.user != user %}
   {% if request.user not in user.follower.all %}
-  <a class="btn btn-outline-primary" href="{% url 'accounts:follow' user.pk %}" role="button">Follow</a>
+  <button id='follow-btn' type="button" data-user-id="{{ user.pk }}" class="btn btn-outline-primary">Follow</button>
   {% else %}
-  <a class="btn btn-outline-danger" href="{% url 'accounts:follow' user.pk %}" role="button">Unfollow</a>
+  <button id='follow-btn' type="button" data-user-id="{{ user.pk }}" class="btn btn-outline-danger">Unfollow</button>
   {% endif %}
   {% endif %}
 </section>
@@ -81,3 +81,33 @@
 </section>
 
 {% endblock content %}
+
+{% block script %}
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const followBtn = document.querySelector('#follow-btn')
+  
+  followBtn.addEventListener('click', function (event) {
+    axios({
+      method: 'get',
+      url: `/accounts/${event.target.dataset.userId}/follow/`
+    }) 
+    .then (response => {
+      if (response.data.isFollowing === true) {
+        event.target.classList.add('btn-outline-danger')
+        followBtn.innerText = 'Unfollow'
+        event.target.classList.remove('btn-outline-primary')
+      } else {
+        event.target.classList.add('btn-outline-primary')
+        followBtn.innerText = 'Follow'
+        event.target.classList.remove('btn-outline-danger')
+      }
+      const followerCnt = document.querySelector('#follower-cnt')
+      followerCnt.innerText = 'Follower: ' + response.data.follower
+
+      const followingCnt = document.querySelector('#following-cnt')
+      followingCnt.innerText = 'Following: ' + response.data.following
+    })
+  })
+</script>
+{% endblock script %}
