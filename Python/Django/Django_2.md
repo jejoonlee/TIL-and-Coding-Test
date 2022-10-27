@@ -23,6 +23,12 @@
 ## ✔️ MTV
 
 > Model | Template | View
+>
+> Model : Query (efficient)
+>
+> Template : filter / tag ('Django template language')
+>
+> View : function / decorator
 
 - **Model** : deals with data and databases. It can retrieve, store and change data in database
 - **Template** : How the data looks on a web page (HTML document)

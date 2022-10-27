@@ -17,9 +17,9 @@
       <p class='mb-3 fw-bold'>Written by : {{ review.user }}</p>
       <p class='mb-3' class="text-muted">Updated at : {{ review.updated_at }}</p>
       {% if request.user not in review.user_like.all %}
-      <a href="{% url 'articles:likes' review.pk %}" class="likes"><i class="bi bi-heart"></i> <span class="likes_count">| {{ review.user_like.all | length }} people like this review</span></a>
+      <p><i id="like-btn" class="likes bi bi-heart" data-review-id="{{ review.pk }}"></i> <span class="likes_count">| {{ review.user_like.count  }} people like this review</span></p>
       {% else %}
-      <a href="{% url 'articles:likes' review.pk %}" class="likes"><i class="bi bi-heart-fill"></i> <span class="likes_count">| {{ review.user_like.all | length }} people like this review</span></a>
+      <p><i id="like-btn" class="likes bi bi-heart-fill" data-review-id="{{ review.pk }}"></i> <span class="likes_count">| {{ review.user_like.count  }} people like this review</span></p>
       {% endif %}
     </div>
   </div>
@@ -66,3 +66,30 @@
   </div>
 </div>
 {% endblock content %}
+
+{% block script %}
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const likeBtn = document.querySelector('#like-btn')
+
+  likeBtn.addEventListener('click', function(event) {
+    axios ({
+      method: 'get',
+      url: `/articles/likes/${event.target.dataset.reviewId}`,
+    })
+    .then (response => {
+      console.log(response.data)
+      if (response.data.isLike === true){
+        event.target.classList.add('bi-heart-fill')
+        event.target.classList.remove('bi-heart')
+      } else {
+        event.target.classList.add('bi-heart')
+        event.target.classList.remove('bi-heart-fill')
+      }
+
+      const reviewCnt = document.querySelector('.likes_count')
+      reviewCnt.innerText = '| ' + response.data.reviewCount + ' people like this review'
+    })
+  })
+</script>
+{% endblock script %}
