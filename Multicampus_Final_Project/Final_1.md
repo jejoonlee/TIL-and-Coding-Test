@@ -9,11 +9,17 @@
 - [인기검색어 기능](#인기검색어_기능)
 - [Arrange 기능](#arrange_기능)
 
+[비동기](#비동기)
+
+- [댓글 비동기](#댓글_비동기)
+- [댓글 삭제 비동기](#댓글_삭제_비동기)
+- [댓글 수정 비동기](#댓글_수정_비동기)
+
 
 
 ## ✔️ 프로젝트 하면서 학습한 것
 
-### API
+### ✍️ API
 
 > #### Application Protocol Interface
 >
@@ -27,7 +33,7 @@
 > - Open API를 사용하는 것은, 이미 만들어진 데이터들을, 데이터들을 제공하는 사이트의 기준에 맞춰서 사용하는 것이다
 >   - 예시로 **지도, 결제, 채팅, AI** 가 있다
 
- ### from django.db.models import Q
+### ✍️ from django.db.models import Q
 
 > 주로 `.filter` ORM을 사용할 때, 어떠한 정보를 찾을 때 사용한다
 >
@@ -39,7 +45,7 @@
 >
 > SQL : `WHERE question LIKE 'Who%' OR question LIKE 'What%'`
 
-### def search
+### ✍️ def search
 
 > ### Search의 모델
 
@@ -365,3 +371,22 @@ if sort == "recent":
 - `href="?searched={{ search }}&sorted=pop`
   - 해당 검색어에 대한 queryset들중 인기순으로 정렬을 한다
   - views.py로 `sorted=pop`을 보낸다. 그러면 위에 있는 함수대로 처리가 된다
+
+### ✍️ 비동기
+
+#### 댓글 비동기
+
+![세미프로젝트_비동기](Final_1.assets/세미프로젝트_비동기.png)
+
+![image-20221106151707969](Final_1.assets/image-20221106151707969.png)
+
+![image-20221106151730901](Final_1.assets/image-20221106151730901.png)
+
+
+
+#### 댓글 삭제 비동기
+
+
+
+#### 댓글 수정 비동기
+
