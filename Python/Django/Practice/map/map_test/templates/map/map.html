@@ -8,27 +8,41 @@
 </head>
 <body>
   <h1>지도지도</h1>
-  <div id="map" style="width:500px;height:400px;"></div>
+  <button type="button" onclick="getUserLocation()" class="btn btn-lg btn-primary" id="getMyPositionBtn">내 위치 가져오기</button>
+  <div id="map" style="width:1000px; height:500px;"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5a06118ba07d4964a2e24ae9f85e906f"></script>
   <script>
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+
+
     mapOption = { 
         center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
+        level: 5 // 지도의 확대 레벨
     };
 
     var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-    // 마커를 표시할 위치와 title 객체 배열입니다
-
-    var positions = [
-        {
-            title: '카카오', 
-            latlng: new kakao.maps.LatLng(33.450705, 126.570677)
-        },
-    ];
     
+    // 마커를 표시할 위치와 title 객체 배열입니다 
+    var parks = JSON.parse("{{ parkJson|escapejs }}")
+    console.log(parks)
+    console.log(parks[1].name)
+
+    var positions = []
+
+    var positions = [];
+    for (var i = 0; i < Object.keys(parks).length; i++) {
+      var content = {
+        title: parks[i].name,
+        latlng: new kakao.maps.LatLng(parks[i].lat, parks[i].long),
+        addr1: parks[i].addr,
+        detail: "디테일입니다 추후 추가예정",
+        tel: parks[i].tel,
+      }
+      positions.push(content);
+    };
+    console.log(positions);
 
     // 마커 이미지의 이미지 주소입니다
     var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
@@ -48,6 +62,32 @@
             title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
             image : markerImage // 마커 이미지 
         });
+    }
+
+
+    function locationLoadSuccess(pos) {
+        var currentPosition = new kakao.maps.LatLng(pos.coords.latitude, pos.coords.longitude)
+        
+        // 지도 이동할때 부드럽게
+        map.panTo(currentPosition)
+        
+        // 마커 생성
+        var marker = new kakao.maps.Marker({
+            position: currentPosition
+        })
+
+        // 기존에 마커가 있으면 제거
+        marker.setMap(null)
+        marker.setMap(map)
+    }
+
+    function loactionLoadError(pos) {
+        alert('위치 정보를 가지고 오는데 실패했습니다 ㅜ.ㅜ')
+    }
+
+    // 내 위치 가지고 오기
+    function getUserLocation() {
+        navigator.geolocation.getCurrentPosition(locationLoadSuccess, loactionLoadError)
     }
   </script>
 </body>
