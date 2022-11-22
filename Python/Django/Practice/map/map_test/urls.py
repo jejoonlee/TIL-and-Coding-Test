@@ -4,6 +4,6 @@ from . import views
 app_name = 'map'
 
 urlpatterns = [
-    path('map/', views.map, name="map"),
-    path("map2/", views.map2, name="map2"),
+    # path('map/', views.map, name="map"),
+    # path('map/<str:x>/<str:y>', views.search_map, name="search_map"),
 ]

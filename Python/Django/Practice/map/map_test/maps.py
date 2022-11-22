@@ -1,5 +1,4 @@
 import json
-import requests
 
 
 # 주소를 통해 위치 얻기
@@ -13,9 +12,8 @@ def search_location(address):
     return crd
 
 
-
-# def map(request):
-#     with open("C:/Users/ADMIN/OneDrive/Desktop/TIL/Python/Django/Practice/map/map_test/parkdata.json", encoding="utf-8") as file:
+# def maps(x, y):
+#     with open("C:/Users/ADMIN/OneDrive/Desktop/TIL/Python/Django/Practice/map/parkdata.json", encoding="utf-8") as file:
 #         park_data = json.load(file)
 #         parks = park_data["records"]
 #         park_info = [] 
@@ -29,4 +27,4 @@ def search_location(address):
 #             })
 
 #         parkJson = json.dumps(park_info)
-#     return render(request, "map/map.html", {'parkJson': park_info})
+#     return parkJson
