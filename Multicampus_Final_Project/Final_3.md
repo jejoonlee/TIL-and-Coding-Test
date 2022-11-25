@@ -10,8 +10,8 @@
 
 ### Who?
 
-- 김나현 https://github.com/jiyeong99
-- 김지연 https://github.com/jiyeong99
+- 김나현 https://github.com/nahkim
+- 김지연 https://github.com/jn-97
 - 김지영 https://github.com/jiyeong99
 - 이제준 https://github.com/jejoonlee
 - 임수경 https://github.com/oiosu
@@ -104,4 +104,3 @@
 ## ✍️ 최종 기능 설명 (내가 해봤던 새로운 기능 위주)
 
 > 
->
