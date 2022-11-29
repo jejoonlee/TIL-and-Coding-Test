@@ -2,6 +2,8 @@
 
 [웹 크롤링이란?](#%EF%B8%8F-웹-크롤링이란?)
 
+[Selenium으로 크롤링 하기](#%EF%B8%8F-selenium으로-크롤링-하기)
+
 
 
 `파싱 (parsing)`이란?
@@ -42,4 +44,22 @@
 - 웹 사이트 내에 어떤 것이 접근이 가능하고 가능하지 않는지 볼 수 있다
 - robots.txt에 접근이 가능하지 않게 나와 있다고, 무조건 접근이 불가능하지 않다
   - 다만, 계속 접근을 시도하다보면 웹 사이트 측에서 불법행위로 생각할 수 있다
+
+
+
+## ✔️ Selenium으로 크롤링 하기
+
+> 내가 직접 웹을 작동시킨다고 생각하고 코드를 짜면된다 (Selenium은 코드를 짜면 driver가 자동으로 웹을 작동 시켜준다)
+>
+> - URL을 가지고 온다
+>
+> - 해당 URL에 있는 요소들을 CSS_SELECTOR 같은, 지정자들을 통해 가지고 오면 된다
+
+![crawling 1](python_크롤링.assets/crawling 1.png)
+
+![crawling 2](python_크롤링.assets/crawling 2.png)
+
+![crawling 3](python_크롤링.assets/crawling 3.png)
+
+
 

@@ -112,17 +112,18 @@
 
 - ### Python
 
-| Content   | Detail               | Date                 |                       Link                        |
-| :-------- | -------------------- | -------------------- | :-----------------------------------------------: |
-| Python 1  |                      | 2022년 7월 11일      |        [링크](./Python/python_basic_1.md)         |
-| Python 2  | Control Statements   | 2022년 7월 12일      |   [링크](./Python/python_control_statement.md)    |
-| Python 3  | Function             | 2022년 7월 13일      |        [링크](./Python/python_function.md)        |
-| Python 4  | Methods              | 2022년 7월 14일      | [링크](./Python/python_data_structure_methods.md) |
-| Python 5  | Error / Debugging    | 2022년 7월 18일      |      [링크](./Python/python_error_debug.md)       |
-| Python 6  | OOP                  | 2022년 7월 19 ~ 20일 |          [링크](./Python/python_OOP.md)           |
-| Python 7  | 응용 / 심화          | 2022년 7월 21 ~ 22일 |         [링크](./Python/python_extra.md)          |
-| 📌**정리** | 명령문/ 함수/methods | 2022년 8월 1일       |  [링크](./Python/python_operators_functions.md)   |
-| ✍️문제풀이 | 수업                 | 2022년 8월 9일       |             [링크](./Python/문제풀이)             |
+| Content   | Detail               | Date                  |                       Link                        |
+| :-------- | -------------------- | --------------------- | :-----------------------------------------------: |
+| Python 1  |                      | 2022년 7월 11일       |        [링크](./Python/python_basic_1.md)         |
+| Python 2  | Control Statements   | 2022년 7월 12일       |   [링크](./Python/python_control_statement.md)    |
+| Python 3  | Function             | 2022년 7월 13일       |        [링크](./Python/python_function.md)        |
+| Python 4  | Methods              | 2022년 7월 14일       | [링크](./Python/python_data_structure_methods.md) |
+| Python 5  | Error / Debugging    | 2022년 7월 18일       |      [링크](./Python/python_error_debug.md)       |
+| Python 6  | OOP                  | 2022년 7월 19 ~ 20일  |          [링크](./Python/python_OOP.md)           |
+| Python 7  | 응용 / 심화          | 2022년 7월 21 ~ 22일  |         [링크](./Python/python_extra.md)          |
+| Crawling  | 크롤링하기           | 2022년 11월 28 ~ 29일 |         [링크](./Python/python_크롤링.md)         |
+| 📌**정리** | 명령문/ 함수/methods | 2022년 8월 1일        |  [링크](./Python/python_operators_functions.md)   |
+| ✍️문제풀이 | 수업                 | 2022년 8월 9일        |             [링크](./Python/문제풀이)             |
 
 > #### **Django**
 

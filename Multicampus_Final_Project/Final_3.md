@@ -4,6 +4,10 @@
 
 [레이아웃 설계](#%EF%B8%8F-레이아웃-설계)
 
+[모델 설계](#%EF%B8%8F-모델-설계)
+
+[Selenium을 통한 크롤링](#%EF%B8%8F-Selenium을-통한-크롤링)
+
 [최종 기능 설명](#%EF%B8%8F-최종-기능-설명)
 
 
@@ -96,8 +100,26 @@
 #### ▶️ 초기 모델 설계
 
 - 모델 설계는 최대한 복잡하지 않게 진행을 했다
+
 - 제일 중요한 것은 최대한 Query문을 통해 카드들을 유저들이 볼 수 있도록 했다
+
 - 그 외에는, 크롤링을 통해 카드 정보를 가지고 올 예정이라, 모델을 계속 바뀔 수 있다
+
+  
+
+## ✍️ Selenium을 통한 크롤링
+
+[크롤링에 대해](https://github.com/jejoonlee/TIL-and-Coding-Test/blob/master/Python/python_%ED%81%AC%EB%A1%A4%EB%A7%81.md)
+
+> Selenium을 이용하여 크롤링을 진행했다
+>
+> 카드 디테일 페이지를 하나씩 돌면서, 안에 있는 상세 정보들을 CSS_SELECTOR를 통해 가지고 왔다
+
+![crawling 1](Final_3.assets/crawling 1.png)
+
+![crawling 2](Final_3.assets/crawling 2.png)
+
+![crawling 3](Final_3.assets/crawling 3.png)
 
 
 

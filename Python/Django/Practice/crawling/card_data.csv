@@ -1,0 +1,365 @@
+1,신한카드 Hi-Point,신한카드,"해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/1/card_img/20083/1card.png,전월실적 없음,VISAmastercardJCB
+2,신한카드 Love,신한카드,"해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/2/card_img/20084/2card.png,전월실적20 만원 이상,VISAmastercardAMEXUnionPay
+3,신한카드 Lady,신한카드,"해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/3/card_img/20085/3card.png,전월실적30 만원 이상,VISAmastercardUnionPay
+4,SK에너지 신한카드The you,신한카드,"국내전용 7,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/4/card_img/20086/4card.png,전월실적30 만원 이상,VISAmastercardUnionPay
+5,GS칼텍스 신한카드Dream 100,신한카드,"국내전용 7,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/5/card_img/20087/5card.png,전월실적30 만원 이상,VISA
+6,신한카드 Cube,신한카드,"국내전용 10,000원 해외겸용 13,000원",https://api.card-gorilla.com:8080/storage/card/6/card_img/20088/6card.png,전월실적30 만원 이상,VISAmastercard
+7,신한카드 23.5°,신한카드,"국내전용 10,000원 해외겸용 14,000원",https://api.card-gorilla.com:8080/storage/card/7/card_img/20089/7card.png,전월실적 없음,VISA
+8,신한카드 The CLASSIC-Y,신한카드,"해외겸용 100,000원",https://api.card-gorilla.com:8080/storage/card/8/card_img/20090/8card.png,전월실적 없음,VISAmastercardUnionPay
+9,신한카드 아이행복,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/9/card_img/20091/9card.png,전월실적30 만원 이상,
+10,신한카드 B.Big(삑),신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/10/card_img/24226/10card.png,전월실적30 만원 이상,VISAUnionPay
+11,신한카드 Simple+,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/11/card_img/20093/11card.png,전월실적 없음,VISAmastercard
+12,신한카드 Air Platinum#,신한카드,"해외겸용 37,000원",https://api.card-gorilla.com:8080/storage/card/12/card_img/20094/12card.png,전월실적 없음,VISAmastercard
+13,신한카드 Mr.Life,신한카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/13/card_img/20095/13card.png,전월실적30 만원 이상,VISA
+14,신한카드 YOLO ⓘ,신한카드,"국내전용 15,000원 해외겸용 18,000원",https://api.card-gorilla.com:8080/storage/card/14/card_img/20096/14card.png,전월실적30 만원 이상,VISA
+15,신한카드 The CLASSIC+,신한카드,"해외겸용 120,000원",https://api.card-gorilla.com:8080/storage/card/15/card_img/20097/15card.png,전월실적30 만원 이상,AMEX
+16,신한카드 RPM+ Platinum#,신한카드,"해외겸용 32,000원",https://api.card-gorilla.com:8080/storage/card/16/card_img/20098/16card.png,전월실적50 만원 이상,VISAUnionPay
+17,신한카드 YOLO Tasty,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/17/card_img/20099/17card.png,전월실적30 만원 이상,VISA
+18,신한카드 Shopping,신한카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/18/card_img/20100/18card.png,전월실적50 만원 이상,VISA
+19,신한카드 O2O,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/19/card_img/20101/19card.png,전월실적50 만원 이상,mastercard
+21,신한카드 Simple Platinum#,신한카드,"해외겸용 27,000원",https://api.card-gorilla.com:8080/storage/card/21/card_img/20103/21card.png,전월실적 없음,VISAUnionPay
+22,카카오페이 신한카드,신한카드,"국내전용 12,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/22/card_img/20104/22card.png,전월실적30 만원 이상,mastercardUnionPay
+23,신한카드 Always FAN,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/23/card_img/20105/23card.png,전월실적50 만원 이상,
+24,EDIYA 신한카드 Tasty,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/24/card_img/20106/24card.png,전월실적30 만원 이상,mastercardUnionPay
+25,신한카드 Noon,신한카드,"해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/25/card_img/20107/25card.png,전월실적50 만원 이상,mastercardUnionPay
+26,신한카드 Edu,신한카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/26/card_img/20108/26card.png,전월실적50 만원 이상,mastercard
+27,아시아나 신한카드 Air 1.5,신한카드,"국내전용 43,000원 해외겸용 45,000원",https://api.card-gorilla.com:8080/storage/card/27/card_img/25865/27card.png,전월실적50 만원 이상,mastercard
+28,신세계 신한카드,신한카드,"해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/28/card_img/20110/28card.png,전월실적50 만원 이상,mastercardUnionPay
+29,TLX PASS 신한카드,신한카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/29/card_img/20111/29card.png,전월실적30 만원 이상,VISAUnionPay
+30,모바일 Tmoney 신한카드,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/30/card_img/20112/30card.png,전월실적30 만원 이상,VISAUnionPay
+31,신한카드 All Pass,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/31/card_img/20113/31card.png,전월실적30 만원 이상,VISAUnionPay
+32,신한카드 Deep Dream,신한카드,"해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/32/card_img/20114/32card.png,전월실적 없음,VISAUnionPay
+33,신한카드 The CLASSIC-L,신한카드,"해외전용 100,000원",https://api.card-gorilla.com:8080/storage/card/33/card_img/20115/33card.png,전월실적 없음,mastercard
+35,GS칼텍스 신한카드 Shine,신한카드,"해외겸용 7,000원",https://api.card-gorilla.com:8080/storage/card/35/card_img/20117/35card.png,전월실적20 만원 이상,VISAmastercard
+36,신한카드 Cube Platinum#,신한카드,"해외겸용 32,000원",https://api.card-gorilla.com:8080/storage/card/36/card_img/23899/36card.png,전월실적30 만원 이상,VISAmastercardAMEX
+37,신한카드 The BEST-F,신한카드,"해외겸용 202,000원",https://api.card-gorilla.com:8080/storage/card/37/card_img/20118/37card.png,전월실적 없음,VISA
+38,신한카드 Lesson Platinum#,신한카드,"해외겸용 27,000원",https://api.card-gorilla.com:8080/storage/card/38/card_img/20119/38card.jpg,전월실적30 만원 이상,AMEX
+39,신한카드 Deep Oil,신한카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/39/card_img/20120/39card.png,전월실적30 만원 이상,mastercard
+40,신한카드 Deep Dream Platinum+,신한카드,"해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/40/card_img/20121/40card.png,전월실적 없음,VISAUnionPay
+41,신한카드 Deep On Platinum+,신한카드,"해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/41/card_img/20122/41card.png,전월실적30 만원 이상,mastercardUnionPay
+42,SOCAR 제휴 SOCAR 신한카드,신한카드,"해외겸용 13,000원",https://api.card-gorilla.com:8080/storage/card/42/card_img/20123/42card.png,전월실적30 만원 이상,VISA
+43,신한카드 Deep Store,신한카드,"해외겸용 13,000원",https://api.card-gorilla.com:8080/storage/card/43/card_img/20124/43card.png,전월실적30 만원 이상,mastercard
+44,위메프페이 신한카드,신한카드,"해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/44/card_img/20125/44card.png,전월실적 없음,mastercard
+45,American Express Blue(아멕스블루),삼성카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/45/card_img/20126/45card.png,전월실적30 만원 이상,AMEX
+46,삼성카앤모아카드,삼성카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/46/card_img/20127/46card.png,전월실적30 만원 이상,mastercard
+47,삼성카드4,삼성카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/47/card_img/20128/47card.png,전월실적10 만원 이상,AMEXUnionPay
+48,국민행복 삼성카드,삼성카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/48/card_img/20129/48card.png,전월실적 없음,mastercardUnionPay
+49,삼성카드 & MILEAGE PLATINUM (스카이패스),삼성카드,"국내전용 47,000원 해외겸용 49,000원",https://api.card-gorilla.com:8080/storage/card/49/card_img/24313/49card.png,전월실적 없음,AMEX
+50,아시아나 삼성지엔미플래티늄카드,삼성카드,"해외전용 20,000원",https://api.card-gorilla.com:8080/storage/card/50/card_img/20131/50card.png,전월실적30 만원 이상,mastercard
+51,삼성카드 taptap O,삼성카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/51/card_img/20132/51card.png,전월실적30 만원 이상,mastercard
+52,삼성카드 taptap S,삼성카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/52/card_img/20133/52card.png,전월실적50 만원 이상,mastercard
+53,아시아나 삼성애니패스플래티늄카드,삼성카드,"해외전용 20,000원",https://api.card-gorilla.com:8080/storage/card/53/card_img/20134/53card.png,전월실적30 만원 이상,mastercard
+54,삼성카드 스페셜마일리지 (스카이패스),삼성카드,"국내전용 97,000원 해외겸용 99,000원",https://api.card-gorilla.com:8080/storage/card/54/card_img/20135/54card.png,전월실적 없음,AMEX
+55,CU·배달의민족 삼성카드 taptap,삼성카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/55/card_img/20136/55card.png,전월실적30 만원 이상,mastercard
+56,삼성카드 지엔미+,삼성카드,"해외전용 49,000원",https://api.card-gorilla.com:8080/storage/card/56/card_img/20137/56card.png,전월실적50 만원 이상,mastercardUnionPay
+57,삼성카드 애니패스+,삼성카드,"해외전용 49,000원",https://api.card-gorilla.com:8080/storage/card/57/card_img/20138/57card.png,전월실적50 만원 이상,mastercardUnionPay
+58,카라이프 삼성카드 DISCOUNT+,삼성카드,"국내전용 49,000원 해외겸용 49,000원",https://api.card-gorilla.com:8080/storage/card/58/card_img/20139/58card.png,전월실적50 만원 이상,mastercard
+59,삼성카드 taptap I,삼성카드,"국내전용 49,000원 해외겸용 49,000원",https://api.card-gorilla.com:8080/storage/card/59/card_img/20141/59card.png,전월실적50 만원 이상,mastercard
+60,American Express Green,삼성카드,"해외전용 49,000원",https://api.card-gorilla.com:8080/storage/card/60/card_img/20142/60card.png,전월실적50 만원 이상,AMEX
+61,스카이패스 삼성아멕스카드,삼성카드,"해외전용 20,000원",https://api.card-gorilla.com:8080/storage/card/61/card_img/20143/61card.png,전월실적 없음,AMEX
+62,글로벌쇼핑 삼성카드 5v2,삼성카드,"해외겸용 18,000원",https://api.card-gorilla.com:8080/storage/card/62/card_img/20144/62card.png,전월실적 없음,mastercard
+63,삼성페이 삼성카드 taptap,삼성카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/63/card_img/20145/63card.png,전월실적30 만원 이상,mastercard
+64,신세계이마트 삼성카드7,삼성카드,"국내전용 18,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/64/card_img/20146/64card.png,전월실적30 만원 이상,mastercard
+65,삼성카드 2V3(아지냥이 Edition),삼성카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/65/card_img/20147/65card.png,전월실적30 만원 이상,VISAmastercardUnionPay
+66,삼성카드 6V3,삼성카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/66/card_img/20148/66card.png,전월실적30 만원 이상,mastercardUnionPay
+67,삼성카드 3V3(GS칼텍스),삼성카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/67/card_img/20149/67card.png,전월실적30 만원 이상,mastercardUnionPay
+68,삼성카드 3V3(SK에너지),삼성카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/68/card_img/20150/68card.png,전월실적30 만원 이상,mastercardUnionPay
+69,삼성카드 4V3(포인트),삼성카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/69/card_img/20151/69card.png,전월실적 없음,mastercardUnionPay
+70,삼성카드 5V3,삼성카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/70/card_img/20152/70card.png,전월실적30 만원 이상,VISAmastercardUnionPay
+71,삼성카드 4V3,삼성카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/71/card_img/20153/71card.png,전월실적30 만원 이상,mastercardUnionPay
+72,트레이더스신세계 삼성카드,삼성카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/72/card_img/27079/0072card.png,전월실적40 만원 이상,mastercard
+73,카드의정석 NEW우리V카드,우리카드,"국내전용 2,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/73/card_img/20155/73card.png,전월실적30 만원 이상,VISABCBC GlobalmastercardUnionPay
+74,All For Me카드,우리카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/74/card_img/20156/74card.png,전월실적30 만원 이상,VISAmastercardUnionPay
+75,KT 카드의정석 Super DC,우리카드,"국내전용 20,000원 해외겸용 25,000원",https://api.card-gorilla.com:8080/storage/card/75/card_img/20157/75card.png,전월실적30 만원 이상,VISABC
+76,LGU+ 카드의정석 장기할부,우리카드,"국내전용 15,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/76/card_img/20158/76card.png,전월실적30 만원 이상,VISABCmastercard
+77,위비멤버스카드,우리카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/77/card_img/20159/77card.png,전월실적30 만원 이상,BCmastercard
+78,블루다이아몬드Ⅱ 카드,우리카드,"국내전용 95,000원 해외겸용 100,000원",https://api.card-gorilla.com:8080/storage/card/78/card_img/20160/78card.png,전월실적30 만원 이상,BCmastercardJCB
+79,그랑블루Ⅱ카드,우리카드,"해외겸용 100,000원",https://api.card-gorilla.com:8080/storage/card/79/card_img/20161/79card.png,전월실적30 만원 이상,VISAmastercardUnionPay
+80,썸(SUM) 페이 카드,우리카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/80/card_img/20162/80card.png,전월실적30 만원 이상,mastercardUnionPay
+81,위메프 우리카드,우리카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/81/card_img/20163/81card.png,전월실적30 만원 이상,BCmastercardUnionPay
+82,우리 XGOLF 카드,우리카드,"국내전용 13,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/82/card_img/20164/82card.png,전월실적30 만원 이상,BCmastercard
+83,ONLY 나만의카드,우리카드,"국내전용 13,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/83/card_img/20165/83card.png,전월실적30 만원 이상,BCmastercard
+84,카드의정석 POINT,우리카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/84/card_img/20166/84card.png,전월실적30 만원 이상,VISABCmastercard
+85,카드의정석 SHOPPING,우리카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/85/card_img/20167/85card.png,전월실적30 만원 이상,VISAmastercardUnionPay
+86,카드의정석 DISCOUNT,우리카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/86/card_img/20168/86card.png,전월실적 없음,VISAmastercardUnionPay
+87,DA@카드의정석,우리카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/87/card_img/20239/87card.png,전월실적 없음,BCmastercard
+88,D4@카드의정석,우리카드,"국내전용 9,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/88/card_img/20241/88card.png,전월실적30 만원 이상,BCmastercard
+89,우리Most카드,우리카드,"국내전용 19,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/89/card_img/20242/89card.png,전월실적30 만원 이상,VISABCUnionPay
+90,카드의정석 위비온 플러스,우리카드,"국내전용 13,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/90/card_img/20243/90card.png,전월실적30 만원 이상,BCmastercard
+91,카드의정석 PREMIUM POINT,우리카드,"국내전용 110,000원 해외겸용 110,000원",https://api.card-gorilla.com:8080/storage/card/91/card_img/20245/91card.png,전월실적 없음,BCmastercard
+92,카드의정석 PREMIUM MILEAGE(SKYPASS),우리카드,"국내전용 135,000원 해외겸용 135,000원",https://api.card-gorilla.com:8080/storage/card/92/card_img/20246/92card.png,전월실적50 만원 이상,BCmastercard
+93,카드의정석 PREMIUM MILEAGE(AsianaClub),우리카드,"국내전용 135,000원 해외겸용 135,000원",https://api.card-gorilla.com:8080/storage/card/93/card_img/20247/93card.png,전월실적50 만원 이상,BCmastercard
+94,LoL CHAMPIONS KOREA 우리카드,우리카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/94/card_img/20248/94card.png,전월실적 없음,VISAmastercardUnionPay
+95,갤러리아 씨티카드 프레스티지,씨티카드,"국내전용 4,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/95/card_img/20250/95card.png,전월실적30 만원 이상,VISA
+96,씨티 리워드,씨티카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/96/card_img/20251/96card.png,전월실적30 만원 이상,mastercard
+97,신세계 씨티 리워드,씨티카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/97/card_img/20253/97card.png,전월실적30 만원 이상,VISAmastercard
+98,신세계 씨티카드 콰트로,씨티카드,"국내전용 2,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/98/card_img/20254/98card.png,전월실적30 만원 이상,VISA
+99,신세계 씨티 플래티늄 아시아나,씨티카드,"해외겸용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/99/card_img/20256/99card.png,전월실적 없음,VISA
+100,씨티 NEW 캐시백,씨티카드,"국내전용 13,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/100/card_img/20257/100card.png,전월실적 없음,mastercard
+101,NEW 씨티 클리어,씨티카드,"국내전용 4,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/101/card_img/20258/101card.png,전월실적15 만원 이상,mastercard
+102,씨티 NEW 프리미어마일 대한항공,씨티카드,"국내전용 148,000원 해외겸용 150,000원",https://api.card-gorilla.com:8080/storage/card/102/card_img/20260/102card.png,전월실적 없음,VISA
+103,씨티 NEW 프리미어마일 아시아나,씨티카드,"국내전용 148,000원 해외겸용 150,000원",https://api.card-gorilla.com:8080/storage/card/103/card_img/20261/103card.png,전월실적 없음,
+104,대백 씨티카드 아인스,씨티카드,"국내전용 4,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/104/card_img/20262/104card.png,전월실적30 만원 이상,VISA
+105,이마트 KB국민카드,KB국민카드,"국내전용 5,000원 해외전용 10,000원",https://api.card-gorilla.com:8080/storage/card/105/card_img/20263/105card.png,전월실적30 만원 이상,VISAmastercardAMEXUnionPay
+106,굿데이카드,KB국민카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/106/card_img/20264/106card.png,전월실적30 만원 이상,VISAmastercardAMEXUnionPayJCB
+107,SK LPG SAVE KB국민카드,KB국민카드,"국내전용 3,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/107/card_img/20265/107card.png,전월실적30 만원 이상,VISAmastercard
+108,와이즈카드,KB국민카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/108/card_img/20266/108card.png,전월실적 없음,VISAmastercardAMEXUnionPayJCB
+109,SK에너지 러브유 KB국민카드,KB국민카드,"국내전용 7,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/109/card_img/20267/109card.png,전월실적30 만원 이상,mastercardJCB
+110,서울도시가스 KB국민카드,KB국민카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/110/card_img/20268/110card.png,전월실적30 만원 이상,mastercardJCB
+111,혜담Ⅱ카드,KB국민카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/111/card_img/20269/111card.png,전월실적30 만원 이상,mastercardAMEXUnionPayJCB
+112,GS행복가득카드,KB국민카드,"국내전용 7,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/112/card_img/20270/112card.png,전월실적30 만원 이상,mastercardAMEX
+113,마일리지 가온카드(대한항공),KB국민카드,"국내전용 15,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/113/card_img/20271/113card.png,전월실적 없음,mastercard
+114,마일리지 가온카드(아시아나),KB국민카드,"국내전용 15,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/114/card_img/20272/114card.png,전월실적 없음,mastercard
+115,굿데이올림카드,KB국민카드,"국내전용 15,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/115/card_img/20273/115card.png,전월실적30 만원 이상,VISAmastercardAMEX
+116,청춘대로카드,KB국민카드,"국내전용 15,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/116/card_img/20274/116card.png,전월실적30 만원 이상,mastercard
+117,청춘대로 티타늄 카드,KB국민카드,"해외겸용 40,000원",https://api.card-gorilla.com:8080/storage/card/117/card_img/20349/117card.png,전월실적30 만원 이상,mastercardUnionPay
+118,FINETECH카드(아시아나),KB국민카드,"국내전용 20,000원 해외겸용 25,000원",https://api.card-gorilla.com:8080/storage/card/118/card_img/24264/118card.png,전월실적 없음,mastercard
+119,FINETECH카드(대한항공),KB국민카드,"국내전용 20,000원 해외겸용 25,000원",https://api.card-gorilla.com:8080/storage/card/119/card_img/24263/119card.png,전월실적 없음,mastercard
+120,ONE카드,KB국민카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/120/card_img/20352/120card.png,전월실적 없음,mastercard
+121,다담카드,KB국민카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/121/card_img/20353/121card.png,전월실적30 만원 이상,VISAmastercard
+122,모바일101카드,KB국민카드,"해외겸용 1,000원",https://api.card-gorilla.com:8080/storage/card/122/card_img/20354/122card.png,전월실적20 만원 이상,VISAmastercard
+123,아이행복카드(S-type),KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/123/card_img/23900/123card.png,전월실적30 만원 이상,mastercard
+124,아이행복카드(T-type),KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/124/card_img/23901/124card.png,전월실적30 만원 이상,mastercard
+125,E1 LPG KB국민카드,KB국민카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/125/card_img/20355/125card.png,전월실적50 만원 이상,mastercard
+126,아시아나 올림카드,KB국민카드,"국내전용 28,000원 해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/126/card_img/20356/126card.png,전월실적 없음,mastercard
+127,청춘대로 매니아i카드,KB국민카드,"국내전용 12,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/127/card_img/20357/127card.png,전월실적40 만원 이상,mastercardUnionPay
+128,Liiv Mate카드,KB국민카드,"국내전용 12,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/128/card_img/23902/128card.png,전월실적30 만원 이상,mastercard
+129,청춘대로 톡톡카드,KB국민카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/129/card_img/20358/129card.png,전월실적30 만원 이상,mastercardJCB
+130,BeV V카드(포인트형),KB국민카드,"해외겸용 300,000원",https://api.card-gorilla.com:8080/storage/card/130/card_img/20359/130card.png,전월실적50 만원 이상,mastercard
+131,BeV V카드(스카이패스형),KB국민카드,"해외겸용 300,000원",https://api.card-gorilla.com:8080/storage/card/131/card_img/20360/131card.png,전월실적50 만원 이상,mastercard
+132,청춘대로 1코노미 카드,KB국민카드,"해외겸용 17,000원",https://api.card-gorilla.com:8080/storage/card/132/card_img/20361/132card.png,전월실적40 만원 이상,mastercard
+133,BeV Ⅲ 카드,KB국민카드,"해외겸용 210,000원",https://api.card-gorilla.com:8080/storage/card/133/card_img/20362/133card.png,전월실적50 만원 이상,mastercard
+134,탄탄대로 온리유카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/134/card_img/20363/134card.png,전월실적40 만원 이상,mastercard
+135,탄탄대로 이지홈카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/135/card_img/23903/135card.png,전월실적40 만원 이상,mastercard
+136,가온 워킹업카드,KB국민카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/136/card_img/20364/136card.png,전월실적 없음,mastercard
+137,탄탄대로 Miz&Mr카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/137/card_img/20365/137card.png,전월실적40 만원 이상,mastercard
+138,스카이패스 KB국민카드,KB국민카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/138/card_img/20366/138card.png,전월실적 없음,VISAmastercardJCB
+139,아시아나항공 KB국민카드,KB국민카드,"국내전용 13,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/139/card_img/20367/139card.png,전월실적 없음,VISAmastercard
+140,S-OIL LPG KB국민카드,KB국민카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/140/card_img/20368/140card.png,전월실적30 만원 이상,VISAmastercard
+141,KB국민 펫코노미 카드,KB국민카드,"국내전용 30,000원 해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/141/card_img/20369/141card.png,전월실적30 만원 이상,mastercard
+142,톡톡 Pay카드,KB국민카드,"국내전용 20,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/142/card_img/20370/142card.png,전월실적40 만원 이상,mastercard
+143,청춘대로 꿀맛α카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/143/card_img/20371/143card.png,전월실적40 만원 이상,mastercard
+144,청춘대로 꿀잠α카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/144/card_img/23904/144card.png,전월실적40 만원 이상,mastercard
+145,청춘대로 꿀잼α카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/145/card_img/23905/145card.png,전월실적40 만원 이상,mastercard
+146,The Easy카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/146/card_img/20372/146card.png,전월실적 없음,mastercard
+147,레일포인트 KB국민카드,KB국민카드,"해외겸용 19,000원",https://api.card-gorilla.com:8080/storage/card/147/card_img/23906/147card.png,전월실적30 만원 이상,mastercard
+148,삼성페이 KB국민카드,KB국민카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/148/card_img/20374/148card.png,전월실적40 만원 이상,mastercard
+149,탄탄대로 올쇼핑카드,KB국민카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/149/card_img/20377/149card.png,전월실적40 만원 이상,mastercard
+150,탄탄대로 Miz&Mr 티타늄카드,KB국민카드,"국내전용 30,000원 해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/150/card_img/23907/150card.png,전월실적40 만원 이상,mastercard
+151,탄탄대로 오토카드,KB국민카드,"국내전용 50,000원 해외겸용 50,000원",https://api.card-gorilla.com:8080/storage/card/151/card_img/20378/151card.png,전월실적50 만원 이상,mastercard
+152,에듀카드,KB국민카드,"해외겸용 35,000원",https://api.card-gorilla.com:8080/storage/card/152/card_img/20379/152card.png,전월실적100 만원 이상,mastercard
+155,Lady다솜카드,NH농협카드,"국내전용 6,000원 해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/155/card_img/23908/155card.png,전월실적30 만원 이상,VISAmastercard
+156,Shopping Save카드,NH농협카드,"국내전용 6,000원 해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/156/card_img/20380/156card.png,전월실적10 만원 이상,VISAmastercard
+157,아시아나클럽카드,NH농협카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/157/card_img/23909/157card.png,전월실적 없음,VISAmastercardJCB
+158,스카이패스카드,NH농협카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/158/card_img/23910/158card.png,전월실적 없음,VISAmastercardJCB
+159,TAKE(테이크)5카드,NH농협카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/159/card_img/26570/159card.png,전월실적30 만원 이상,mastercard
+160,알뜰주유카드(할인형),NH농협카드,"국내전용 6,000원 해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/160/card_img/23912/160card.png,전월실적20 만원 이상,JCB
+161,NC다이노스카드,NH농협카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/161/card_img/20381/161card.png,전월실적30 만원 이상,VISA
+162,#ing(샵핑)카드,NH농협카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/162/card_img/20382/162card.png,전월실적30 만원 이상,mastercard
+163,#ing+(샵핑플러스)카드,NH농협카드,"국내전용 23,000원 해외겸용 25,000원",https://api.card-gorilla.com:8080/storage/card/163/card_img/20383/163card.png,전월실적30 만원 이상,mastercard
+164,ME+(미플러스)카드,NH농협카드,"국내전용 23,000원 해외겸용 25,000원",https://api.card-gorilla.com:8080/storage/card/164/card_img/20384/164card.png,전월실적30 만원 이상,mastercard
+165,ME(미)카드,NH농협카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/165/card_img/23913/165card.png,전월실적30 만원 이상,mastercard
+166,BAZIC(베이직)카드,NH농협카드,"국내전용 8,000원 해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/166/card_img/20389/166card.png,전월실적 없음,mastercardJCB
+167,BAZIC+(베이직플러스)카드,NH농협카드,"국내전용 23,000원 해외겸용 25,000원",https://api.card-gorilla.com:8080/storage/card/167/card_img/20390/167card.png,전월실적 없음,mastercard
+168,아이행복카드(교육)(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/168/card_img/23915/168card.png,전월실적30 만원 이상,UnionPay
+169,아이행복카드(쇼핑)(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/169/card_img/23914/169card.png,전월실적30 만원 이상,UnionPay
+170,jumjum(점점)카드(할인)(비씨),NH농협카드,"해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/170/card_img/23916/170card.png,전월실적20 만원 이상,VISAUnionPay
+171,jumjum(점점)카드(적립)(비씨),NH농협카드,"해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/171/card_img/23917/171card.png,전월실적 없음,VISAUnionPay
+172,NH올원카드,NH농협카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/172/card_img/23918/172card.png,전월실적 없음,mastercard
+173,NH올원+(플러스)카드,NH농협카드,"국내전용 23,000원 해외겸용 25,000원",https://api.card-gorilla.com:8080/storage/card/173/card_img/20385/173card.png,전월실적 없음,mastercard
+174,국민행복카드(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/174/card_img/20386/174card.png,전월실적30 만원 이상,UnionPay
+175,NH올원 하나로카드,NH농협카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/175/card_img/20387/175card.png,전월실적10 만원 이상,mastercard
+176,부자되세요 HomeShopping카드(비씨),NH농협카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/176/card_img/20391/176card.png,전월실적20 만원 이상,VISAUnionPay
+177,NH올원 All100(올백)카드,NH농협카드,"국내전용 8,000원 해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/177/card_img/20393/177card.png,전월실적30 만원 이상,mastercardJCB
+178,NH올원 Shopping&11번가카드(R1타입),NH농협카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/178/card_img/20394/178card.png,전월실적30 만원 이상,mastercard
+179,NH올원 Shopping&11번가카드(R2타입),NH농협카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/179/card_img/20395/179card.png,전월실적30 만원 이상,mastercard
+180,위카드,NH농협카드,"해외겸용 200,000원",https://api.card-gorilla.com:8080/storage/card/180/card_img/20396/180card.png,전월실적 없음,VISAmastercardUnionPayJCB
+181,NH올원 파이카드,NH농협카드,"국내전용10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/181/card_img/20398/181card.png,전월실적30 만원 이상,mastercardJCB
+182,SolSol++(쏠쏠투플러스)카드,NH농협카드,"해외겸용 50,000원",https://api.card-gorilla.com:8080/storage/card/182/card_img/20399/182card.png,전월실적30 만원 이상,mastercardUnionPay
+183,SolSol(쏠쏠)카드,NH농협카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/183/card_img/20400/183card.png,전월실적30 만원 이상,mastercardJCB
+185,NH농협 부자되세요 아파트카드(비씨),NH농협카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/185/card_img/20402/185card.png,전월실적40 만원 이상,mastercardUnionPay
+186,NH농협 콕카드,NH농협카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/186/card_img/20403/186card.png,전월실적40 만원 이상,VISAmastercardJCB
+187,올바른POINT카드,NH농협카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/187/card_img/20404/187card.png,전월실적 없음,VISAmastercardJCB
+188,올바른OIL카드,NH농협카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/188/card_img/20406/188card.png,전월실적30 만원 이상,UnionPay
+189,올바른TRAVEL카드(일본특화),NH농협카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/189/card_img/20407/189card.png,전월실적30 만원 이상,JCB
+190,올바른TRAVEL카드(중국특화),NH농협카드,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/190/card_img/20410/190card.png,전월실적30 만원 이상,UnionPay
+191,T라이트카드,NH농협카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/191/card_img/20411/191card.png,전월실적40 만원 이상,VISAJCB
+192,KT수퍼할부카드(비씨),NH농협카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/192/card_img/20412/192card.png,전월실적30 만원 이상,UnionPay
+193,NH올원 LGU+카드,NH농협카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/193/card_img/20413/193card.png,전월실적30 만원 이상,mastercardJCB
+194,롯데포인트 플러스 카드,롯데카드,"국내전용 5,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/194/card_img/20414/194card.png,전월실적 없음,VISAmastercardAMEXUnionPayJCB
+195,VEEX 플래티넘 카드,롯데카드,"국내전용 15,000원 해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/195/card_img/20415/195card.png,전월실적 없음,mastercardAMEX
+196,뉴 에듀드림롯데카드,롯데카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/196/card_img/20416/196card.png,전월실적30 만원 이상,mastercard
+197,올마이쇼핑 카드 (교통),롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/197/card_img/20417/197card.png,전월실적50 만원 이상,mastercard
+198,올마이쇼핑 카드 (통신),롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/198/card_img/20418/198card.png,전월실적50 만원 이상,mastercard
+199,올마이쇼핑 카드 (점심),롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/199/card_img/20419/199card.png,전월실적50 만원 이상,mastercard
+200,올마이쇼핑 카드 (해외),롯데카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/200/card_img/20420/200card.png,전월실적50 만원 이상,mastercard
+201,롯데백화점 롯데카드,롯데카드,"국내전용 10,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/201/card_img/20421/201card.png,전월실적30 만원 이상,VISAmastercard
+202,SKYPASS THE DREAM 롯데카드,롯데카드,"국내전용 25,000원 해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/202/card_img/20423/202card.png,전월실적 없음,mastercard
+203,ALL MY DC,롯데카드,"국내전용 15,000원 해외겸용 18,000원",https://api.card-gorilla.com:8080/storage/card/203/card_img/20424/203card.png,전월실적50 만원 이상,VISAmastercardAMEX
+204,ALL MY POINT,롯데카드,"국내전용 15,000원 해외겸용 18,000원",https://api.card-gorilla.com:8080/storage/card/204/card_img/20426/204card.png,전월실적50 만원 이상,VISAmastercardAMEX
+205,ALL MY LIVING,롯데카드,"국내전용 15,000원 해외겸용 18,000원",https://api.card-gorilla.com:8080/storage/card/205/card_img/20428/205card.png,전월실적50 만원 이상,VISAmastercardAMEX
+206,ALL MY DRIVING,롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/206/card_img/20430/206card.png,전월실적30 만원 이상,VISAmastercardAMEX
+207,경차 smart 롯데카드,롯데카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/207/card_img/20431/207card.png,전월실적30 만원 이상,mastercard
+208,LIKIT FUN 카드,롯데카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/208/card_img/20432/208card.png,전월실적30 만원 이상,mastercard
+209,LIKIT ON 카드,롯데카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/209/card_img/20435/209card.png,전월실적30 만원 이상,mastercard
+210,LIKIT ALL 카드,롯데카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/210/card_img/20509/210card.png,전월실적 없음,mastercard
+211,트래블패스 시그니처카드,롯데카드,"해외겸용 120,000원",https://api.card-gorilla.com:8080/storage/card/211/card_img/20437/211card.png,전월실적 없음,VISA
+212,포인트플러스 GRANDE카드,롯데카드,"국내전용 5,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/212/card_img/20438/212card.jpg,전월실적 없음,AMEXUnionPayJCB
+213,I’m WONDERFUL,롯데카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/213/card_img/20439/213card.png,전월실적 없음,VISAmastercard
+214,I’m GREAT,롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/214/card_img/20440/214card.png,전월실적50 만원 이상,VISAmastercard
+215,I’m CHEERFUL,롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/215/card_img/20441/215card.png,전월실적50 만원 이상,VISAmastercard
+216,I’m HEARTFUL,롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/216/card_img/20442/216card.png,전월실적50 만원 이상,VISAmastercard
+217,I’m JOYFUL,롯데카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/217/card_img/20443/217card.png,전월실적50 만원 이상,VISAmastercard
+218,L.pay 롯데카드,롯데카드,"국내전용 9,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/218/card_img/20444/218card.png,전월실적 없음,VISAmastercard
+219,I’m YOLO,롯데카드,"국내전용 35,000원 해외겸용 35,000원",https://api.card-gorilla.com:8080/storage/card/219/card_img/20445/219card.png,전월실적30 만원 이상,mastercard
+220,L.CLASS L20 (스카이패스형),롯데카드,"국내전용 195,000원 해외겸용 200,000원",https://api.card-gorilla.com:8080/storage/card/220/card_img/20446/220card.png,전월실적 없음,mastercard
+221,L.CLASS L20 (아시아나클럽형),롯데카드,"국내전용 195,000원 해외겸용 200,000원",https://api.card-gorilla.com:8080/storage/card/221/card_img/20447/221card.png,전월실적50 만원 이상,mastercard
+222,L.CLASS L20 (L.POINT형),롯데카드,"국내전용 195,000원 해외겸용 200,000원",https://api.card-gorilla.com:8080/storage/card/222/card_img/20448/222card.png,전월실적 없음,mastercard
+223,뉴 CJ헬로 롯데카드,롯데카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/223/card_img/20449/223card.png,전월실적30 만원 이상,mastercard
+224,카카오페이 롯데카드,롯데카드,"국내전용 12,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/224/card_img/20450/224card.png,전월실적30 만원 이상,mastercard
+225,PAYCO 플래티넘 롯데카드,롯데카드,"국내전용 9,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/225/card_img/20451/225card.png,전월실적 없음,VISA
+226,터치원카드(Touch1),하나카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/226/card_img/20452/226card.png,전월실적20 만원 이상,mastercard
+227,CLUB SK(클럽 SK)카드,하나카드,"국내전용 6,000원 해외겸용 7,000원",https://api.card-gorilla.com:8080/storage/card/227/card_img/20453/227card.png,전월실적40 만원 이상,VISAmastercardAMEXUnionPay
+228,Smart Any 카드(스마트애니),하나카드,"국내전용 5,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/228/card_img/20454/228card.png,전월실적 없음,VISAmastercardUnionPay
+229,미생카드,하나카드,"국내전용 6,000원 해외겸용 8,000원",https://api.card-gorilla.com:8080/storage/card/229/card_img/20455/229card.png,전월실적30 만원 이상,VISA
+230,아이행복카드,하나카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/230/card_img/20456/230card.png,전월실적30 만원 이상,JCB
+231,하나멤버스 1Q(원큐) 카드 Living,하나카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/231/card_img/20458/231card.png,전월실적30 만원 이상,VISAmastercard
+232,하나멤버스 1Q(원큐) 카드 Shopping,하나카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/232/card_img/20459/232card.png,전월실적30 만원 이상,VISAmastercardJCB
+233,카카오페이 신용카드,하나카드,"국내전용 10,000원 해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/233/card_img/20460/233card.png,전월실적40 만원 이상,VISA
+234,하나멤버스 1Q(원큐) 카드 Daily,하나카드,"국내전용 8,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/234/card_img/20461/234card.png,전월실적30 만원 이상,VISAmastercard
+235,Ohmyzip(오마이집) 카드,하나카드,"국내전용 10,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/235/card_img/20462/235card.png,전월실적30 만원 이상,AMEX
+236,Simple Life,하나카드,"국내전용 15,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/236/card_img/20463/236card.png,전월실적 없음,VISAmastercardAMEXUnionPay
+237,하나멤버스 1Q카드 내맘대로,하나카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/237/card_img/20464/237card.png,전월실적30 만원 이상,VISAJCB
+238,1Q Daily+,하나카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/238/card_img/20465/238card.png,전월실적30 만원 이상,VISAmastercardJCB
+239,1Q Shopping+,하나카드,"국내전용 10,000원 해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/239/card_img/20466/239card.png,전월실적30 만원 이상,VISAmastercardJCB
+240,1Q Living+,하나카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/240/card_img/20467/240card.png,전월실적30 만원 이상,VISAmastercardJCB
+241,1Q Special+,하나카드,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/241/card_img/20468/241card.png,전월실적30 만원 이상,VISAmastercardJCB
+242,Mile 1.6 대한항공,하나카드,"해외겸용 45,000원",https://api.card-gorilla.com:8080/storage/card/242/card_img/20469/242card.png,전월실적 없음,AMEX
+243,Mile 1.6 아시아나,하나카드,"해외겸용 45,000원",https://api.card-gorilla.com:8080/storage/card/243/card_img/20470/243card.png,전월실적 없음,AMEX
+244,Mile 1.8 대한항공,하나카드,"해외겸용 130,000원",https://api.card-gorilla.com:8080/storage/card/244/card_img/20471/244card.png,전월실적 없음,AMEX
+245,Mile 1.8 아시아나,하나카드,"해외겸용 130,000원",https://api.card-gorilla.com:8080/storage/card/245/card_img/20472/245card.png,전월실적 없음,AMEX
+246,통커 카드,하나카드,"해외겸용 17,000원",https://api.card-gorilla.com:8080/storage/card/246/card_img/20473/246card.png,전월실적50 만원 이상,VISAJCB
+247,#tag1카드 Orange,하나카드,"해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/247/card_img/20474/247card.png,전월실적30 만원 이상,mastercardUnionPay
+248,#tag1카드 Navy,하나카드,"해외겸용 12,000원",https://api.card-gorilla.com:8080/storage/card/248/card_img/20475/248card.png,전월실적40 만원 이상,mastercardUnionPay
+249,1Q Coupon 카드,하나카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/249/card_img/20476/249card.png,전월실적30 만원 이상,mastercardUnionPay
+250,my pass 마패 카드,하나카드,"해외겸용 17,000원",https://api.card-gorilla.com:8080/storage/card/250/card_img/20477/250card.png,전월실적50 만원 이상,mastercardUnionPay
+251,1Q Global VIVA,하나카드,"국내전용 13,000원 해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/251/card_img/20479/251card.png,전월실적30 만원 이상,mastercard
+252,Any PLUS 카드,하나카드,"해외겸용 15,000원",https://api.card-gorilla.com:8080/storage/card/252/card_img/20480/252card.png,전월실적 없음,mastercardUnionPayJCB
+254,1Q My Lunch,하나카드,"국내전용 15,000원 해외겸용 17,000원",https://api.card-gorilla.com:8080/storage/card/254/card_img/20482/254card.png,전월실적30 만원 이상,VISAmastercard
+255,1Q My Edu,하나카드,"국내전용 15,000원 해외겸용 17,000원",https://api.card-gorilla.com:8080/storage/card/255/card_img/20483/255card.png,전월실적30 만원 이상,VISAmastercard
+258,Oil & Life카드(Oil카드),IBK기업은행,"해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/258/card_img/20484/258card.png,전월실적30 만원 이상,mastercardUnionPay
+259,Oil & Life카드(Life카드),IBK기업은행,"해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/259/card_img/20485/259card.png,전월실적40 만원 이상,mastercardUnionPay
+260,국민행복카드(신용),IBK기업은행,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/260/card_img/20486/260card.png,전월실적30 만원 이상,BC
+263,참! 좋은 kt wiz 카드(신용),IBK기업은행,"해외겸용 2,000원",https://api.card-gorilla.com:8080/storage/card/263/card_img/20487/263card.png,전월실적 없음,VISAUnionPay
+264,olleh Super DC IBK카드,IBK기업은행,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/264/card_img/20488/264card.png,전월실적30 만원 이상,mastercardUnionPay
+266,일상의 기쁨카드(신용),IBK기업은행,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/266/card_img/23586/266card.png,전월실적50 만원 이상,VISAUnionPay
+267,마일앤조이카드(대한항공),IBK기업은행,"해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/267/card_img/20490/267card.png,전월실적 없음,UnionPay
+268,마일앤조이카드(아시아나),IBK기업은행,"해외겸용 30,000원",https://api.card-gorilla.com:8080/storage/card/268/card_img/20491/268card.png,전월실적 없음,UnionPay
+269,IBK-Hybrid(하이브리드)카드,IBK기업은행,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/269/card_img/20492/269card.png,전월실적 없음,mastercardUnionPay
+270,아모레퍼시픽 IBK카드,IBK기업은행,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/270/card_img/20493/270card.png,전월실적50 만원 이상,VISAUnionPay
+271,일년의 설렘카드,IBK기업은행,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/271/card_img/23585/271card.png,전월실적50 만원 이상,VISAUnionPay
+273,참! 좋은 다이소카드(신용),IBK기업은행,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/273/card_img/20495/273card.png,전월실적30 만원 이상,VISAUnionPay
+274,쇼핑앤조이 카드,IBK기업은행,"해외겸용 10,000원",https://api.card-gorilla.com:8080/storage/card/274/card_img/20496/274card.png,전월실적30 만원 이상,BCBC Global
+275,제주항공 Refresh Point 카드,IBK기업은행,"해외겸용 20,000원",https://api.card-gorilla.com:8080/storage/card/275/card_img/20497/275card.png,전월실적 없음,BCBC GlobalmastercardUnionPay
+276,플러스마일카드,SC제일은행,"해외겸용 49,000원",https://api.card-gorilla.com:8080/storage/card/276/card_img/20498/276card.png,전월실적 없음,VISAmastercardUnionPay
+277,시그마카드,SC제일은행,"해외겸용 200,000원",https://api.card-gorilla.com:8080/storage/card/277/card_img/20499/277card.png,전월실적 없음,BCBC Globalmastercard
+278,FANtastic S 신한카드 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/278/card_img/20500/278card.png,전월실적30 만원 이상,mastercard
+279,CJ ONE 신한카드 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/279/card_img/20501/279card.png,전월실적20 만원 이상,mastercardUnionPay
+280,11번가 팝 신한카드 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/280/card_img/20502/280card.png,전월실적20 만원 이상,mastercard
+281,신한카드 Deep Dream 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/281/card_img/20503/281card.png,전월실적 없음,VISAUnionPay
+282,신세계 신한카드 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/282/card_img/20504/282card.png,전월실적30 만원 이상,mastercardUnionPay
+283,쿠팡 신한카드 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/283/card_img/20505/283card.png,전월실적20 만원 이상,mastercard
+284,신한카드 주거래 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/284/card_img/20506/284card.png,전월실적30 만원 이상,VISAUnionPay
+285,G마켓/옥션 신한카드 Smile365 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/285/card_img/20507/285card.png,전월실적20 만원 이상,VISA
+286,카카오페이 신한 체크카드,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/286/card_img/20508/286card.png,전월실적 없음,mastercard
+287,NCSOFT 신한카드 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/287/card_img/20510/287card.png,전월실적30 만원 이상,mastercard
+288,신한카드 YOLO Triplus 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/288/card_img/20511/288card.png,전월실적 없음,mastercard
+289,신한 글로벌패스 Check&Debit (라이프),신한카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/289/card_img/20512/289card.png,전월실적 없음,
+290,신한카드 4Tune 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/290/card_img/20513/290card.png,전월실적 없음,mastercard
+291,팝 신한카드 S-Choice 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/291/card_img/20514/291card.png,전월실적20 만원 이상,mastercard
+292,신한카드 아이행복 체크카드,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/292/card_img/20515/292card.png,전월실적30 만원 이상,mastercard
+293,신한 빅플러스 체크카드,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/293/card_img/20516/293card.jpg,전월실적10 만원 이상,VISA
+294,신한카드 S-Line 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/294/card_img/20517/294card.png,전월실적30 만원 이상,VISA
+295,신한 S20 Pink(핑크)체크카드,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/295/card_img/20518/295card.png,전월실적20 만원 이상,mastercard
+296,신한 S-Choice체크카드,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/296/card_img/20519/296card.gif,전월실적20 만원 이상,VISAmastercard
+297,해피포인트 신한카드 BigPlus 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/297/card_img/20520/297card.png,전월실적10 만원 이상,VISA
+298,신한 S20 체크카드,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/298/card_img/20521/298card.png,전월실적20 만원 이상,mastercard
+299,신한카드 EV 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/299/card_img/20522/299card.png,전월실적30 만원 이상,mastercardUnionPay
+300,SOCAR 제휴 SOCAR 신한카드 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/300/card_img/20523/300card.png,전월실적20 만원 이상,VISAUnionPay
+301,KT 신한카드 체크,신한카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/301/card_img/20524/301card.png,전월실적30 만원 이상,
+302,LG U+ 신한카드 Smart 체크,신한카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/302/card_img/20525/302card.png,전월실적30 만원 이상,
+303,GS칼텍스 신한카드 경차사랑 체크,신한카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/303/card_img/20526/303card.png,전월실적 없음,
+304,SRT 신한카드 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/304/card_img/20527/304card.png,전월실적20 만원 이상,mastercard
+305,KBO 제휴 신한카드 MY KBO 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/305/card_img/20550/305card.png,전월실적 없음,mastercardUnionPay
+306,리디 신한카드 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/306/card_img/20551/306card.png,전월실적20 만원 이상,VISAUnionPay
+307,더본 신한카드 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/307/card_img/20552/307card.png,전월실적20 만원 이상,VISA
+308,요기요 신한카드 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/308/card_img/20553/308card.png,전월실적20 만원 이상,mastercard
+309,EDIYA 신한카드 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/309/card_img/20554/309card.png,전월실적20 만원 이상,mastercardUnionPay
+310,마이 홈플러스 신한카드 체크,신한카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/310/card_img/20555/310card.png,전월실적 없음,VISA
+311,몰테일 신한카드 체크,신한카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/311/card_img/20556/311card.png,전월실적 없음,mastercard
+312,카드의정석 COOKIE CHECK,우리카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/312/card_img/20557/312card.png,전월실적20 만원 이상,BCmastercard
+313,LoL CHAMPIONS KOREA 우리체크카드,우리카드,국내전용없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/313/card_img/20558/313card.png,전월실적25 만원 이상,BCmastercard
+314,카드의정석 SSO3 CHECK,우리카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/314/card_img/20559/314card.png,전월실적30 만원 이상,BCmastercard
+315,카카오페이 체크카드,우리카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/315/card_img/20560/315card.png,전월실적20 만원 이상,VISABC
+316,카드의정석 L.POINT CHECK,우리카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/316/card_img/20562/316card.png,전월실적30 만원 이상,BCmastercard
+317,카드의정석 POINT CHECK,우리카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/317/card_img/20563/317card.png,전월실적30 만원 이상,VISABCmastercard
+318,위메프 우리체크,우리카드,"국내전용 3,000원 해외겸용 5,000원",https://api.card-gorilla.com:8080/storage/card/318/card_img/20564/318card.png,전월실적20 만원 이상,BCmastercardUnionPay
+319,배달의민족 우리체크,우리카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/319/card_img/20565/319card.png,전월실적25 만원 이상,BCmastercard
+320,롯데마트 라서 즐거운 체크카드,우리카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/320/card_img/20566/320card.png,전월실적30 만원 이상,mastercardUnionPay
+322,우리 아이행복체크카드,우리카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/322/card_img/20567/322card.png,전월실적30 만원 이상,mastercardUnionPay
+323,우리국민행복체크카드,우리카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/323/card_img/20568/323card.png,전월실적30 만원 이상,BC
+324,우리 YG 체크카드,우리카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/324/card_img/20569/324card.png,전월실적30 만원 이상,UnionPay
+325,그랑블루 체크카드,우리카드,"해외겸용 95,000원",https://api.card-gorilla.com:8080/storage/card/325/card_img/20570/325card.png,전월실적30 만원 이상,BCBC Globalmastercard
+326,해피포인트 우리체크카드,우리카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/326/card_img/20571/326card.png,전월실적20 만원 이상,BC
+328,라떼 우리체크카드,우리카드,"국내전용 2,000원",https://api.card-gorilla.com:8080/storage/card/328/card_img/20572/328card.png,전월실적25 만원 이상,BC
+329,갤러리아 체크카드,우리카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/329/card_img/20573/329card.png,전월실적30 만원 이상,VISAUnionPay
+330,카드의정석 CREAM TEENS CHECK,우리카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/330/card_img/20574/330card.png,전월실적10 만원 이상,BC
+331,New 현대백화점 체크카드,우리카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/331/card_img/20575/331card.png,전월실적20 만원 이상,BCBC Globalmastercard
+332,카카오페이 KB국민 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/332/card_img/20576/332card.png,전월실적30 만원 이상,mastercard
+333,Liiv Mate 체크카드,KB국민카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/333/card_img/20577/333card.png,전월실적30 만원 이상,
+334,아시아나 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/334/card_img/20578/334card.png,전월실적30 만원 이상,mastercard
+335,청춘대로 싱글 체크카드,KB국민카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/335/card_img/20579/335card.png,전월실적30 만원 이상,mastercardUnionPay
+336,가온체크카드,KB국민카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/336/card_img/20580/336card.png,전월실적10 만원 이상,mastercard
+337,ONE 체크카드,KB국민카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/337/card_img/20582/337card.png,전월실적10 만원 이상,mastercardUnionPay
+338,누리체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/338/card_img/20583/338card.png,전월실적30 만원 이상,mastercard
+339,음 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/339/card_img/20584/339card.png,전월실적30 만원 이상,VISAmastercard
+340,락스타 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/340/card_img/20585/340card.png,전월실적20 만원 이상,VISAUnionPay
+341,훈 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/341/card_img/20586/341card.png,전월실적30 만원 이상,VISAmastercard
+342,해피노리체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/342/card_img/20587/342card.png,전월실적20 만원 이상,VISAmastercardUnionPay
+343,포인트리체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/343/card_img/20588/343card.png,전월실적20 만원 이상,VISA
+344,아이행복 체크카드,KB국민카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/344/card_img/20589/344card.png,전월실적10 만원 이상,mastercard
+345,정 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/345/card_img/20590/345card.png,전월실적30 만원 이상,VISAmastercard
+346,민 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/346/card_img/20591/346card.png,전월실적30 만원 이상,VISAmastercard
+347,비트윈체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/347/card_img/20592/347card.png,전월실적20 만원 이상,VISAmastercard
+348,노리체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/348/card_img/20581/348card.png,전월실적20 만원 이상,VISAmastercardUnionPay
+349,해피락스타 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/349/card_img/20593/349card.png,전월실적20 만원 이상,mastercard
+350,직장인보너스체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/350/card_img/20594/350card.png,전월실적20 만원 이상,VISAmastercard
+351,스타체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/351/card_img/20595/351card.png,전월실적20 만원 이상,VISAmastercard
+353,해피CU포인트 체크카드,KB국민카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/353/card_img/20596/353card.png,전월실적30 만원 이상,VISAmastercard
+354,LG U+ 체크카드,KB국민카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/354/card_img/20597/354card.png,전월실적30 만원 이상,mastercard
+355,H.Point 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/355/card_img/20598/355card.png,전월실적30 만원 이상,mastercard
+357,AK KB국민 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/357/card_img/20599/357card.png,전월실적30 만원 이상,mastercard
+359,아모레퍼시픽 체크카드,KB국민카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/359/card_img/20600/359card.png,전월실적30 만원 이상,mastercard
+360,올바른POINT체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/360/card_img/25852/360card.png,전월실적 없음,VISA
+361,콕체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/361/card_img/20602/361card.png,전월실적 없음,mastercard
+362,NH20해봄체크카드,NH농협카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/362/card_img/20603/362card.png,전월실적20 만원 이상,mastercard
+363,Global Unlimited(글로벌 언리미티드)체크카드,NH농협카드,"해외겸용 3,000원",https://api.card-gorilla.com:8080/storage/card/363/card_img/20604/363card.png,전월실적 없음,mastercard
+364,국민행복체크카드(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/364/card_img/20605/364card.png,전월실적30 만원 이상,UnionPay
+365,DC줌체크카드(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/365/card_img/20606/365card.png,전월실적20 만원 이상,UnionPay
+366,jumjum(점점) 체크카드(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/366/card_img/20607/366card.png,전월실적 없음,UnionPay
+367,내일배움체크카드,NH농협카드,국내전용 없음,https://api.card-gorilla.com:8080/storage/card/367/card_img/20608/367card.png,전월실적 없음,
+368,NH올원체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/368/card_img/20609/368card.jpg,전월실적 없음,mastercard
+369,아이행복체크카드(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/369/card_img/20610/369card.png,전월실적20 만원 이상,UnionPay
+370,BAZIC(베이직)체크카드,NH농협카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/370/card_img/20867/370card.png,전월실적 없음,mastercard
+371,#ing(샵핑) 체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/371/card_img/20868/371card.png,전월실적20 만원 이상,mastercard
+372,NC다이노스체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/372/card_img/20869/372card.jpg,전월실적30 만원 이상,VISA
+373,Global체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/373/card_img/20871/373card.png,전월실적10 만원 이상,VISAmastercard
+374,청년동행체크카드(비씨),NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/374/card_img/20872/374card.png,전월실적 없음,UnionPay
+375,올바른GLOBAL체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/375/card_img/20874/375card.png,전월실적20 만원 이상,mastercard
+376,문화융성체크카드,NH농협카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/376/card_img/20876/376card.png,전월실적10 만원 이상,UnionPay
+377,행복건강체크카드,NH농협카드,국내전용 없음 해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/377/card_img/20877/377card.png,전월실적20 만원 이상,mastercard
+378,VIVA+ 체크카드,하나카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/378/card_img/20878/378card.jpg,전월실적 없음,VISA
+379,VIVA e-Platinum 체크카드,하나카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/379/card_img/20879/379card.jpg,전월실적25 만원 이상,VISA
+380,하나멤버스 1Q 체크카드,하나카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/380/card_img/20880/380card.png,전월실적20 만원 이상,VISAmastercard
+381,뷰티풀해피 체크카드,하나카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/381/card_img/20881/381card.jpg,전월실적20 만원 이상,VISA
+382,카카오페이 체크카드,하나카드,해외겸용 없음,https://api.card-gorilla.com:8080/storage/card/382/card_img/20882/382card.png,전월실적25 만원 이상,VISA
