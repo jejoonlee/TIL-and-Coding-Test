@@ -55,11 +55,9 @@
 >
 > - 해당 URL에 있는 요소들을 CSS_SELECTOR 같은, 지정자들을 통해 가지고 오면 된다
 
-![crawling 1](python_크롤링.assets/crawling 1.png)
+![crawling1](python_크롤링.assets/crawling1.png)
 
-![crawling 2](python_크롤링.assets/crawling 2.png)
+![crawling2](python_크롤링.assets/crawling2.png)
 
-![crawling 3](python_크롤링.assets/crawling 3.png)
-
-
+![crawling3](python_크롤링.assets/crawling3.png)
 

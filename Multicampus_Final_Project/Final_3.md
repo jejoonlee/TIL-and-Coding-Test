@@ -115,11 +115,11 @@
 >
 > 카드 디테일 페이지를 하나씩 돌면서, 안에 있는 상세 정보들을 CSS_SELECTOR를 통해 가지고 왔다
 
-![crawling 1](Final_3.assets/crawling 1.png)
+![crawling1](Final_3.assets/crawling1.png)
 
-![crawling 2](Final_3.assets/crawling 2.png)
+![crawling2](Final_3.assets/crawling2.png)
 
-![crawling 3](Final_3.assets/crawling 3.png)
+![crawling3](Final_3.assets/crawling3.png)
 
 
 
