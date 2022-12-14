@@ -91,26 +91,30 @@
 <div style="margin-bottom:3rem;">
 
 #### 활용 장비
-> ##### 레이아웃
 <div style="display:flex; margin-bottom: 1rem">
+
+> ##### 레이아웃
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" />
 </div>
 
-> ##### 활용 언어
 <div style="display:flex; margin-bottom: 1rem">
+
+> ##### 활용 언어
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
 </div>
 
-> ##### 활용 프레임워크
 <div style="display:flex; margin-bottom: 1rem">
+
+> ##### 활용 프레임워크
   <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" />
 </div>
 
-> ##### 배포
 <div style="display:flex; margin-bottom: 1rem">
+
+> ##### 배포
   <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" />
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
 </div>
