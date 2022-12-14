@@ -118,7 +118,7 @@
 
 <div style="margin-bottom:3rem;">
 
-## ✍️ 프로젝트 수행 절차 및 방법
+<h2 style="background-color: #7696fd; color:white;">✍️ 프로젝트 수행 절차 및 방법</h2>
 
 ![프로젝트수행절차](Final_3.assets/프로젝트수행절차.png)
 </div>
@@ -126,7 +126,7 @@
 
 <div style="margin-bottom:3rem;">
 
-## ✍️ 레이아웃 설계
+<h2 style="background-color: #7696fd; color:white;">✍️ 레이아웃 설계</h2>
 
 ![화면_설계](Final_3.assets/화면_설계.png)
 
@@ -193,7 +193,7 @@
 
 <div style="margin-bottom:3rem;">
 
-## ✍️ 모델 설계
+<h2 style="background-color: #7696fd; color:white;">✍️ 모델 설계</h2>
 
 ![모델](Final_3.assets/모델.png)
 
@@ -235,7 +235,7 @@
 
 <div style="margin-bottom:3rem;">
 
-## ✍️ Selenium을 통한 크롤링
+<h2 style="background-color: #7696fd; color:white;">✍️ Selenium을 통한 크롤링</h2>
 
 [크롤링에 대해](https://github.com/jejoonlee/TIL-and-Coding-Test/blob/master/Python/python_%ED%81%AC%EB%A1%A4%EB%A7%81.md)
 
@@ -252,7 +252,7 @@
 
 <div style="margin-bottom:3rem;">
 
-## ✍️ 최종 기능 설명 (매인 페이지 기준)
+<h2 style="background-color: #7696fd; color:white;">✍️ 최종 기능 설명 (매인 페이지 기준)</h2>
 
 <div style="margin-bottom:2rem;">
 
@@ -379,7 +379,7 @@
 
 </div>
 
-## ✍️ 소감
+<h2 style="background-color: #7696fd; color:white;">✍️ 소감</h2>
 
 #### Rothy (김나현)
 
@@ -410,16 +410,3 @@
 최종프로젝트를 진행하면서 디자인 부분이 가장 어려웠습니다. 기본적인 서비스의 컨셉과 계획했던 웹 구조를 잘 만들어 간다고 생각하지 못했던 부분에 대해서 많은 시간을 소요했던 것 같습니다. 하지만 디자이너분의 도움을 받아 차근차근 웹의 구조와 컨셉을 다시 만들어 갈 수 있었습니다. 각 페이지마다의 요구사항도 팀원들과 함께 많은 시간동안 하나씩 채워가는 재미와 뿌듯함을 느낄 수 있었습니다.
 
 애플 아이패드 반응형 웹사이트 클론 코딩을 하면서 다시 복습한 transform-origin으로 회전하는 스타일링과 자바스크립트의 이벤트 버블링을 공부할 수 있었습니다. 또한 애플 사이트에서 영감을 많이 받아 인터렉션을 구현하고자 노력했습니다. 기간이 긴 만큼 팀원들과 많은 시간과 코드를 공유하며 더 많은 것을 배울 수 있었습니다.  모두 고생하셨습니다!
-
-
-
-
-
-
-
-
-
-
-
-
-
