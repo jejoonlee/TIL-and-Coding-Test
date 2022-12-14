@@ -89,6 +89,7 @@
 
 
 <div style="margin-bottom:3rem;">
+
 #### 활용 장비
 > ##### 레이아웃
 <div style="display:flex; margin-bottom: 1rem">
@@ -116,6 +117,7 @@
 </div>
 
 <div style="margin-bottom:3rem;">
+
 ## ✍️ 프로젝트 수행 절차 및 방법
 
 ![프로젝트수행절차](Final_3.assets/프로젝트수행절차.png)
@@ -123,6 +125,7 @@
 
 
 <div style="margin-bottom:3rem;">
+
 ## ✍️ 레이아웃 설계
 
 ![화면_설계](Final_3.assets/화면_설계.png)
@@ -189,6 +192,7 @@
 
 
 <div style="margin-bottom:3rem;">
+
 ## ✍️ 모델 설계
 
 ![모델](Final_3.assets/모델.png)
@@ -230,6 +234,7 @@
 </div>
 
 <div style="margin-bottom:3rem;">
+
 ## ✍️ Selenium을 통한 크롤링
 
 [크롤링에 대해](https://github.com/jejoonlee/TIL-and-Coding-Test/blob/master/Python/python_%ED%81%AC%EB%A1%A4%EB%A7%81.md)
@@ -246,18 +251,22 @@
 </div>
 
 <div style="margin-bottom:3rem;">
+
 ## ✍️ 최종 기능 설명 (매인 페이지 기준)
 
 <div style="margin-bottom:2rem;">
+
 > ### 카드사 페이지
 
 ![카드사페이지](Final_3.assets/카드사페이지.png)
 
 - 대중적으로 많이 알려진 카드사 기준으로 카드를 찾을 수 있다
 - 각 카드의 정보안에 있는 카드사들을 필터링을 통해, 카드를 찾는다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 맞춤 카드 페이지
 
 ![맞춤카드](Final_3.assets/맞춤카드.png)
@@ -266,9 +275,11 @@
   - 연령대별로 어느 나이 대에 사람들이 카드의 어떤 혜택을 중요하게 생각하는지 생각하며 혜택들을 나누었다
 - 카드 맞춤 검색에는 추가로 검색한 카드를 카드사 별로 볼 수 있도록, 추가로 필터링이 가능하도록 했다.
 - 📌 `request.GET.get `를 통해서 URL을 통해 어떤 정보를 위주로 필터링할지 가져온 후, 그 정보를 가지고 for문이나 필터 쿼리를 사용하였다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 >### 카드 비교 페이지
 
 ![카드비교](Final_3.assets/카드비교.png)
@@ -276,17 +287,21 @@
 - 로그인을 한 사람들을 위주로 카드를 장바구니에 넣는 것 처럼 카드 비교함에 넣을 수 있도록 했다
   - 여기서 카드는 한 계정 당, 최대 3개를 넣을 수 있다
 - 카드 비교 페이지에서는 카드 비교함에 있던 카드 정보들을 끌어와서, 유저들이 카드들을 한 눈에 비교할 수 있도록 만들었다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 이벤트 페이지
 
 ![카드이벤트](Final_3.assets/카드이벤트.png)
 
 - 카드 이벤트는 정보를 가지고 온 것보다는, 수작업으로 이벤트들을 작성했다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 커뮤니티 페이지
 
 ![커뮤니티](Final_3.assets/커뮤니티.png)
@@ -298,9 +313,11 @@
 ![image-20221214165930377](Final_3.assets/image-20221214165930377.png)
 
 - 유저들은 글들을 북마크를 통해서, 각 유저들의 페이지에 저장을 할 수 있다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 고객 문의 페이지
 
 ![고객문의](Final_3.assets/고객문의.png)
@@ -308,18 +325,22 @@
 - 고객들이 자주 묻는 질문을 넣었다
 - 유저들이 문의도 할 수 있다
 - 검색을 통해 다른 유저들이 문의한 내용들을 검색을 통해 볼 수 있는 페이지
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 검색 기능
 
 ![검색기능](Final_3.assets/검색기능.png)
 
 - 네브바에 돋보기를 누르면 카드 카드를 검색할 수 있는 기능이 구현되어 있다
 - 카드 이름, 카드사 등을 위주로 검색을 통해 카드를 검색할 수 있다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 카드 디테일 페이지
 
 ![카드디테일](Final_3.assets/카드디테일.png)
@@ -330,9 +351,11 @@
 - 주요 혜택의 카드들을 호버하면, 주요 혜택에 관련된 혜택 정보를 모달을 통해 볼 수 있다
 - 후기를 통해 카드에 대한 유저들의 의견을 읽을 수 있다
 - 여기서 비교함 넣기/빼기 + 카드 후기는 모두 비동기 처리를 했다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 프로필 페이지
 
 ![profile](Final_3.assets/profile.png)
@@ -341,15 +364,19 @@
 - 타 유저 팔로우를 할 수 있고, 북마크를 통해 저장한 글들을 다시 볼 수 있다
 - 회원 정보를 수정 또는 탈퇴를 할 수 있다
 - 그 외 회원가입 기능 같은 경우, 이메일 인증을 해야 최종적으로 회원가입이 가능하다
+
 </div>
 
 <div style="margin-bottom:2rem;">
+
 > ### 메인 페이지
 
 ![mainpage1](Final_3.assets/mainpage1.png)
 
 ![mainpage2](Final_3.assets/mainpage2.png)
+
 </div>
+
 </div>
 
 ## ✍️ 소감
