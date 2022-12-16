@@ -16,6 +16,7 @@ chrome_options.add_experimental_option('excludeSwitches', ["enable-logging"])
 
 chrome_options.add_argument('--start-maximized') #브라우저가 최대화된 상태로 실행됩니다.
 chrome_options.add_argument("disable-infobars")
+chrome_options.add_argument('headless')
 
 driver = webdriver.Chrome(options=chrome_options)
 
@@ -39,7 +40,6 @@ for i in range(1, 2435):
         driver.execute_script('document.querySelector("#q-app > header").style.visibility="hidden";')
 
         # id를 만들어서 card_data 테이블과 benefit_data 테이블을 연결시킨다
-        card_id += 1
 
         # 카드 이름 (꼭 있음)
         card_name = driver.find_element(By.CSS_SELECTOR, '#q-app > section > div.card_detail.fr-view > section > div > article.card_top > div > div > div.data_area > div.tit > strong')
@@ -69,14 +69,11 @@ for i in range(1, 2435):
         except:
             NoSuchWindowException
             card_type = None
+        
+        card_id += 1
+        print(f"카드 id : {card_id}")
+        print(f"id : {i}")
 
-
-        print(f"card_name: {card_name}")
-        print(f"card_brand: {card_brand}")
-        print(f"card_in_out: {card_in_out}")
-        print(f"card_image: {card_image}")
-        print(f"card_record: {card_record}")
-        print(f"card_type: {card_type}")
         card_data.writerow([card_id, card_name, card_brand, card_in_out, card_image, card_record, card_type])
 
 
@@ -94,9 +91,6 @@ for i in range(1, 2435):
             benefit_click[i].click()
             benefit_content_all = driver.find_elements(By.CSS_SELECTOR, "#q-app > section > div.card_detail.fr-view > section > div > article.cmd_con.benefit > div.lst.inner.faq_area > dl.on > dd > div")
             bnf_content_all = benefit_content_all[i].text
-            print(bnf_name)
-            print(bnf_content)
-            print(bnf_content_all)
             benefit_data.writerow([card_id, bnf_name, bnf_content, bnf_content_all])
     
     except:
