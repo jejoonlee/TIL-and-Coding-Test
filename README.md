@@ -122,6 +122,7 @@
 | Python 5  | Error / Debugging    | 2022년 7월 18일       |      [링크](./Python/python_error_debug.md)       |
 | Python 6  | OOP                  | 2022년 7월 19 ~ 20일  |          [링크](./Python/python_OOP.md)           |
 | Python 7  | 응용 / 심화          | 2022년 7월 21 ~ 22일  |         [링크](./Python/python_extra.md)          |
+| Python 8  | Lambda               | 2022년 12월 24일      |         [링크](./Python/python_lambda.md)         |
 | Crawling  | 크롤링하기           | 2022년 11월 28 ~ 29일 |         [링크](./Python/python_크롤링.md)         |
 | 📌**정리** | 명령문/ 함수/methods | 2022년 8월 1일        |  [링크](./Python/python_operators_functions.md)   |
 | ✍️문제풀이 | 수업                 | 2022년 8월 9일        |             [링크](./Python/문제풀이)             |

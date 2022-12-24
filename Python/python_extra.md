@@ -68,6 +68,8 @@ cubic_dict = {number: number ** 3 for number in range(1, 4)}
 ## ✔️ Lambda
 
 > 이름이 없는 (익명)의 함수
+>
+> 더보기 [click](./python_lambda.md)
 
 **특징**
 
