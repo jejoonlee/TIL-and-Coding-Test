@@ -1,5 +1,7 @@
 # 🧑‍💻 Semi-PJT 2
 
+[코드보기](https://github.com/jejoonlee/Sanme)
+
 #### Category
 
 [레이아웃 설계](#%EF%B8%8F-레이아웃-설계)

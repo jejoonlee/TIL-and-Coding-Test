@@ -2,6 +2,8 @@
 
 [사이트 보러가기](http://classcard2-env.eba-5zup7z28.ap-northeast-2.elasticbeanstalk.com/)
 
+[코드 보기](https://github.com/nahkim/ClassCard)
+
 
 
 #### Category
