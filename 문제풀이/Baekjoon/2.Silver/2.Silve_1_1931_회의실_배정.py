@@ -30,26 +30,22 @@ sys.stdin = open('input.txt')
 # 회의를 시작하는 시간 기준으로 정렬을 한 후, 끝나는 시간의 기준으로도 다시 정렬을 해야 한다
 
 # 즉 회의가 빨리 끝나는 순서대로 정렬을 해야 한다. 회의가 빨리 시작하는 순서대로 정렬을 하면 안 된다
-
 N = int(input())
 time = []
 
-for _ in range(N):
+for n in range(N):
   start, end = map(int, input().split())
-  time.append([start, end])
+  time.append((start, end))
 
-time = sorted(time, key=lambda a: a[0]) # 시작 시간을 기준으로 오름차순
-print(time)
-time = sorted(time, key=lambda a: a[1]) # 끝나는 시간을 기준으로 다시 오름차순
-print(time)
+time.sort(key = lambda x: x[0])
+time.sort(key = lambda x: x[1])
 
-last = 0 # 회의의 마지막 시간을 저장할 변수
-conut = 0 # 회의 개수를 저장할 변수
+end = 0
+cnt = 0
 
-for i, j in time:
-  print(i, j)
-  if i >= last: # 시작시간이 회의의 마지막 시간보다 크거나 같을경우
-    conut += 1
-    last = j
+for s, e in time:
+  if s >= end :
+    end = e
+    cnt += 1
 
-print(conut)
+print(cnt)

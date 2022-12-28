@@ -47,7 +47,7 @@
 | (정렬된 연결리스트)      | O(N)           | O(1)        |
 | **힙(Heap)**             | **O(logN)**    | **O(logN)** |
 
-
+![우선순위큐_힙](algorithm_6.assets/우선순위큐_힙.jpg)
 
 ### 힙의 특징 Heap
 

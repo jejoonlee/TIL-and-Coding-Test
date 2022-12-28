@@ -1,5 +1,5 @@
 import sys
-from collections import deque
+import heapq
 
 sys.stdin = open('input.txt')
 
@@ -11,8 +11,15 @@ for n in range(N):
     time.append((s, e))
 
 time.sort(key=lambda x:x[0])
-time = deque(time)
 room = []
 
-room.append(time.popleft()[1])
+heapq.heappush(room, time[0][1])
 
+for i in range(1,N):
+    if room[0] <= time[i][0]:
+        heapq.heappop(room)
+        heapq.heappush(room, time[i][1])
+    else:
+        heapq.heappush(room, time[i][1])
+
+print(len(room))
