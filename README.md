@@ -23,6 +23,7 @@
 - [Projects](#projects)
 - [Algorithm](#Algorithm)
 - [Git/Github](#gitgithub)
+- [IT Tech](#it_tech)
 - [Markdown](#markdown)
 - [Python](#python)
   - [Django](#django)
@@ -100,6 +101,12 @@
 | 📌**정리** | 명령문 + Diagram | 2022년 7월 7일 | [링크](./Git/Summary.md) |
 
 
+
+- ### IT Tech
+
+| Content   | Detail                            | Date             | Link                                    |
+| --------- | --------------------------------- | ---------------- | --------------------------------------- |
+| World Cup | Semi-Automated Offside Technology | 2022년 12월 29일 | [링크](./IT_Tech/1_월드컵의_IT_기술.md) |
 
 - ### Markdown
 
