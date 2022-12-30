@@ -108,6 +108,7 @@
 | --------- | --------------------------------- | ---------------- | --------------------------------------- |
 | World Cup | Semi-Automated Offside Technology | 2022년 12월 29일 | [링크](./IT_Tech/1_월드컵의_IT_기술.md) |
 | World Cup | Video Assistant Referee           | 2022년 12월 30일 | [링크](./IT_Tech/2_월드컵의_IT_기술.md) |
+| World Cup | Goal-line technology              | 2022년 12월 31일 | [링크](./IT_Tech/3_월드컵의_IT_기술.md) |
 
 - ### Markdown
 
