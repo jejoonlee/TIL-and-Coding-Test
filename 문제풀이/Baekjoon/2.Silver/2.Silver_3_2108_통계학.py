@@ -37,8 +37,10 @@ most_value = max(diction.values())
 
 result = []
 for i in diction:
+    print(i)
     if diction[i] == most_value:
         result.append(i)
+        
 
 if len(result) == 1:
     print(result[0])
