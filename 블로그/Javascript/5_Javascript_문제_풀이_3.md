@@ -53,3 +53,45 @@ function maxSubarraySum (array, num) {
 
 
 <img src="5_Javascript_문제_풀이_3.assets/image-20230107162846254.png" alt="image-20230107162846254" style="zoom:67%;" />
+
+
+
+## **Sliding Window - minSubArrayLen**
+
+Write a function called **minSubArrayLen** which accepts two parameters - an array of positive integers and a positive integer.
+
+This function should return the minimal length of a **contiguous** subarray of which the sum is greater than or equal to the integer passed to the function. If there isn't one, return 0 instead.
+Examples:
+
+```javascript
+minSubArrayLen([2,3,1,2,4,3], 7) // 2 -> because [4,3] is the smallest subarray
+minSubArrayLen([2,1,6,5,4], 9) // 2 -> because [5,4] is the smallest subarray
+minSubArrayLen([3,1,7,11,2,9,8,21,62,33,19], 52) // 1 -> because [62] is greater than 52
+minSubArrayLen([1,4,16,22,5,7,8,9,10],39) // 3minSubArrayLen([1,4,16,22,5,7,8,9,10],55) // 5
+minSubArrayLen([4, 3, 3, 8, 1, 2, 3], 11) // 2minSubArrayLen([1,4,16,22,5,7,8,9,10],95) // 0
+```
+
+Time Complexity - O(n)
+
+Space Complexity - O(1)
+
+> 배열 안에 있는 숫자를 연속으로 더한다
+>
+> 입력된 배열 말고, 입력된 숫자보다 같거나 커야 한다
+>
+> 즉 입력된 숫자보다, 작으면 배열에 있는 숫자들을 순회하면서 더한다.
+>
+> 그렇게 더해서 입력된 숫자보다 적은 숫자들의 개수가 제일 적은 개수를 구하는 것이다
+
+위에 예제에서 1번)
+
+[2, 3, 1, 2, 4, 3] 이 주어지고 7이라는 숫자가 주어진다
+
+- 2 + 3 + 1 + 2  까지 해야 7을 넘는다 (여기서 숫자 4개)
+- 그 다음 4, 3 이 있다 (2개)
+- 즉 정답은 2개다
+
+
+
+
+
