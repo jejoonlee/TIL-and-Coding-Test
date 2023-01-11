@@ -1,4 +1,4 @@
-# 네트워크 - 유선 LAN : Ethernet
+# 네트워크 - 무선 LAN
 
 *K-MOOC - 네트워크 기초*
 
