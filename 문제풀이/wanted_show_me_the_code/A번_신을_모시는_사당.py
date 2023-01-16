@@ -6,7 +6,6 @@ sys.stdin = open("input.txt")
 # 연속을 금칠하고 나서, 외쪽을 보는 돌상과 오른쪽을 보는 돌상들을 뺀다
     # 빼고 난 값이 깨달음의 양이다 (절대값으로 바꿔야 함)
 
-
 N = int(input())
 
 rocks = list(map(int, input().split()))
