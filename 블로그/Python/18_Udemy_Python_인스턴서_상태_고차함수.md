@@ -87,6 +87,32 @@ print(calculator(2, 5, multiply))
 
 
 
+### 클래스 상속
+
+> 이미 만든 클래스를, 새로운 클래스에 상속을 시키는 것이다
+
+- 로봇이란 클래스 안에, 로봇의 형태, 그리고 행동이 담겨져 있다
+- 이 로봇의 형태 그리고 행동들을 다른 클래스에 상속을 시키고, 거기에 형태와 행동을 더 추가할 수 있다
+
+```python
+# Animal이란 클래스를 Fish 클래스에 상속시킨다
+class Fish(Animal):
+    def __init__(self):
+        super().__init__()
+        # Animal 클래스의 속성들을 Fish 클래스의 속성에 넣는다
+        # super는 Animal이라는 클래스를 가리킨다
+        
+    def breathe(self):
+        super().breathe()
+        # Animal 클래스에 있는 breathe() function을 가지고 온다
+        print("Addition")
+        # Animal 클래스에 있는 breathe() function에서, 새로운 기능을 추가로 넣을 수 있다
+```
+
+
+
+
+
 ## Etch-a-sketch App
 
 > W = Forward
