@@ -1,193 +1,185 @@
-# Udemy : 파이썬 거북이 크로싱 프로젝트
+# Udemy : 퐁 게임
 
-> #### 거북이가 자동차들을 피해서 도로를 건너는 것
->
-> #### 거북이는 위로만 갈 수 있다
->
-> #### 자동차는 왼쪽으로만 움직인다
->
-> - 자동차는 랜덤으로 생성
->
-> #### 거북이가 도로를 건너면, 다음 레벨로 가고, 자동차 속도는 더 빨라진다
+![Pong460x276](20_Udemy_Python_벽돌깨기.assets/Pong460x276.webp)
 
+### **main.py**
 
+> while문을 보면, 게임에 대한 주요 동작들을 볼 수 있다
 
-## 느낀 점
-
-그 전에는 파이썬으로 숫자나 데이터만 보면서 실습을 하거나, 강의를 들었다. 그러다 보니, 생각하는 것도 배가 되고, 시각화가 잘 안 되어서 조금 힘들었다. 하지만, `turtle` 모듈을 이용하면서, 내 코드가 시각화가 되면서, 좀 더 재미있게 코딩을 할 수 있었던 것 같다.
-
-특히, 전에는 `class`와 `function`이 잘 이해가 되지 않아서, 둘을 사용하는 것을 많이 자제를 했다. 아니면 장고를 할 때에는, 크게 생각을 안 하면서 사용을 했다. 하지만, 이번 강의를 통해서, 다시 복습을 하며 두 개의 개념을 더 이해를 했던 것 같다!
-
-
-
-### main.py
-
-> 이 게임의 로직 자체를 구현하는 파일이다
->
-> `up` 키를 누를 때 거북이의 행동
->
-> 거북이와 자동차가 부딛혔을 때 일어나는 일
->
-> 거북이가 결승점에 도달했을 때, 더 어려운 레벨로 올라가는 것
->
-> 점수판 등
-
-```python
-import time
-from turtle import Screen
-from player import Player
-from car_manager import CarManager
+```
+from turtle import Turtle, Screen
+from paddle import Paddle
+from ball import Ball
 from scoreboard import Scoreboard
+import time
 
 screen = Screen()
-screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.setup(800, 600)
+screen.title("Pong Game")
 screen.tracer(0)
 
-avator = Player()
-car = CarManager()
-scoreboard = Scoreboard()
+r_paddle = Paddle((350, 0))
+l_paddle = Paddle((-350, 0))
+ball = Ball()
+score = Scoreboard()
 
 screen.listen()
-
-screen.onkey(avator.move ,"Up")
+screen.onkey(r_paddle.up, "Up")
+screen.onkey(r_paddle.down, "Down")
+screen.onkey(l_paddle.up, "w")
+screen.onkey(l_paddle.down, "s")
 
 game_is_on = True
+cnt = 0
+
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(ball.ball_speed)
     screen.update()
+    ball.move()
 
-    car.create_car()
-    car.car_move()
+    if ball.ycor() > 280 or ball.ycor() < -280:
+        ball.bounce()
 
-    # 거북이가 도착 지점에 도착하면, 다시 시작 지점으로 돌아온다
-    # 그리고 레벨이 올라간다
-    if avator.ycor() > 280:
-        car.level_up()
-        avator.new_level()
-        scoreboard.score_up()
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -320:
+        ball.paddle_bounce()
 
-    # 차에 부딛히면, 게임을 중단 시킨다
-    for vehicle in car.all_cars:
-        if avator.distance(vehicle) <= 20:
-            game_is_on = False
-            scoreboard.game_over()
-            break
+    # 공을 놓쳤을 때
+    if ball.xcor() > 380:
+        score.l_score_point()
+        ball.reset_position()
+
+    if ball.xcor() < -380:
+        score.r_score_point()
+        ball.reset_position()
 
 screen.exitonclick()
 ```
 
+-   if문 차례대로
+    -   맨 위와, 맨 아래를 부딛힐 때에, 공은 튕겨서 안쪽으로 들어와야 하는 것
+    -   공이 벽돌에 부딛혔을때, 반대쪽으로 튕긴다
+    -   공을 놓쳤을 때에, 공의 위치를 초기화시키고, 상대방에게 점수를 준다
 
+### **Brick movement**
 
-### player.py
-
-> 유저가, 거북이를 조작하는 것을 구현한 파일이다
+> left and right bricks with different key
 >
-> 거북이는 위로 밖에 움직일 수 없어서 `y` 좌표만 신경을 쓰면 됬다
+> (left, WASD / right, arrows)
 
-```python
+```
 from turtle import Turtle
 
+MOVE_DISTANCE = 20
 
-STARTING_POSITION = (0, -280)
-MOVE_DISTANCE = 10
-FINISH_LINE_Y = 280
+class Paddle(Turtle):
+
+    def __init__(self, s_position):
+        super().__init__()
+        self.shape("square")
+        self.color("white")
+        self.shapesize(stretch_wid=5, stretch_len=1)
+        self.starting_position(s_position)
+
+    def starting_position(self, s_position):
+        self.penup()
+        self.setposition(s_position)
+
+    def up(self):
+        new_ycor = self.ycor() + MOVE_DISTANCE
+
+        if new_ycor <= 255:
+            self.goto(self.xcor(), new_ycor)
 
 
-class Player(Turtle):
+    def down(self):
+        new_ycor = self.ycor() - MOVE_DISTANCE
+
+        if new_ycor >= -250:
+            self.goto(self.xcor(), new_ycor)
+```
+
+-   벽돌의 위치 그리고, 동작들을 여기서 작동을 시킨다
+-   벽돌은 위 아래만 움직이기 때문에 `ycor()`만 사용하여, 벽돌을 움직이면 된다
+
+### **Ball movement**
+
+> automatic, starts from center
+
+```
+from turtle import Turtle
+
+MOVE_DISTANCE = 20
+
+class Ball(Turtle):
 
     def __init__(self):
         super().__init__()
-        self.shape("turtle")
+        self.shape("circle")
+        self.color("white")
         self.penup()
-        self.goto(STARTING_POSITION)
-        self.setheading(90)
+        self.x_move = 10
+        self.y_move = 10
+        self.ball_speed = 0.1
 
     def move(self):
-        y_cor = self.ycor() + MOVE_DISTANCE 
-        self.goto(0, y_cor)
+        x_cor = self.xcor() + self.x_move
+        y_cor = self.ycor() + self.y_move
+        self.goto(x_cor, y_cor)
 
-    def new_level(self):
-        self.goto(STARTING_POSITION)
+    # x 좌표같은 경우 계속 한 쪽으로 움직인다
+    # 하지만 위 아래 벽에 부딛힐 경우, 위로 가던 공은 아래로 향해야 하고
+    # 아래고 가던 공은 위로 향해야 해서 -1을 곱해준다
+    def bounce(self):
+        self.y_move *= -1
+        self.ball_speed *= 0.9
+
+    def paddle_bounce(self):
+        self.x_move *= -1
+        self.ball_speed *= 0.9
+
+    def reset_position(self):
+        self.goto(0,0)
+        self.x_move *= -1
+        self.ball_speed = 0.1
 ```
 
+-   제일 중요한 것은 공이 벽에 부딛히겨나, 벽돌에 부딛히면 반대로 튕겨 나가야 한다
+    -   위 아래 벽을 부딛힐 때에는, `y` 좌표의 반대 방향으로 튕겨 나와야 해서 `-1`을 곱해준다
+    -   반대로 벽돌에 부딛힐 때에는 `x`좌표의 반대 방향으로 튕겨 나와야 해서 `-1`을 `x` 좌표에 곱해준다
+-   공의 속도도, 조금씩 빨라지게 `self.ball_speed`를 `0.9`씩 곱해준다
+    -   여기서 `self.ball_speed`는 `main.py`의 `time.sleep`에 들어가게 된다
+-   벽돌이 공을 맞추지 못 할 경우, 공은 중앙으로 돌아간다. 여기서 반대 방향으로 시작을 하기 위해 `x`좌표에 -1을 곱해준다
 
+### **Scoreboard**
 
-### car_manager.py
-
-> 자동차, 장애물이 만들어지는 것부터, 행동하는 것을 구현
->
-> 오른쪽에서 왼쪽으로 움직이는 것. 즉 `x`좌표를 빼주면 된다
->
-> 레벨이 올라가면, 자동차 속도가 더 빨라짐으로 `STARTING_MOVE_DISTANCE`의 속도를 어떻게 올릴지 고민하였다
-
-```python
-from turtle import Turtle
-import random
-
-COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
-STARTING_MOVE_DISTANCE = 5
-MOVE_INCREMENT = 10
-
-
-class CarManager(Turtle):
-    
-    def __init__(self):
-        self.all_cars = []
-        self.car_speed = STARTING_MOVE_DISTANCE
-
-    def create_car(self):
-        random_chance = random.randint(1, 6)
-
-        if random_chance == 1:
-            new_car = Turtle("square")
-            new_car.color(random.choice(COLORS))
-            new_car.penup()
-            new_car.shapesize(stretch_wid=1, stretch_len=2)
-            random_y = random.randint(-240, 250)
-            new_car.goto(300, random_y)
-            
-            self.all_cars.append(new_car)
-
-    def car_move(self):
-        for car in self.all_cars:
-            car.backward(self.car_speed)
-
-        
-    def level_up(self):
-        self.car_speed += 3
 ```
-
-
-
-### scoreboard.py
-
-> 점수판 구현
-
-```python
 from turtle import Turtle
-
-FONT = ("Courier", 24, "normal")
-
 
 class Scoreboard(Turtle):
-    
     def __init__(self):
         super().__init__()
-        self.hideturtle()
+        self.color("white")
         self.penup()
-        self.setposition(-290, 260)
-        self.level = 1
-        self.write(f"Level : {self.level}", False, font = FONT)
+        self.hideturtle()
+        self.r_score = 0
+        self.l_score = 0
+        self.update_scoreboard()
 
-    def score_up(self):
+    def update_scoreboard(self):
+        self.setposition(250, 200)
+        self.write(self.r_score, font=('Arial', 48, 'normal'))
+        self.setposition(-250, 200)
+        self.write(self.l_score, font=('Arial', 48, 'normal'))
+
+
+    def r_score_point(self):
+        self.r_score += 1
         self.clear()
-        self.level += 1
-        self.write(f"Level : {self.level}", False, font = FONT)
-    
-    def game_over(self):
-        self.setposition(0, 0)
-        self.write("Game Over", False, align="center",font = FONT)
+        self.update_scoreboard()
+
+    def l_score_point(self):
+        self.l_score += 1
+        self.clear()
+        self.update_scoreboard()
 ```
-
-
-
