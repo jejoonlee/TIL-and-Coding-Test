@@ -22,6 +22,15 @@ class Snake:
         for position in STARTING_POSITIONS:
             self.add_snake(position)
 
+    def reset(self):
+        # 실패하면, 원래 있던 뱀은 스크린 밖으로 나간다
+        for body in self.body:
+            body.goto(1000, 1000)
+
+        self.body.clear()
+        self.create_snake()
+        self.head = self.body[0]
+
     def extend(self):
         position = (self.body[-1].xcor(), self.body[-1].ycor())
         self.add_snake(position)
