@@ -17,7 +17,7 @@ for _ in range(T):
 
     left, right = [], []
     middle = nums[0]
-    
+
     result = [nums[0]]      
 
     for i in range(1, N):
@@ -25,7 +25,7 @@ for _ in range(T):
         # 숫자가 중앙 숫자보다 작으면 left 힙 (최대 힙)에 넣는다
         if nums[i] < middle:
             heapq.heappush(left, -nums[i])
-        
+
         # 중앙 숫자보다 크면 right 힙에 넣는다
         else:
             heapq.heappush(right, nums[i])
