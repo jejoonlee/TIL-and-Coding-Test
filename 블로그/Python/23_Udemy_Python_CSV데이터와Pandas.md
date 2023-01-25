@@ -227,3 +227,58 @@ data_csv.to_csv("squirrel_count.csv")
 
 
 
+
+
+## 미국 주 게임
+
+>`turtle`과 `pandas`를 사용해서, 미국 주들을 맞추는 게임을 만들기
+>
+>turtle은 이미지 파일을 gif 파일 밖에 못 받는다
+
+<img src="23_Udemy_Python_CSV데이터와Pandas.assets/image-20230125101926757.png" alt="image-20230125101926757" style="zoom:67%;" />
+
+
+
+```python
+from turtle import Turtle, Screen
+import pandas
+
+screen = Screen()
+name = Turtle()
+
+screen.title("US States Game")
+screen.bgpic("blank_states_img.gif")
+screen.setup(width=725, height=491)
+
+data = pandas.read_csv("50_states.csv")
+states = data["state"].to_list()
+count = 0
+correct_states = []
+
+while len(correct_states) < 50:
+    state_name = screen.textinput(f"{count}/{len(data)} States Correct", "Type name of US state: ")
+    state_name = state_name.title()
+
+    if state_name == 'Exit':
+        missing_states = set(states) - set(correct_states)
+        list(missing_states).sort()
+
+        states_to_learn = pandas.DataFrame(missing_states)
+        states_to_learn.to_csv("states_to_learn.csv")
+        break
+
+    if state_name in states and state_name not in correct_states:
+        count += 1
+        correct_states.append(state_name)
+        x_cord = int(data[data["state"] == state_name].x)
+        y_cord = int(data[data["state"] == state_name].y)
+
+        name.penup()
+        name.hideturtle()
+        name.goto(x_cord, y_cord)
+        name.write(state_name, align="center")
+```
+
+- CSV 파일에 있는 데이터를 이용해서, 미국 주 이름을 맞추는 것
+  - 미국 주 이름을 입력하고, 진짜 존재하는 주면, 그 주의 이름을 지도에 표시
+- `exit`을 입력했을 때에는, 내가 맞추지 못 한 주의 이름들을 csv 파일에 저장
