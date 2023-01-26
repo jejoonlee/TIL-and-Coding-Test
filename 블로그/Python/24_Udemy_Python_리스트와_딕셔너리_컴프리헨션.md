@@ -176,7 +176,7 @@ result = [nato_dict[letter] for letter in user_word if nato_dict[letter]]
 print(result)
 
 # input : Alex
-# output : ["Alpha", "Lima", "Echo", "X-ra"]
+# output : ["Alpha", "Lima", "Echo", "X-ray"]
 ```
 
 - `data` : pandas를 통해 **nato_phonetic_alphabet.csv**에서 표로 데이터를 가지고 온다
