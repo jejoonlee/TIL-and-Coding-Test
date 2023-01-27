@@ -66,3 +66,60 @@ mergeSort([1, 10, 50], [2, 14, 99 , 100])
 
 
 
+## 합병 정렬 코드
+
+```javascript
+function merge(array1, array2) {
+    let i = 0
+    let j = 0
+    let newArray = []
+
+    while (i < array1.length && j < array2.length) {
+        if (array1[i] < array2[j]) {
+            newArray.push(array1[i])
+            i ++
+        } else {
+            newArray.push(array2[j])
+            j ++
+        }
+    }
+    
+    while (i < array1.length) {
+        newArray.push(array1[i])
+        i ++
+    }
+    
+    while (j < array2.length) {
+        newArray.push(array2[j])
+        j ++
+    }
+
+
+    return newArray
+}
+
+
+function mergeSort(array) {
+    if (array.length <= 1) return array;
+    let mid = Math.floor(array.length/2)
+    let left = mergeSort(array.slice(0, mid))
+    let right = mergeSort(array.slice(mid))
+    
+    return merge(left, right)
+}
+```
+
+- `mergeSort(array)`, 재귀 함수를 통해서 합병 정렬을 한다
+  - `mid` 는 중간 지점을 구하고, 그 중간 지점 기준으로 오른쪽과 왼쪽을 `.slice`를 반반 한다
+  - 그것을 왼쪽 기준으로 계속해서 배열의 길이가 1일 때까지 계속한다. 
+  - 그 다음엔 오른쪽도 1일 때까지 mergeSort를 해주고, 1이 나오면 `merge()`를 한다
+  - 이것을 계속 반복하다 보면, 모든 수가 정렬이 된다
+
+
+
+![image-20230127163227252](13_Javascript_합병_정렬.assets/image-20230127163227252.png)
+
+- 3, 5, 9, 11 은 `if (array.length <= 1) return array` 이다
+  - 즉 배열에 원소가 하나 밖에 없어서, 그냥 그 배열을 반환 하는 것이다
+- 3번이랑 5번이 배열을 하나씩 반환한다
+  - 이렇게 되면 `merge()`에서 argument로 2개의 배열 (left, right)을 넣어서 합병을 할 수 있게 된다
