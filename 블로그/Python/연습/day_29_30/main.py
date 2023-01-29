@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import random
 import pyperclip
+import json
 
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
@@ -29,27 +30,56 @@ def password_generate():
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save_password():
-    w = website_input.get()
+    w = website_input.get().lower()
     e = email_input.get()
     p = password_input.get()
 
+    new_data = {w: {
+        "email" : e,
+        "password" : p,
+    }}
+
     if len(w) == 0 or len(e) == 0 or len(p) == 0:
         messagebox.showerror(title="Oops", message="Please fill in the information")
-    else:    
-        is_ok = messagebox.askokcancel(title=w, message=f"These are the details enterd: \nEmail: {e} \nPassword: {p} \nIs it ok to save?")
+    else:
+        try:
+            with open("data.json", "r") as data_add:
+                # json.dump(new_data, data_add, indent=4)
+                data = json.load(data_add)
 
+        except FileNotFoundError:
+            with open("data.json", "w") as data_add:
+                json.dump(new_data, data_add, indent=4)
 
-        # ok를 누르면 밑에 있는 코드가 작동한다
-        # cancel을 누르면 아무것도 안 된다
-        if is_ok == True:
-            with open("data.txt", "a") as data_add:
-                data_add.write(f"{w} | {e} | {p}\n")
-
+        else:
+            data.update(new_data)
+            
+            with open("data.json", "w") as data_add:
+                json.dump(data, data_add, indent=4)
+            
+        finally:
             website_input.delete(0, "end")
-            password_input.delete(0, "end")
-    
+            password_input.delete(0, "end") 
 
 
+def search():
+
+    website_name = website_input.get().lower()
+    try:
+        with open("data.json", "r") as data_file:
+            data = json.load(data_file)
+
+    except FileNotFoundError:
+        messagebox.showinfo(title="Error", message="No Data File Found")
+
+    else:
+        if website_name in data:
+            website_e = data[website_name]['email']
+            website_p = data[website_name]["password"]
+            messagebox.showinfo(title=website_name.title(), message=f"Email/Username : {website_e} \nPassword : {website_p}")
+        else:
+            messagebox.showinfo(title="Error", message=f"No details for {website_name.title()} exists.")
+        
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
@@ -65,10 +95,13 @@ lock.grid(row=0, column=1)
 website = Label(text="Website:", pady=5)
 website.grid(row=1, column=0)
 
-website_input = Entry(width=40)
-website_input.grid(row=1, column=1, columnspan=2)
+website_input = Entry(width=24)
+website_input.grid(row=1, column=1)
 # 실행이 되면 입력하는 곳을 클릭 없이 바로 쓸 수 있다
 website_input.focus()
+
+website_search = Button(text="Search", width=15, command=search)
+website_search.grid(row=1, column=2)
 
 
 # ---------이메일 또는 유저 이름---------
@@ -85,10 +118,10 @@ email_input.insert(0, "jejoonlee@naver.com")
 password = Label(text="Password:", pady=5)
 password.grid(row=3, column=0)
 
-password_input = Entry(width=22)
+password_input = Entry(width=24)
 password_input.grid(row=3, column=1)
 
-generate_password = Button(text="Generate Password", width=17, command=password_generate)
+generate_password = Button(text="Generate Password", width=15, command=password_generate)
 generate_password.grid(row=3, column=2)
 
 
