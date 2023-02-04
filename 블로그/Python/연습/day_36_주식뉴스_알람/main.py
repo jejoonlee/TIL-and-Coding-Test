@@ -67,9 +67,6 @@ for stock in STOCK:
 
     change = (close_value_1 - close_value_2) // close_value_1
 
-    print(close_value_1, close_value_2)
-    print(change)
-
     if abs(change) >= 1:
         if change < 0:
             change = f"🔻 {abs(change)}%"
@@ -78,14 +75,26 @@ for stock in STOCK:
 
 
 
-
-
-
 ## STEP 2: Use https://newsapi.org
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
 
-## STEP 3: Use https://www.twilio.com
-# Send a seperate message with the percentage change and each article's title and description to your phone number. 
+    news_parameter = {
+        "apiKey": os.getenv("news_api_key"),
+        "q": stock,
+        "language": "en",
+        "sortBy": "popularity",
+        "from": yesterday,
+        "to": yesterday_2,
+    }
+
+    news = requests.get(url="https://newsapi.org/v2/everything", params=news_parameter)
+    news.raise_for_status()
+    news_data = news.json()["articles"][:3]
+
+    for news in news_data:
+        print(news["title"])
+        print(news["description"])
+
 
 
 #Optional: Format the SMS message like this: 
