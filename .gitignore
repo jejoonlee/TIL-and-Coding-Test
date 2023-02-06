@@ -2,6 +2,7 @@
 *.xlsx
 *.csv
 
+
 # Created by https://www.toptal.com/developers/gitignore/api/venv,python,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=venv,python,django
 

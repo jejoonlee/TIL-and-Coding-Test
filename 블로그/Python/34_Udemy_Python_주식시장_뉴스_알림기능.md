@@ -1,3 +1,30 @@
+# Udemy : 주식시장 뉴스 알림기능 프로젝트
+
+https://apilist.fun/
+
+
+
+## API 사용
+
+주식 API : https://www.alphavantage.co/
+
+뉴스 API : https://newsapi.org/
+
+
+
+## 내용
+
+1. 주식
+   - 오늘 주식 가치와, 전 날의 주식 가치를 비교한다
+     - 얼마가 올랐거나, 내려갔는지 확인 (퍼센트도 추가)
+     - **전 날과 비교해서, 가격 변동이 심하면, 그 주식에 관련된 회사에 어떤 일이 일어났는지 확인하고 싶은** 것
+2. 뉴스
+   - 가격 변동이 크다면 (예시) 10프로 변동), 주식에 관련된 회사의 뉴스를 확인한다
+3. SMS 또는 이메일을 보낸
+
+
+
+```python
 import requests
 import os
 import dotenv
@@ -42,9 +69,10 @@ if symbol_data:
         if data["4. region"] == "United States":
             STOCK.append(data["1. symbol"])
 
-## STEP 1: Use https://www.alphavantage.co
-# When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
 
+#------- 주식 시장이 매일 열리는 것이 아는 것을 인지 ------
+# 토요일, 일요일, 월요일에는 목요일 금요일 시장 마감 금액을 파악해야 한다
+# 화요일에는 목요일 월요일 시장 마감 금액을 파악해야 다
 today = datetime.now().weekday()
 yesterday = (datetime.now() - timedelta(1)).date()
 yesterday_2 = (datetime.now() - timedelta(2)).date()
@@ -67,6 +95,8 @@ yesterday_2 = f"{y2_year}-{y2_month}-{y2_day}"
 
 news_to_send = []
 
+#---------------- STOCK 이라는 리스트를 만들었다 ------------------
+# 즉 삼성이라도, 삼성전자가 있고, 삼성전기가 있듯이, 삼성이라고 검색하면, STOCK에 삼성에 관련된 이름들이 저장될 수 있다
 for stock in STOCK:
     parameter = {
         "function": "TIME_SERIES_DAILY_ADJUSTED",
@@ -84,6 +114,7 @@ for stock in STOCK:
     close_value_1 = float(data_list[0]["4. close"])
     close_value_2 = float(data_list[1]["4. close"])
 
+    # 얼마나 가치가 떨어지거나, 올라갔는지 알수 있는 공식
     change = (close_value_1 - close_value_2) // close_value_1
 
     if abs(change) >= 1:
@@ -93,9 +124,6 @@ for stock in STOCK:
             change = f"🔺 {abs(change)}%"
 
 
-
-## STEP 2: Use https://newsapi.org
-# Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
 
     news_parameter = {
         "apiKey": os.getenv("news_api_key"),
@@ -114,17 +142,6 @@ for stock in STOCK:
         news_to_send.append(f'{stock}: {change} \nHeadline: { news["title"] } \nBrief: { news["description"] }')
 
 send_email(news_to_send)
+```
 
-
-
-#Optional: Format the SMS message like this: 
-"""
-TSLA: 🔺2%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-or
-"TSLA: 🔻5%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-"""
-
+![image-20230206195706539](34_Udemy_Python_주식시장_뉴스_알림기능.assets/image-20230206195706539.png)

@@ -3,13 +3,18 @@ sys.stdin = open('input.txt')
 
 from collections import deque
 
+DFS_LIST = []
+BFS_LIST = []
+
 def dfs(V):
   dfs_visited[V] = 'V'
-  print(V + 1, end=' ')
+  DFS_LIST.append(V + 1)
 
   for i in graph[V]:
     if dfs_visited[i] != 'V':
       dfs(i)
+
+  return DFS_LIST
 
 def bfs(V):
   bfs_visited[V] = 'V'
@@ -17,12 +22,14 @@ def bfs(V):
 
   while queue:
     current = queue.popleft()
-    print(current + 1, end=' ')
+    BFS_LIST.append(current + 1)
 
     for cur in graph[current]:
       if bfs_visited[cur] != 'V':
         bfs_visited[cur] = 'V'
         queue.append(cur)
+
+  return BFS_LIST
 
 
 
@@ -42,6 +49,6 @@ for _ in range(M):
 for j in graph:
   j.sort()
 
-dfs(V)
-print()
-bfs(V)
+print(graph)
+print(' '.join(map(str, dfs(V))))
+print(' '.join(map(str, bfs(V))))
