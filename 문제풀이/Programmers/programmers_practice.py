@@ -6,15 +6,25 @@ total_weight = 0
 
 people.sort()
 
-for weight in people:
-    if total_weight + weight > limit:
-        total_weight = 0
-        answer += 1
-        total_weight += weight
+i = 0
+    
+while people:
+    total_weight = people.pop()
+    
+    if people:
+        for index, person in enumerate(people):
+            if total_weight + person > limit:
+                break
+                
+        if index - 1 == -1:
+            answer += 1
+            if len(people) == 1:
+                people.pop()
+        else:
+            people.pop(index-1)
+            
     else:
-        total_weight += weight
-
-if total_weight != 0:
-    answer += 1
+        answer += 1
+        break
 
 print(answer)

@@ -118,6 +118,81 @@ class SinglyLinkedList{
         this.length += 1
         return this
     }
+    
+    get(index) {
+        if (index < 0 || index >= this.length) return null;
+        let current = this.head
+        
+        for (let i = 0; i <= index; i ++) {
+            if (i !== 0) {
+                current = current.next
+            } 
+        }
+        return current
+    }
+    
+    set(index, value) {
+        let foundNode = this.get(index)
+        if (foundNode) {
+            foundNode.value = value
+            return true;
+        }
+        return false
+    }
+    
+    insert(index, value) {
+        if (index < 0 || index > this.length) return false;
+        if (index === this.length) {
+            this.push(value);
+            return true;
+        };
+        if (index === 0) {
+            this.unshift(value);
+            return true;
+        };
+        
+        let newNode = new Node(value);
+        let prev = this.get(index-1);
+        let temp = prev.next;
+        
+        prev.next = newNode;
+        newNode.next = temp;
+        this.length += 1
+        return true
+    }
+    
+    remove(index) {
+        if (index < 0 || index > this.length) return undefined;
+        if (index === this.length - 1) {
+            this.pop();
+            return true;
+        }
+        if (index === 0) {
+            this.shift();
+            return true;
+        }
+        let prevNode = this.get(index-1)
+        let removed = prevNode.next
+        prevNode.next = removed.next
+        this.length -= 1
+        
+        return removed
+    }
+    
+    reverse() {
+        let node = this.head;
+        this.head = this.tail;
+        this.tail = node
+        let prev = null
+        let next = null
+        
+        for (let i = 0; i < this.length ; i++) {
+            next = node.next
+            node.next = prev
+            prev = node;
+            node = next;
+        }
+    }
 }
 ```
 
@@ -157,3 +232,54 @@ class SinglyLinkedList{
   - `head`가 없다는 것은, 리스트에 아무것도 없다는 것
 - 그게 아니면, **새로 들어갈 노드의 다음 노드 `newNode.next`**를 현재 `this.head`로 저장을 한다
 - 그리고 새로 노드를 `this.head`로 넣는다
+
+
+
+#### `get(index)` : 몇 번째의 값을 출력해준다
+
+- 배열보다 비효율적이다.
+  - 배열은 인덱스를 바로 찾아준다
+- 값을 찾을때까지 while 또는 for문을 해야 한다
+
+ ![image-20230209094003576](17_Javascript_단일_연결_리스트.assets/image-20230209094003576.png)
+
+
+
+
+
+#### `set(index, value)` : 특정 노드를 찾고, 노드의 값을 value로 적은 값으로 수정하는 것
+
+- 수정을 했으면, 수정을 하고 `true`를 반환한다
+- 만약 `index`가 존재하지 않으면 `false`를 반환한다
+
+![image-20230209095434759](17_Javascript_단일_연결_리스트.assets/image-20230209095434759.png)
+
+
+
+
+
+#### `insert(index, value)` :  index에, value를 추가하는 것
+
+- 노드와 노드 사이에 새로운 노드를 넣는 것
+  - `77 `이 들어갈 자리를 먼저 찾는다 (`get(index-1)`)
+  - `22`와 `2` 사이에 들어가야 함으로, 새로운 노드를 생성한다
+  - `2`를 임시 변수에 저장을 한다
+  - `22`의 다음 노드를 새로운 노드와 연결한다
+  - 새로운 노드의 다음 노드를 `2`, 즉 임시 변수로 저장했던 노드로 연결을 시킨다
+
+![image-20230209100157456](17_Javascript_단일_연결_리스트.assets/image-20230209100157456.png)
+
+
+
+#### `remove(index)` : index의 노드를 없애는 것
+
+![image-20230209102211071](17_Javascript_단일_연결_리스트.assets/image-20230209102211071.png)
+
+
+
+#### `reverse()` : 리스트 순서를 돌리는 것
+
+![image-20230209135847428](17_Javascript_단일_연결_리스트.assets/image-20230209135847428.png)
+
+
+

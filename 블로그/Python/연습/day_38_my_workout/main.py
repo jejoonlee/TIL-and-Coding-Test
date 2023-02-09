@@ -34,6 +34,10 @@ now = datetime.now()
 now_date = now.strftime("%Y/%m/%d")
 now_time = now.strftime("%X")
 
+bearer_headers = {
+    "Authorization": f"Bearer {os.environ['token']}"
+}
+
 
 for workout in workout_list:
     sheet_input = {
@@ -46,6 +50,6 @@ for workout in workout_list:
         }  
     }
 
-    sheet_response = requests.post(url=sheet_endpoint, json=sheet_input)
+    sheet_response = requests.post(url=os.getenv("sheet_endpoint"), json=sheet_input, headers=bearer_headers)
 
     print(sheet_response.text)
