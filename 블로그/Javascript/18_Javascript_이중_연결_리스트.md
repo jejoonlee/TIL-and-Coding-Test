@@ -126,7 +126,7 @@ class DoublyLinkedList {
             var current = this.tail;
             while (count != index) {
                 current = current.prev;
-                cou
+                count --;
             }
         }
         
