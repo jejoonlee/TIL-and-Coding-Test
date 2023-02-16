@@ -133,6 +133,48 @@ class DoublyLinkedList {
         return current;
     }
     
+    set(index, value) {
+        var foundNode = this.get(index);
+        if (foundNode != null) {
+            foundNode.value = value;
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    insert(index, value) {
+        if (index < 0 || index > this.length) return false;
+        if (index === 0) return this.unshift(value);
+        if (index === this.length) return this.push(value);
+        
+        var newNode = new Node(value);
+        var beforeNode = this.get(index - 1);
+        var afterNode = beforeNode.next;
+        beforeNode.next = newNode
+        newNode.prev = beforeNode
+        newNode.next = afterNode
+        afterNode.prev = newNode
+        this.length += 1;
+        return true
+    }
+    
+    remove(index) {
+        if (index < 0 || index > this.length) return undefined;
+        if (index === 0) return this.shift();
+        if (index === this.length) return this.pop();
+        
+        var beforeNode = this.get(index - 1)
+       	var removeNode = beforeNode.next
+        var afterNode = removeNode.next
+        beforeNode.next = afterNode
+        afterNode.prev = beforeNode
+        removeNode.next = null
+        removeNode.prev = null
+        this.length += 1
+        return true
+    }
+    
 }
 ```
 
@@ -169,3 +211,17 @@ class DoublyLinkedList {
 #### `get(index)` : 인덱스의 값을 출력해준다
 
 - `this.length`기준, index가 `this.length`의 반 이하이면, head부터 시작하고, 그 위면 tail부터 시작해도 된다
+
+
+
+#### `set(index, value)` : 특정 인덱스의 값을 입력한 값으로 바꿔주는 것
+
+
+
+#### `insert(index, value)` : 인덱스에 입력한 값을 추가한다
+
+![image-20230214170257698](18_Javascript_이중_연결_리스트.assets/image-20230214170257698.png)
+
+#### `remove(index)` : 특정 인덱스의 값을 삭제한다
+
+![image-20230214171253423](18_Javascript_이중_연결_리스트.assets/image-20230214171253423.png)
