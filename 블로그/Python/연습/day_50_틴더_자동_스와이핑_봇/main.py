@@ -36,7 +36,7 @@ time.sleep(2)
 fb_login_btn = driver.find_element(By.XPATH, '/html/body/div[2]/main/div/div/div[1]/div/div/div[3]/span/div[2]/button/div[2]/div[2]/div/div')
 fb_login_btn.click()
 
-time.sleep(2)
+time.sleep(4)
 
 base_window = driver.window_handles[0]
 fb_login_window = driver.window_handles[1]
@@ -66,7 +66,7 @@ personal_info = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[2]/div/
 personal_info.click()
 
 while True:
-    time.sleep(3)
+    time.sleep(10)
     like = driver.find_element(By.XPATH, '//*[@id="c-1351236777"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div/div[4]/button')
     like.click()
     print("click")
