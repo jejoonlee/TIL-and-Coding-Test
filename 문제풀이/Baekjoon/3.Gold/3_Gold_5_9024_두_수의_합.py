@@ -8,7 +8,7 @@ for _ in range(T):
     array = list(map(int, input().split()))
     array.sort()
 
-    count = 0
+    count, min_num = 0, 2000000
 
 
     while count == 0:

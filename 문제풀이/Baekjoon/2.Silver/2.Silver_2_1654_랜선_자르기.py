@@ -10,22 +10,20 @@ lens = []
 for _ in range(K):
     lens.append(int(input()))
 
-M = min(lens) + 1
-count = 0
+start, end = 1, max(lens)
 
-# N개 이상일 때 while문을 끝낸다
-# count는 만들 수 있는 랜선 개수
+while start <= end:
 
-# while문은 
-# 가지고 있는 랜선 중 길이가 제일 짧은 랜선으로 시작해서, 1씩 내려가면서
-# 총 몇개의 랜선을 만들 수 있는지
-
-while count < N:
-    M -= 1
+    mid = (start + end) // 2
     count = 0
 
-    for i in lens:
-        count += i // M
-    
+    for wire in lens:
+        count += wire // mid
 
-print(M)
+    if count >= N:
+        start = mid + 1
+
+    else:
+        end = mid - 1
+
+print(end)
