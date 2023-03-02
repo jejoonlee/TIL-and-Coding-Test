@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600" height="300" viewBox="0 0 600 300" style="enable-background:new 0 0 600 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EDEEEF;}
+	.st1{fill:#2B74BA;}
+	.st2{font-family:'Calibri';}
+	.st3{font-size:32.5364px;}
+	.st4{fill:none;stroke:#2C75BA;stroke-width:7;stroke-miterlimit:10;}
+	.st5{fill:#2C75BA;}
+	.st6{font-size:16.5364px;}
+	.st7{fill:#29ABE2;}
+	.st8{fill:#FFFFFF;stroke:#2C75BA;stroke-width:0.9113;stroke-miterlimit:10;}
+	.st9{fill:#FFFFFF;stroke:#2C75BA;stroke-width:1.1409;stroke-miterlimit:10;}
+	.st10{fill:#FA6E55;}
+	.st11{font-size:20.5364px;}
+	.st12{font-size:10px;}
+	.st13{fill:#41AD49;}
+</style>
+<rect x="-1" class="st0" width="600" height="300"/>
+<g>
+	<text transform="matrix(1 0 0 1 167.2729 61.1159)" class="st1 st2 st3">How Hashing Works</text>
+</g>
+<g>
+	<g>
+		<polygon class="st4" points="132.5,141 132.5,208.6 61.5,208.6 61.5,115.6 113.1,115.6 		"/>
+		<polygon class="st4" points="132.5,142 132.5,144.6 106.5,144.6 106.5,116.6 113.1,116.6 		"/>
+	</g>
+	<rect x="75" y="154.1" class="st5" width="16" height="4"/>
+	<rect x="75" y="163.1" class="st5" width="45" height="4"/>
+	<rect x="75" y="173.1" class="st5" width="45" height="4"/>
+	<rect x="75" y="182.1" class="st5" width="45" height="4"/>
+	<rect x="75" y="192.1" class="st5" width="45" height="4"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 66.8478 234.1159)"><tspan x="0" y="0" class="st1 st2 st6">Dinosaur</tspan><tspan x="7.2" y="19.8" class="st1 st2 st6">(Input)</tspan></text>
+</g>
+<rect x="236.2" y="112.9" class="st7" width="125.5" height="98.4"/>
+<rect x="244.5" y="133.7" class="st8" width="109" height="69.6"/>
+<circle class="st9" cx="321.2" cy="123.1" r="3.1"/>
+<circle class="st9" cx="330.6" cy="123.1" r="3.1"/>
+<circle class="st9" cx="340" cy="123.1" r="3.1"/>
+<g>
+	<text transform="matrix(1 0 0 1 257.4006 177.1159)" class="st10 st2 st11">SHA - 256</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 251.1038 234.1159)"><tspan x="0" y="0" class="st1 st2 st6">Hash Function</tspan><tspan x="-19.3" y="19.8" class="st1 st2 st6">(Hashing Algorithm)</tspan></text>
+</g>
+<g>
+	<polygon class="st4" points="536.5,141 536.5,208.6 465.5,208.6 465.5,115.6 517.1,115.6 	"/>
+	<polygon class="st4" points="536.5,142 536.5,144.6 510.5,144.6 510.5,116.6 517.1,116.6 	"/>
+</g>
+<text transform="matrix(1 0 0 1 476.9166 157.4538)"><tspan x="0" y="0" class="st5 st2 st12">bc6435e5e</tspan><tspan x="0.6" y="12" class="st5 st2 st12">1f976d1a6</tspan><tspan x="4.9" y="24" class="st5 st2 st12">1d19bc3</tspan><tspan x="1.9" y="36" class="st5 st2 st12">f42164e...</tspan></text>
+<g>
+	<text transform="matrix(1 0 0 1 463.3907 234.1159)"><tspan x="0" y="0" class="st1 st2 st6">Hash Value</tspan><tspan x="8.5" y="19.8" class="st1 st2 st6">(Output)</tspan></text>
+</g>
+<path class="st13" d="M156.5,156.6c17.7,0,35.3,0,53,0c0-2,0-4.1,0-6.1c3.9,3.9,7.7,7.7,11.6,11.6c-3.8,3.8-7.7,7.7-11.5,11.5
+	c0-2,0-4,0-6c-17.7,0-35.3,0-53,0C156.5,163.9,156.5,160.3,156.5,156.6z"/>
+<path class="st13" d="M382.5,156.6c17.7,0,35.3,0,53,0c0-2,0-4.1,0-6.1c3.9,3.9,7.7,7.7,11.6,11.6c-3.8,3.8-7.7,7.7-11.5,11.5
+	c0-2,0-4,0-6c-17.7,0-35.3,0-53,0C382.5,163.9,382.5,160.3,382.5,156.6z"/>
+</svg>
