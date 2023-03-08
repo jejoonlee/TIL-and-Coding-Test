@@ -1,18 +1,18 @@
 import sys
-sys.stdin = open("input.txt")
+sys.stdin = open('input.txt')
 
-import heapq
+from itertools import permutations
 
-array = []
+small = [int(input()) for _ in range(9)]
 
-for _ in range(int(sys.stdin.readline())):
-    num = int(sys.stdin.readline())
 
-    if num == 0:
-        if len(array) != 0:
-            print(heapq.heappop(array)[1])
-        else:
-            print(0)
-    
-    else:
-        heapq.heappush(array, (abs(num), num))
+for num in permutations(small, 7):
+    height = sum(num)
+
+    if height == 100:
+        result = [i for i in num]
+        result.sort()
+        break
+
+for r in result:
+    print(r)
