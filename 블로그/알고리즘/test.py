@@ -1,18 +1,20 @@
 import sys
 sys.stdin = open('input.txt')
 
-from itertools import permutations
+N, L = map(int, input().split())
 
-small = [int(input()) for _ in range(9)]
+pipe_location = list(map(int, input().split()))
 
+pipe_location.sort(key=lambda x: x)
 
-for num in permutations(small, 7):
-    height = sum(num)
+count = 0
+start = 0
 
-    if height == 100:
-        result = [i for i in num]
-        result.sort()
-        break
+for i in range(1, N):
 
-for r in result:
-    print(r)
+    if pipe_location[i] - pipe_location[start] > L - 1:
+        count += 1
+        start = i
+    
+
+print(count + 1)
