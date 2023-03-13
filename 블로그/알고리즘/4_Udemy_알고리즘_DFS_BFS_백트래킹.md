@@ -78,8 +78,95 @@
 ## BFS (Breadth First Search)
 
 > #### 너비 우선 탐색
+>
+> #### 최단 거리를 구할 때에 유리할 수 있다
 
 - 완전 탐색이다
 - 큐를 이용해서 구현한다
 
 <img src="https://blog.kakaocdn.net/dn/zOJ8V/btr0doU6uvT/kwSKYJ7fl5xBX0e10vaDo1/img.png" alt="img" style="zoom: 67%;" />
+
+
+
+
+
+## 백트래킹
+
+#### 모든 경우를 탐색한다
+
+#### 가지치기를 통해 탐색 경우의 수를 줄인다
+
+- 가능한 덜 탐색하는 것
+
+
+
+
+
+## 문제 풀이
+
+#### 11724 연결 요소의 개수
+
+- DFS를 하며, DFS가 한번 끝날 때, 연결 요소 하나를 세어주면 된다
+
+```python
+def dfs(start):
+    for s in links[start]:
+        if visited[s] == False:
+            visited[s] = True
+            dfs(s)
+
+N, M = map(int, input().split())
+
+visited = [False for _ in range(N + 1)]
+links = [[] for n in range(N + 1)]
+
+for m in range(M):
+    a, b = map(int, input().split())
+    links[a].append(b)
+    links[b].append(a)
+
+count = 0
+
+for index in range(1, len(visited)):
+    if visited[index] == False:
+        dfs(index)
+        count += 1
+
+print(count)
+```
+
+
+
+#### 2178 - 미로 탐색
+
+```python
+from collections import deque
+
+N, M = map(int, input().split())
+
+matrix = [list(map(int, input())) for _ in range(N)]
+visited = [[0] * M for _ in range(N)]
+
+dr, dc = [-1, 0, 0, 1], [0, -1, 1, 0]
+
+
+queue = deque([(0, 0)])
+visited[0][0] = 1
+
+while queue:
+    row, column = queue.popleft()
+
+    for i in range(4):
+        sr, sc = row + dr[i], column + dc[i]
+
+        if 0 <= sr < N and 0 <= sc < M:
+            if matrix[sr][sc] == 1 and visited[sr][sc] == 0:
+                visited[sr][sc] = visited[row][column] + 1
+                queue.append((sr, sc))
+            
+
+print(visited[N-1][M-1])
+```
+
+
+

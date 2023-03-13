@@ -1,20 +1,30 @@
 import sys
 sys.stdin = open('input.txt')
 
-N, L = map(int, input().split())
 
-pipe_location = list(map(int, input().split()))
+from collections import deque
 
-pipe_location.sort(key=lambda x: x)
+N, M = map(int, input().split())
 
-count = 0
-start = 0
+matrix = [list(map(int, input())) for _ in range(N)]
+visited = [[0] * M for _ in range(N)]
 
-for i in range(1, N):
+dr, dc = [-1, 0, 0, 1], [0, -1, 1, 0]
 
-    if pipe_location[i] - pipe_location[start] > L - 1:
-        count += 1
-        start = i
-    
 
-print(count + 1)
+queue = deque([(0, 0)])
+visited[0][0] = 1
+
+while queue:
+    row, column = queue.popleft()
+
+    for i in range(4):
+        sr, sc = row + dr[i], column + dc[i]
+
+        if 0 <= sr < N and 0 <= sc < M:
+            if matrix[sr][sc] == 1 and visited[sr][sc] == 0:
+                visited[sr][sc] = visited[row][column] + 1
+                queue.append((sr, sc))
+            
+
+print(visited[N-1][M-1])
