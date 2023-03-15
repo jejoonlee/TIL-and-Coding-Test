@@ -1,30 +1,21 @@
 import sys
 sys.stdin = open('input.txt')
 
+from bisect import bisect_left, bisect_right
 
-from collections import deque
+N = int(input())
+my_card = list(map(int, input().split()))
+M = int(input())
+card = list(map(int, input().split()))
 
-N, M = map(int, input().split())
+my_card.sort()
 
-matrix = [list(map(int, input())) for _ in range(N)]
-visited = [[0] * M for _ in range(N)]
+result = []
 
-dr, dc = [-1, 0, 0, 1], [0, -1, 1, 0]
+for i in card:
+    if i == my_card[bisect_left(my_card, i)]:
+        result.append(1)
+    else:
+        result.append(0)
 
-
-queue = deque([(0, 0)])
-visited[0][0] = 1
-
-while queue:
-    row, column = queue.popleft()
-
-    for i in range(4):
-        sr, sc = row + dr[i], column + dc[i]
-
-        if 0 <= sr < N and 0 <= sc < M:
-            if matrix[sr][sc] == 1 and visited[sr][sc] == 0:
-                visited[sr][sc] = visited[row][column] + 1
-                queue.append((sr, sc))
-            
-
-print(visited[N-1][M-1])
+print(' '.join(map(str, result)))
