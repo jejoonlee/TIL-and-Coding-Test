@@ -234,3 +234,163 @@
 >
 > - EC2 인스턴스
 > - IP 주소 - 개인 IP 주소여야 한다
+
+
+
+
+
+## Sticky Sessions (Sessions Affinity)
+
+> #### Stickiness를 도입한다는 것은 클라이언트가 Load Balancer를 통해 인스턴스를 이용할 때에, 계속 같은 인스턴스를 사용하게 되는 것이다
+>
+> - 반대로, Stickiness를 도입하지 않으면, 클라이언트가 어플리케이션을 사용할 때마다, 랜덤한 인스턴스를 사용하게 된다
+> - 아래 이미지처럼, Stickiness를 도입하면 Client 1은 계속 왼쪽의 인스턴스를 사용하고, Client 2와 Client 3는 오른쪽의 인스턴스를 사용하게 된다
+
+<img src="5_AWS_ELB.assets/image-20230316092220899.png" alt="image-20230316092220899" style="zoom:50%;" />
+
+
+
+- Classic Load Balancer와 Application Load Balancer에서 사용할 수 있다
+- 주로 '쿠키'를 사용해서 Stickiness를 도입하는데, '쿠키'는 만료기한이 있다
+- 유저들이 세션 데이터, 즉 어플리케이션을 사용했을때 저장된 데이터들을 유지시켜줄 수 있다 (예. 로그인 기록)
+- 하지만 EC2 인스턴스들의 백엔드에 로드(Load)의 불균형을 가져올 수 있다
+
+
+
+#### Application-based Cookies
+
+- Custom Cookie (맞춤화 쿠키)
+
+  - Target, 또는 어플리케이션의 의해 만들어지는 쿠키다
+  - 어플리케이션이 필요로하면, 아무 속성이나 커스텀하여 추가할 수 있다
+  - 각각의 Target 그룹마다 쿠키의 이름을 만들어야 한다
+  - 단 **AWSALB, AWSALBAPP**, 또는 **AWSALBTG**를 사용하면 안 된다 (AWS의 ELB에서 이미 사용하고 있다)
+
+  
+
+- Application Cookie
+
+  - Load Balancer의 의해 만들어지는 쿠키다
+  - 쿠키 이름은 **AWSALBAPP**이다
+
+
+
+#### Duration-based Cookies
+
+- 만료 기간을 설정할 수 있고, 만료 기간은 load balancer에 의해 생성된다
+
+- Load Balancer의 의해 만들어지는 쿠키다
+- 쿠키 이름은 ALB에서는 AWSALB 또는 CLB에서는 AWSELB다
+
+
+
+## Cross-Zone Load Balancing
+
+> #### 인스턴스에 부여가될 트래픽을 모든 AZ에서 동일하게 가져가는 것이다
+
+![Screen-Shot-2019-08-02-at-9.46.42-AM](5_AWS_ELB.assets/Screen-Shot-2019-08-02-at-9.46.42-AM.png)
+
+- Cross-Zone Load Balancing이 활성화가 안 될 경우
+  - 각각의 Load Balancer에서 50씩 트래픽을 가져간다
+  - 각 50씩의 트래픽을, 각각의 인스턴스에 나눠서 트래픽을 분산 시킨다
+- Cross-Zone Load Balancing이 활성될 경우
+  - AZ 또는 Load Balancer에게 할당하는 트래픽의 크기 상관없이, 트래픽을 관리하는 모든 인스턴스에게 같은 양의 트래픽을 가지게 한다
+
+
+
+#### Application Load Balancer
+
+- 기본적으로 Cross-Zone Load Balancing이 활성화되어 있다 (Target 그룹 계층에서 비활성화 시킬 수 있다)
+- 비용이 안 든다
+
+
+
+#### Network Load Balancer & Gateway Load Balancer
+
+- 기본적으로 Cross-Zone Load Balancing이 비활성화되어 있다
+- 활성화를 시키면 비용이 든다
+
+
+
+#### Classic Load Balancer
+
+- 기본적으로 Cross-Zone Load Balancing이 비활성화되어 있다
+- 활성화를 시켜도 비용이 안 든다
+
+
+
+
+
+## SSL / TLS
+
+> #### 클라이언트와 Load Balancer 사이의 트래픽을 암호화 시켜준다
+
+#### SSL (Secure Socket Layer),와 TLS(Transport Layer Security)는 같다
+
+- TLS가 더 최신 버전인데, 아직도 많은 사람들이 SSL이라고 한다
+
+
+
+#### SSL은 CA (Certificate Authorities)로부터 인증을 받는다
+
+- CA는 인증 기관이고, 인증 기관은 공공 SSL을 인증함으로써, 검증된 인증서임을 알려준다
+- SSL 인증서는 만료 기한이 있다
+
+
+
+#### SSL Certificates
+
+- Load Balancer는 X.509 인증서를 사용한다
+- ACM (AWS Certificate Manager)를 통해 인증서를 관리할 수 있다
+- 자신이 가지고 있는 SSL 인증서를 이용할 수 있다
+- **HTTPS Listener : 클라이언트는 SNI (Server Name Indication)을 사용하여 사용하고자 하는 호스트 이름을 명시할 수 있다**
+
+
+
+#### SNI (Server Name Indication)
+
+> #### ALB, NLB, CloudFront 에서만 사용이 가능하다
+
+<img src="5_AWS_ELB.assets/image-20230316094756634.png" alt="image-20230316094756634" style="zoom: 80%;" />
+
+- 클라이언트는 `www.mycorp.com` 을 요청한다
+- ALB는 `www.mycorp.com`에 관련된 SSL 인증서가 있는지 확인한다
+- 인증서가 있다면, 그 인증서를 가지고, `www.mycorp.com`의 인스턴스를 사용할 수 있도록 한다
+
+
+
+#### Classic Load Balancer (v1)
+
+- 하나의 SSL 인증서를 지원하고, 다수의 SSL 인증서를 사용하려면, 다수의 CLB의 다수의 호스트 이름을 사용해야 한다
+
+
+
+#### Application Load Balancer (v2), Network Load Balancer (v2)
+
+- SNI를 통해 다수의 listeners의 다수 SSL 인증서를 지원한다
+
+
+
+
+
+## Connection Draining
+
+> #### Connection Draining 또는 De-registration Delay 라고 한다
+>
+> - Connection Draining : CLB
+> - De-registration Delay : ALB와 NLB
+
+<img src="5_AWS_ELB.assets/image-20230316100018023.png" alt="image-20230316100018023" style="zoom:50%;" />
+
+#### 인스턴스가 de-registered 또는 문제가 있을 때, 활성화된 요청을 완료할 시간을 주는 것이다
+
+- 한 번 연결이 끊어지면, 새로운 요청을 문제가 있는 EC2 인스턴스에 보내지 않는다
+
+
+
+#### 위의 이미지
+
+- Draining으로 표시된 인스턴스에, 이미 연결이 되어 있는 유저들은, 유저들의 요청들이 완료될때까지 시간을 준다
+  - 그 유저들의 요청들이 다 완료가 될 때에, 인스턴스는 연결을 끊게 된다
+  - 이후 유저들은 다른 인스턴스를 사용한다
+- 그 외에 새로운 유저들은 다른 인스턴스를 사용하게 된다
