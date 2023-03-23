@@ -7,6 +7,7 @@ N, M = map(int, input().split())
 
 dr,dc  = [-1, 0, 1, 0], [0, 1, 0, -1]
 
+# 0 북 / 1 동 / 2 남 / 3 서
 direction = [[], [[0], [1], [2], [3]], [(0, 2), (1, 3)], [(0, 1), (1, 2), (2, 3), (3, 0)], [(0, 1, 2), (1, 2, 3), (2, 3, 0), (3, 0, 1)], [(0, 1, 2, 3)]]
 office = []
 CCTV = []
@@ -59,6 +60,7 @@ for i in range(N):
     for j in range(M):
         if 0 < office[i][j] < 6:
             CCTV.append((office[i][j], i, j))
+
 
 result = 1e9
 dfs(0, office)

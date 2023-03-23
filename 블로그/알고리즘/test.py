@@ -1,21 +1,17 @@
 import sys
 sys.stdin = open('input.txt')
 
-from bisect import bisect_left, bisect_right
+MOD = 10007
+sys.setrecursionlimit(10**7)
 
-N = int(input())
-my_card = list(map(int, input().split()))
-M = int(input())
-card = list(map(int, input().split()))
+N, K = map(int, input().split())
 
-my_card.sort()
+cache = [[0] * 1001 for _ in range(1001)]
 
-result = []
+for i in range(1001):
+    cache[i][0], cache[i][i] = 1, 1
+    
+    for j in range(1, i):
+        cache[i][j] = cache[i - 1][j - 1] + cache[i - 1][j]
 
-for i in card:
-    if i == my_card[bisect_left(my_card, i)]:
-        result.append(1)
-    else:
-        result.append(0)
-
-print(' '.join(map(str, result)))
+print(cache[N][K])
