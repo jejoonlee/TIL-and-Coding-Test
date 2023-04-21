@@ -14,6 +14,10 @@
 
 
 
+
+
+### 리스트로 Series 만들기
+
 ![image-20230420140025792](3_데이터분석_Pandas_Series.assets/image-20230420140025792.png)
 
 - 저장한 **ice_cream** 들은 순서대로 Series로 저장되었다
@@ -23,4 +27,18 @@
 
 - dtype가 숫자일 경우 **int** 로 나타날 것이다
 - dtype가 boolean일 경우 (True or False), **bool** 로 니타날 것이다 
+
+
+
+
+
+### 딕셔너리로 Series 만들기
+
+![image-20230420181109193](3_데이터분석_Pandas_Series.assets/image-20230420181109193.png)
+
+- 위에 리스트로 만들었을 때, index에 왔던 곳에 숫자 대신 딕셔너리의 key가 들어왔다
+  - 여기서 숫자 인덱스가 안 보이지만, red는 0번째, white는 1번째, blue는 2번째, yellow 3번째 인덱스다
+- 값은 똑같이 값에 들어가고, dtype도 모든 값이 문자열이라서, object로 지정되어 있다
+
+
 
