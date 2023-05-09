@@ -161,7 +161,7 @@ int sumOfTwoNumbers(int firstNumber, int secondNumber) {
 }
 
 int plus = sumOfTwoNumbers(2, 4);
-// plus == 6
+// plus ==> 6
 
 int findAngle(int firstAngle, int secondAngle) {
    int angle = 180 - (firstAngle + secondAngle);
