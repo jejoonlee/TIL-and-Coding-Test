@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author ADMIN
+ *
+ */
+module JavaPracticeProject {
+}
