@@ -22,7 +22,9 @@
 
 
 
-#### Class
+
+
+### Class
 
 ```java
 public class Planet {
@@ -38,7 +40,7 @@ public class Planet {
 
 
 
-#### Object
+### Object
 
 ```java
 public class Planet {
@@ -57,7 +59,7 @@ Planet venus = new Planet();
 
 
 
-#### Encapsulation
+### Encapsulation
 
 - '캡슐화'는 변수와 함수를 클래스로 묶고, 외부에서 쉽게 접근 못 하도록 은닉하는 것이다
   - 즉 객체가 제공하는 필드와 메소드를 통해서만 내부 정보를 접근할 수 있다
@@ -75,16 +77,49 @@ Planet venus = new Planet();
 ```java
 public class MotorBike {
 	
-	// state
+	// --------------- state -------------
 	private int speed;
+	
+    // speed의 기본 설정
+	MotorBike() {
+		this(10)
+	}
+	
+	MotorBike(int speed) {
+		this.speed = speed;
+	}
 	
 
 	
-	// behavior
-	void changeSpeed(int s) {
-		this.speed = s;
+	// -------------------- behavior----------------------
+    // 속도 초기 세팅하기
+	void changeSpeed(int speed) {
+		if (speed >= 0) {
+			this.speed = speed;
+		} else {
+			System.out.println("This Can not be a speed");
+		}
 	}
 	
+    // 속도 추가하기
+	public void increaseSpeed(int speed) {
+		if (speed >= 0) {
+			changeSpeed(this.speed + speed);
+		} else {
+			System.out.println("You can only INCREASE speed");
+		}
+	}
+	
+    // 속도 줄이기
+	public void decreaseSpeed(int speed) {
+		if (speed >= 0) {
+			changeSpeed(this.speed - speed);
+		} else {
+			System.out.println("Negative value can not be an input");
+		}
+	}
+    
+    // 현제 속도 반환하기
 	int getSpeed() {
 		return this.speed;
 	}
@@ -102,6 +137,7 @@ public class MotorBike {
   - 외부에서 **speed**라는 변수를 직접적으로 접근할 수 없다 (private을 사용)
 - **void changeSpeed(int speed)**
   - 이 함수를 통해 **speed**를 바꾼다
+  - **if 문**을 사용하며, 음수는 **speed**가 될 수 없는 것을 설정한다
 - **this.speed = speed;**
   - **this.speed** 는 클래스 안에 만들어진 **speed** 속성
 - **int getSpeed()**
@@ -110,6 +146,38 @@ public class MotorBike {
 
 
 > #### 메서드를 이용해서 클래스 안에 있는 speed라는 변수를 바꿔주고, 반환을 했다
+
+
+
+
+
+
+
+### 추상화
+
+- 자동차를 운전하기 위해서는, 자동차 안에 모든 부품에 대해 알 필요가 없다
+- 이와 같이 프로그래밍도 디테일 적인 부분들은 모두 추상화가 되어 있다
+  - 우리는 자바 코드를 작성한다
+  - 코드를 작성하면, 코드가 컴파일 되어 ByteCode로 만들어 지고, JVM을 통해 각 운영체제에 맞춰 실행이 된다
+  - **우리는 자바 코드를 작성하면 되지, 컴파일부터 JVM까지 할 필요가 없다 (모두 추상화가 되어 있다)**
+- 즉 메서드를 이용할 때에, 메서드가 어떤 기능을 하는지만 알면 되고, 자세한 로직까지 알 필요 없이 사용이 가능하다
+  - 로직은 추상화가 되어 있다
+
+
+
+
+
+### 생성자
+
+> #### 객체를 만들 때에, 속성의 값을 미리 설정을 해 놓는 것이다
+
+
+
+![image-20230516103803346](7_Java.assets/image-20230516103803346.png)
+
+
+
+
 
 
 

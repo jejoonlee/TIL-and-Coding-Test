@@ -4,8 +4,8 @@ public class MotorBikeRunner {
 
 	public static void main(String[] args) {
 		
-		MotorBike hyundai = new MotorBike();
-		MotorBike harleys = new MotorBike();
+		MotorBike hyundai = new MotorBike(100);
+		MotorBike harleys = new MotorBike(300);
 		
 		hyundai.start();
 		harleys.stop();
@@ -14,6 +14,12 @@ public class MotorBikeRunner {
 		harleys.changeSpeed(90);
 		
 		System.out.println(hyundai.getSpeed());
+		
+		hyundai.increaseSpeed(50);
+		
+		System.out.println(hyundai.getSpeed());
+		
+
 		
 	}
 
