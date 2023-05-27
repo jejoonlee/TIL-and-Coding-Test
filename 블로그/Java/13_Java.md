@@ -51,6 +51,8 @@ Planet jupiter = new Planet();
 
 ## String Class (String으로 저장된 변수 확인하기)
 
+#### 
+
 
 
 #### String은 클래스이고, 생성자가 필요가 없다
@@ -144,4 +146,104 @@ biggerString.indexOf("lot");
 
 - **A.equalsIgnoreCase("문자열")**
   - 대소문자를 무시한채로, **A** 와 문자열이 같은지 확인해준다
+
+
+
+
+
+
+
+## String의 불변객체
+
+#### 문자열의 값은 바뀔 수 없다
+
+
+
+![image-20230527140508973](13_Java.assets/image-20230527140508973.png)
+
+
+
+- **.concat("문자열")** 
+  - 문자열을 추가해서 출력만 해주는 것이다
+  - 즉 기존 문자열의 값을 바꾸는 것이 아니다
+  - 해당 값을 사용하려면, 새로운 변수에, 해당 값을 저장해야 한다
+
+
+
+![image-20230527140643763](13_Java.assets/image-20230527140643763.png)
+
+- **.toUpperCase()**
+  - 모든 알파벳을 대문자로 만들어 준다
+- **.toLowerCase()**
+  - 모든 알파벳을 소문자로 만들어 준다
+- **.trim()**
+  - 문자열 양 옆에, 빈 공간이 있으면, 그 빈 공간을 없애준다
+
+
+
+
+
+## String Concatenation
+
+> #### 결합 하는 것
+
+
+
+```java
+jshell> 1 + 2
+$12 ==> 3
+
+jshell> "1" + 2
+$13 ==> "12"
+
+jshell> 1 + 2 + "3"
+$14 ==> "33"
+
+jshell> "3" + "7"
+$15 ==> "37"
+    
+jshell> System.out.println("The Value is " + 20 + 20)
+The Value is 2020
+
+jshell> System.out.println("The Value is " + (20 + 20))
+The Value is 40
+```
+
+- 숫자끼리는 그냥 더해진다
+- 숫자와 문자열이 있으면, 문자열로 바뀐다
+
+
+
+```java
+jshell> String.join(",", "2", "3", "A");
+$18 ==> "2,3,A"
+
+jshell> String.join(",", "A", "B", "C");
+$19 ==> "A,B,C"
+
+jshell> String.join(",", "A");
+$20 ==> "A"
+```
+
+- 어떻한 문자, 또는 부호로, 값들을 나누고 싶으면 **String.join** 을 사용한다
+  - 제일 첫 argument를 통해, 값들을 나눠준다
+
+
+
+```java
+jshell> "abcd".replace("a", "z");
+$23 ==> "zbcd"
+
+jshell> "aaabbcd".replace("a", "z");
+$24 ==> "zzzbbcd"
+
+jshell> "aaabbcd".replaceFirst("a", "z");
+$25 ==> "zaabbcd"
+```
+
+- 특정 알파벳을 바꿔주는 것이다
+  - 그냥 **.replace()** 만 사용하면, 모든 알파벳을 바꿔준다
+- **.replaceFirst()** : 제일 먼저 나오는 알파벳을 바꿔준다
+
+
 
