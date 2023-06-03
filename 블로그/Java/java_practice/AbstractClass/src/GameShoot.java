@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface GameShoot {
+public interface GameShoot {
+    void shoot();
+    void jump();
+    void protect();
 }
