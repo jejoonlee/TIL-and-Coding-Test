@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f101f0a-f6cf-4081-8096-d28435a259c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../10_제로베이스_Java_컬렉션_프레임워크.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9_제로베이스_Java_예외처리.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Week1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main$1Google.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main$1Website.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Week1/.idea/Week1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tax.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../SQL/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/java_practice/Week1/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/java_practice/Week1/.idea/.gitignore" beforeDir="false" />
