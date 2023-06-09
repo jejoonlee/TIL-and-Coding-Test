@@ -28,27 +28,45 @@ public class Tax {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        int[] taxStandard = {12000000, 34000000, 42000000, 62000000, 150000000, 200000000, 500000000, 1000000000};
         Double[] taxPercen = {0.06, 0.15, 0.24, 0.35, 0.38, 0.4, 0.42, 0.45};
+        int[] cumul = {0, 1080000, 5220000, 14900000, 19400000, 25400000, 35400000, 65400000};
 
         System.out.println("[과세금액 계산 프로그램]");
         System.out.print("연소득을 입력해 주세요. : ");
-        double income = scanner.nextDouble();
-        double cumulDeduc = income;
+        int income = scanner.nextInt();
+        int cumulDeduc = income;
 
         // 세금 계산
-        double taxCal = 0;
+        int taxCal = 0;
 
         // 나름, 등급을 나누었음
         int taxLevel = TaxLevel(income);
 
-        // 누진공제 계산
-        if (cumulDeduc <= 12000000) {
-            cumulDeduc = 0;
+        // 세율에 의한 세금
+        if (income <= 12000000) {
+            taxCal += income * taxPercen[0];
+            System.out.printf("%d * %.0f%% = %.0f", taxStandard[0], taxPercen[0] * 100, taxStandard[0] * taxPercen[0]).println();
         } else {
-            cumulDeduc /= taxPercen[taxLevel];
+            for (int i = 0; i <= taxLevel; i ++) {
+                if (income <= taxStandard[i]) {
+                    taxCal += income * taxPercen[i];
+                    System.out.printf("%d * %.0f%% = %.0f", income, taxPercen[i] * 100, income * taxPercen[i]).println();
+                    break;
+                }
+                System.out.printf("%d * %.0f%% = %.0f", taxStandard[i], taxPercen[i] * 100, taxStandard[i] * taxPercen[i]).println();
+                taxCal += taxStandard[i] * taxPercen[i];
+                income -= taxStandard[i];
+            }
         }
 
-        System.out.println(cumulDeduc);
+        // 누진공제 계산
+        cumulDeduc *= taxPercen[taxLevel];
+        cumulDeduc -= cumul[taxLevel];
+
+        System.out.println();
+        System.out.printf("[세율에 의한 세금]: %20d", taxCal).println();
+        System.out.printf("[누진공제 계산에 의한 세금]: %13d", Math.round(cumulDeduc));
 
     }
 }
