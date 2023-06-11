@@ -46,15 +46,15 @@ public class Tax {
         // 세율에 의한 세금
         if (income <= 12000000) {
             taxCal += income * taxPercen[0];
-            System.out.printf("%d * %.0f%% = %.0f", taxStandard[0], taxPercen[0] * 100, taxStandard[0] * taxPercen[0]).println();
+            System.out.printf("%12d * %4.0f%% = %15.0f", taxStandard[0], taxPercen[0] * 100, taxStandard[0] * taxPercen[0]).println();
         } else {
             for (int i = 0; i <= taxLevel; i ++) {
                 if (income <= taxStandard[i]) {
                     taxCal += income * taxPercen[i];
-                    System.out.printf("%d * %.0f%% = %.0f", income, taxPercen[i] * 100, income * taxPercen[i]).println();
+                    System.out.printf("%12d * %4.0f%% = %15.0f", income, taxPercen[i] * 100, income * taxPercen[i]).println();
                     break;
                 }
-                System.out.printf("%d * %.0f%% = %.0f", taxStandard[i], taxPercen[i] * 100, taxStandard[i] * taxPercen[i]).println();
+                System.out.printf("%12d * %4.0f%% = %15.0f", taxStandard[i], taxPercen[i] * 100, taxStandard[i] * taxPercen[i]).println();
                 taxCal += taxStandard[i] * taxPercen[i];
                 income -= taxStandard[i];
             }
@@ -65,8 +65,10 @@ public class Tax {
         cumulDeduc -= cumul[taxLevel];
 
         System.out.println();
-        System.out.printf("[세율에 의한 세금]: %20d", taxCal).println();
-        System.out.printf("[누진공제 계산에 의한 세금]: %13d", Math.round(cumulDeduc));
+        String taxTitle = "[세율에 의한 세금]:";
+        String deducTitle = "[누진공제 계산에 의한 세금]:";
+        System.out.printf("%-25s\t%d", taxTitle, taxCal).println();
+        System.out.printf("%-23s\t%d", deducTitle, Math.round(cumulDeduc));
 
     }
 }

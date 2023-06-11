@@ -75,7 +75,7 @@ public class Vote {
                     String canPercen = String.format("%.2f%%", candidateVote.get(j) / numVote * 100);
                     String voteNum = String.format("(투표수: %.0f)", candidateVote.get(j));
 
-                    System.out.printf("[기호:%d] %-8s %-5s %12s", j + 1, name, canPercen, voteNum);
+                    System.out.printf("[기호:%d] %-8s\t%-5s\t%10s", j + 1, name, canPercen, voteNum);
                     System.out.println();
                 }
 
