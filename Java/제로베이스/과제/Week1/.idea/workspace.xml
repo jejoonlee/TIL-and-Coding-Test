@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f101f0a-f6cf-4081-8096-d28435a259c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Practice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../8_제로베이스_Java_입출력 - 복사본.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../SQL/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/java_practice/Week1/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/java_practice/Week1/.idea/.gitignore" beforeDir="false" />
@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/java_practice/Week1/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/java_practice/Week1/src/RegistrationNumber.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/java_practice/Week_1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../블로그/Java/제로베이스/2_Java_random.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,17 @@
       <updated>1685863468248</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
