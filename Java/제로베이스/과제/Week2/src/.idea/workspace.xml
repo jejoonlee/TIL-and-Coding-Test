@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a400b355-4c3c-4051-980a-7d18798331a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../LinkedList/src/Practice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LinkedList/src/Practice3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Baekjoon1158.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../16_제로베이스_Java_자료구조_연결리스트.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../16_제로베이스_Java_자료구조_연결리스트.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../알고리즘 설명/1_Stack.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../알고리즘 설명/1_Stack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../알고리즘 설명/2_Queue.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../알고리즘 설명/2_Queue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../알고리즘 설명/3_Deque.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../알고리즘 설명/3_Deque.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="2RMI6vKbBTaB8sTcDV8PmIQL1C0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a400b355-4c3c-4051-980a-7d18798331a8" name="Changes" comment="" />
+      <created>1687053354405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687053354405</updated>
+    </task>
+    <servers />
+  </component>
+</project>

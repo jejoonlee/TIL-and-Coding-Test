@@ -12,6 +12,17 @@
 
 
 
+#### Queue 클래스를 이용하여 사용할 수 있다
+
+```java
+import java.util.LinkedList;
+import java.util.queue;
+
+Queue queue = new LinkedList();
+```
+
+
+
 #### Enqueue 는 값을 큐에 넣는 것이다
 
 ```java
@@ -37,6 +48,26 @@ queue.poll();
 ```java
 queue.peek();
 ```
+
+
+
+#### 그 외
+
+```java
+// 특정 값의 유무 확인
+queue.contains(1);
+
+// 큐 크기 출력
+queue.size();
+
+// 큐에 값이 있는지 없는지 확인
+queue.isEmpty();
+
+// 큐 안에 있는 값을 모두 삭제하기
+queue.clear()
+```
+
+
 
 
 

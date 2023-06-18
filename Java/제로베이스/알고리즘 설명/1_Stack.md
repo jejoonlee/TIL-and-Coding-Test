@@ -15,6 +15,16 @@
 
 
 
+#### 자바에는 스택 클래스가 존재한다
+
+```java
+import java.util.Stack;
+
+Stack stack = new Stack();
+```
+
+
+
 #### Stack에 값 넣기
 
 ```java
@@ -34,8 +44,28 @@ stack.pop()
 #### 조회를 할 때에는 제일 늦게 들어간 값을 조회한다
 
 ```java
-peek.peek();
+stack.peek();
 ```
+
+
+
+#### 그 외
+
+```java
+// 값이 있는지 확인
+stack.contains(1);
+
+// 스택의 사이즈 출력
+stack.size();
+
+// 스택 안에 값이 있는지 없는지 확인
+stack.empty();
+
+// 스택을 초기화
+stack.clear();
+```
+
+
 
 
 
