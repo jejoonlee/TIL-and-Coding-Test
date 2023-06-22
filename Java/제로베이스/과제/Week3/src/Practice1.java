@@ -1,8 +1,10 @@
 
+import java.util.Scanner;
+import java.util.Arrays;
 class BinaryTree {
-    char[] array;
+    int[] array;
 
-    BinaryTree(char[] array) {
+    BinaryTree(int[] array) {
         this.array = array.clone();
     }
 
@@ -65,29 +67,25 @@ class BinaryTree {
 
 }
 
+
 public class Practice1 {
     public static void main(String[] args) {
-        char[] array = new char[10];
-        for(int i = 0; i < array.length; i++) {
-            array[i] = (char)('A' + i);
+
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+
+        int[] array = new int[num * num - 1];
+
+        for (int i = 1; i < array.length ; i ++) {
+            if (i % 2 == 0) {
+                array[i] = 1;
+            }
         }
+        System.out.println(Arrays.toString(array));
 
         BinaryTree binaryTree = new BinaryTree(array);
 
-        System.out.println("==PreOrder==");
-        binaryTree.preOrder(0);
-        System.out.println();
-
-        System.out.println("==Inorder==");
         binaryTree.inOrder(0);
-        System.out.println();
 
-        System.out.println("==PostOrder==");
-        binaryTree.postOrder(0);
-        System.out.println();
-
-        System.out.println("==LevelOrder==");
-        binaryTree.levelOrder(0);
-        System.out.println();
     }
 }
