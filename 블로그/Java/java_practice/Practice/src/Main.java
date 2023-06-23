@@ -1,27 +1,24 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("------ Integer --------------");
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(Integer.MIN_VALUE);
+        String bin1 = "1011010";
+        String bin2 = "1101001";
 
-        int num1 = Integer.MAX_VALUE;
-        System.out.printf("Integer.MAX_VALUE + 2 = %d", num1 + 2).println();
+        // 연산자를 사용하기 위해서 이진수를 십진수로 바꿔야 한다
+        int num1 = Integer.parseInt(bin1, 2);
+        int num2 = Integer.parseInt(bin2, 2);
 
-        System.out.println("------ Long --------------");
-        long longNum = (long) Integer.MAX_VALUE + 10;
-        System.out.println("long으로 변환하기");
+        int num1AndNum2 = Integer.parseInt(String.valueOf(num1 & num2));
+        int num1OrNum2 = Integer.parseInt(String.valueOf(num1 | num2));
+        int num1XorNum2 = Integer.parseInt(String.valueOf(num1 ^ num2));
 
-        // 2, 8, 16 진수
-        int numBase2 = 0b1100;
-        int numBase8 = 014;
-        int numBase16 = 0xC;
-        // 모두 12를 반환한다
 
-        // 2, 8, 16 진수로 반환하기
-        System.out.println("0b" + Integer.toBinaryString(numBase2));
-        System.out.println("0" + Integer.toOctalString(numBase8));
-        System.out.println("0x" + Integer.toHexString(numBase16));
+        // AND, OR, XOR 연산자를 활용해서 2진수 연산을 하며 십진수를 출력한다
+        System.out.println(Integer.toBinaryString(num1AndNum2));
+        System.out.println(Integer.toBinaryString(num1OrNum2));
+        System.out.println(Integer.toBinaryString(num1XorNum2));
+
+
     }
 }
