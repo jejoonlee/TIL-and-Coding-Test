@@ -1,4 +1,4 @@
-# [TIL] Java (정렬하기)
+# [TIL] Java (정렬)
 
 
 
