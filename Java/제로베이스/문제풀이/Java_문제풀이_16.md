@@ -135,6 +135,81 @@ public class Baekjoon2167 {
 
 
 
+## [백준 2003] 수들의 합
+
+#### 투 포인터를 사용한다
+
+
+
+#### 왼쪽 시작부터 두 개의 포인터로 시작을 한다
+
+
+
+![image-20230703220643161](Java_문제풀이_16.assets/image-20230703220643161.png)
+
+
+
+#### tempAdd가 만드려는 숫자 m 보다 크거나 같으면 r 인덱스를 1을 더한다
+
+- r이 움직일때마다 tempAdd에 새로운 인덱스의 값을 추가해준다
+
+
+
+#### tempAdd가 m 보다 작으면 l 인덱스를 1씩 더한다
+
+- l이 하나씩 움직일 때, 전에 array[l] 을 tempAdd에서 빼줘야 한다
+
+
+
+#### r 인덱스가 먼저 끝 지점에 도착하게 된다면, l 만 1씩 더하면서 m이 나오는지 안 나오는지 확인을 한다
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int n = Integer.parseInt(scanner.next());
+        int m = Integer.parseInt(scanner.next());
+
+        int[] array = new int[n];
+
+        for (int i = 0; i < n; i++) array[i] = Integer.parseInt(scanner.next());
+
+        int left = 0;
+        int right = 0;
+        int answer = 0;
+        int tempAdd = array[left];
+
+        while (left < n) {
+            if (tempAdd <= m) {
+                if (tempAdd == m) answer += 1;
+
+                if (right + 1 < n) {
+                    right ++;
+                    tempAdd += array[right];
+                } else {
+                    tempAdd -= array[left];
+                    left ++;
+                }
+            } else if (tempAdd > m) {
+                tempAdd -= array[left];
+                left ++;
+            }
+        }
+        System.out.println(answer);
+
+    }
+}
+```
+
+
+
+
+
+
+
 ## [백준 11047] 동전 0
 
 #### 동전은 오름차순으로 받는다
