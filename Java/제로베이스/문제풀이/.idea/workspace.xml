@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16bd32fc-fd3c-4487-b52b-6bb6cfd88384" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java_문제풀이_19.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_문제풀이_20.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_문제풀이_21.assets/crane_game_104.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_문제풀이_21.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2SHkDHUkJqN2ITJXKId8eUi1LHE" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16bd32fc-fd3c-4487-b52b-6bb6cfd88384" name="Changes" comment="" />
+      <created>1688810775353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688810775353</updated>
+    </task>
+    <servers />
+  </component>
+</project>
