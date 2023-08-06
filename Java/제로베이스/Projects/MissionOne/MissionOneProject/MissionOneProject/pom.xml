@@ -5,8 +5,8 @@
   <artifactId>MissionOneProject</artifactId>
   <packaging>war</packaging>
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <version>1.0-SNAPSHOT</version>
   <name>MissionOneProject Maven Webapp</name>
@@ -17,6 +17,11 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty-util</artifactId>
+      <version>6.1.25</version>
     </dependency>
   </dependencies>
   <build>
