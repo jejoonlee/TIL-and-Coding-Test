@@ -30,6 +30,11 @@
 
 ![image-20230802151210096](README.assets/image-20230802151210096.png)
 
+- 추후 wifiInfo에서 변경 사항
+  - 작업 일자 : String으로 변환
+  - Year : Integer로 변환
+  - 설치위치 : String으로 변
+
 
 
 
