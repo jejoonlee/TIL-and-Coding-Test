@@ -1,5 +1,5 @@
 
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="euc_kr" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,70 +12,73 @@
         th {
             font-size: small;
             font-weight: bold;
-            color: white;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
         }
     </style>
 </head>
 
 <body>
-<h1 style="text-align: center;">ì™€ì´íŒŒì´ ì •ë³´ êµ¬í•˜ê¸°</h1>
+<h1 style="text-align: center;">¿ÍÀÌÆÄÀÌ Á¤º¸ ±¸ÇÏ±â</h1>
 <section style="display: flex;align-items: center;justify-content: center;">
-    <a href="">í™ˆ</a>
+    <a href="">È¨</a>
     <p style="margin: 0px 10px;"> | </p>
-    <a href="">ìœ„ì¹˜ ížˆìŠ¤í† ë¦¬ ëª©ë¡</a>
+    <a href="">À§Ä¡ È÷½ºÅä¸® ¸ñ·Ï</a>
     <p style="margin: 0px 10px;"> | </p>
-    <a href="">Open API ì™€ì´íŒŒì´ ì •ë³´ ê°€ì ¸ì˜¤ê¸°</a>
+    <a class="update-data" href="http://localhost:8080/MissionOneProject_war_exploded/wifiConfirm.jsp">Open API ¿ÍÀÌÆÄÀÌ Á¤º¸ °¡Á®¿À±â</a>
 </section>
 
 <section class="my_loc" style="display: flex;align-items: center;justify-content: space-evenly; margin: 20px 0px;">
     <div style="display: flex;align-items: center;">
         <p style="margin-right:10px;">LAT: </p>
-        <input type="">
+        <input class="lati" type="" value="0.0">
     </div>
 
     <div style="display: flex;align-items: center; margin-left: 30px;">
         <p style="margin-right:10px;">LNT: </p >
-        <input type="">
+        <input class="long" type="" value="0.0">
     </div>
 
     <div style="display:flex;align-items:center">
-        <a class="btn btn-primary" href="#" role="button" style="padding: 3px 10px;margin-right:20px">ë‚´ ìœ„ì¹˜ ê°€ì ¸ì˜¤ê¸°</a>
-        <a class="btn btn-primary" href="#" role="button" style="padding: 3px 10px;">ê·¼ì²˜ WiFi ì •ë³´ ë³´ê¸°</a>
+        <button class="find-my-loc btn btn-primary" href="#" role="button" style="padding: 3px 10px;margin-right:20px">³» À§Ä¡ °¡Á®¿À±â</button>
+        <a class="btn btn-primary" href="#" role="button" style="padding: 3px 10px;">±ÙÃ³ WiFi Á¤º¸ º¸±â</a>
     </div>
 </section>
 <table class="table">
     <thead>
     <tr>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ê±°ë¦¬(Km)</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ê´€ë¦¬ë²ˆí˜¸</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ìžì¹˜êµ¬</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ì™€ì´íŒŒì´ëª…</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ë„ë¡œëª…ì£¼ì†Œ</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ìƒì„¸ì£¼ì†Œ</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ì„¤ì¹˜ìœ„ì¹˜(ì¸µ)</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ì„¤ì¹˜ìœ í˜•</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ì„¤ì¹˜ê¸°ê´€</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ì„œë¹„ìŠ¤êµ¬ë¶„</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ë§ì¢…ë¥˜</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ì„¤ì¹˜ë…„ë„</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ì‹¤ë‚´ì™¸êµ¬ë¶„</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">WIFI ì ‘ì†í™˜ê²½</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">Xì¢Œí‘œ</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">Yì¢Œí‘œ</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">ìž‘ì—…ì¼ìž</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">°Å¸®(Km)</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">°ü¸®¹øÈ£</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">ÀÚÄ¡±¸</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">¿ÍÀÌÆÄÀÌ¸í</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">µµ·Î¸íÁÖ¼Ò</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">»ó¼¼ÁÖ¼Ò</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">¼³Ä¡À§Ä¡(Ãþ)</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">¼³Ä¡À¯Çü</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">¼³Ä¡±â°ü</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">¼­ºñ½º±¸ºÐ</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">¸ÁÁ¾·ù</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">¼³Ä¡³âµµ</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">½Ç³»¿Ü±¸ºÐ</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">WIFI Á¢¼ÓÈ¯°æ</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">XÁÂÇ¥</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">YÁÂÇ¥</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">ÀÛ¾÷ÀÏÀÚ</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <th scope="row">1</th>
+        <td>1</td>
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
     </tr>
     </tbody>
 </table>
-
 </body>
-
+<script type="text/javascript" src="findLoc.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
