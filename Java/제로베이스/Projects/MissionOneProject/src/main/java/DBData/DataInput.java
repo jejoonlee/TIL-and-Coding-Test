@@ -1,0 +1,235 @@
+package DBData;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
+
+import java.math.BigDecimal;
+import java.sql.*;
+import java.util.*;
+
+public class DataInput {
+
+    public static void dataInsert() {
+
+        ArrayList<HashMap<String, String>> data = WifiData.getAllData();
+
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+            for (HashMap<String, String> mapData : data) {
+                // SQL 수행
+                Statement stat = con.createStatement();
+
+                String sql =
+                        "insert into wifiInfo (manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
+                                "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+                PreparedStatement statement = con.prepareStatement(sql);
+
+                statement.setString(1, mapData.get("X_SWIFI_MGR_NO")); // manage_num, string
+
+                statement.setString(2, mapData.get("X_SWIFI_WRDOFC")); // Gu, string
+                statement.setString(3, mapData.get("X_SWIFI_MAIN_NM")); // wifi_name, string
+                statement.setString(4, mapData.get("X_SWIFI_ADRES1")); // address1, string
+                statement.setString(5, mapData.get("X_SWIFI_ADRES2")); // address2, string
+                statement.setString(6, mapData.get("X_SWIFI_INSTL_FLOOR")); // building_floor, integer
+                statement.setString(7, mapData.get("X_SWIFI_INSTL_TY")); // install_type, string
+                statement.setString(8, mapData.get("X_SWIFI_INSTL_MBY")); // install_company, string
+                statement.setString(9, mapData.get("X_SWIFI_SVC_SE")); // service_type, string
+                statement.setString(10, mapData.get("X_SWIFI_CMCWR")); // connection_type, string
+
+                int year = Integer.parseInt(mapData.get("X_SWIFI_CNSTC_YEAR"));
+                statement.setInt(11, year); // install_year, integer
+                statement.setString(12, mapData.get("X_SWIFI_INOUT_DOOR")); // in_or_out, string
+                statement.setString(13, mapData.get("X_SWIFI_REMARS3")); // wifi_con, string
+
+                BigDecimal num1 = new BigDecimal(mapData.get("LAT"));
+                BigDecimal num2 = new BigDecimal(mapData.get("LNT"));
+                BigDecimal latitude = null;
+                BigDecimal longitude = null;
+
+                if (num1.compareTo(num2) == 1) {
+                    longitude = num1;
+                    latitude = num2;
+                } else if (num2.compareTo(num1) == 1) {
+                    longitude = num2;
+                    latitude = num1;
+                }
+
+                statement.setBigDecimal(14, latitude); // lat, integer
+                statement.setBigDecimal(15, longitude); // long, Integer
+
+
+                statement.setString(16, mapData.get("WORK_DTTM")); // worktime, datetime
+
+                int affected = statement.executeUpdate();
+                if (affected > 0) System.out.println(mapData.get("X_SWIFI_MGR_NO") + ": success");
+                else System.out.println("fail");
+
+            }
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+    }
+
+    public static int dataUpdate() {
+        ArrayList<HashMap<String, String>> data = WifiData.getAllData();
+
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+
+            Properties props = new Properties();
+            props.put("charSet", "utf-8");
+
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile, props);
+
+            for (HashMap<String, String> jsonData : data) {
+                // SQL 수행
+                Statement stat = con.createStatement();
+
+                // 데이터를 아예 업데이트 할 떄에는 insert or replace으로
+                String sql =
+                        "insert or ignore into wifiInfo (manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
+                                "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+                PreparedStatement statement = con.prepareStatement(sql);
+
+                String manageNum = jsonData.get("X_SWIFI_MGR_NO");
+                statement.setString(1, manageNum); // manage_num, string
+
+                statement.setString(2, jsonData.get("X_SWIFI_WRDOFC")); // Gu, string
+                statement.setString(3, jsonData.get("X_SWIFI_MAIN_NM")); // wifi_name, string
+                statement.setString(4, jsonData.get("X_SWIFI_ADRES1")); // address1, string
+                statement.setString(5, jsonData.get("X_SWIFI_ADRES2")); // address2, string
+                statement.setString(6, jsonData.get("X_SWIFI_INSTL_FLOOR")); // building_floor, integer
+                statement.setString(7, jsonData.get("X_SWIFI_INSTL_TY")); // install_type, string
+                statement.setString(8, jsonData.get("X_SWIFI_INSTL_MBY")); // install_company, string
+                statement.setString(9, jsonData.get("X_SWIFI_SVC_SE")); // service_type, string
+                statement.setString(10, jsonData.get("X_SWIFI_CMCWR")); // connection_type, string
+
+                int year = Integer.parseInt(jsonData.get("X_SWIFI_CNSTC_YEAR"));
+                statement.setInt(11, year); // install_year, integer
+                statement.setString(12, jsonData.get("X_SWIFI_INOUT_DOOR")); // in_or_out, string
+                statement.setString(13, jsonData.get("X_SWIFI_REMARS3")); // wifi_con, string
+
+                BigDecimal num1 = new BigDecimal(jsonData.get("LAT"));
+                BigDecimal num2 = new BigDecimal(jsonData.get("LNT"));
+                BigDecimal latitude = null;
+                BigDecimal longitude = null;
+
+                if (num1.compareTo(num2) == 1) {
+                    longitude = num1;
+                    latitude = num2;
+                } else if (num2.compareTo(num1) == 1) {
+                    longitude = num2;
+                    latitude = num1;
+                }
+
+                statement.setBigDecimal(14, latitude); // lat, integer
+                statement.setBigDecimal(15, longitude); // long, Integer
+
+                statement.setString(16, jsonData.get("WORK_DTTM")); // worktime, datetime
+
+
+                int affected = statement.executeUpdate();
+                if (affected > 0) System.out.println(manageNum + ": success");
+            }
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+
+        return data.size();
+    }
+
+    public static void dataAllDelete() {
+
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+            // 데이터를 아예 업데이트 할 떄에는 insert or replace으로
+            String sql =
+                    "delete from wifiInfo";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+            statement.executeUpdate();
+
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+    }
+
+    public static void getCloseWifi(BigDecimal latitude, BigDecimal longitude) {
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+            String sql =
+                    "SELECT *, Round(( 6371 * acos( cos( radians(?) ) * cos( radians( lat ) ) * cos( radians(?) - radians(long) ) + sin( radians(?) ) * sin( radians(lat)))), 4) AS dist" +
+                            " FROM wifiInfo" +
+                            " WHERE lat is not null and long is not null" +
+                            " ORDER BY dist ASC";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setString(1, latitude.toString());
+            statement.setString(2, longitude.toString());
+            statement.setString(3, latitude.toString());
+
+            statement.executeUpdate();
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+    }
+}

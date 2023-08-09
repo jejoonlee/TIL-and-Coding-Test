@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9c1c153-aa0f-4984-b5e0-ad4880b5cc9c" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/DataInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/DataInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/WifiData.java" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/java/DBData/WifiData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/webapp/wifiConfirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/MissionOneProject/src/main/webapp/wifiConfirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/MissionOneProject/seoulWifi.db" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/MissionOneProject/seoulWifi.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissionOne/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/MissionOne/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2TjJBf48GYG5Fs1jJQYRPzhX7gv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="d9c1c153-aa0f-4984-b5e0-ad4880b5cc9c" name="변경" comment="" />
+      <created>1691550422416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691550422416</updated>
+      <workItem from="1691550423774" duration="202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
