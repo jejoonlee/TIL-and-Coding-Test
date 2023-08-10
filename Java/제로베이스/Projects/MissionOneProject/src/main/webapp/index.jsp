@@ -1,3 +1,7 @@
+<%@ page import="DBData.DataInput" %>
+<%@ page import="java.math.BigDecimal" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
@@ -6,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>와이파이 정보 구하기</title>
     <style>
         th {
             font-size: small;
@@ -23,7 +27,7 @@
 <body>
 <h1 style="text-align: center;">와이파이 정보 구하기</h1>
 <section style="display: flex;align-items: center;justify-content: center;">
-    <a href="">홈</a>
+    <a href="http://localhost:8080">홈</a>
     <p style="margin: 0 10px;"> | </p>
     <a href="">위치 히스토리 목록</a>
     <p style="margin: 0 10px;"> | </p>
@@ -31,9 +35,20 @@
 </section>
 
 <section class="my_loc" style="display: flex;align-items: center;justify-content: center; margin: 20px 0;">
-    <form action="http://localhost:8080" method="post">
-        <input class="lati" type="text" name="latitude" value="0.0">
-        <input class="long" type="text" name="longitude" value="0.0">
+    <form action="http://localhost:8080" method="post" style="display:flex;">
+        <%
+            if (request.getParameter("longitude")==null && request.getParameter("latitude")==null) {
+                out.write("<div style=\"display:flex;margin-right: 20px;\"><p style=\"margin-bottom:0;margin-right: 10px;\">LAT: </p>");
+                out.write("<input class=\"lati\" type=\"text\" name=\"latitude\" value=\"0.0\"></div>");
+                out.write("<div style=\"display:flex;margin-right: 20px;\"><p style=\"margin-bottom:0;margin-right: 10px;\">LNG: </p>");
+                out.write("<input class=\"long\" type=\"text\" name=\"longitude\" value=\"0.0\"></div>");
+            } else {
+                out.write("<div style=\"display:flex;margin-right: 20px;\"><p style=\"margin-bottom:0;margin-right: 10px;\">LAT: </p>");
+                out.write("<input class=\"lati\" type=\"text\" name=\"latitude\" value=" + request.getParameter("latitude") + "></div>");
+                out.write("<div style=\"display:flex;margin-right: 20px;\"><p style=\"margin-bottom:0;margin-right: 10px;\">LNG: </p>");
+                out.write("<input class=\"long\" type=\"text\" name=\"longitude\" value="+ request.getParameter("longitude") +"></div>");
+            }
+        %>
         <input class="btn btn-primary" style="padding: 3px 10px;" type="submit" value="근처 WiFI 정보 보기">
     </form>
     <button class="find-my-loc btn btn-success" style="padding: 3px 10px;margin-left:20px">내 위치 가져오기</button>
@@ -61,21 +76,53 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
         <%
             String lng = request.getParameter("longitude");
             String lati = request.getParameter("latitude");
 
             if (lng == null && lati == null) {
+                out.write("<tr>");
                 out.write("<td colspan='17' style='text-align: center'>" + "위치 정보를 입력한 후에 조회해 주세요"+ "</td>");
+                out.write("</tr>");
             } else if (lng.equals("0.0") && lati.equals("0.0")) {
+                out.write("<tr>");
                 out.write("<td colspan='17' style='text-align: center'>" + "위치 정보를 입력한 후에 조회해 주세요"+ "</td>");
+                out.write("</tr>");
             } else {
-                out.write("<p>" + lng + lati + "좌표 있음" + "</p>");
+                DataInput.saveInBookmark(lati, lng);
+                BigDecimal latitude = new BigDecimal(lati);
+                BigDecimal longitude = new BigDecimal(lng);
+
+                ArrayList<HashMap<String, String>> array = DataInput.getCloseWifi(latitude, longitude);
+
+                for (int i = 0; i < array.size(); i++) {
+                    out.write("<tr>");
+                    HashMap<String, String> wifiD = array.get(i);
+                    out.write("<td style='text-align: center'>" + wifiD.get("dist") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("manage_num") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("gu") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("wifi_name") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("address1") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("address2") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("building_floor") + "</td>");
+
+                    String installType = wifiD.get("install_type");
+                    if (installType == null) installType = "";
+                    out.write("<td style='text-align: center'>" + installType + "</td>");
+
+                    out.write("<td style='text-align: center'>" + wifiD.get("install_company") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("service_type") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("connection_type") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("install_year") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("in_or_out") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("wifi_con") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("long") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("lat") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("work_time") + "</td>");
+                    out.write("</tr>");
+                }
             }
         %>
-
-    </tr>
     </tbody>
 </table>
 </body>

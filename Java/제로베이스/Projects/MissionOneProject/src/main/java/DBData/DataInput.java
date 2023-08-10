@@ -196,8 +196,10 @@ public class DataInput {
         }
     }
 
-    public static void getCloseWifi(BigDecimal latitude, BigDecimal longitude) {
+    public static ArrayList<HashMap<String, String>> getCloseWifi(BigDecimal latitude, BigDecimal longitude) {
         Connection con = null;
+        ResultSet resultSet = null;
+        ArrayList<HashMap<String, String>> array = new ArrayList<>();
 
         try {
             // SQLite JDBC 체크
@@ -214,13 +216,75 @@ public class DataInput {
                     "SELECT *, Round(( 6371 * acos( cos( radians(?) ) * cos( radians( lat ) ) * cos( radians(?) - radians(long) ) + sin( radians(?) ) * sin( radians(lat)))), 4) AS dist" +
                             " FROM wifiInfo" +
                             " WHERE lat is not null and long is not null" +
-                            " ORDER BY dist ASC";
+                            " ORDER BY dist ASC" +
+                            " Limit 20";
 
             PreparedStatement statement = con.prepareStatement(sql);
 
             statement.setString(1, latitude.toString());
             statement.setString(2, longitude.toString());
             statement.setString(3, latitude.toString());
+
+            resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                HashMap<String, String> tempMap = new HashMap<>();
+
+                tempMap.put("dist", resultSet.getString("dist"));
+                tempMap.put("manage_num", resultSet.getString("manage_num"));
+                tempMap.put("gu", resultSet.getString("Gu"));
+                tempMap.put("wifi_name", resultSet.getString("wifi_name"));
+                tempMap.put("address1", resultSet.getString("address1"));
+                tempMap.put("address2", resultSet.getString("address2"));
+                tempMap.put("building_floor", resultSet.getString("building_floor"));
+                tempMap.put("install_type", resultSet.getString("install_type"));
+                tempMap.put("install_company", resultSet.getString("install_company"));
+                tempMap.put("service_type", resultSet.getString("service_type"));
+                tempMap.put("connection_type", resultSet.getString("connection_type"));
+                tempMap.put("install_year", resultSet.getString("install_year"));
+                tempMap.put("in_or_out", resultSet.getString("in_or_out"));
+                tempMap.put("wifi_con", resultSet.getString("wifi_con"));
+                tempMap.put("lat", resultSet.getString("lat"));
+                tempMap.put("long", resultSet.getString("long"));
+                tempMap.put("work_time", resultSet.getString("work_time"));
+
+                array.add(tempMap);
+            }
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+
+        return array;
+    }
+
+    public static void saveInBookmark(String lat, String lng) {
+
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+            // SQL 수행
+            Statement stat = con.createStatement();
+
+            String sql =
+                    "INSERT into History (lat, long, search_time)\n" +
+                            "values (?, ?, datetime('now', 'localtime'))";
+
+
+            PreparedStatement statement = con.prepareStatement(sql);
+            statement.setString(1, lat);
+            statement.setString(2, lng);
 
             statement.executeUpdate();
 
