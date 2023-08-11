@@ -262,7 +262,7 @@ public class DataInput {
         return array;
     }
 
-    public static void saveInBookmark(String lat, String lng) {
+    public static void saveInHistory(String lat, String lng) {
 
         Connection con = null;
 
@@ -295,5 +295,141 @@ public class DataInput {
                 try {con.close();}catch(Exception e) {}
             }
         }
+    }
+
+    public static ArrayList<HashMap<String, String>> showHistory() {
+        Connection con = null;
+        ResultSet resultSet = null;
+        ArrayList<HashMap<String, String>> array = new ArrayList<>();
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+            String sql =
+                    "SELECT * from History";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                HashMap<String, String> tempMap = new HashMap<>();
+
+                tempMap.put("historyId", resultSet.getString("history_id"));
+                tempMap.put("lat", resultSet.getString("lat"));
+                tempMap.put("lng", resultSet.getString("long"));
+                tempMap.put("searchTime", resultSet.getString("search_time"));
+
+                array.add(tempMap);
+            }
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+
+        return array;
+
+    }
+
+    public static void deleteHistory(int id) {
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+
+            String sql =
+                    "delete from History WHERE history_id = ?";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setInt(1, id);
+
+            int confirm = statement.executeUpdate();
+
+            if (confirm > 0) System.out.println("Success");
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {};
+            }
+        }
+
+    }
+
+    public static HashMap<String, String> getDetailData(String code) {
+        Connection con = null;
+        ResultSet resultSet = null;
+        HashMap<String, String> map = new HashMap<>();
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+            String sql =
+                    "select * from wifiInfo where manage_num = ?";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setString(1, code);
+
+            resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                map.put("manage_num", resultSet.getString("manage_num"));
+                map.put("gu", resultSet.getString("Gu"));
+                map.put("wifi_name", resultSet.getString("wifi_name"));
+                map.put("address1", resultSet.getString("address1"));
+                map.put("address2", resultSet.getString("address2"));
+                map.put("building_floor", resultSet.getString("building_floor"));
+                map.put("install_type", resultSet.getString("install_type"));
+                map.put("install_company", resultSet.getString("install_company"));
+                map.put("service_type", resultSet.getString("service_type"));
+                map.put("connection_type", resultSet.getString("connection_type"));
+                map.put("install_year", resultSet.getString("install_year"));
+                map.put("in_or_out", resultSet.getString("in_or_out"));
+                map.put("wifi_con", resultSet.getString("wifi_con"));
+                map.put("lat", resultSet.getString("lat"));
+                map.put("long", resultSet.getString("long"));
+                map.put("work_time", resultSet.getString("work_time"));
+            }
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+
+        return map;
     }
 }

@@ -11,6 +11,7 @@
 </head>
 <body>
     <div style="text-align: center">
+        <% request.setCharacterEncoding("UTF-8"); %>
         <%
             String dataSize = "0";
             dataSize = String.format("%d", DataInput.dataUpdate());

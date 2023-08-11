@@ -2,6 +2,7 @@
 <%@ page import="java.math.BigDecimal" %>
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="java.net.URLEncoder" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
@@ -25,11 +26,12 @@
 </head>
 
 <body>
+<% request.setCharacterEncoding("UTF-8"); %>
 <h1 style="text-align: center;">와이파이 정보 구하기</h1>
 <section style="display: flex;align-items: center;justify-content: center;">
     <a href="http://localhost:8080">홈</a>
     <p style="margin: 0 10px;"> | </p>
-    <a href="">위치 히스토리 목록</a>
+    <a href="http://localhost:8080/history.jsp">위치 히스토리 목록</a>
     <p style="margin: 0 10px;"> | </p>
     <a class="update-data" href="http://localhost:8080/wifiConfirm.jsp">Open API 와이파이 정보 가져오기</a>
 </section>
@@ -70,8 +72,8 @@
         <th scope="col" style="background-color: #0d6efd;color: white;">설치년도</th>
         <th scope="col" style="background-color: #0d6efd;color: white;">실내외구분</th>
         <th scope="col" style="background-color: #0d6efd;color: white;">WIFI 접속환경</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">X좌표</th>
-        <th scope="col" style="background-color: #0d6efd;color: white;">Y좌표</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">경도</th>
+        <th scope="col" style="background-color: #0d6efd;color: white;">위도</th>
         <th scope="col" style="background-color: #0d6efd;color: white;">작업일자</th>
     </tr>
     </thead>
@@ -89,7 +91,7 @@
                 out.write("<td colspan='17' style='text-align: center'>" + "위치 정보를 입력한 후에 조회해 주세요"+ "</td>");
                 out.write("</tr>");
             } else {
-                DataInput.saveInBookmark(lati, lng);
+                DataInput.saveInHistory(lati, lng);
                 BigDecimal latitude = new BigDecimal(lati);
                 BigDecimal longitude = new BigDecimal(lng);
 
@@ -98,19 +100,24 @@
                 for (int i = 0; i < array.size(); i++) {
                     out.write("<tr>");
                     HashMap<String, String> wifiD = array.get(i);
+
+                    String distance = wifiD.get("dist");
                     out.write("<td style='text-align: center'>" + wifiD.get("dist") + "</td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("manage_num") + "</td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("gu") + "</td>");
-                    out.write("<td style='text-align: center'>" + wifiD.get("wifi_name") + "</td>");
+
+                    System.out.println(wifiD.get("manage_num"));
+                    String mngNum = URLEncoder.encode(wifiD.get("manage_num"), "UTF-8");
+                    System.out.println(mngNum);
+                    out.write("<td style='text-align: center'><a href=\"http://localhost:8080/detail.jsp?wifi="+ wifiD.get("manage_num") + "&dist=" + distance +"\">" + wifiD.get("wifi_name") + "</a></td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("address1") + "</td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("address2") + "</td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("building_floor") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("install_type") + "</td>");
 
-                    String installType = wifiD.get("install_type");
-                    if (installType == null) installType = "";
-                    out.write("<td style='text-align: center'>" + installType + "</td>");
-
-                    out.write("<td style='text-align: center'>" + wifiD.get("install_company") + "</td>");
+                    String installCom = wifiD.get("install_company");
+                    if(installCom == null) installCom = "";
+                    out.write("<td style='text-align: center'>" + installCom + "</td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("service_type") + "</td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("connection_type") + "</td>");
                     out.write("<td style='text-align: center'>" + wifiD.get("install_year") + "</td>");
