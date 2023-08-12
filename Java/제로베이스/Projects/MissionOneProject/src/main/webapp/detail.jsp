@@ -4,7 +4,8 @@
 
 <html>
 <head>
-    <title>와이파이 정보 상세 페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>와이파이 정보 구하기</title>
     <meta charset="UTF-8">
     <style>
         .names{
@@ -17,27 +18,64 @@
             border: solid #cecece 1px;
             border-radius : 5%;
         }
+
+        .bookmark-sec{
+            display: flex;
+            justify-content: center;
+        }
+
+        .bm{
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            margin: 30px 0;
+        }
+
+        .fs{
+            margin-right: 20px;
+            padding: 5px 20px;
+        }
     </style>
 </head>
 <body>
-<h1 style="text-align: center;">와이파이 정보 구하기</h1>
+<h1 style="text-align: center; margin-top:70px;">와이파이 정보 구하기</h1>
 <section style="display: flex;align-items: center;justify-content: center;">
     <a href="http://localhost:8080">홈</a>
     <p style="margin: 0 10px;"> | </p>
     <a href="http://localhost:8080/history.jsp">위치 히스토리 목록</a>
     <p style="margin: 0 10px;"> | </p>
     <a class="update-data" href="http://localhost:8080/wifiConfirm.jsp">Open API 와이파이 정보 가져오기</a>
+    <p style="margin: 0 10px;"> | </p>
+    <a class="update-data" href="http://localhost:8080/show-bookmark.jsp">즐겨 찾기 보기</a>
+    <p style="margin: 0 10px;"> | </p>
+    <a class="update-data" href="http://localhost:8080/bookmark-group.jsp">즐겨 찾기 그룹 관리</a>
 </section>
+
+<div class="bookmark-sec">
+    <form class="bm">
+        <select class="fs form-select" aria-label="Default select example">
+            <option selected>북마크 그룹 이름 선택</option>
+            <%
+                ArrayList<HashMap<String, String>> data = DataInput.bookmarkShow();
+
+                for (HashMap<String, String> rowData : data) {
+                    String id = rowData.get("bookmarkId");
+                    String name = rowData.get("bName");
+
+                    out.write("<option value=\""+ id +"\">" + name + "</option>");
+                }
+            %>
+        </select>
+        <input class="btn btn-success" type="submit" value="즐겨찾기 추가하기">
+    </form>
+</div>
+
 <%
-    String code = request.getParameter("wifi");
-    code = new String(code.getBytes("ISO-8859-1"), "UTF-8");
-    HashMap<String, String> details = DataInput.getDetailData(code);
-    System.out.println(request.getParameter("wifi"));
-    System.out.println(code);
+    HashMap<String, String> details = DataInput.getDetailData(request.getParameter("wifi"));
 %>
 
 
-<table style="display:flex; justify-content: center; margin:30px 0;">
+<table style="display:flex; justify-content: center; margin-bottom:30px">
     <tbody>
         <tr>
             <td class="names">거리(KM)</td>

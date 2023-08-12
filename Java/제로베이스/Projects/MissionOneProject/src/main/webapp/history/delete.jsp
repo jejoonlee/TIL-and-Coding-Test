@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>좌표 검색 기록 삭제 페이지</title>
+    <title>와이파이 정보 구하기</title>
 </head>
 <body>
 

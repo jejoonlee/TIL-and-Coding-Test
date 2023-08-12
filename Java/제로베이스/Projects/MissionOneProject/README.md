@@ -33,7 +33,24 @@
 - 추후 wifiInfo에서 변경 사항
   - 작업 일자 : String으로 변환
   - Year : Integer로 변환
-  - 설치위치 : String으로 변
+  - 설치위치 : String으로 변환
+
+
+
+![image-20230811215434684](README.assets/image-20230811215434684.png)
+
+
+
+#### Bookmark에 북마크 이름도 추가했다
+
+- 그리고 북마크 이름에, UNIQUE 값을 넣어서, 북마크 이름이 중복이 안 되게 만들었
+
+
+
+#### 즐겨찾기 기능, 즉 북마크와 와이파이 정보를 이어줄, 새로운 테이블을 필요하다고 생각했다
+
+- 처음에는 Bookmark와 wifiInfo를 연결해서 BookmarkID를 wifiInfo에 저장을 하려고 했다
+- 이렇게 하니깐, wifiInfo 테이블에 bookmarkID라는 foregin key 때문에, 데이터가 혼잡해질 것이라고 판단했다
 
 
 
@@ -43,7 +60,7 @@
 
 
 
-### **Index.jsp에서 Open API 와이파이 정보 가져오기**
+### **🚨 Index.jsp에서 Open API 와이파이 정보 가져오기**
 
 - 위를 누르면, DB를 업데이트 할 수 있도록 만드려고 했다
 - 하지만 Open API의 key값에 한글이 포함이 되어 있는데, 한글이 깨지면서, 새로운 데이터라고 인식하여, 추가로 데이터를 넣게 되었다
@@ -74,3 +91,26 @@
 
 
 
+#### 다른 encoding 문제
+
+- 이번에는 URL의 parameter를 가지고 올 때에 encoding 문제가 일어났다
+- 일단 사용하고 있는 tomcat 폴더에 들어가 conf 폴더에 들어가서 server.xml를 찾는다
+
+- connector에 URIEncoding 부분에 UTF-8을 추가해준다
+
+```
+    <Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443"
+               maxParameterCount="1000"
+               URIEncoding="UTF-8"
+               />
+```
+
+
+
+
+
+### 🚨데이터를 업데이트 할 때마다, DB상 데이터의 개수는 잘 나오지만, 화면으로 보여지는 개수는 그 전 데이터의 개수를 한번 더해서 나온다
+
+- 예: 23331 + 23331 = 46662

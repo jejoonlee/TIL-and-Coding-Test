@@ -107,8 +107,8 @@ public class DataInput {
 
                 // 데이터를 아예 업데이트 할 떄에는 insert or replace으로
                 String sql =
-                        "insert or ignore into wifiInfo (manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
-                                "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                        "insert or ignore into wifiInfo(manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
+                                " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
                 PreparedStatement statement = con.prepareStatement(sql);
 
@@ -148,9 +148,9 @@ public class DataInput {
 
                 statement.setString(16, jsonData.get("WORK_DTTM")); // worktime, datetime
 
-
                 int affected = statement.executeUpdate();
                 if (affected > 0) System.out.println(manageNum + ": success");
+                else System.out.println(manageNum + ": Fail");
             }
 
         }catch(Exception e) {
@@ -314,7 +314,8 @@ public class DataInput {
             Statement stat = con.createStatement();
 
             String sql =
-                    "SELECT * from History";
+                    "SELECT * from History" +
+                            " order by search_time DESC ";
 
             PreparedStatement statement = con.prepareStatement(sql);
 
@@ -432,4 +433,206 @@ public class DataInput {
 
         return map;
     }
+
+    public static boolean bookmarkAdd(String bName, String bOrder) {
+
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            String sql =
+                    "insert into Bookmark (bookmark_name, bookmark_order, register_time)" +
+                            "values (?, ?, datetime('now', 'localtime'))";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setString(1, bName);
+
+            statement.setInt(2, Integer.parseInt(bOrder));
+
+            int affected = statement.executeUpdate();
+            if (affected > 0) return true;
+            else return false;
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+        return false;
+    }
+
+    public static ArrayList<HashMap<String, String>> bookmarkShow() {
+        Connection con = null;
+        ResultSet resultSet = null;
+        ArrayList<HashMap<String, String>> array = new ArrayList<>();
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+            String sql =
+                    "SELECT * from Bookmark " +
+                            "order by register_time DESC ";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                HashMap<String, String> tempMap = new HashMap<>();
+
+                tempMap.put("bookmarkId", resultSet.getString("bookmark_id"));
+                tempMap.put("bName", resultSet.getString("bookmark_name"));
+                tempMap.put("bOrder", resultSet.getString("bookmark_order"));
+                tempMap.put("registerTime", resultSet.getString("register_time"));
+                tempMap.put("updateTime", resultSet.getString("update_time"));
+
+                array.add(tempMap);
+            }
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+        return array;
+    }
+
+    public static HashMap<String, String> getBookmarkDetail(String bId) {
+        Connection con = null;
+        ResultSet resultSet = null;
+        HashMap<String, String> map = new HashMap<>();
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+            String sql =
+                    "select bookmark_name, bookmark_order from Bookmark where bookmark_id = ?";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setInt(1, Integer.parseInt(bId));
+
+            resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                map.put("bName", resultSet.getString("bookmark_name"));
+                map.put("bOrder", resultSet.getString("bookmark_order"));
+            }
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+
+        return map;
+    }
+
+    public static boolean deleteBookmark(String id) {
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+
+            String sql =
+                    "delete from Bookmark WHERE bookmark_id = ?";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setInt(1, Integer.parseInt(id));
+
+            int confirm = statement.executeUpdate();
+
+            if (confirm > 0) return true;
+            else return false;
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {};
+            }
+        }
+        return false;
+    }
+
+    public static boolean updateBookmark(String id, String bName, String bOrder) {
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+
+            String sql =
+                    "update Bookmark " +
+                            "set bookmark_name=?, bookmark_order=?, update_time=datetime('now', 'localtime') " +
+                            "WHERE bookmark_id=?";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setString(1, bName);
+            statement.setString(2, bOrder);
+            statement.setInt(3, Integer.parseInt(id));
+
+            int confirm = statement.executeUpdate();
+
+            if (confirm > 0) return true;
+            else return false;
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {};
+            }
+        }
+        return false;
+    }
 }
+
