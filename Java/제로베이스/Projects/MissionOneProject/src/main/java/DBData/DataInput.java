@@ -634,5 +634,41 @@ public class DataInput {
         }
         return false;
     }
+
+    public static boolean addWifiIntoBookmark(String wifiMngNum, String bookmarkId) {
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            String sql =
+                    "insert or replace into BKWI (bookmark_id, manage_num, register_time)" +
+                            "values (?, ?, datetime('now', 'localtime'))";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setInt(1, Integer.parseInt(bookmarkId));
+
+            statement.setString(2, wifiMngNum);
+
+            int affected = statement.executeUpdate();
+            if (affected > 0) return true;
+            else return false;
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+        return false;
+    };
 }
 

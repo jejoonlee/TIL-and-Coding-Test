@@ -26,6 +26,7 @@
 
         .bm{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             width: 500px;
             margin: 30px 0;
@@ -52,21 +53,24 @@
 </section>
 
 <div class="bookmark-sec">
-    <form class="bm">
-        <select class="fs form-select" aria-label="Default select example">
-            <option selected>북마크 그룹 이름 선택</option>
-            <%
-                ArrayList<HashMap<String, String>> data = DataInput.bookmarkShow();
+    <form class="bm" action="http://localhost:8080/show-bookmark/insert.jsp" method="post">
+        <input value="<% out.write(request.getParameter("wifi")); %>" name="wifiMngNum" style="visibility: hidden; width:0; height:0;">
+        <div style="display: flex">
+            <select class="fs form-select" name="bId" aria-label="Default select example">
+                <option selected>북마크 그룹 이름 선택</option>
+                <%
+                    ArrayList<HashMap<String, String>> data = DataInput.bookmarkShow();
 
-                for (HashMap<String, String> rowData : data) {
-                    String id = rowData.get("bookmarkId");
-                    String name = rowData.get("bName");
+                    for (HashMap<String, String> rowData : data) {
+                        String id = rowData.get("bookmarkId");
+                        String name = rowData.get("bName");
 
-                    out.write("<option value=\""+ id +"\">" + name + "</option>");
-                }
-            %>
-        </select>
-        <input class="btn btn-success" type="submit" value="즐겨찾기 추가하기">
+                        out.write("<option value=\""+ id +"\">" + name + "</option>");
+                    }
+                %>
+            </select>
+            <input class="btn btn-success" type="submit" value="즐겨찾기 추가하기">
+        </div>
     </form>
 </div>
 
