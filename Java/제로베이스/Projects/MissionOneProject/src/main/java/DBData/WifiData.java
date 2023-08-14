@@ -157,7 +157,9 @@ public class WifiData {
         }
     }
 
-    public static ArrayList<HashMap<String,String>> getAllData() {
+    public static ArrayList<HashMap<String,String>> getAllData(){
+        allData = new ArrayList<>();
+
         int dataCount = getDataCount().intValue();
 
         int s = 1;

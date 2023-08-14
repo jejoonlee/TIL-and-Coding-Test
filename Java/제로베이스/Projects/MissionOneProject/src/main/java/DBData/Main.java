@@ -23,8 +23,12 @@ public class Main {
 
 //        System.out.println(DataInput.updateBookmark("7", "집", "3"));
 
-        System.out.println(DataInput.addWifiIntoBookmark("---EP000004", "7"));
-        System.out.println(DataInput.addWifiIntoBookmark("---EP000004", "7"));
+
+//        DataInput.deleteWifiFromBookmark();
+
+//        System.out.println(DataInput.addWifiIntoBookmark("---EP000004", "7"));
+//        System.out.println(DataInput.addWifiIntoBookmark("---EP000004", "7"));
+//        System.out.println(DataInput.addWifiIntoBookmark("---EP000004", "6"));
 
     }
 }

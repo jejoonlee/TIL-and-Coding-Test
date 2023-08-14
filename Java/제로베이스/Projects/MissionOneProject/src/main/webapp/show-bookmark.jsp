@@ -1,5 +1,4 @@
 <%@ page import="DBData.DataInput" %>
-<%@ page import="java.math.BigDecimal" %>
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.net.URLEncoder" %>
@@ -15,11 +14,11 @@
     <style>
         th {
             font-weight: bold;
-            text-align: center;
         }
 
         th, td {
             border: 1px solid black;
+            text-align: center;
         }
     </style>
 </head>
@@ -39,7 +38,7 @@
     <a class="update-data" href="http://localhost:8080/bookmark-group.jsp">즐겨 찾기 그룹 관리</a>
 </section>
 
-<div style="display:flex; justify-content: center">
+<div style="display:flex; justify-content: center; margin: 30px 0;">
     <table class="table" style="width: 80%;">
         <thead>
         <tr>
@@ -52,25 +51,22 @@
         </thead>
         <tbody>
         <%
-//            ArrayList<HashMap<String, String>> data = DataInput.bookmarkShow();
-//            String updateOrDelete = "http://localhost:8080/bookmark-group/update-or-delete.jsp?";
-//
-//            for (HashMap<String, String> rowData : data) {
-//                String id = rowData.get("bookmarkId");
-//                String urlId = "id=" + id;
-//
-//                out.write("<tr>");
-//                out.write("<td>" + id + "</td>");
-//                out.write("<td>" + rowData.get("bName") + "</td>");
-//                out.write("<td>" + rowData.get("bOrder") + "</td>");
-//                out.write("<td>" + rowData.get("registerTime") + "</td>");
-//
-//                String uT = rowData.get("updateTime");
-//                if (uT == null) uT = "수정된 적이 없습니다";
-//                out.write("<td>" + uT + "</td>");
-//                out.write("<td>" + "<a href='" + updateOrDelete + urlId + "' class='btn btn-danger'>수정 / 삭제</a>" + "</td>");
-//                out.write("</tr>");
-//            }
+            ArrayList<HashMap<String, String>> data = DataInput.showWifiAndBk();
+            String deleteUrl = "http://localhost:8080/show-bookmark/delete.jsp?";
+
+            for (HashMap<String, String> rowData : data) {
+                String id = rowData.get("id");
+                String urlId = "id=" + id;
+
+                out.write("<tr>");
+                out.write("<td>" + id + "</td>");
+                out.write("<td>" + rowData.get("bName") + "</td>");
+                out.write("<td>" + rowData.get("wName") + "</td>");
+                out.write("<td>" + rowData.get("registerTime") + "</td>");
+
+                out.write("<td>" + "<a href='" + deleteUrl + urlId + "' class='btn btn-danger'>삭제</a>" + "</td>");
+                out.write("</tr>");
+            }
         %>
         </tbody>
     </table>

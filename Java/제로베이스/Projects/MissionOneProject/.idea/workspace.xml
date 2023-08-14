@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0be7c8-faa2-4419-8b29-db3b5e34a9eb" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/show-bookmark/insert.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/show-bookmark/delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MissionOne/Database/wifi_erd/wifi.exerd" beforeDir="false" afterPath="$PROJECT_DIR$/../MissionOne/Database/wifi_erd/wifi.exerd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MissionOne/MissionOneProject/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MissionOne/MissionOneProject/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MissionOne/MissionOneProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MissionOne/MissionOneProject/.idea/workspace.xml" afterDir="false" />
@@ -23,10 +23,13 @@
       <change beforePath="$PROJECT_DIR$/../MissionOne/README.assets/image-20230802151210096.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MissionOne/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DBData/DataInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBData/DataInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DBData/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBData/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DBData/WifiData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBData/WifiData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/findLoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/findLoc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/show-bookmark.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/show-bookmark.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/show-bookmark/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/show-bookmark/insert.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../apache-tomcat-8.5.91/conf/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-tomcat-8.5.91/conf/server.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../apache-tomcat-8.5.91/temp/sqlite-3.36.0.3-41fcac14-6fb2-4f76-ac55-647c55db61c4-sqlitejdbc.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../과제/Week8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../과제/Week8/.idea/workspace.xml" afterDir="false" />
@@ -197,6 +200,7 @@
       <workItem from="1691715823931" duration="24529000" />
       <workItem from="1691808583082" duration="20567000" />
       <workItem from="1691896853307" duration="3392000" />
+      <workItem from="1691967819892" duration="8609000" />
     </task>
     <servers />
   </component>

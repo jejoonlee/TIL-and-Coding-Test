@@ -9,7 +9,7 @@ import java.util.*;
 
 public class DataInput {
 
-    public static void dataInsert() {
+    public static void dataInsert(){
 
         ArrayList<HashMap<String, String>> data = WifiData.getAllData();
 
@@ -28,7 +28,7 @@ public class DataInput {
                 Statement stat = con.createStatement();
 
                 String sql =
-                        "insert into wifiInfo (manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
+                        "insert or ignore into wifiInfo (manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
                                 "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
                 PreparedStatement statement = con.prepareStatement(sql);
@@ -107,8 +107,8 @@ public class DataInput {
 
                 // 데이터를 아예 업데이트 할 떄에는 insert or replace으로
                 String sql =
-                        "insert or ignore into wifiInfo(manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
-                                " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                        "INSERT OR IGNORE INTO wifiInfo(manage_num, Gu, wifi_name, address1, address2, building_floor, install_type, install_company, service_type, connection_type, install_year, in_or_out, wifi_con, lat, long, work_time)" +
+                                " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
                 PreparedStatement statement = con.prepareStatement(sql);
 
@@ -148,9 +148,7 @@ public class DataInput {
 
                 statement.setString(16, jsonData.get("WORK_DTTM")); // worktime, datetime
 
-                int affected = statement.executeUpdate();
-                if (affected > 0) System.out.println(manageNum + ": success");
-                else System.out.println(manageNum + ": Fail");
+                statement.executeUpdate();
             }
 
         }catch(Exception e) {
@@ -648,7 +646,7 @@ public class DataInput {
 
 
             String sql =
-                    "insert or replace into BKWI (bookmark_id, manage_num, register_time)" +
+                    "insert into BKWI (bookmark_id, manage_num, register_time)" +
                             "values (?, ?, datetime('now', 'localtime'))";
 
             PreparedStatement statement = con.prepareStatement(sql);
@@ -656,6 +654,88 @@ public class DataInput {
             statement.setInt(1, Integer.parseInt(bookmarkId));
 
             statement.setString(2, wifiMngNum);
+
+            int affected = statement.executeUpdate();
+            if (affected > 0) return true;
+            else return false;
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+        return false;
+    };
+
+    public static ArrayList<HashMap<String, String>> showWifiAndBk() {
+        Connection con = null;
+        ResultSet resultSet = null;
+        ArrayList<HashMap<String, String>> array = new ArrayList<>();
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            Statement stat = con.createStatement();
+
+            String sql =
+                    "SELECT BKWI.bookmark_show_id, Bookmark.bookmark_name, wifiInfo.wifi_name, BKWI.register_time\n" +
+                            "FROM BKWI\n" +
+                            "JOIN Bookmark ON BKWI.bookmark_id = Bookmark.bookmark_id\n" +
+                            "JOIN wifiInfo ON BKWI.manage_num = wifiInfo.manage_num\n" +
+                            "order by BKWI.register_time desc ; ";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            resultSet = statement.executeQuery();
+
+            while(resultSet.next()) {
+                HashMap<String, String> tempMap = new HashMap<>();
+
+                tempMap.put("id", resultSet.getString("bookmark_show_id"));
+                tempMap.put("bName", resultSet.getString("bookmark_name"));
+                tempMap.put("wName", resultSet.getString("wifi_name"));
+                tempMap.put("registerTime", resultSet.getString("register_time"));
+
+                array.add(tempMap);
+            }
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
+            if(con != null) {
+                try {con.close();}catch(Exception e) {}
+            }
+        }
+        return array;
+    }
+
+    public static boolean deleteWifiFromBookmark(String id) {
+        Connection con = null;
+
+        try {
+            // SQLite JDBC 체크
+            Class.forName("org.sqlite.JDBC");
+
+            // SQLite 데이터베이스 파일에 연결
+            String dbFile = "C:\\Users\\ADMIN\\OneDrive\\Desktop\\TIL\\Java\\제로베이스\\Projects\\MissionOne\\MissionOneProject\\seoulWifi.db";
+            con = DriverManager.getConnection("jdbc:sqlite:" + dbFile);
+
+
+            String sql =
+                    "delete from BKWI" +
+                            " where bookmark_show_id = ?";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            statement.setInt(1, Integer.parseInt(id));
 
             int affected = statement.executeUpdate();
             if (affected > 0) return true;
