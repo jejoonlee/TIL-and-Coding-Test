@@ -70,7 +70,7 @@
                connectionTimeout="20000"
                redirectPort="8443"
                maxParameterCount="1000"
-               URIEncoding="euc-kr"
+               URIEncoding="UTF-8"
                />
     <!-- A "Connector" using the shared thread pool-->
     <!--

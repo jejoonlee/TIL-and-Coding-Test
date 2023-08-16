@@ -67,25 +67,30 @@
                 ArrayList<HashMap<String, String>> data = DataInput.bookmarkShow();
                 String updateOrDelete = "http://localhost:8080/bookmark-group/update-or-delete.jsp?";
 
-                for (HashMap<String, String> rowData : data) {
-                    String id = rowData.get("bookmarkId");
-                    String urlId = "id=" + id;
-
+                if (data.isEmpty()) {
                     out.write("<tr>");
-                    out.write("<td>" + id + "</td>");
-                    out.write("<td>" + rowData.get("bName") + "</td>");
-                    out.write("<td>" + rowData.get("bOrder") + "</td>");
-                    out.write("<td>" + rowData.get("registerTime") + "</td>");
-
-                    String uT = rowData.get("updateTime");
-                    if (uT == null) uT = "수정된 적이 없습니다";
-                    out.write("<td>" + uT + "</td>");
-                    out.write("<td>" + "<a href='" + updateOrDelete + urlId + "' class='btn btn-danger'>수정 / 삭제</a>" + "</td>");
+                    out.write("<td colspan='6' style='text-align: center'>정보가 존재하지 않습니다</td>");
                     out.write("</tr>");
+                } else {
+                    for (HashMap<String, String> rowData : data) {
+                        String id = rowData.get("bookmarkId");
+                        String urlId = "id=" + id;
+
+                        out.write("<tr>");
+                        out.write("<td>" + id + "</td>");
+                        out.write("<td>" + rowData.get("bName") + "</td>");
+                        out.write("<td>" + rowData.get("bOrder") + "</td>");
+                        out.write("<td>" + rowData.get("registerTime") + "</td>");
+
+                        String uT = rowData.get("updateTime");
+                        if (uT == null) uT = "수정된 적이 없습니다";
+                        out.write("<td>" + uT + "</td>");
+                        out.write("<td>" + "<a href='" + updateOrDelete + urlId + "' class='btn btn-danger'>수정 / 삭제</a>" + "</td>");
+                        out.write("</tr>");
+                    }
                 }
+
             %>
-
-
         </tbody>
     </table>
 </div>

@@ -26,4 +26,10 @@ function findMyLocation() {
 }
 
 
+function loading() {
+    console.log("정보 가지고 오기")
+    alert("Open API 와이파이 정보를 가지고 오는 중입니다\n시간이 걸릴 수도 있습니다\n시작을 하기 위해 확인을 눌러주세요");
+}
+
+document.querySelector(".update-data").addEventListener("click", loading);
 document.querySelector(".find-my-loc").addEventListener("click", findMyLocation);

@@ -27,7 +27,7 @@
     <p style="margin: 0 10px;"> | </p>
     <a href="http://localhost:8080/history.jsp">위치 히스토리 목록</a>
     <p style="margin: 0 10px;"> | </p>
-    <a class="update-data" href="http://localhost:8080/wifiConfirm.jsp">Open API 와이파이 정보 가져오기</a>    <p style="margin: 0 10px;"> | </p>
+    <a class="update-data" href="http://localhost:8080/wifiConfirm.jsp">Open API 와이파이 정보 가져오기</a>
     <p style="margin: 0 10px;"> | </p>
     <a class="update-data" href="http://localhost:8080/show-bookmark.jsp">즐겨 찾기 보기</a>
     <p style="margin: 0 10px;"> | </p>
@@ -52,18 +52,24 @@
             ArrayList<HashMap<String, String>> array = DataInput.showHistory();
             String[] links = new String[array.size()];
 
-            for (int i = 0; i < array.size(); i++) {
-                links[i] = array.get(i).get("historyId");
-            }
-            for (int i = 0; i < array.size(); i++) {
+            if (array.isEmpty()) {
                 out.write("<tr>");
-                HashMap<String, String> wifiD = array.get(i);
-                out.write("<td style='text-align: center'>" + wifiD.get("historyId") + "</td>");
-                out.write("<td style='text-align: center'>" + wifiD.get("lat") + "</td>");
-                out.write("<td style='text-align: center'>" + wifiD.get("lng") + "</td>");
-                out.write("<td style='text-align: center'>" + wifiD.get("searchTime") + "</td>");
-                out.write("<td style='text-align: center'>" + "<a class=\"btn btn-danger\" href=\"http://localhost:8080/history/delete.jsp?delete=" + links[i] + "\">삭제 버튼</a>" + "</td>");
+                out.write("<td colspan='5' style='text-align: center'>정보가 존재하지 않습니다</td>");
                 out.write("</tr>");
+            } else {
+                for (int i = 0; i < array.size(); i++) {
+                    links[i] = array.get(i).get("historyId");
+                }
+                for (int i = 0; i < array.size(); i++) {
+                    out.write("<tr>");
+                    HashMap<String, String> wifiD = array.get(i);
+                    out.write("<td style='text-align: center'>" + wifiD.get("historyId") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("lat") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("lng") + "</td>");
+                    out.write("<td style='text-align: center'>" + wifiD.get("searchTime") + "</td>");
+                    out.write("<td style='text-align: center'>" + "<a class=\"btn btn-danger\" href=\"http://localhost:8080/history/delete.jsp?delete=" + links[i] + "\">삭제 버튼</a>" + "</td>");
+                    out.write("</tr>");
+                }
             }
 
         %>
