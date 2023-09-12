@@ -158,3 +158,86 @@ class Solution {
   - ---- = 150
   - ---pizza = 150
   - --juniorpizza = 150 등등
+
+
+
+#### 그리고 더 빠른 검색을 위해 BinarySearch를 사용한다
+
+- BinarySearch를 하기 전에는 모든 value들을 sort 해야 한다
+  - value들은 모두 숫자로 된 리스트로 저장되어 있다
+
+
+
+```java
+import java.util.*;
+
+class Solution {
+    
+    static HashMap<String, ArrayList<Integer>> map = new HashMap<>();
+    
+    public void possibleChoice(String[] array, int count, String str) {
+        
+        if (count == 4) {
+            if (!map.containsKey(str)) {
+                ArrayList<Integer> numList = new ArrayList<>(); 
+                map.put(str, numList);
+            }
+            map.get(str).add(Integer.parseInt(array[4]));
+            return;
+        }
+        
+        possibleChoice(array, count + 1, str + "-");
+        possibleChoice(array, count + 1, str + array[count]);
+        
+    }
+    
+    public int binarySearch(ArrayList<Integer> list, int score) {
+        int left = 0;
+        int right = list.size() - 1;
+        
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            
+            if (list.get(mid) >= score) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        
+        return list.size() - left;
+    }
+    
+    public int[] solution(String[] info, String[] query) {
+        int[] answer = new int[query.length];
+        
+        for (int i = 0; i < info.length; i++) {
+            String[] stringArray = info[i].split(" ");
+            possibleChoice(stringArray, 0, "");
+        }
+        
+        for (String key : map.keySet()) {
+            Collections.sort(map.get(key));
+        }
+        
+        for (int i = 0; i < query.length; i++) {
+            String newQuery = query[i].replace("and ", "");
+            
+            String[] queryArray = newQuery.split(" ");
+            
+            int score = Integer.parseInt(queryArray[4]);
+            
+            String compareString = queryArray[0] + queryArray[1] + queryArray[2] + queryArray[3];
+            
+            if (map.containsKey(compareString)) {
+                ArrayList<Integer> scoreList = map.get(compareString);
+
+                answer[i] = binarySearch(scoreList, score);
+            }
+        }
+        
+        return answer;
+    }
+}
+```
+

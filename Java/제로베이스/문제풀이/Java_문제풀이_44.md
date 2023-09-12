@@ -18,10 +18,6 @@
 
 
 
-
-
-#### 아래 코드는 테스트 코드 5번이 계속 틀린다
-
 ```java
 import java.util.*;
 class Solution {
@@ -71,13 +67,13 @@ class Solution {
                         
                         if (from[1] < to[1]) {
                             // from 위치의 동쪽과 남쪽을 확인하고, 둘 중에 하나라도 패티션이 없으면 거리두기를 못 하고 있는 것
-                            if (places[from[0] + 1].charAt(from[1]) != 'X' && places[from[0]].charAt(from[1] + 1) != 'X') {
+                            if (places[from[0] + 1].charAt(from[1]) != 'X' || places[from[0]].charAt(from[1] + 1) != 'X') {
                                 isPossible = false;
                                 break;
                             }
                             // from 위치의 서쪽과 남쪽을 확인하고, 둘 중에 하나라도 패티션이 없으면 거리두기를 못 하고 있는 것
                         } else if (from[1] > to[1]) {
-                            if (places[from[0] + 1].charAt(from[1]) != 'X' && places[from[0]].charAt(from[1] - 1) != 'X') {
+                            if (places[from[0] + 1].charAt(from[1]) != 'X' || places[from[0]].charAt(from[1] - 1) != 'X') {
                                 isPossible = false;
                                 break;
                             }
@@ -116,8 +112,6 @@ class Solution {
             if (socialDistance(places[i], pLocation)) {
                 answer[i] = 1;
             };
-            
-            
         }
         
         return answer;
