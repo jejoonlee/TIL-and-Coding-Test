@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6272ea2d-f867-4e83-82ca-a0d86285937e" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Setting/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setting/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setting/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setting/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setting/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setting/Setting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setting/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Setting/src/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jejoon/api/config/SwaggerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jejoon/api/controller/DeleteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jejoon/api/controller/GetController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jejoon/api/controller/PostController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jejoon/api/controller/PutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jejoon/api/dto/MemberDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/Database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/Database/seoul_wifi.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/Database/wifi_erd/wifi.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.assets/image-20230802151210096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.assets/image-20230808225401090.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.assets/image-20230808235829456.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.assets/image-20230809221713974.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.assets/image-20230811213630553.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.assets/image-20230811213758400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.assets/image-20230811215434684.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/java/DBData/DataInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/java/DBData/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/java/DBData/WifiData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/bookmark-group-add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/bookmark-group-add/submit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/bookmark-group.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/bookmark-group/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/bookmark-group/update-or-delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/bookmark-group/update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/findLoc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/history.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/history/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/show-bookmark.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/show-bookmark/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/show-bookmark/insert.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/Projects/MissionOneProject/src/main/webapp/wifiConfirm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/문제풀이/Java_문제풀이_44.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../제로베이스/문제풀이/Java_문제풀이_44.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../제로베이스/문제풀이/Java_문제풀이_45.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../제로베이스/문제풀이/Java_문제풀이_45.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2V6GoXnHPYr9ACSw6v6RyHWoP6Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="6272ea2d-f867-4e83-82ca-a0d86285937e" name="변경" comment="" />
+      <created>1694149298394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694149298394</updated>
+      <workItem from="1694149302080" duration="128000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
