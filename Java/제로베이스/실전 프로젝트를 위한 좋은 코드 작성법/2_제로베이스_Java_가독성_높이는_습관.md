@@ -128,7 +128,7 @@ class User {
 
 #### 매번 회피 로직을 넣어야 안전하다
 
-- 하지만 의도하지 않는 에러가 생길 수 있
+- 하지만 의도하지 않는 에러가 생길 수 있다
 
 
 
@@ -146,4 +146,24 @@ boolean hasText(String text) {
 - 그래서 null에 대한 if문을 만들어 줘야 한다
 
 
+
+
+
+### null 핸들링
+
+> Assertion 단정문 `assert expression` 이 있는데, 사용을 하지 않는게 좋다
+>
+> - 레거시 코드에 있을 수 있음
+
+
+
+```java
+// Null이면 true를 리턴한다
+Object.isNull();
+
+// Null이 아니면 true를 리턴한다
+Object.nonNull();
+
+Object.requireNonNull(); // NullPointerException 예외를 리턴한다
+```
 
