@@ -71,9 +71,10 @@ public class ChatController {
     /**
      * 메세지를 보낼 때
      */
-    @MessageMapping("/chat/sendMessage")
+    @MessageMapping("/chat/message/{chatRoomId}")
     public void sendMessage(
-            ChatMessageDto chat
+            ChatMessageDto chat,
+        	@DestinationVariable Long chatRoomId
     ) {
          return chatMessageDto;
         log.info("Chat {}", chat);
@@ -81,12 +82,10 @@ public class ChatController {
         template.convertAndSend("/sub/chat/room/" + chat.getChatRoomId(), chat);
     }
 
-    /**
-     * 유저와 웹 소켓이 연결될 때에 생성되는 메세지다
-     */
-    @MessageMapping("/chat/enter")
+    @MessageMapping("chat/enter/{chatRoomId}")
     public void addUser(
-            ChatMessageDto chat
+            ChatMessageDto chat,
+        	@DestinationVariable Long chatRoomId
     ) {
         // Add username in WebSocket session
         headerAccessor.getSessionAttributes().put("username", chatMessageDto.getSender());
@@ -99,6 +98,9 @@ public class ChatController {
 ```
 
 
+
+- **MessageMapping**
+  - /pub/chat... 형태로 해당 메세지를 발행해준다
 
 - **SimpleMessageSendingOperations**
   - STOMP 같이, 매세지를 보내는 작업에 특화된 인터페이스다. MessageSendingOperation을 특화한 것 (docs.spring)
